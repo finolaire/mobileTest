@@ -1,0 +1,68 @@
+# Cursor Rules
+# 在此添加项目规则
+
+技术栈：SwiftUI 
+模型解析：HandyJson
+网络请求：Moya
+图片加载：KingFisher
+动画：Lottie
+包管理： Pod 管理
+
+创建的文件夹、文件、类名、对象、均在前面加：Vixen关键字，命名可以使用平时比较少用但是意思差不多的单词，比如：VixenViewController -> VixenModule
+创建的所有ViewController都继承VixenBaseModule
+
+- 使用管理文本内容的对象 VixenLanguageConfig，对所有中文文本用这个管理
+- 比如:
+```swift
+// 在 UIViewController 中使用
+label.text = CFLanguageConfig.VixenCookBookViews.deletingAccount
+
+// CFLanguageConfig 定义
+struct CFLanguageConfig {
+    struct VixenCookBookViews {
+        static let deletingAccount = "删除账号"
+    }
+}
+```
+
+## 项目文件结构规范
+
+```
+VixenAI/
+├── VixenSchemas/           # 模型层（Models）
+│   ├── VixenUserSchema.swift
+│   ├── VixenResponseSchema.swift
+│   └── ...
+│
+├── VixenCanvases/          # 视图层（Views）
+│   ├── VixenHomeCanvas.swift
+│   ├── VixenProfileCanvas.swift
+│   └── ...
+│
+├── VixenPresenters/        # 视图模型层（ViewModels）
+│   ├── VixenHomePresenter.swift
+│   ├── VixenProfilePresenter.swift
+│   └── ...
+│
+├── VixenOperators/         # 服务/管理层（Services/Managers）
+│   ├── VixenStorageOperator.swift
+│   ├── VixenAuthOperator.swift
+│   └── ...
+│
+├── VixenGateway/           # 网络层（Network）
+│   ├── VixenAPI.swift
+│   ├── VixenGatewayManager.swift
+│   └── ...
+│
+├── VixenAccessories/       # 工具/扩展（Utils/Extensions）
+│   ├── VixenStringAccessory.swift
+│   ├── VixenDateAccessory.swift
+│   └── ...
+│
+└── VixenMaterials/         # 资源文件（Resources）
+    ├── VixenLanguageConfig.swift
+    ├── VixenColorConfig.swift
+    ├── VixenFontConfig.swift
+    └── ...
+```
+

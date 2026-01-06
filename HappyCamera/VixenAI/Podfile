@@ -1,0 +1,26 @@
+platform :ios, '15.4'
+
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+# Specify the target for your app
+target 'VixenAI' do
+  # Use frameworks for better integration
+  use_frameworks!
+
+  pod 'Moya'
+  pod 'HandyJSON'
+  pod 'Kingfisher'
+  #pod 'SnapKit'
+  #pod 'IQKeyboardManagerSwift'
+
+end
+
+# Post-install configuration
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # Ensure minimum iOS version is set to 15.4
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.4'
+    end
+  end
+end
