@@ -22,6 +22,8 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C796F9F12EB1F5F3004EA8DB /* VixenAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = VixenAI;
 			sourceTree = "<group>";
 		};
@@ -87,7 +89,6 @@
 				C796F9EB2EB1F5F3004EA8DB /* Sources */,
 				C796F9EC2EB1F5F3004EA8DB /* Frameworks */,
 				C796F9ED2EB1F5F3004EA8DB /* Resources */,
-				CBE085AA33F5FF0A7A7C1864 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,27 +147,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CBE085AA33F5FF0A7A7C1864 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VixenAI/Pods-VixenAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VixenAI/Pods-VixenAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VixenAI/Pods-VixenAI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EF13744B4F820EC10E5B034C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

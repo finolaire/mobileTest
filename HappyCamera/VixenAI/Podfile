@@ -7,9 +7,9 @@ target 'VixenAI' do
   # Use frameworks for better integration
   use_frameworks!
 
-  pod 'Moya'
-  pod 'HandyJSON'
-  pod 'Kingfisher'
+# pod 'Moya'
+# pod 'HandyJSON'
+# pod 'Kingfisher'
   #pod 'SnapKit'
   #pod 'IQKeyboardManagerSwift'
 
