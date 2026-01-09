@@ -29,10 +29,6 @@ struct VixenCarouselSelector: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            // 标题提示
-            Text("滑动选择拍摄模式")
-                .font(.system(size: 18, weight: .medium))
-                .foregroundColor(.white.opacity(0.9))
             
             // TabView 轮播 - 固定大小无缩放
             TabView(selection: $currentIndex) {
@@ -56,10 +52,6 @@ struct VixenCarouselSelector: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .frame(height: 400)
-            
-            // 自定义页面指示器
-            pageIndicator
-                .padding(.bottom, 20)
         }
     }
     
@@ -103,18 +95,6 @@ struct VixenCarouselSelector: View {
                 .padding(.horizontal, 20)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-    
-    // MARK: - 页面指示器
-    private var pageIndicator: some View {
-        HStack(spacing: 12) {
-            ForEach(0..<items.count, id: \.self) { index in
-                Circle()
-                    .fill(index == currentIndex ? Color.white : Color.white.opacity(0.4))
-                    .frame(width: index == currentIndex ? 12 : 8, height: index == currentIndex ? 12 : 8)
-                    .animation(.spring(response: 0.3), value: currentIndex)
-            }
-        }
     }
     
     // MARK: - 辅助方法

@@ -9,6 +9,12 @@ import SwiftUI
 
 @main
 struct VixenAIApp: App {
+    
+    init() {
+        // 初始化配置并打印内容
+        _ = VixenConfigManager.shared
+    }
+    
     var body: some Scene {
         WindowGroup {
             VixenHomeCanvas()

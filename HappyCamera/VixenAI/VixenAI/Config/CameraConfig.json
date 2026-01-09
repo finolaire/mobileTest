@@ -1,0 +1,47 @@
+{
+    "CameraType": [
+        {
+            "Template": [
+                {
+                    "group": "草莓",
+                    "pic": [
+                        {
+                            "pic": "portrait_01",
+                            "cameraCode": 0
+                        }
+                    ]
+                },
+                {
+                    "group": "苹果",
+                    "pic": [
+                        {
+                            "pic": "portrait_02",
+                            "cameraCode": 0
+                        }
+                    ]
+                }
+            ],
+            "name": "标准模式",
+            "pic": "v_01",
+            "cameraCode": 0
+        },
+        {
+            "Template": [],
+            "name": "人像模式",
+            "pic": "v_02",
+            "cameraCode": 1
+        },
+        {
+            "Template": [],
+            "name": "夜景模式",
+            "pic": "v_03",
+            "cameraCode": "2"
+        },
+        {
+            "Template": [],
+            "name": "卡通模式",
+            "pic": "v_04",
+            "cameraCode": "3"
+        }
+    ]
+}
