@@ -22,8 +22,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C796F9F12EB1F5F3004EA8DB /* VixenAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = VixenAI;
 			sourceTree = "<group>";
 		};
@@ -89,6 +87,7 @@
 				C796F9EB2EB1F5F3004EA8DB /* Sources */,
 				C796F9EC2EB1F5F3004EA8DB /* Frameworks */,
 				C796F9ED2EB1F5F3004EA8DB /* Resources */,
+				D01045D623B332F99A183CD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +146,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D01045D623B332F99A183CD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VixenAI/Pods-VixenAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VixenAI/Pods-VixenAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VixenAI/Pods-VixenAI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EF13744B4F820EC10E5B034C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.finolaire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.allteststar.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev;
@@ -373,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.finolaire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.allteststar.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev;

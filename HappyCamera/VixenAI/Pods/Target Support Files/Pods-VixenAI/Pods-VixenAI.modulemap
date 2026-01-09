@@ -1,0 +1,6 @@
+framework module Pods_VixenAI {
+  umbrella header "Pods-VixenAI-umbrella.h"
+
+  export *
+  module * { export * }
+}
