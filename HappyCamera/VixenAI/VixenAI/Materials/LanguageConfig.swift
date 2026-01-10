@@ -10,14 +10,14 @@ import Foundation
 struct VixenLanguageConfig {
     
     // MARK: - 首页相关文本
-    struct VixenHomeCanvas {
+    struct HomeCanvas {
         static let title = "Vixen AI"
         static let captureButton = "开始拍摄"
         static let welcomeMessage = "欢迎使用 Vixen AI"
     }
     
     // MARK: - 拍照界面相关文本
-    struct VixenCaptureCanvas {
+    struct CaptureCanvas {
         static let title = "拍摄"
         static let captureAction = "拍照"
         static let retakeAction = "重拍"

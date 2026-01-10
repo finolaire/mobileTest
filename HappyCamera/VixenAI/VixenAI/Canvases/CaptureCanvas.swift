@@ -1,5 +1,5 @@
 //
-//  VixenCaptureCanvas.swift
+//  CaptureCanvas.swift
 //  VixenAI
 //
 //  拍照界面视图
@@ -28,9 +28,9 @@ struct CameraFilter: Identifiable {
     ]
 }
 
-struct VixenCaptureCanvas: View {
+struct CaptureCanvas: View {
     
-    var captureMode: VixenCarouselItem?
+    var captureMode: CarouselItem?
     
     @StateObject private var cameraOperator = VixenCameraOperator()
     @Environment(\.dismiss) private var dismiss
@@ -64,7 +64,7 @@ struct VixenCaptureCanvas: View {
             }
         }
         .onAppear {
-            print("📸 [调试] VixenCaptureCanvas onAppear")
+            print("📸 [调试] CaptureCanvas onAppear")
             print("📸 [调试] captureMode?.title: \(captureMode?.title ?? "nil")")
             print("📸 [调试] captureMode?.imageName: \(captureMode?.imageName ?? "nil")")
             
@@ -104,24 +104,24 @@ struct VixenCaptureCanvas: View {
             cameraOperator.isFlashOn = false
             cameraOperator.capturedImage = nil
         }
-        .alert(VixenLanguageConfig.VixenCaptureCanvas.cameraPermissionDenied, isPresented: $showPermissionAlert) {
-            Button(VixenLanguageConfig.VixenCaptureCanvas.cancelAction, role: .cancel) {
+        .alert(VixenLanguageConfig.CaptureCanvas.cameraPermissionDenied, isPresented: $showPermissionAlert) {
+            Button(VixenLanguageConfig.CaptureCanvas.cancelAction, role: .cancel) {
                 dismiss()
             }
-            Button(VixenLanguageConfig.VixenCaptureCanvas.openSettings) {
+            Button(VixenLanguageConfig.CaptureCanvas.openSettings) {
                 if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
                     UIApplication.shared.open(settingsURL)
                 }
             }
         } message: {
-            Text(VixenLanguageConfig.VixenCaptureCanvas.cameraPermissionMessage)
+            Text(VixenLanguageConfig.CaptureCanvas.cameraPermissionMessage)
         }
-        .alert(VixenLanguageConfig.VixenCaptureCanvas.saveSuccess, isPresented: $showSaveSuccessAlert) {
+        .alert(VixenLanguageConfig.CaptureCanvas.saveSuccess, isPresented: $showSaveSuccessAlert) {
             Button("好的", role: .cancel) {}
         }
-        .alert(VixenLanguageConfig.VixenCaptureCanvas.saveFailed, isPresented: $showSaveErrorAlert) {
-            Button(VixenLanguageConfig.VixenCaptureCanvas.cancelAction, role: .cancel) {}
-            Button(VixenLanguageConfig.VixenCaptureCanvas.openSettings) {
+        .alert(VixenLanguageConfig.CaptureCanvas.saveFailed, isPresented: $showSaveErrorAlert) {
+            Button(VixenLanguageConfig.CaptureCanvas.cancelAction, role: .cancel) {}
+            Button(VixenLanguageConfig.CaptureCanvas.openSettings) {
                 VixenPhotoOperator.shared.openSettings()
             }
         } message: {
@@ -462,7 +462,7 @@ struct VixenCaptureCanvas: View {
                         VStack(spacing: 8) {
                             Image(systemName: "arrow.clockwise")
                                 .font(.system(size: 28))
-                            Text(VixenLanguageConfig.VixenCaptureCanvas.retakeAction)
+                            Text(VixenLanguageConfig.CaptureCanvas.retakeAction)
                                 .font(.system(size: 14, weight: .medium))
                         }
                         .foregroundColor(.white)
@@ -487,7 +487,7 @@ struct VixenCaptureCanvas: View {
                                 Image(systemName: "checkmark")
                                     .font(.system(size: 28))
                             }
-                            Text(isSaving ? VixenLanguageConfig.VixenCaptureCanvas.saving : VixenLanguageConfig.VixenCaptureCanvas.confirmAction)
+                            Text(isSaving ? VixenLanguageConfig.CaptureCanvas.saving : VixenLanguageConfig.CaptureCanvas.confirmAction)
                                 .font(.system(size: 14, weight: .medium))
                         }
                         .foregroundColor(.white)
@@ -514,11 +514,11 @@ struct VixenCaptureCanvas: View {
                 .frame(width: 100, height: 100)
                 .foregroundColor(VixenColorConfig.secondaryTextColor)
             
-            Text(VixenLanguageConfig.VixenCaptureCanvas.cameraPermissionDenied)
+            Text(VixenLanguageConfig.CaptureCanvas.cameraPermissionDenied)
                 .font(.system(size: 24, weight: .bold))
                 .foregroundColor(VixenColorConfig.primaryTextColor)
             
-            Text(VixenLanguageConfig.VixenCaptureCanvas.cameraPermissionMessage)
+            Text(VixenLanguageConfig.CaptureCanvas.cameraPermissionMessage)
                 .font(.system(size: 16))
                 .foregroundColor(VixenColorConfig.secondaryTextColor)
                 .multilineTextAlignment(.center)
@@ -527,7 +527,7 @@ struct VixenCaptureCanvas: View {
             Button(action: {
                 showPermissionAlert = true
             }) {
-                Text(VixenLanguageConfig.VixenCaptureCanvas.openSettings)
+                Text(VixenLanguageConfig.CaptureCanvas.openSettings)
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(.white)
                     .padding(.horizontal, 40)
@@ -565,7 +565,7 @@ struct VixenCaptureCanvas: View {
                 showSaveErrorAlert = true
                 
             case .permissionDenied:
-                saveErrorMessage = VixenLanguageConfig.VixenCaptureCanvas.photoPermissionMessage
+                saveErrorMessage = VixenLanguageConfig.CaptureCanvas.photoPermissionMessage
                 showSaveErrorAlert = true
             }
         }
@@ -1120,12 +1120,12 @@ struct FilterItem: View {
 }
 
 // MARK: - Preview
-struct VixenCaptureCanvas_Previews: PreviewProvider {
+struct CaptureCanvas_Previews: PreviewProvider {
     static var previews: some View {
-        VixenCaptureCanvas()
+        CaptureCanvas()
     }
 }
 
 #Preview {
-    VixenCaptureCanvas()
+    CaptureCanvas()
 }
