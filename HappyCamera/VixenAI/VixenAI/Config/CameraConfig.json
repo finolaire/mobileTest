@@ -8,57 +8,14 @@
                         {
                             "pic_en": "portrait_en_01",
                             "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
+                            "cameraCode": 0,
+                            "isLock": false
                         },
                         {
                             "pic_en": "portrait_en_01",
                             "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
-                        },
-                        {
-                            "pic_en": "portrait_en_01",
-                            "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
+                            "cameraCode": 0,
+                            "isLock": true
                         }
                     ]
                 },
@@ -68,7 +25,8 @@
                         {
                             "pic_en": "portrait_en_02",
                             "pic_zh": "portrait_zh_01",
-                            "cameraCode": 0
+                            "cameraCode": 0,
+                            "isLock": false
                         }
                     ]
                 }
@@ -85,7 +43,8 @@
                         {
                             "pic_en": "portrait_en_01",
                             "pic_zh": "portrait_zh_01",
-                            "cameraCode": 0
+                            "cameraCode": 0,
+                            "isLock": false
                         }
                     ]
                 },
@@ -95,7 +54,8 @@
                         {
                             "pic_en": "portrait_en_02",
                             "pic_zh": "portrait_zh_02",
-                            "cameraCode": 0
+                            "cameraCode": 0,
+                            "isLock": false
                         }
                     ]
                 }

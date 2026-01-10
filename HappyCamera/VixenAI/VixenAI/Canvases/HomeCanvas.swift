@@ -12,6 +12,9 @@ struct HomeCanvas: View {
     @State private var selectedCamera: CarouselItem?
     @State private var currentTemplates: [TemplateModel] = []
     @State private var columnCount: Int = 3 // 默认3列
+    @State private var showCaptureCanvas = false
+    @State private var selectedTemplateImageName: String?
+    @State private var selectedTemplatePicModel: TemplatePicModel?
     
     // 从配置管理器获取拍摄模式数据
     private var captureModels: [CarouselItem] {
@@ -114,14 +117,22 @@ struct HomeCanvas: View {
                             
                             ScrollView(.vertical, showsIndicators: false) {
                                 LazyVStack(spacing: 15) {
-                                    ForEach(Array(currentTemplates.enumerated()), id: \.offset) { index, template in
-                                        TemplateGroupView(
-                                            groupTitle: template.group ?? "",
-                                            pics: template.pic ?? [],
-                                            getImageName: getImageName,
-                                            columnCount: $columnCount
-                                        )
-                                    }
+                                ForEach(Array(currentTemplates.enumerated()), id: \.offset) { index, template in
+                                    TemplateGroupView(
+                                        groupTitle: template.group ?? "",
+                                        pics: template.pic ?? [],
+                                        getImageName: getImageName,
+                                        columnCount: $columnCount,
+                                        onPicSelected: { picModel in
+                                            // 处理照片点击，进入拍摄页面
+                                            let imageName = getImageName(for: picModel)
+                                            print("🏠 [调试] 选中照片: \(imageName)")
+                                            selectedTemplateImageName = imageName
+                                            selectedTemplatePicModel = picModel
+                                            showCaptureCanvas = true
+                                        }
+                                    )
+                                }
                                 }
                                 .padding(.horizontal, 20)
                                 .padding(.top, 10)
@@ -153,6 +164,12 @@ struct HomeCanvas: View {
                 }
             }
         }
+        .fullScreenCover(isPresented: $showCaptureCanvas) {
+            CaptureCanvas(
+                captureMode: selectedCamera,
+                templateImageName: selectedTemplateImageName
+            )
+        }
     }
 }
 
@@ -162,6 +179,7 @@ struct TemplateGroupView: View {
     let pics: [TemplatePicModel]
     let getImageName: (TemplatePicModel) -> String
     @Binding var columnCount: Int
+    let onPicSelected: (TemplatePicModel) -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -178,25 +196,51 @@ struct TemplateGroupView: View {
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 8) {
                     ForEach(Array(pics.enumerated()), id: \.offset) { picIndex, picModel in
                         let imageName = getImageName(picModel)
+                        let isLocked = picModel.isLock
                         
-                        Group {
-                            if UIImage(named: imageName) != nil {
-                                Image(imageName)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                            } else {
+                        ZStack {
+                            // 图片
+                            Group {
+                                if UIImage(named: imageName) != nil {
+                                    Image(imageName)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                } else {
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(Color.gray.opacity(0.3))
+                                        .overlay(
+                                            Image(systemName: "photo")
+                                                .font(.system(size: 30))
+                                                .foregroundColor(.white.opacity(0.5))
+                                        )
+                                }
+                            }
+                            .aspectRatio(1, contentMode: .fit)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            
+                            // 加锁蒙版
+                            if isLocked {
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(Color.gray.opacity(0.3))
+                                    .fill(Color.black.opacity(0.6))
                                     .overlay(
-                                        Image(systemName: "photo")
-                                            .font(.system(size: 30))
-                                            .foregroundColor(.white.opacity(0.5))
+                                        Image(systemName: "lock.fill")
+                                            .font(.system(size: 24, weight: .bold))
+                                            .foregroundColor(.white)
+                                            .shadow(color: .black.opacity(0.5), radius: 4, x: 0, y: 2)
                                     )
                             }
                         }
-                        .aspectRatio(1, contentMode: .fit)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
                         .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 3)
+                        .onTapGesture {
+                            if !isLocked {
+                                // 未加锁：进入拍摄页面
+                                onPicSelected(picModel)
+                            } else {
+                                // 加锁：点击无效，可以添加提示
+                                let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                                impactFeedback.impactOccurred()
+                            }
+                        }
                     }
                 }
                 .padding(.horizontal, 10)

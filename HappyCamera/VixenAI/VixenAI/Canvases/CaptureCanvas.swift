@@ -31,6 +31,7 @@ struct CameraFilter: Identifiable {
 struct CaptureCanvas: View {
     
     var captureMode: CarouselItem?
+    var templateImageName: String? // 新增：模板图片名称（蒙版）
     
     @StateObject private var cameraOperator = VixenCameraOperator()
     @Environment(\.dismiss) private var dismiss
@@ -67,6 +68,7 @@ struct CaptureCanvas: View {
             print("📸 [调试] CaptureCanvas onAppear")
             print("📸 [调试] captureMode?.title: \(captureMode?.title ?? "nil")")
             print("📸 [调试] captureMode?.imageName: \(captureMode?.imageName ?? "nil")")
+            print("📸 [调试] templateImageName: \(templateImageName ?? "nil")")
             
             cameraOperator.checkCameraPermission()
             cameraOperator.startSession()
@@ -270,13 +272,23 @@ struct CaptureCanvas: View {
                         .padding(.bottom, 10)  // 距离遮罩层底部10px ✅
                     }
                     
-                    // 中间可视区域（透明）+ 人像模式辅助线
+                    // 中间可视区域（透明）+ 模板蒙版图片
                     ZStack {
                         Color.clear
                             .frame(height: frameHeight)
                             .allowsHitTesting(false)  // 不拦截触摸
-                        // 人像模式辅助图片（只在人像模式下显示）
-                        if captureMode?.title == "人像模式" {
+                        
+                        // 模板蒙版图片（如果提供了模板图片名称）
+                        if let templateImageName = templateImageName, UIImage(named: templateImageName) != nil {
+                            Image(templateImageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: frameHeight)
+                                .opacity(0.5) // 半透明蒙版
+                                .allowsHitTesting(false)  // 不拦截触摸
+                        }
+                        // 人像模式辅助图片（只在人像模式下显示，且没有模板图片时）
+                        else if captureMode?.title == "人像模式" {
                             Image("portrait")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)

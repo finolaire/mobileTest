@@ -38,6 +38,7 @@ struct TemplatePicModel: HandyJSON {
     var pic_en: String?
     var pic_zh: String?
     var cameraCode: Int = 0
+    var isLock: Bool = false
 }
 
 // MARK: - 配置加载器
