@@ -11,6 +11,7 @@ struct HomeCanvas: View {
     
     @State private var selectedCamera: CarouselItem?
     @State private var currentTemplates: [TemplateModel] = []
+    @State private var columnCount: Int = 3 // 默认3列
     
     // 从配置管理器获取拍摄模式数据
     private var captureModels: [CarouselItem] {
@@ -72,19 +73,60 @@ struct HomeCanvas: View {
                 VStack(spacing: 0) {
                     // 列表视图 - 显示当前选中相机的 Template 数据
                     if !currentTemplates.isEmpty {
-                        ScrollView(.vertical, showsIndicators: false) {
-                            LazyVStack(spacing: 15) {
-                                ForEach(Array(currentTemplates.enumerated()), id: \.offset) { index, template in
-                                    TemplateGroupView(
-                                        groupTitle: template.group ?? "",
-                                        pics: template.pic ?? [],
-                                        getImageName: getImageName
+                        VStack(spacing: 0) {
+                            // 顶部标题栏（包含分列按钮）
+                            HStack {
+                                Text("模板列表")
+                                    .font(.system(size: 20, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 2)
+                                
+                                Spacer()
+                                
+                                // 分列按钮
+                                Button(action: {
+                                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                        if columnCount >= 6 {
+                                            columnCount = 1
+                                        } else {
+                                            columnCount += 1
+                                        }
+                                    }
+                                }) {
+                                    HStack(spacing: 4) {
+                                        Image(systemName: "square.grid.2x2")
+                                            .font(.system(size: 16, weight: .medium))
+                                        Text("\(columnCount)列")
+                                            .font(.system(size: 14, weight: .medium))
+                                    }
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal, 12)
+                                    .padding(.vertical, 6)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(Color.white.opacity(0.2))
                                     )
                                 }
                             }
                             .padding(.horizontal, 20)
-                            .padding(.top, 20)
-                            .padding(.bottom, 20)
+                            .padding(.top, 10)
+                            .padding(.bottom, 10)
+                            
+                            ScrollView(.vertical, showsIndicators: false) {
+                                LazyVStack(spacing: 15) {
+                                    ForEach(Array(currentTemplates.enumerated()), id: \.offset) { index, template in
+                                        TemplateGroupView(
+                                            groupTitle: template.group ?? "",
+                                            pics: template.pic ?? [],
+                                            getImageName: getImageName,
+                                            columnCount: $columnCount
+                                        )
+                                    }
+                                }
+                                .padding(.horizontal, 20)
+                                .padding(.top, 10)
+                                .padding(.bottom, 20)
+                            }
                         }
                         .frame(maxHeight: geometry.size.height - 100 - geometry.safeAreaInsets.bottom - 20)
                     } else {
@@ -119,6 +161,7 @@ struct TemplateGroupView: View {
     let groupTitle: String
     let pics: [TemplatePicModel]
     let getImageName: (TemplatePicModel) -> String
+    @Binding var columnCount: Int
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -127,11 +170,12 @@ struct TemplateGroupView: View {
                 .font(.system(size: 18, weight: .bold))
                 .foregroundColor(.white)
                 .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 2)
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 10)
             
-            // 图片列表
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+            // 瀑布流图片布局
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 8) {
                     ForEach(Array(pics.enumerated()), id: \.offset) { picIndex, picModel in
                         let imageName = getImageName(picModel)
                         
@@ -150,13 +194,14 @@ struct TemplateGroupView: View {
                                     )
                             }
                         }
-                        .frame(width: 100, height: 100)
+                        .aspectRatio(1, contentMode: .fit)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 3)
                     }
                 }
                 .padding(.horizontal, 10)
             }
+            .frame(minHeight: 200) // 最小高度，内容会自动扩展
         }
         .padding(.vertical, 10)
         .background(
