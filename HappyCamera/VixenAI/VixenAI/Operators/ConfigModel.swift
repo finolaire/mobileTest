@@ -35,7 +35,8 @@ struct TemplateModel: HandyJSON {
 }
 
 struct TemplatePicModel: HandyJSON {
-    var pic: String?
+    var pic_en: String?
+    var pic_zh: String?
     var cameraCode: Int = 0
 }
 

@@ -6,7 +6,8 @@
                     "group": "草莓",
                     "pic": [
                         {
-                            "pic": "portrait_01",
+                            "pic_en": "portrait_en_01",
+                            "pic_zh": "portrait_zh_01",
                             "cameraCode": 0
                         }
                     ]
@@ -15,7 +16,8 @@
                     "group": "苹果",
                     "pic": [
                         {
-                            "pic": "portrait_02",
+                            "pic_en": "portrait_en_02",
+                            "pic_zh": "portrait_zh_01",
                             "cameraCode": 0
                         }
                     ]
