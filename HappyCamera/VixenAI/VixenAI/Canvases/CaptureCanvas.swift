@@ -48,6 +48,7 @@ struct CaptureCanvas: View {
     @State private var isCountingDown = false    // 是否正在倒计时
     @State private var countdownValue = 0        // 倒计时数值
     @State private var selectedFilter: CameraFilter = CameraFilter.filters[0]  // 当前选中的滤镜
+    @State private var showTemplateImage: Bool = true  // 是否显示辅助图片
     
     var body: some View {
         ZStack {
@@ -278,18 +279,9 @@ struct CaptureCanvas: View {
                             .frame(height: frameHeight)
                             .allowsHitTesting(false)  // 不拦截触摸
                         
-                        // 模板蒙版图片（如果提供了模板图片名称）
-                        if let templateImageName = templateImageName, UIImage(named: templateImageName) != nil {
+                        // 人像辅助图片（从HomeCanvas选择的模板）
+                        if showTemplateImage, let templateImageName = templateImageName, !templateImageName.isEmpty {
                             Image(templateImageName)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: frameHeight)
-                                .opacity(0.5) // 半透明蒙版
-                                .allowsHitTesting(false)  // 不拦截触摸
-                        }
-                        // 人像模式辅助图片（只在人像模式下显示，且没有模板图片时）
-                        else if captureMode?.title == "人像模式" {
-                            Image("portrait")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: frameHeight)
@@ -427,6 +419,27 @@ struct CaptureCanvas: View {
                     Spacer()
                 }
                 .padding(.trailing, 20)
+            }
+            
+            // 右下角：辅助图片显示开关
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    VStack(spacing: 8) {
+                        Toggle("", isOn: $showTemplateImage)
+                            .toggleStyle(SwitchToggleStyle(tint: .green))
+                            .labelsHidden()
+                            .scaleEffect(0.8)
+                    }
+                    .padding(10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(Color.black.opacity(0.5))
+                    )
+                    .padding(.trailing, 20)
+                    .padding(.bottom, 0)
+                }
             }
         }
     }
