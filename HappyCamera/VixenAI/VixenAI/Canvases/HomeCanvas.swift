@@ -15,6 +15,7 @@ struct HomeCanvas: View {
     @State private var showCaptureCanvas = false
     @State private var selectedTemplateImageName: String?
     @State private var selectedTemplatePic: TemplatePicItem?
+    @State private var viewerImageItem: ViewerImageItem?
     
     // 从配置管理器获取拍摄模式数据
     private var captureModels: [CarouselItem] {
@@ -132,13 +133,18 @@ struct HomeCanvas: View {
                                         pics: getPicItems(from: template),
                                         getImageName: getImageName,
                                         columnCount: $columnCount,
-                                        onPicSelected: { picItem in
-                                            // 处理照片点击，进入拍摄页面
+                                        onCameraButtonTapped: { picItem in
+                                            // 处理相机按钮点击，进入拍摄页面
                                             let imageName = getImageName(for: picItem)
-                                            print("🏠 [调试] 选中照片: \(imageName)")
+                                            print("🏠 [调试] 点击相机按钮，选中照片: \(imageName)")
                                             selectedTemplateImageName = imageName
                                             selectedTemplatePic = picItem
                                             showCaptureCanvas = true
+                                        },
+                                        onImagePreview: { imageName in
+                                            // 处理图片点击，查看大图
+                                            print("🏠 [调试] 查看大图: \(imageName)")
+                                            viewerImageItem = ViewerImageItem(imageName: imageName)
                                         }
                                     )
                                 }
@@ -179,7 +185,16 @@ struct HomeCanvas: View {
                 templateImageName: selectedTemplateImageName
             )
         }
+        .fullScreenCover(item: $viewerImageItem) { item in
+            ImageViewer(imageName: item.imageName)
+        }
     }
+}
+
+// MARK: - 图片查看器数据结构（用于 fullScreenCover item 传值）
+struct ViewerImageItem: Identifiable {
+    let id = UUID()
+    let imageName: String
 }
 
 // MARK: - 统一的图片项数据结构
@@ -207,7 +222,8 @@ struct TemplateGroupView: View {
     let pics: [TemplatePicItem]
     let getImageName: (TemplatePicItem) -> String
     @Binding var columnCount: Int
-    let onPicSelected: (TemplatePicItem) -> Void
+    let onCameraButtonTapped: (TemplatePicItem) -> Void  // 相机按钮点击 - 进入拍摄
+    let onImagePreview: (String) -> Void  // 图片点击 - 查看大图
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -226,7 +242,7 @@ struct TemplateGroupView: View {
                         let imageName = getImageName(picItem)
                         let isLocked = picItem.isLock
                         
-                        ZStack {
+                        ZStack(alignment: .topTrailing) {
                             // 图片
                             Group {
                                 if UIImage(named: imageName) != nil {
@@ -245,6 +261,12 @@ struct TemplateGroupView: View {
                             }
                             .aspectRatio(1, contentMode: .fit)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .onTapGesture {
+                                // 点击图片查看大图
+                                if UIImage(named: imageName) != nil {
+                                    onImagePreview(imageName)
+                                }
+                            }
                             
                             // 加锁蒙版
                             if isLocked {
@@ -257,18 +279,29 @@ struct TemplateGroupView: View {
                                             .shadow(color: .black.opacity(0.5), radius: 4, x: 0, y: 2)
                                     )
                             }
-                        }
-                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 3)
-                        .onTapGesture {
+                            
+                            // 右上角相机按钮（未加锁时显示）
                             if !isLocked {
-                                // 未加锁：进入拍摄页面
-                                onPicSelected(picItem)
-                            } else {
-                                // 加锁：点击无效，可以添加提示
-                                let impactFeedback = UIImpactFeedbackGenerator(style: .light)
-                                impactFeedback.impactOccurred()
+                                Button(action: {
+                                    // 点击相机按钮进入拍摄页面
+                                    let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
+                                    impactFeedback.impactOccurred()
+                                    onCameraButtonTapped(picItem)
+                                }) {
+                                    ZStack {
+                                        Circle()
+                                            .fill(Color.black.opacity(0.5))
+                                            .frame(width: 32, height: 32)
+                                        
+                                        Image(systemName: "camera.fill")
+                                            .font(.system(size: 14, weight: .medium))
+                                            .foregroundColor(.white)
+                                    }
+                                }
+                                .padding(6)
                             }
                         }
+                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 3)
                     }
                 }
                 .padding(.horizontal, 10)
