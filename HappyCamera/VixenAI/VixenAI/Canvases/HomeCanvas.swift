@@ -14,7 +14,7 @@ struct HomeCanvas: View {
     @State private var columnCount: Int = 3 // 默认3列
     @State private var showCaptureCanvas = false
     @State private var selectedTemplateImageName: String?
-    @State private var selectedTemplatePicModel: TemplatePicModel?
+    @State private var selectedTemplatePic: TemplatePicItem?
     
     // 从配置管理器获取拍摄模式数据
     private var captureModels: [CarouselItem] {
@@ -43,6 +43,19 @@ struct HomeCanvas: View {
         return []
     }
     
+    // 从Template获取图片项（默认使用pic_zh，如果为空则使用pic_en）
+    private func getPicItems(from template: TemplateModel) -> [TemplatePicItem] {
+        // 默认使用中文图片数组
+        if let picZhArray = template.pic_zh, !picZhArray.isEmpty {
+            return picZhArray.map { TemplatePicItem(from: $0) }
+        }
+        // 如果中文图片为空，使用英文图片
+        if let picEnArray = template.pic_en, !picEnArray.isEmpty {
+            return picEnArray.map { TemplatePicItem(from: $0) }
+        }
+        return []
+    }
+    
     // 判断系统是否使用中文
     private var isChinese: Bool {
         let preferredLanguage = Locale.preferredLanguages.first ?? ""
@@ -50,12 +63,8 @@ struct HomeCanvas: View {
     }
     
     // 根据语言获取图片名称
-    private func getImageName(for picModel: TemplatePicModel) -> String {
-        if isChinese {
-            return picModel.pic_zh ?? picModel.pic_en ?? ""
-        } else {
-            return picModel.pic_en ?? picModel.pic_zh ?? ""
-        }
+    private func getImageName(for picItem: TemplatePicItem) -> String {
+        return picItem.imageName
     }
     
     var body: some View {
@@ -120,15 +129,15 @@ struct HomeCanvas: View {
                                 ForEach(Array(currentTemplates.enumerated()), id: \.offset) { index, template in
                                     TemplateGroupView(
                                         groupTitle: template.group ?? "",
-                                        pics: template.pic ?? [],
+                                        pics: getPicItems(from: template),
                                         getImageName: getImageName,
                                         columnCount: $columnCount,
-                                        onPicSelected: { picModel in
+                                        onPicSelected: { picItem in
                                             // 处理照片点击，进入拍摄页面
-                                            let imageName = getImageName(for: picModel)
+                                            let imageName = getImageName(for: picItem)
                                             print("🏠 [调试] 选中照片: \(imageName)")
                                             selectedTemplateImageName = imageName
-                                            selectedTemplatePicModel = picModel
+                                            selectedTemplatePic = picItem
                                             showCaptureCanvas = true
                                         }
                                     )
@@ -173,13 +182,32 @@ struct HomeCanvas: View {
     }
 }
 
+// MARK: - 统一的图片项数据结构
+struct TemplatePicItem {
+    let imageName: String
+    let cameraCode: Int
+    let isLock: Bool
+    
+    init(from picZh: PicZhModel) {
+        self.imageName = picZh.pic ?? ""
+        self.cameraCode = picZh.cameraCode
+        self.isLock = picZh.isLock
+    }
+    
+    init(from picEn: PicEnModel) {
+        self.imageName = picEn.pic_en ?? ""
+        self.cameraCode = picEn.cameraCode
+        self.isLock = picEn.isLock
+    }
+}
+
 // MARK: - Template Group View
 struct TemplateGroupView: View {
     let groupTitle: String
-    let pics: [TemplatePicModel]
-    let getImageName: (TemplatePicModel) -> String
+    let pics: [TemplatePicItem]
+    let getImageName: (TemplatePicItem) -> String
     @Binding var columnCount: Int
-    let onPicSelected: (TemplatePicModel) -> Void
+    let onPicSelected: (TemplatePicItem) -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -194,9 +222,9 @@ struct TemplateGroupView: View {
             // 瀑布流图片布局
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 8) {
-                    ForEach(Array(pics.enumerated()), id: \.offset) { picIndex, picModel in
-                        let imageName = getImageName(picModel)
-                        let isLocked = picModel.isLock
+                    ForEach(Array(pics.enumerated()), id: \.offset) { picIndex, picItem in
+                        let imageName = getImageName(picItem)
+                        let isLocked = picItem.isLock
                         
                         ZStack {
                             // 图片
@@ -234,7 +262,7 @@ struct TemplateGroupView: View {
                         .onTapGesture {
                             if !isLocked {
                                 // 未加锁：进入拍摄页面
-                                onPicSelected(picModel)
+                                onPicSelected(picItem)
                             } else {
                                 // 加锁：点击无效，可以添加提示
                                 let impactFeedback = UIImpactFeedbackGenerator(style: .light)

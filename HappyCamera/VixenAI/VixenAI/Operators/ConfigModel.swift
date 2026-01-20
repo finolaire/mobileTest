@@ -31,12 +31,20 @@ struct CameraTypeModel: HandyJSON {
 
 struct TemplateModel: HandyJSON {
     var group: String?
-    var pic: [TemplatePicModel]?
+    var pic_en: [PicEnModel]?
+    var pic_zh: [PicZhModel]?
 }
 
-struct TemplatePicModel: HandyJSON {
+// 英文图片模型
+struct PicEnModel: HandyJSON {
     var pic_en: String?
-    var pic_zh: String?
+    var cameraCode: Int = 0
+    var isLock: Bool = false
+}
+
+// 中文图片模型
+struct PicZhModel: HandyJSON {
+    var pic: String?
     var cameraCode: Int = 0
     var isLock: Bool = false
 }
