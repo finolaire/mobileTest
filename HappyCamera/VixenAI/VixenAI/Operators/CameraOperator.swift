@@ -35,7 +35,7 @@ class VixenCameraOperator: NSObject, ObservableObject {
             setupCamera()
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self?.cameraPermissionGranted = granted
                     if granted {
                         self?.setupCamera()
@@ -86,7 +86,7 @@ class VixenCameraOperator: NSObject, ObservableObject {
         guard !isSessionRunning else { return }
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             self?.session.startRunning()
-            DispatchQueue.main.async {
+            Task { @MainActor in
                 self?.isSessionRunning = true
             }
         }
@@ -103,7 +103,7 @@ class VixenCameraOperator: NSObject, ObservableObject {
         
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             self?.session.stopRunning()
-            DispatchQueue.main.async {
+            Task { @MainActor in
                 self?.isSessionRunning = false
             }
         }
@@ -412,7 +412,7 @@ extension VixenCameraOperator: AVCapturePhotoCaptureDelegate {
         // 应用滤镜
         let filteredImage = self.applyFilter(to: croppedImage, filterName: self.currentFilter)
         
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.capturedImage = filteredImage
         }
     }
