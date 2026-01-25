@@ -53,9 +53,15 @@
         },
         {
             "Template": [],
-            "name": "卡通模式",
+            "name": "夜景模式",
             "pic": "v_04",
             "cameraCode": "3"
+        },
+        {
+            "Template": [],
+            "name": "卡通模式",
+            "pic": "v_05",
+            "cameraCode": "4"
         }
     ]
 }
