@@ -170,7 +170,40 @@
             "cameraCode": "2"
         },
         {
-            "Template": [],
+            "Template": [
+                {
+                    "group": "草莓",
+                    "pic_en": [
+                    ],
+                    "pic_zh": [
+                        {
+                            "pic": "goods_zh_1",
+                            "cameraCode": 0,
+                            "isLock": false
+                        },
+                        {
+                            "pic": "goods_zh_2",
+                            "cameraCode": 0,
+                            "isLock": false
+                        },
+                        {
+                            "pic": "goods_zh_3",
+                            "cameraCode": 0,
+                            "isLock": false
+                        },
+                        {
+                            "pic": "goods_zh_4",
+                            "cameraCode": 0,
+                            "isLock": false
+                        },
+                        {
+                            "pic": "goods_zh_5",
+                            "cameraCode": 0,
+                            "isLock": false
+                        }
+                    ]
+                }
+            ],
             "name": "物品",
             "pic": "v_04",
             "cameraCode": "3"
