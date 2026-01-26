@@ -41,25 +41,231 @@
         },
         {
             "Template": [],
-            "name": "人像模式",
+            "name": "合影",
             "pic": "v_02",
             "cameraCode": 1
         },
         {
-            "Template": [],
-            "name": "夜景模式",
+            "Template": [
+                {
+                    "group": "草莓",
+                    "pic_en": [
+                    ],
+                    "pic_zh": [
+                        {
+                            "pic": "food_zh_1",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_2",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_3",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_4",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_5",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_6",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_7",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_8",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_9",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_10",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_11",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_12",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_13",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_14",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_15",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_16",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_17",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_18",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_19",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_20",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_21",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "food_zh_22",
+                            "cameraCode": 0,
+                            "isLock": false
+                          }
+                    ]
+                }
+            ],
+            "name": "美食",
             "pic": "v_03",
             "cameraCode": "2"
         },
         {
             "Template": [],
-            "name": "夜景模式",
+            "name": "物品",
             "pic": "v_04",
             "cameraCode": "3"
         },
         {
-            "Template": [],
-            "name": "卡通模式",
+            "Template": [
+                {
+                    "group": "草莓",
+                    "pic_en": [
+                    ],
+                    "pic_zh": [
+                        {
+                            "pic": "landscape_zh_1",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_2",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_3",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_4",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_5",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_6",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_7",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_8",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_9",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_10",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_11",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_12",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_13",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_14",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_15",
+                            "cameraCode": 0,
+                            "isLock": false
+                          },
+                          {
+                            "pic": "landscape_zh_16",
+                            "cameraCode": 0,
+                            "isLock": false
+                          }
+                    ]
+                }
+            ],
+            "name": "风景",
             "pic": "v_05",
             "cameraCode": "4"
         }

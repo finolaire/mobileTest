@@ -7,6 +7,119 @@
 
 import SwiftUI
 
+// MARK: - 渐变主题枚举
+enum GradientTheme: String, CaseIterable {
+    case defaultPurple = "默认紫"
+    case oceanBlue = "海洋蓝"
+    case sunsetOrange = "日落橙"
+    case forestGreen = "森林绿"
+    case nightPurple = "暗夜紫"
+    case fireRed = "火焰红"
+    // 深色主题
+    case deepBlack = "深邃黑"
+    case deepOcean = "深海蓝"
+    case deepPurple = "深灰紫"
+    case deepGreen = "深墨绿"
+    case deepWine = "深酒红"
+    case midnight = "午夜黑"
+    
+    var colors: [Color] {
+        switch self {
+        case .defaultPurple:
+            return [
+                Color(hex: "#6C5CE7").opacity(0.8),
+                Color(hex: "#A29BFE").opacity(0.6),
+                Color(hex: "#FD79A8").opacity(0.4)
+            ]
+        case .oceanBlue:
+            return [
+                Color(hex: "#0984E3").opacity(0.9),
+                Color(hex: "#74B9FF").opacity(0.7),
+                Color(hex: "#00CEC9").opacity(0.5)
+            ]
+        case .sunsetOrange:
+            return [
+                Color(hex: "#E17055").opacity(0.9),
+                Color(hex: "#FDCB6E").opacity(0.7),
+                Color(hex: "#FFA502").opacity(0.5)
+            ]
+        case .forestGreen:
+            return [
+                Color(hex: "#00B894").opacity(0.9),
+                Color(hex: "#55EFC4").opacity(0.7),
+                Color(hex: "#81ECEC").opacity(0.5)
+            ]
+        case .nightPurple:
+            return [
+                Color(hex: "#2D3436").opacity(0.95),
+                Color(hex: "#6C5CE7").opacity(0.8),
+                Color(hex: "#A29BFE").opacity(0.6)
+            ]
+        case .fireRed:
+            return [
+                Color(hex: "#D63031").opacity(0.9),
+                Color(hex: "#FF7675").opacity(0.7),
+                Color(hex: "#FD79A8").opacity(0.5)
+            ]
+        // 深色主题
+        case .deepBlack:
+            return [
+                Color(hex: "#000000"),
+                Color(hex: "#1a1a1a"),
+                Color(hex: "#2d2d2d")
+            ]
+        case .deepOcean:
+            return [
+                Color(hex: "#001f3f"),
+                Color(hex: "#003d7a"),
+                Color(hex: "#005a99")
+            ]
+        case .deepPurple:
+            return [
+                Color(hex: "#1a1a2e"),
+                Color(hex: "#16213e"),
+                Color(hex: "#533483")
+            ]
+        case .deepGreen:
+            return [
+                Color(hex: "#0a3d2c"),
+                Color(hex: "#0d5940"),
+                Color(hex: "#107050")
+            ]
+        case .deepWine:
+            return [
+                Color(hex: "#3d0814"),
+                Color(hex: "#5c0f1f"),
+                Color(hex: "#7a1d2e")
+            ]
+        case .midnight:
+            return [
+                Color(hex: "#0c0c1e"),
+                Color(hex: "#1a1a3e"),
+                Color(hex: "#2d2d5e")
+            ]
+        }
+    }
+    
+    var icon: String {
+        switch self {
+        case .defaultPurple: return "sparkles"
+        case .oceanBlue: return "drop.fill"
+        case .sunsetOrange: return "sun.max.fill"
+        case .forestGreen: return "leaf.fill"
+        case .nightPurple: return "moon.stars.fill"
+        case .fireRed: return "flame.fill"
+        // 深色主题图标
+        case .deepBlack: return "circle.fill"
+        case .deepOcean: return "water.waves"
+        case .deepPurple: return "moon.fill"
+        case .deepGreen: return "tree.fill"
+        case .deepWine: return "wineglass.fill"
+        case .midnight: return "moon.zzz.fill"
+        }
+    }
+}
+
 struct HomeCanvas: View {
     
     @State private var selectedCamera: CarouselItem?
@@ -16,6 +129,20 @@ struct HomeCanvas: View {
     @State private var selectedTemplateImageName: String?
     @State private var selectedTemplatePic: TemplatePicItem?
     @State private var viewerImageItem: ViewerImageItem?
+    @AppStorage("selectedTheme") private var selectedThemeRawValue: String = GradientTheme.deepPurple.rawValue // 保存主题设置，默认深灰紫
+    @State private var showThemeSelector = false // 是否显示主题选择器
+    
+    // 计算属性：从保存的字符串恢复主题
+    private var selectedTheme: GradientTheme {
+        get {
+            GradientTheme(rawValue: selectedThemeRawValue) ?? .deepPurple
+        }
+    }
+    
+    // 设置主题的方法
+    private func setTheme(_ theme: GradientTheme) {
+        selectedThemeRawValue = theme.rawValue
+    }
     
     // 从配置管理器获取拍摄模式数据
     private var captureModels: [CarouselItem] {
@@ -71,19 +198,30 @@ struct HomeCanvas: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                // 背景渐变
+                // 背景渐变 - 使用选中的主题
                 LinearGradient(
-                    gradient: Gradient(colors: [
-                        VixenColorConfig.primaryColor.opacity(0.8),
-                        VixenColorConfig.secondaryColor.opacity(0.6),
-                        VixenColorConfig.accentColor.opacity(0.4)
-                    ]),
+                    gradient: Gradient(colors: selectedTheme.colors),
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
                 .ignoresSafeArea()
+                .animation(.easeInOut(duration: 0.5), value: selectedTheme)
                 
                 VStack(spacing: 0) {
+                    // 主题选择器
+                    if showThemeSelector {
+                        ThemeSelectorView(
+                            selectedTheme: selectedTheme,
+                            showThemeSelector: $showThemeSelector,
+                            onThemeSelected: { theme in
+                                setTheme(theme)
+                            }
+                        )
+                        .padding(.top, 10)
+                        .padding(.horizontal, 20)
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                    }
+                    
                     // 列表视图 - 显示当前选中相机的 Template 数据
                     if !currentTemplates.isEmpty {
                         VStack(spacing: 0) {
@@ -96,29 +234,52 @@ struct HomeCanvas: View {
                                 
                                 Spacer()
                                 
-                                // 分列按钮
-                                Button(action: {
-                                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                                        if columnCount >= 6 {
-                                            columnCount = 1
-                                        } else {
-                                            columnCount += 1
+                                HStack(spacing: 8) {
+                                    // 主题选择按钮
+                                    Button(action: {
+                                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                            showThemeSelector.toggle()
                                         }
+                                    }) {
+                                        HStack(spacing: 4) {
+                                            Image(systemName: selectedTheme.icon)
+                                                .font(.system(size: 16, weight: .medium))
+                                            Text("主题")
+                                                .font(.system(size: 14, weight: .medium))
+                                        }
+                                        .foregroundColor(.white)
+                                        .padding(.horizontal, 12)
+                                        .padding(.vertical, 6)
+                                        .background(
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .fill(Color.white.opacity(0.2))
+                                        )
                                     }
-                                }) {
-                                    HStack(spacing: 4) {
-                                        Image(systemName: "square.grid.2x2")
-                                            .font(.system(size: 16, weight: .medium))
-                                        Text("\(columnCount)列")
-                                            .font(.system(size: 14, weight: .medium))
+                                    
+                                    // 分列按钮
+                                    Button(action: {
+                                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                            if columnCount >= 6 {
+                                                columnCount = 1
+                                            } else {
+                                                columnCount += 1
+                                            }
+                                        }
+                                    }) {
+                                        HStack(spacing: 4) {
+                                            Image(systemName: "square.grid.2x2")
+                                                .font(.system(size: 16, weight: .medium))
+                                            Text("\(columnCount)列")
+                                                .font(.system(size: 14, weight: .medium))
+                                        }
+                                        .foregroundColor(.white)
+                                        .padding(.horizontal, 12)
+                                        .padding(.vertical, 6)
+                                        .background(
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .fill(Color.white.opacity(0.2))
+                                        )
                                     }
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal, 12)
-                                    .padding(.vertical, 6)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .fill(Color.white.opacity(0.2))
-                                    )
                                 }
                             }
                             .padding(.horizontal, 20)
@@ -314,6 +475,125 @@ struct TemplateGroupView: View {
                 .fill(Color.white.opacity(0.1))
                 .shadow(color: .black.opacity(0.2), radius: 8, x: 0, y: 4)
         )
+    }
+}
+
+// MARK: - 主题选择器视图
+struct ThemeSelectorView: View {
+    let selectedTheme: GradientTheme
+    @Binding var showThemeSelector: Bool
+    let onThemeSelected: (GradientTheme) -> Void
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            // 标题
+            HStack {
+                Text("选择主题背景")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                Button(action: {
+                    withAnimation {
+                        showThemeSelector = false
+                    }
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white.opacity(0.8))
+                }
+            }
+            
+            // 主题网格
+            LazyVGrid(columns: columns, spacing: 12) {
+                ForEach(GradientTheme.allCases, id: \.self) { theme in
+                    ThemeCard(
+                        theme: theme,
+                        isSelected: selectedTheme == theme,
+                        onSelect: {
+                            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                                onThemeSelected(theme)
+                            }
+                            // 添加触觉反馈
+                            let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
+                            impactFeedback.impactOccurred()
+                        }
+                    )
+                }
+            }
+        }
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color.black.opacity(0.3))
+                .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5)
+        )
+    }
+}
+
+// MARK: - 主题卡片
+struct ThemeCard: View {
+    let theme: GradientTheme
+    let isSelected: Bool
+    let onSelect: () -> Void
+    
+    var body: some View {
+        Button(action: onSelect) {
+            VStack(spacing: 8) {
+                // 主题预览
+                ZStack {
+                    LinearGradient(
+                        gradient: Gradient(colors: theme.colors),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                    .aspectRatio(1, contentMode: .fit)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    
+                    // 选中标记
+                    if isSelected {
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.white, lineWidth: 3)
+                        
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 24, weight: .bold))
+                            .foregroundColor(.white)
+                            .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 1)
+                    }
+                    
+                    // 主题图标
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Image(systemName: theme.icon)
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundColor(.white)
+                                .padding(6)
+                                .background(
+                                    Circle()
+                                        .fill(Color.black.opacity(0.3))
+                                )
+                                .padding(6)
+                        }
+                    }
+                }
+                
+                // 主题名称
+                Text(theme.rawValue)
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.white)
+                    .lineLimit(1)
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
