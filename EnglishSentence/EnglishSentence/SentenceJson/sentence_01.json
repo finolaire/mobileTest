@@ -1,0 +1,144 @@
+{
+  "unit_name": "基础英语入门 - 第一课",
+  "description": "掌握最基本的 BE 动词句型",
+  "sentences": [
+    {
+      "id": "s001",
+      "sentence_info": {
+        "original": "I am a boy",
+        "translation": "我是一个男孩",
+        "sentence_pattern": "主语 + Be动词 + 冠词 + 名词",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["personal_intro", "basic_be"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数代词，在句中充当主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/",
+            "audio_uk": "https://example.com/audio/uk/i.mp3",
+            "audio_us": "https://example.com/audio/us/i.mp3"
+          }
+        },
+        {
+          "word": "am",
+          "base_form": "be",
+          "range": [2, 4],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词的第一人称单数现在时形式。",
+          "phonetics": {
+            "uk": "/æm/", "us": "/æm/",
+            "audio_uk": "https://example.com/audio/uk/am.mp3",
+            "audio_us": "https://example.com/audio/us/am.mp3"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [5, 6],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词，用于辅音音素开头的单数可数名词前。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/",
+            "audio_uk": "https://example.com/audio/uk/a.mp3",
+            "audio_us": "https://example.com/audio/us/a.mp3"
+          }
+        },
+        {
+          "word": "boy",
+          "base_form": "boy",
+          "range": [7, 10],
+          "tag": "noun_object",
+          "type": "Noun (名词/表语)",
+          "chinese_definition": "男孩",
+          "explanation": "指年轻的男性人类。",
+          "phonetics": {
+            "uk": "/bɔɪ/", "us": "/bɔɪ/",
+            "audio_uk": "https://example.com/audio/uk/boy.mp3",
+            "audio_us": "https://example.com/audio/us/boy.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s002",
+      "sentence_info": {
+        "original": "She is a teacher",
+        "translation": "她是一名老师",
+        "sentence_pattern": "主语 + Be动词 + 冠词 + 名词",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["identity", "basic_be"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数女性代词，在句中充当主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/",
+            "audio_uk": "https://example.com/audio/uk/she.mp3",
+            "audio_us": "https://example.com/audio/us/she.mp3"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [4, 6],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词的第三人称单数现在时形式。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/",
+            "audio_uk": "https://example.com/audio/uk/is.mp3",
+            "audio_us": "https://example.com/audio/us/is.mp3"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [7, 8],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个/一名",
+          "explanation": "不定冠词，表示职业或身份的泛指。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/",
+            "audio_uk": "https://example.com/audio/uk/a.mp3",
+            "audio_us": "https://example.com/audio/us/a.mp3"
+          }
+        },
+        {
+          "word": "teacher",
+          "base_form": "teacher",
+          "range": [9, 16],
+          "tag": "noun_object",
+          "type": "Noun (名词/表语)",
+          "chinese_definition": "老师",
+          "explanation": "从事教学工作的人。",
+          "phonetics": {
+            "uk": "/ˈtiːtʃə(r)/", "us": "/ˈtiːtʃər/",
+            "audio_uk": "https://example.com/audio/uk/teacher.mp3",
+            "audio_us": "https://example.com/audio/us/teacher.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}
