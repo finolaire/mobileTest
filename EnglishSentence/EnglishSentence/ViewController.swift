@@ -1,33 +1,43 @@
 import UIKit
+import SnapKit
 
 // MARK: - Configuration
-struct DisplayConfig {
-    enum PhoneticType {
-        case uk
-        case us
-    }
-    var phoneticType: PhoneticType = .uk
-    var showWordType: Bool = true
-}
+// Moved to shared location or keep here if it's app-wide config
+// For now, it's used by ViewModel, so we can keep it here or move to a separate file.
+// Since SentenceViewModel uses it, and WordCell uses it (via VM), it's fine.
 
 class ViewController: UIViewController {
 
+    // MARK: - ViewModel
+    private var viewModel = SentenceViewModel()
+
     // MARK: - UI Components
+    private let backgroundImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        return iv
+    }()
+    
+    private let backgroundDimmingView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.8) // Dark mask with 80% opacity
+        return view
+    }()
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = 8
         layout.minimumLineSpacing = 16
         layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-        // Estimated size to help with self-sizing if needed, but we'll calculate size
         layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .black // Dark background as per sketch
+        cv.backgroundColor = .clear // Transparent to show background
         cv.delegate = self
         cv.dataSource = self
         cv.register(WordCell.self, forCellWithReuseIdentifier: WordCell.identifier)
-        cv.translatesAutoresizingMaskIntoConstraints = false
         return cv
     }()
     
@@ -37,7 +47,6 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -47,7 +56,6 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -56,7 +64,6 @@ class ViewController: UIViewController {
         btn.setTitle("Previous", for: .normal)
         btn.setTitleColor(.systemBlue, for: .normal)
         btn.addTarget(self, action: #selector(prevTapped), for: .touchUpInside)
-        btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
     
@@ -65,7 +72,6 @@ class ViewController: UIViewController {
         btn.setTitle("Next", for: .normal)
         btn.setTitleColor(.systemBlue, for: .normal)
         btn.addTarget(self, action: #selector(nextTapped), for: .touchUpInside)
-        btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
     
@@ -74,14 +80,21 @@ class ViewController: UIViewController {
         stack.axis = .horizontal
         stack.distribution = .equalSpacing
         stack.alignment = .center
-        stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
-
-    // MARK: - Data
-    private var courseUnit: CourseUnit?
-    private var currentSentenceIndex: Int = 0
-    private var displayConfig = DisplayConfig()
+    
+    private let settingsButton: UIButton = {
+        let btn = UIButton(type: .system)
+        // Use a gear icon if available, otherwise text
+        if let image = UIImage(systemName: "gearshape.fill") {
+            btn.setImage(image, for: .normal)
+        } else {
+            btn.setTitle("Settings", for: .normal)
+        }
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(settingsTapped), for: .touchUpInside)
+        return btn
+    }()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -89,104 +102,122 @@ class ViewController: UIViewController {
         view.backgroundColor = .black
         
         setupUI()
-        loadData()
+        setupBindings()
+        viewModel.loadData()
+        updateBackground() // Set initial background
     }
     
     private func setupUI() {
+        view.addSubview(backgroundImageView)
+        view.addSubview(backgroundDimmingView)
         view.addSubview(collectionView)
         view.addSubview(patternLabel)
         view.addSubview(translationLabel)
+        view.addSubview(settingsButton)
         
         controlsStack.addArrangedSubview(prevButton)
         controlsStack.addArrangedSubview(nextButton)
         view.addSubview(controlsStack)
         
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
-            
-            patternLabel.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 20),
-            patternLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            patternLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            
-            translationLabel.topAnchor.constraint(equalTo: patternLabel.bottomAnchor, constant: 20),
-            translationLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            translationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            
-            controlsStack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            controlsStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            controlsStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            controlsStack.heightAnchor.constraint(equalToConstant: 44)
-        ])
-    }
-    
-    private func loadData() {
-        // Try to load from Bundle first, then fallback to direct path (for simulator/dev env)
-        if let url = Bundle.main.url(forResource: "sentence_01", withExtension: "json") {
-            parseJSON(from: url)
-        } else {
-            // Fallback for development environment if bundle resource isn't set up yet
-            let path = "/Users/apple2026/mobileTest/EnglishSentence/EnglishSentence/SentenceJson/sentence_01.json"
-            let url = URL(fileURLWithPath: path)
-            parseJSON(from: url)
+        backgroundImageView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        backgroundDimmingView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        settingsButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
+            make.trailing.equalToSuperview().offset(-20)
+            make.width.height.equalTo(44)
+        }
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(settingsButton.snp.bottom).offset(10)
+            make.leading.trailing.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.55) // Adjusted height
+        }
+        
+        patternLabel.snp.makeConstraints { make in
+            make.top.equalTo(collectionView.snp.bottom).offset(20)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().offset(-20)
+        }
+        
+        translationLabel.snp.makeConstraints { make in
+            make.top.equalTo(patternLabel.snp.bottom).offset(20)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().offset(-20)
+        }
+        
+        controlsStack.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+            make.leading.equalToSuperview().offset(40)
+            make.trailing.equalToSuperview().offset(-40)
+            make.height.equalTo(44)
         }
     }
     
-    private func parseJSON(from url: URL) {
-        do {
-            let data = try Data(contentsOf: url)
-            let decoder = JSONDecoder()
-            courseUnit = try decoder.decode(CourseUnit.self, from: data)
-            updateUI()
-        } catch {
-            print("Error loading JSON: \(error)")
-            // Show alert
-            let alert = UIAlertController(title: "Error", message: "Failed to load data: \(error.localizedDescription)", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            present(alert, animated: true)
+    private func setupBindings() {
+        viewModel.onDataUpdated = { [weak self] in
+            DispatchQueue.main.async {
+                self?.updateUI()
+            }
+        }
+        
+        viewModel.onError = { [weak self] errorMessage in
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self?.present(alert, animated: true)
+            }
         }
     }
     
     private func updateUI() {
-        guard let unit = courseUnit, !unit.sentences.isEmpty else { return }
+        patternLabel.text = viewModel.currentPattern
+        patternLabel.isHidden = !viewModel.displayConfig.showSentencePattern
         
-        let sentence = unit.sentences[currentSentenceIndex]
+        translationLabel.text = viewModel.currentTranslation
+        translationLabel.isHidden = !viewModel.displayConfig.showTranslation
         
-        // Update Labels
-        patternLabel.text = sentence.sentenceInfo.sentencePattern
-        translationLabel.text = sentence.sentenceInfo.translation
-        
-        // Update CollectionView
         collectionView.reloadData()
         
-        // Update Buttons
-        prevButton.isEnabled = currentSentenceIndex > 0
-        nextButton.isEnabled = currentSentenceIndex < unit.sentences.count - 1
+        prevButton.isEnabled = viewModel.isPrevEnabled
+        nextButton.isEnabled = viewModel.isNextEnabled
+        
+        updateBackground()
+    }
+    
+    private func updateBackground() {
+        let imageName = "BackgroundImage\(viewModel.displayConfig.backgroundImageIndex)"
+        backgroundImageView.image = UIImage(named: imageName)
+        backgroundDimmingView.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(viewModel.displayConfig.maskOpacity))
     }
     
     // MARK: - Actions
     @objc private func prevTapped() {
-        if currentSentenceIndex > 0 {
-            currentSentenceIndex -= 1
-            updateUI()
-        }
+        viewModel.prevSentence()
     }
     
     @objc private func nextTapped() {
-        guard let unit = courseUnit else { return }
-        if currentSentenceIndex < unit.sentences.count - 1 {
-            currentSentenceIndex += 1
-            updateUI()
+        viewModel.nextSentence()
+    }
+    
+    @objc private func settingsTapped() {
+        let settingsVC = SettingsViewController(config: viewModel.displayConfig)
+        settingsVC.onConfigChanged = { [weak self] newConfig in
+            self?.viewModel.updateConfig(newConfig)
         }
+        present(settingsVC, animated: true, completion: nil)
     }
 }
 
 // MARK: - UICollectionViewDataSource & Delegate
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return courseUnit?.sentences[currentSentenceIndex].analysis.count ?? 0
+        return viewModel.numberOfItems()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -194,96 +225,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
             return UICollectionViewCell()
         }
         
-        if let wordAnalysis = courseUnit?.sentences[currentSentenceIndex].analysis[indexPath.item] {
-            cell.configure(with: wordAnalysis, config: displayConfig)
+        if let cellViewModel = viewModel.viewModelForCell(at: indexPath.item) {
+            cell.configure(with: cellViewModel)
         }
         
         return cell
-    }
-    
-    // Use automatic size, but we can provide hints if needed
-    // The WordCell will use AutoLayout to determine its size
-}
-
-// MARK: - WordCell
-class WordCell: UICollectionViewCell {
-    static let identifier = "WordCell"
-    
-    private let wordLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private let phoneticLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-        label.textColor = .lightGray
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private let typeLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
-        label.textColor = .orange
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private let stackView: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = 4
-        stack.alignment = .center
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        return stack
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        contentView.addSubview(stackView)
-        stackView.addArrangedSubview(wordLabel)
-        stackView.addArrangedSubview(phoneticLabel)
-        stackView.addArrangedSubview(typeLabel)
-        
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            // Add a minimum width to prevent cramping
-            contentView.widthAnchor.constraint(greaterThanOrEqualToConstant: 40)
-        ])
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(with data: WordAnalysis, config: DisplayConfig) {
-        wordLabel.text = data.word
-        wordLabel.textColor = colorForTag(data.tag)
-        
-        switch config.phoneticType {
-        case .uk:
-            phoneticLabel.text = data.phonetics.uk
-        case .us:
-            phoneticLabel.text = data.phonetics.us
-        }
-        
-        typeLabel.text = data.type
-        typeLabel.isHidden = !config.showWordType
-    }
-    
-    private func colorForTag(_ tag: String) -> UIColor {
-        switch tag {
-        case "pronoun_subject": return UIColor(red: 0.2, green: 0.6, blue: 1.0, alpha: 1.0) // Light Blue
-        case "verb_be": return UIColor(red: 1.0, green: 0.4, blue: 0.4, alpha: 1.0) // Light Red
-        case "article_indefinite": return UIColor(red: 0.4, green: 0.8, blue: 0.4, alpha: 1.0) // Light Green
-        case "noun_object": return UIColor(red: 1.0, green: 0.8, blue: 0.2, alpha: 1.0) // Yellow/Orange
-        default: return .white
-        }
     }
 }
