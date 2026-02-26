@@ -1,11 +1,13 @@
 import UIKit
 import SnapKit
+import AVFoundation
 
 class SettingsViewController: UIViewController {
     
     // MARK: - Properties
     private var currentConfig: DisplayConfig
     var onConfigChanged: ((DisplayConfig) -> Void)?
+    private var voiceButton: UIButton?
     
     // MARK: - UI Components
     private let containerView: UIView = {
@@ -79,9 +81,17 @@ class SettingsViewController: UIViewController {
         
         // Add switches
         addSwitchRow(title: "Show Phonetics", isOn: currentConfig.showPhonetics, action: #selector(phoneticsToggled(_:)))
+        
+        // Add Accent and Voice settings
+        addPhoneticSettings()
+        
         addSwitchRow(title: "Show Word Type", isOn: currentConfig.showWordType, action: #selector(wordTypeToggled(_:)))
         addSwitchRow(title: "Show Pattern", isOn: currentConfig.showSentencePattern, action: #selector(patternToggled(_:)))
         addSwitchRow(title: "Show Translation", isOn: currentConfig.showTranslation, action: #selector(translationToggled(_:)))
+        addSwitchRow(title: "Show English Sentence", isOn: currentConfig.showEnglishSentence, action: #selector(englishSentenceToggled(_:)))
+        addSwitchRow(title: "Show Word Audio", isOn: currentConfig.showAudioButton, action: #selector(audioButtonToggled(_:)))
+        addSwitchRow(title: "Show Translation Audio", isOn: currentConfig.showTranslationAudioButton, action: #selector(translationAudioButtonToggled(_:)))
+        addSwitchRow(title: "Show English Audio", isOn: currentConfig.showEnglishAudioButton, action: #selector(englishAudioButtonToggled(_:)))
         
         // Add Background Selector
         addBackgroundSelector()
@@ -129,6 +139,106 @@ class SettingsViewController: UIViewController {
         // Drag gesture
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         containerView.addGestureRecognizer(panGesture)
+    }
+    
+    private func addPhoneticSettings() {
+        // Accent Segmented Control
+        let accentStack = UIStackView()
+        accentStack.axis = .horizontal
+        accentStack.distribution = .equalSpacing
+        accentStack.alignment = .center
+        
+        let accentLabel = UILabel()
+        accentLabel.text = "Accent"
+        accentLabel.textColor = .white
+        accentLabel.font = UIFont.systemFont(ofSize: 16)
+        
+        let accentSegment = UISegmentedControl(items: ["UK", "US"])
+        accentSegment.selectedSegmentIndex = currentConfig.phoneticType == .uk ? 0 : 1
+        accentSegment.selectedSegmentTintColor = .systemBlue
+        accentSegment.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+        accentSegment.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
+        accentSegment.addTarget(self, action: #selector(accentChanged(_:)), for: .valueChanged)
+        
+        accentStack.addArrangedSubview(accentLabel)
+        accentStack.addArrangedSubview(accentSegment)
+        stackView.addArrangedSubview(accentStack)
+        
+        // Voice Selection Button
+        let voiceStack = UIStackView()
+        voiceStack.axis = .horizontal
+        voiceStack.distribution = .equalSpacing
+        voiceStack.alignment = .center
+        
+        let voiceLabel = UILabel()
+        voiceLabel.text = "Voice"
+        voiceLabel.textColor = .white
+        voiceLabel.font = UIFont.systemFont(ofSize: 16)
+        
+        let btn = UIButton(type: .system)
+        btn.setTitle(currentVoiceName(), for: .normal)
+        btn.setTitleColor(.systemBlue, for: .normal)
+        btn.addTarget(self, action: #selector(voiceButtonTapped), for: .touchUpInside)
+        self.voiceButton = btn
+        
+        voiceStack.addArrangedSubview(voiceLabel)
+        voiceStack.addArrangedSubview(btn)
+        stackView.addArrangedSubview(voiceStack)
+    }
+
+    private func currentVoiceName() -> String {
+        if let id = currentConfig.selectedVoiceIdentifier,
+           let voice = AVSpeechSynthesisVoice(identifier: id) {
+            return voice.name
+        }
+        return "Default"
+    }
+    
+    @objc private func accentChanged(_ sender: UISegmentedControl) {
+        let newType: DisplayConfig.PhoneticType = sender.selectedSegmentIndex == 0 ? .uk : .us
+        if currentConfig.phoneticType != newType {
+            currentConfig.phoneticType = newType
+            currentConfig.selectedVoiceIdentifier = nil // Reset voice when accent changes
+            voiceButton?.setTitle("Default", for: .normal)
+            onConfigChanged?(currentConfig)
+        }
+    }
+    
+    @objc private func voiceButtonTapped() {
+        let language = currentConfig.phoneticType == .uk ? "en-GB" : "en-US"
+        let voices = TTSManager.shared.getVoices(for: language)
+        
+        let alert = UIAlertController(title: "Select Voice", message: nil, preferredStyle: .actionSheet)
+        
+        // Default option
+        let defaultAction = UIAlertAction(title: "Default", style: .default) { [weak self] _ in
+            guard let self = self else { return }
+            self.currentConfig.selectedVoiceIdentifier = nil
+            self.voiceButton?.setTitle("Default", for: .normal)
+            self.onConfigChanged?(self.currentConfig)
+        }
+        alert.addAction(defaultAction)
+        
+        for voice in voices {
+            let action = UIAlertAction(title: voice.name, style: .default) { [weak self] _ in
+                guard let self = self else { return }
+                self.currentConfig.selectedVoiceIdentifier = voice.identifier
+                self.voiceButton?.setTitle(voice.name, for: .normal)
+                self.onConfigChanged?(self.currentConfig)
+            }
+            alert.addAction(action)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        
+        // For iPad support
+        if let popover = alert.popoverPresentationController {
+            popover.sourceView = voiceButton
+            popover.sourceRect = voiceButton?.bounds ?? .zero
+        }
+        
+        present(alert, animated: true, completion: nil)
     }
     
     private func addSwitchRow(title: String, isOn: Bool, action: Selector) {
@@ -226,6 +336,26 @@ class SettingsViewController: UIViewController {
     
     @objc private func translationToggled(_ sender: UISwitch) {
         currentConfig.showTranslation = sender.isOn
+        onConfigChanged?(currentConfig)
+    }
+    
+    @objc private func englishSentenceToggled(_ sender: UISwitch) {
+        currentConfig.showEnglishSentence = sender.isOn
+        onConfigChanged?(currentConfig)
+    }
+    
+    @objc private func audioButtonToggled(_ sender: UISwitch) {
+        currentConfig.showAudioButton = sender.isOn
+        onConfigChanged?(currentConfig)
+    }
+    
+    @objc private func translationAudioButtonToggled(_ sender: UISwitch) {
+        currentConfig.showTranslationAudioButton = sender.isOn
+        onConfigChanged?(currentConfig)
+    }
+    
+    @objc private func englishAudioButtonToggled(_ sender: UISwitch) {
+        currentConfig.showEnglishAudioButton = sender.isOn
         onConfigChanged?(currentConfig)
     }
     

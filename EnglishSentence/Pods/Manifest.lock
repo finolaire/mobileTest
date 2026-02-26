@@ -1,16 +1,24 @@
 PODS:
+  - AMPopTip (4.12.0)
+  - EasyTipView (2.1.0)
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
+  - AMPopTip
+  - EasyTipView
   - SnapKit
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - AMPopTip
+    - EasyTipView
     - SnapKit
 
 SPEC CHECKSUMS:
+  AMPopTip: cf89d8690aa6e59ddc86bf46c0ccabb3e7d148a1
+  EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 4fd7847f571fe590b3c3e36f6bb35a267e1cf724
+PODFILE CHECKSUM: 2be02bf479a4b0b07339e82f7be25cedd756797e
 
 COCOAPODS: 1.16.2

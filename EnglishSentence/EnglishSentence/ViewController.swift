@@ -6,11 +6,11 @@ import SnapKit
 // For now, it's used by ViewModel, so we can keep it here or move to a separate file.
 // Since SentenceViewModel uses it, and WordCell uses it (via VM), it's fine.
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     // MARK: - ViewModel
     private var viewModel = SentenceViewModel()
-
+    
     // MARK: - UI Components
     private let backgroundImageView: UIImageView = {
         let iv = UIImageView()
@@ -59,6 +59,31 @@ class ViewController: UIViewController {
         return label
     }()
     
+    private let englishSentenceLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let translationAudioButton: UIButton = {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
+        btn.setImage(UIImage(systemName: "speaker.wave.3.fill", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
+        return btn
+    }()
+    
+    private let englishAudioButton: UIButton = {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
+        btn.setImage(UIImage(systemName: "speaker.wave.3.fill", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
+        return btn
+    }()
+    
     private let prevButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.setTitle("Previous", for: .normal)
@@ -105,6 +130,9 @@ class ViewController: UIViewController {
         setupBindings()
         viewModel.loadData()
         updateBackground() // Set initial background
+        
+        translationAudioButton.addTarget(self, action: #selector(translationAudioTapped), for: .touchUpInside)
+        englishAudioButton.addTarget(self, action: #selector(englishAudioTapped), for: .touchUpInside)
     }
     
     private func setupUI() {
@@ -113,6 +141,9 @@ class ViewController: UIViewController {
         view.addSubview(collectionView)
         view.addSubview(patternLabel)
         view.addSubview(translationLabel)
+        view.addSubview(englishSentenceLabel)
+        view.addSubview(translationAudioButton)
+        view.addSubview(englishAudioButton)
         view.addSubview(settingsButton)
         
         controlsStack.addArrangedSubview(prevButton)
@@ -147,8 +178,28 @@ class ViewController: UIViewController {
         
         translationLabel.snp.makeConstraints { make in
             make.top.equalTo(patternLabel.snp.bottom).offset(20)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().offset(-20)
+            make.centerX.equalToSuperview()
+            make.leading.greaterThanOrEqualToSuperview().offset(20)
+            make.trailing.lessThanOrEqualToSuperview().offset(-50) // Make room for audio button
+        }
+        
+        translationAudioButton.snp.makeConstraints { make in
+            make.centerY.equalTo(translationLabel)
+            make.leading.equalTo(translationLabel.snp.trailing).offset(10)
+            make.width.height.equalTo(30)
+        }
+        
+        englishSentenceLabel.snp.makeConstraints { make in
+            make.top.equalTo(translationLabel.snp.bottom).offset(20)
+            make.centerX.equalToSuperview()
+            make.leading.greaterThanOrEqualToSuperview().offset(20)
+            make.trailing.lessThanOrEqualToSuperview().offset(-50) // Make room for audio button
+        }
+        
+        englishAudioButton.snp.makeConstraints { make in
+            make.centerY.equalTo(englishSentenceLabel)
+            make.leading.equalTo(englishSentenceLabel.snp.trailing).offset(10)
+            make.width.height.equalTo(30)
         }
         
         controlsStack.snp.makeConstraints { make in
@@ -175,12 +226,18 @@ class ViewController: UIViewController {
         }
     }
     
-    private func updateUI() {
-        patternLabel.text = viewModel.currentPattern
+    private func updateUI() {//更新数据
+        patternLabel.attributedText = viewModel.currentPatternAttributed
         patternLabel.isHidden = !viewModel.displayConfig.showSentencePattern
         
-        translationLabel.text = viewModel.currentTranslation
+        translationLabel.attributedText = viewModel.currentTranslationAttributed
         translationLabel.isHidden = !viewModel.displayConfig.showTranslation
+        
+        englishSentenceLabel.attributedText = viewModel.currentEnglishSentenceAttributed
+        englishSentenceLabel.isHidden = !viewModel.displayConfig.showEnglishSentence
+        
+        translationAudioButton.isHidden = !viewModel.displayConfig.showTranslationAudioButton || !viewModel.displayConfig.showTranslation
+        englishAudioButton.isHidden = !viewModel.displayConfig.showEnglishAudioButton || !viewModel.displayConfig.showEnglishSentence
         
         collectionView.reloadData()
         
@@ -188,6 +245,20 @@ class ViewController: UIViewController {
         nextButton.isEnabled = viewModel.isNextEnabled
         
         updateBackground()
+    }
+    
+    @objc private func translationAudioTapped() {
+        guard let sentence = viewModel.currentSentence else { return }
+        TTSManager.shared.play(sentence.sentenceInfo.translation, language: "zh-CN")
+    }
+    
+    @objc private func englishAudioTapped() {
+        guard let sentence = viewModel.currentSentence else { return }
+        
+        // Determine language based on config
+        let language = viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
+        let voiceId = viewModel.displayConfig.selectedVoiceIdentifier
+        TTSManager.shared.play(sentence.sentenceInfo.original, language: language, voiceIdentifier: voiceId)
     }
     
     private func updateBackground() {
@@ -227,8 +298,42 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         
         if let cellViewModel = viewModel.viewModelForCell(at: indexPath.item) {
             cell.configure(with: cellViewModel)
+            
+            // Handle audio tap
+            cell.onAudioTapped = { [weak self] in
+                guard let self = self,
+                      let analysis = self.viewModel.analysisForCell(at: indexPath.item) else { return }
+                
+                // Determine language based on config
+                let language = self.viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
+                let voiceId = self.viewModel.displayConfig.selectedVoiceIdentifier
+                TTSManager.shared.play(analysis.word, language: language, voiceIdentifier: voiceId)
+            }
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath),
+              let analysis = viewModel.analysisForCell(at: indexPath.item) else { return }
+        
+        let detailVC = WordDetailViewController(analysis: analysis, color: AppTheme.color(forTag: analysis.tag))
+        detailVC.modalPresentationStyle = .popover
+        
+        if let popover = detailVC.popoverPresentationController {
+            popover.sourceView = cell
+            popover.sourceRect = cell.bounds
+            popover.permittedArrowDirections = [] // Remove arrow to make it a rounded rectangle
+            popover.delegate = self
+            popover.backgroundColor = AppTheme.color(forTag: analysis.tag)
+        }
+        
+        present(detailVC, animated: true, completion: nil)
+    }
+    
+    // MARK: - UIPopoverPresentationControllerDelegate
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none // Force popover on iPhone
     }
 }

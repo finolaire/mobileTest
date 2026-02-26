@@ -6,7 +6,9 @@ target 'EnglishSentence' do
   use_frameworks!
 
   pod 'SnapKit'
-
+  pod 'EasyTipView'
+  pod 'AMPopTip'
+  
 end
 
 post_install do |installer|

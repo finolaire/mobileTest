@@ -9,6 +9,7 @@ struct WordCellViewModel {
     let wordColor: UIColor
     let isPhoneticsHidden: Bool
     let isTypeHidden: Bool
+    let isAudioButtonHidden: Bool
     
     init(analysis: WordAnalysis, config: DisplayConfig) {
         self.word = analysis.word
@@ -23,15 +24,10 @@ struct WordCellViewModel {
         self.type = analysis.type
         self.isPhoneticsHidden = !config.showPhonetics
         self.isTypeHidden = !config.showWordType
+        self.isAudioButtonHidden = !config.showAudioButton
         
         // Color logic moved to ViewModel
-        switch analysis.tag {
-        case "pronoun_subject": self.wordColor = UIColor(red: 0.2, green: 0.6, blue: 1.0, alpha: 1.0) // Light Blue
-        case "verb_be": self.wordColor = UIColor(red: 1.0, green: 0.4, blue: 0.4, alpha: 1.0) // Light Red
-        case "article_indefinite": self.wordColor = UIColor(red: 0.4, green: 0.8, blue: 0.4, alpha: 1.0) // Light Green
-        case "noun_object": self.wordColor = UIColor(red: 1.0, green: 0.8, blue: 0.2, alpha: 1.0) // Yellow/Orange
-        default: self.wordColor = .white
-        }
+        self.wordColor = AppTheme.color(forTag: analysis.tag)
     }
 }
 
@@ -70,9 +66,21 @@ class WordCell: UICollectionViewCell {
         return stack
     }()
     
+    private let audioButton: UIButton = {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 12, weight: .medium)
+        btn.setImage(UIImage(systemName: "speaker.wave.2.fill", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
+        btn.alpha = 0.7
+        return btn
+    }()
+    
+    var onAudioTapped: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        audioButton.addTarget(self, action: #selector(audioButtonTapped), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -81,12 +89,20 @@ class WordCell: UICollectionViewCell {
     
     private func setupUI() {
         contentView.addSubview(stackView)
+        contentView.addSubview(audioButton)
+        
         stackView.addArrangedSubview(wordLabel)
         stackView.addArrangedSubview(phoneticLabel)
         stackView.addArrangedSubview(typeLabel)
         
         stackView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        
+        audioButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(0)
+            make.trailing.equalToSuperview().offset(4)
+            make.width.height.equalTo(20)
         }
         
         contentView.snp.makeConstraints { make in
@@ -101,5 +117,10 @@ class WordCell: UICollectionViewCell {
         phoneticLabel.isHidden = viewModel.isPhoneticsHidden
         typeLabel.text = viewModel.type
         typeLabel.isHidden = viewModel.isTypeHidden
+        audioButton.isHidden = viewModel.isAudioButtonHidden
+    }
+    
+    @objc private func audioButtonTapped() {
+        onAudioTapped?()
     }
 }

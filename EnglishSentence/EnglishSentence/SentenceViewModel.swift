@@ -11,14 +11,125 @@ class SentenceViewModel {
     var onDataUpdated: (() -> Void)?
     var onError: ((String) -> Void)?
     
-    var currentPattern: String {
-        guard let unit = courseUnit, !unit.sentences.isEmpty else { return "" }
-        return unit.sentences[currentSentenceIndex].sentenceInfo.sentencePattern
+    var currentSentence: Sentence? {
+        guard let unit = courseUnit, !unit.sentences.isEmpty else { return nil }
+        return unit.sentences[currentSentenceIndex]
     }
     
-    var currentTranslation: String {
-        guard let unit = courseUnit, !unit.sentences.isEmpty else { return "" }
-        return unit.sentences[currentSentenceIndex].sentenceInfo.translation
+    var currentPatternAttributed: NSAttributedString {
+        guard let unit = courseUnit, !unit.sentences.isEmpty else { return NSAttributedString(string: "") }
+        let pattern = unit.sentences[currentSentenceIndex].sentenceInfo.sentencePattern
+        
+        // Split by " + "
+        // Example: "主语 + Be动词 + 冠词 + 名词"
+        let components = pattern.components(separatedBy: " + ")
+        let attributedString = NSMutableAttributedString()
+        
+        for (index, component) in components.enumerated() {
+            // Get color for component
+            let color = AppTheme.color(forKeyword: component)
+            let attributes: [NSAttributedString.Key: Any] = [
+                .foregroundColor: color,
+                .font: UIFont.systemFont(ofSize: 16, weight: .medium)
+            ]
+            let part = NSAttributedString(string: component, attributes: attributes)
+            attributedString.append(part)
+            
+            // Add separator if not last
+            if index < components.count - 1 {
+                let separatorAttributes: [NSAttributedString.Key: Any] = [
+                    .foregroundColor: UIColor.white,
+                    .font: UIFont.systemFont(ofSize: 16, weight: .medium)
+                ]
+                attributedString.append(NSAttributedString(string: " + ", attributes: separatorAttributes))
+            }
+        }
+        
+        return attributedString
+    }
+    
+    var currentEnglishSentenceAttributed: NSAttributedString {
+        guard let unit = courseUnit, !unit.sentences.isEmpty else { return NSAttributedString(string: "") }
+        let sentence = unit.sentences[currentSentenceIndex]
+        let original = sentence.sentenceInfo.original
+        
+        let attributedString = NSMutableAttributedString(string: original, attributes: [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 20, weight: .bold)
+        ])
+        
+        // Track ranges that have already been colored to avoid overlapping
+        var coloredRanges: [NSRange] = []
+        
+        for analysis in sentence.analysis {
+            let color = AppTheme.color(forTag: analysis.tag)
+            let word = analysis.word
+            
+            // Find all ranges of this word in the original string
+            let ranges = original.ranges(of: word)
+            
+            for range in ranges {
+                // Check if this range overlaps with any already colored range
+                let isOverlapping = coloredRanges.contains { existingRange in
+                    return NSIntersectionRange(existingRange, range).length > 0
+                }
+                
+                if !isOverlapping {
+                    // Apply color
+                    attributedString.addAttribute(.foregroundColor, value: color, range: range)
+                    coloredRanges.append(range)
+                    break // Move to next word in analysis
+                }
+            }
+        }
+        
+        return attributedString
+    }
+    
+    var currentTranslationAttributed: NSAttributedString {
+        guard let unit = courseUnit, !unit.sentences.isEmpty else { return NSAttributedString(string: "") }
+        let sentence = unit.sentences[currentSentenceIndex]
+        let translation = sentence.sentenceInfo.translation
+        
+        let attributedString = NSMutableAttributedString(string: translation, attributes: [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 20, weight: .bold)
+        ])
+        
+        // Track ranges that have already been colored to avoid overlapping
+        var coloredRanges: [NSRange] = []
+        
+        for analysis in sentence.analysis {
+            let color = AppTheme.color(forTag: analysis.tag)
+            // Split definitions by "/" (e.g., "一个/一名")
+            let definitions = analysis.chineseDefinition.components(separatedBy: "/")
+            
+            var foundMatchForWord = false
+            
+            for def in definitions {
+                if foundMatchForWord { break }
+                
+                // Find all ranges of this definition in the translation string
+                let ranges = translation.ranges(of: def)
+                
+                for range in ranges {
+                    // Check if this range overlaps with any already colored range
+                    let isOverlapping = coloredRanges.contains { existingRange in
+                        return NSIntersectionRange(existingRange, range).length > 0
+                    }
+                    
+                    if !isOverlapping {
+                        // Apply color
+                        attributedString.addAttribute(.foregroundColor, value: color, range: range)
+                        coloredRanges.append(range)
+                        foundMatchForWord = true
+                        break // Move to next word in analysis
+                    }
+                }
+            }
+        }
+        
+        return attributedString
     }
     
     var isPrevEnabled: Bool {
@@ -82,12 +193,16 @@ class SentenceViewModel {
     }
     
     func viewModelForCell(at index: Int) -> WordCellViewModel? {
+        guard let analysis = analysisForCell(at: index) else { return nil }
+        return WordCellViewModel(analysis: analysis, config: displayConfig)
+    }
+    
+    func analysisForCell(at index: Int) -> WordAnalysis? {
         guard let unit = courseUnit,
               !unit.sentences.isEmpty,
               index < unit.sentences[currentSentenceIndex].analysis.count else {
             return nil
         }
-        let analysis = unit.sentences[currentSentenceIndex].analysis[index]
-        return WordCellViewModel(analysis: analysis, config: displayConfig)
+        return unit.sentences[currentSentenceIndex].analysis[index]
     }
 }
