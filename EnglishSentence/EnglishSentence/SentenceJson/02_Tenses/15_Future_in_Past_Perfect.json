@@ -1,0 +1,166 @@
+{
+  "unit_name": "核心时态 (15/16) - 过去将来完成时",
+  "description": "表示从过去某一时间看将来某一时刻之前已经完成的动作。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PAST_PERF",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PAST_PERF_001",
+      "sentence_info": {
+        "original": "He said he would have finished the work by 5 o'clock",
+        "translation": "他说他会在5点前完成这项工作",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would have + 过去分词 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would have finished",
+          "base_form": "finish",
+          "range": [11, 30],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经完成",
+          "explanation": "过去将来完成时结构 (would have done)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the work",
+          "base_form": "work",
+          "range": [31, 39],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "工作",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/wɜːk/", "us": "/wɜːrk/"
+          }
+        },
+        {
+          "word": "by 5 o'clock",
+          "base_form": "by 5 o'clock",
+          "range": [40, 52],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在5点之前",
+          "explanation": "by 引导的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_002",
+      "sentence_info": {
+        "original": "I hoped that we would have arrived by then",
+        "translation": "我希望那时我们已经到达了",
+        "sentence_pattern": "主语 + hoped + (that) + 主语 + would have + 过去分词 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "hope"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "hoped",
+          "base_form": "hope",
+          "range": [2, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "希望",
+          "explanation": "hope 的过去式。",
+          "phonetics": {
+            "uk": "/həʊpt/", "us": "/hoʊpt/"
+          }
+        },
+        {
+          "word": "we",
+          "base_form": "we",
+          "range": [13, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "我们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "would have arrived",
+          "base_form": "arrive",
+          "range": [16, 34],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经到达",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by then",
+          "base_form": "by then",
+          "range": [35, 42],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到那时",
+          "explanation": "by 引导的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

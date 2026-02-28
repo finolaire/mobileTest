@@ -1,0 +1,118 @@
+{
+  "unit_name": "五大句型 (3/5) - SVP 主系表结构",
+  "description": "说明主语的状态、性质或特征，通常由系动词连接。",
+  "category": "Basic_Structure",
+  "code": "BS_SVP",
+  "sentences": [
+    {
+      "id": "BS_SVP_001",
+      "sentence_info": {
+        "original": "The flower is red",
+        "translation": "这朵花是红色的",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "adjective"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这",
+          "explanation": "定冠词，特指。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "flower",
+          "base_form": "flower",
+          "range": [4, 10],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "花",
+          "explanation": "单数名词作主语。",
+          "phonetics": {
+            "uk": "/ˈflaʊə(r)/", "us": "/ˈflaʊər/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [11, 13],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "Be动词作系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "red",
+          "base_form": "red",
+          "range": [14, 17],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "红色的",
+          "explanation": "形容词作表语，说明主语的颜色。",
+          "phonetics": {
+            "uk": "/red/", "us": "/red/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_002",
+      "sentence_info": {
+        "original": "He looks tired",
+        "translation": "他看起来很累",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "senses"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "代词主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "looks",
+          "base_form": "look",
+          "range": [3, 8],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "看起来",
+          "explanation": "感官动词作系动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/lʊks/", "us": "/lʊks/"
+          }
+        },
+        {
+          "word": "tired",
+          "base_form": "tired",
+          "range": [9, 14],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "疲累的",
+          "explanation": "形容词作表语，描述主语状态。",
+          "phonetics": {
+            "uk": "/ˈtaɪəd/", "us": "/ˈtaɪərd/"
+          }
+        }
+      ]
+    }
+  ]
+}

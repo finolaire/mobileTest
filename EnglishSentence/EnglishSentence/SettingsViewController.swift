@@ -2,12 +2,14 @@ import UIKit
 import SnapKit
 import AVFoundation
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: - Properties
     private var currentConfig: DisplayConfig
     var onConfigChanged: ((DisplayConfig) -> Void)?
     private var voiceButton: UIButton?
+    private var backgroundSegmentedControl: UISegmentedControl?
+    private var customBackgroundButton: UIButton?
     
     // MARK: - UI Components
     private let containerView: UIView = {
@@ -87,11 +89,15 @@ class SettingsViewController: UIViewController {
         
         addSwitchRow(title: "Show Word Type", isOn: currentConfig.showWordType, action: #selector(wordTypeToggled(_:)))
         addSwitchRow(title: "Show Pattern", isOn: currentConfig.showSentencePattern, action: #selector(patternToggled(_:)))
-        addSwitchRow(title: "Show Translation", isOn: currentConfig.showTranslation, action: #selector(translationToggled(_:)))
-        addSwitchRow(title: "Show English Sentence", isOn: currentConfig.showEnglishSentence, action: #selector(englishSentenceToggled(_:)))
+        
+        // Combined rows for Translation and English Sentence with their audio toggles
+        addCombinedRow(title1: "Translation", isOn1: currentConfig.showTranslation, action1: #selector(translationToggled(_:)),
+                      title2: "Audio", isOn2: currentConfig.showTranslationAudioButton, action2: #selector(translationAudioButtonToggled(_:)))
+        
+        addCombinedRow(title1: "English", isOn1: currentConfig.showEnglishSentence, action1: #selector(englishSentenceToggled(_:)),
+                      title2: "Audio", isOn2: currentConfig.showEnglishAudioButton, action2: #selector(englishAudioButtonToggled(_:)))
+        
         addSwitchRow(title: "Show Word Audio", isOn: currentConfig.showAudioButton, action: #selector(audioButtonToggled(_:)))
-        addSwitchRow(title: "Show Translation Audio", isOn: currentConfig.showTranslationAudioButton, action: #selector(translationAudioButtonToggled(_:)))
-        addSwitchRow(title: "Show English Audio", isOn: currentConfig.showEnglishAudioButton, action: #selector(englishAudioButtonToggled(_:)))
         
         // Add Background Selector
         addBackgroundSelector()
@@ -241,6 +247,52 @@ class SettingsViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    private func addCombinedRow(title1: String, isOn1: Bool, action1: Selector, title2: String, isOn2: Bool, action2: Selector) {
+        let rowStack = UIStackView()
+        rowStack.axis = .horizontal
+        rowStack.distribution = .fill
+        rowStack.alignment = .center
+        rowStack.spacing = 8
+        
+        // Group 1
+        let label1 = UILabel()
+        label1.text = title1
+        label1.textColor = .white
+        label1.font = UIFont.systemFont(ofSize: 14)
+        
+        let toggle1 = UISwitch()
+        toggle1.isOn = isOn1
+        toggle1.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        toggle1.addTarget(self, action: action1, for: .valueChanged)
+        
+        // Group 2
+        let label2 = UILabel()
+        label2.text = title2
+        label2.textColor = .white
+        label2.font = UIFont.systemFont(ofSize: 14)
+        
+        let toggle2 = UISwitch()
+        toggle2.isOn = isOn2
+        toggle2.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        toggle2.addTarget(self, action: action2, for: .valueChanged)
+        
+        rowStack.addArrangedSubview(label1)
+        rowStack.addArrangedSubview(toggle1)
+        
+        let spacer = UIView()
+        spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        rowStack.addArrangedSubview(spacer)
+        
+        rowStack.addArrangedSubview(label2)
+        rowStack.addArrangedSubview(toggle2)
+        
+        stackView.addArrangedSubview(rowStack)
+        
+        rowStack.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+        }
+    }
+
     private func addSwitchRow(title: String, isOn: Bool, action: Selector) {
         let rowStack = UIStackView()
         rowStack.axis = .horizontal
@@ -273,15 +325,35 @@ class SettingsViewController: UIViewController {
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16)
         
+        let controlsStack = UIStackView()
+        controlsStack.axis = .horizontal
+        controlsStack.spacing = 16
+        controlsStack.alignment = .center
+        
         let segmentedControl = UISegmentedControl(items: ["BG 0", "BG 1", "BG 2", "BG 3"])
-        segmentedControl.selectedSegmentIndex = currentConfig.backgroundImageIndex
+        if currentConfig.useCustomBackground {
+            segmentedControl.selectedSegmentIndex = UISegmentedControl.noSegment
+        } else {
+            segmentedControl.selectedSegmentIndex = currentConfig.backgroundImageIndex
+        }
         segmentedControl.selectedSegmentTintColor = .systemBlue
         segmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
         segmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
         segmentedControl.addTarget(self, action: #selector(backgroundChanged(_:)), for: .valueChanged)
+        self.backgroundSegmentedControl = segmentedControl
+        
+        let addImageBtn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
+        addImageBtn.setImage(UIImage(systemName: "photo.badge.plus", withConfiguration: config), for: .normal)
+        addImageBtn.tintColor = currentConfig.useCustomBackground ? .systemBlue : .white
+        addImageBtn.addTarget(self, action: #selector(addImageTapped), for: .touchUpInside)
+        self.customBackgroundButton = addImageBtn
+        
+        controlsStack.addArrangedSubview(segmentedControl)
+        controlsStack.addArrangedSubview(addImageBtn)
         
         rowStack.addArrangedSubview(label)
-        rowStack.addArrangedSubview(segmentedControl)
+        rowStack.addArrangedSubview(controlsStack)
         
         stackView.addArrangedSubview(rowStack)
     }
@@ -361,7 +433,43 @@ class SettingsViewController: UIViewController {
     
     @objc private func backgroundChanged(_ sender: UISegmentedControl) {
         currentConfig.backgroundImageIndex = sender.selectedSegmentIndex
+        currentConfig.useCustomBackground = false
+        customBackgroundButton?.tintColor = .white
         onConfigChanged?(currentConfig)
+    }
+    
+    @objc private func addImageTapped() {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        present(picker, animated: true, completion: nil)
+    }
+    
+    // MARK: - UIImagePickerControllerDelegate
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        guard let image = info[.originalImage] as? UIImage else { return }
+        
+        // Save image to documents directory
+        if let data = image.jpegData(compressionQuality: 0.8) {
+            let filename = "custom_background.jpg"
+            let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(filename)
+            try? data.write(to: url)
+            
+            currentConfig.customBackgroundImageName = filename
+            currentConfig.useCustomBackground = true
+            
+            // Update UI
+            backgroundSegmentedControl?.selectedSegmentIndex = UISegmentedControl.noSegment
+            customBackgroundButton?.tintColor = .systemBlue
+            
+            onConfigChanged?(currentConfig)
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
     
     @objc private func opacityChanged(_ sender: UISlider) {

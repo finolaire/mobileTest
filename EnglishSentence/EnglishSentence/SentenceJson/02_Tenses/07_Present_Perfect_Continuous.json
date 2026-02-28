@@ -1,0 +1,154 @@
+{
+  "unit_name": "核心时态 (7/16) - 现在完成进行时",
+  "description": "表示从过去某一时间开始一直延续到现在的动作，强调动作的持续性。",
+  "category": "Tenses",
+  "code": "TENS_PRES_PERF_CONT",
+  "sentences": [
+    {
+      "id": "TENS_PRES_PERF_CONT_001",
+      "sentence_info": {
+        "original": "I have been waiting for two hours",
+        "translation": "我已经等了两个小时了",
+        "sentence_pattern": "主语 + have/has + been + doing + 时间段",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词，用于构成完成时。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词，用于构成完成进行时。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [12, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "等待",
+          "explanation": "实义动词的现在分词形式，表示动作正在进行。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        },
+        {
+          "word": "for two hours",
+          "base_form": "for two hours",
+          "range": [20, 33],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "两个小时",
+          "explanation": "介词短语表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_002",
+      "sentence_info": {
+        "original": "It has been raining all day",
+        "translation": "雨下了一整天",
+        "sentence_pattern": "主语 + has + been + doing + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "代词，指代天气。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词 have 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "raining",
+          "base_form": "rain",
+          "range": [12, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "下雨",
+          "explanation": "动词 rain 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈreɪnɪŋ/", "us": "/ˈreɪnɪŋ/"
+          }
+        },
+        {
+          "word": "all day",
+          "base_form": "all day",
+          "range": [20, 27],
+          "tag": "phrase_noun",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一整天",
+          "explanation": "表示整个白天，强调持续性。",
+          "phonetics": {
+            "uk": "/ɔːl deɪ/", "us": "/ɔːl deɪ/"
+          }
+        }
+      ]
+    }
+  ]
+}

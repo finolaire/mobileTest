@@ -121,6 +121,18 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         return btn
     }()
     
+    private let bookshelfButton: UIButton = {
+        let btn = UIButton(type: .system)
+        if let image = UIImage(systemName: "books.vertical.fill") {
+            btn.setImage(image, for: .normal)
+        } else {
+            btn.setTitle("Books", for: .normal)
+        }
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(bookshelfTapped), for: .touchUpInside)
+        return btn
+    }()
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -145,6 +157,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         view.addSubview(translationAudioButton)
         view.addSubview(englishAudioButton)
         view.addSubview(settingsButton)
+        view.addSubview(bookshelfButton)
         
         controlsStack.addArrangedSubview(prevButton)
         controlsStack.addArrangedSubview(nextButton)
@@ -161,6 +174,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         settingsButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
             make.trailing.equalToSuperview().offset(-20)
+            make.width.height.equalTo(44)
+        }
+        
+        bookshelfButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
+            make.leading.equalToSuperview().offset(20)
             make.width.height.equalTo(44)
         }
         
@@ -262,8 +281,20 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     private func updateBackground() {
-        let imageName = "BackgroundImage\(viewModel.displayConfig.backgroundImageIndex)"
-        backgroundImageView.image = UIImage(named: imageName)
+        if viewModel.displayConfig.useCustomBackground,
+           let filename = viewModel.displayConfig.customBackgroundImageName {
+            let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(filename)
+            if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                backgroundImageView.image = image
+            } else {
+                // Fallback if file not found
+                let imageName = "BackgroundImage\(viewModel.displayConfig.backgroundImageIndex)"
+                backgroundImageView.image = UIImage(named: imageName)
+            }
+        } else {
+            let imageName = "BackgroundImage\(viewModel.displayConfig.backgroundImageIndex)"
+            backgroundImageView.image = UIImage(named: imageName)
+        }
         backgroundDimmingView.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(viewModel.displayConfig.maskOpacity))
     }
     
@@ -282,6 +313,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             self?.viewModel.updateConfig(newConfig)
         }
         present(settingsVC, animated: true, completion: nil)
+    }
+    
+    @objc private func bookshelfTapped() {
+        let bookshelfVC = BookshelfViewController()
+        bookshelfVC.onCourseSelected = { [weak self] course in
+            self?.viewModel.loadData(unit: course)
+        }
+        present(bookshelfVC, animated: true, completion: nil)
     }
 }
 

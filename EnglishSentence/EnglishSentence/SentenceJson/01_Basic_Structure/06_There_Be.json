@@ -1,0 +1,154 @@
+{
+  "unit_name": "There Be 句型 (存在句)",
+  "description": "表示'某处有某物'或'某时发生某事'，There 是引导词，真正的主语在 Be 动词后面。",
+  "category": "Basic_Structure",
+  "code": "BS_THERE_BE",
+  "sentences": [
+    {
+      "id": "BS_THERE_BE_001",
+      "sentence_info": {
+        "original": "There is a book on the table",
+        "translation": "桌子上有一本书",
+        "sentence_pattern": "There + be + 主语 + 地点状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "there_be", "location"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词，引起句子，不作句子成分。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [6, 8],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "谓语动词，单数形式，因为后面的主语 book 是单数。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [9, 10],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一本",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "book",
+          "base_form": "book",
+          "range": [11, 15],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "书",
+          "explanation": "真正的主语。",
+          "phonetics": {
+            "uk": "/bʊk/", "us": "/bʊk/"
+          }
+        },
+        {
+          "word": "on the table",
+          "base_form": "on the table",
+          "range": [16, 28],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在桌子上",
+          "explanation": "介词短语作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_002",
+      "sentence_info": {
+        "original": "There are two cats under the bed",
+        "translation": "床底下有两只猫",
+        "sentence_pattern": "There + be + 主语 + 地点状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "there_be", "animals"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [6, 9],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "复数形式，因为后面的主语 cats 是复数。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "two",
+          "base_form": "two",
+          "range": [10, 13],
+          "tag": "numeral_cardinal",
+          "type": "Numeral (数词)",
+          "chinese_definition": "两",
+          "explanation": "基数词。",
+          "phonetics": {
+            "uk": "/tuː/", "us": "/tuː/"
+          }
+        },
+        {
+          "word": "cats",
+          "base_form": "cat",
+          "range": [14, 18],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "猫",
+          "explanation": "复数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/kæts/", "us": "/kæts/"
+          }
+        },
+        {
+          "word": "under the bed",
+          "base_form": "under the bed",
+          "range": [19, 32],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在床底下",
+          "explanation": "介词短语作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

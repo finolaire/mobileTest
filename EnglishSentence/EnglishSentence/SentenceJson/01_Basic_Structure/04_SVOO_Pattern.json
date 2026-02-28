@@ -1,0 +1,154 @@
+{
+  "unit_name": "五大句型 (4/5) - SVOO 主谓双宾结构",
+  "description": "动词后面接两个宾语，通常一个是人（间接宾语），一个是物（直接宾语）。",
+  "category": "Basic_Structure",
+  "code": "BS_SVOO",
+  "sentences": [
+    {
+      "id": "BS_SVOO_001",
+      "sentence_info": {
+        "original": "He gave me a book",
+        "translation": "他给了我一本书",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "giving"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "gave",
+          "base_form": "give",
+          "range": [3, 7],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "给",
+          "explanation": "give 的过去式，接双宾语。",
+          "phonetics": {
+            "uk": "/ɡeɪv/", "us": "/ɡeɪv/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [8, 10],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我",
+          "explanation": "宾格代词，作间接宾语（接受者）。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [11, 12],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一本",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "book",
+          "base_form": "book",
+          "range": [13, 17],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "书",
+          "explanation": "名词，作直接宾语（被给的物品）。",
+          "phonetics": {
+            "uk": "/bʊk/", "us": "/bʊk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_002",
+      "sentence_info": {
+        "original": "She bought him a gift",
+        "translation": "她给他买了一份礼物",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "shopping"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "bought",
+          "base_form": "buy",
+          "range": [4, 10],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "买",
+          "explanation": "buy 的过去式。",
+          "phonetics": {
+            "uk": "/bɔːt/", "us": "/bɔːt/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [11, 14],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [15, 16],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一份",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "gift",
+          "base_form": "gift",
+          "range": [17, 21],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "礼物",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/ɡɪft/", "us": "/ɡɪft/"
+          }
+        }
+      ]
+    }
+  ]
+}

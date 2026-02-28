@@ -1,0 +1,130 @@
+{
+  "unit_name": "从句 (3/3) - 状语从句",
+  "description": "在句子中起状语作用的从句，修饰动词、形容词或副词，表示时间、地点、原因、条件、让步等。",
+  "category": "Clauses",
+  "code": "CLAUSE_ADVERBIAL",
+  "sentences": [
+    {
+      "id": "CLAUSE_ADVERBIAL_001",
+      "sentence_info": {
+        "original": "I will wait here until you come back",
+        "translation": "我会在这里等到你回来",
+        "sentence_pattern": "主句 + until + 时间状语从句",
+        "pattern_code": "SV_ADV_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["clause", "adverbial_clause", "time_clause"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will wait",
+          "base_form": "wait",
+          "range": [2, 11],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会等待",
+          "explanation": "主句谓语，一般将来时。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [12, 16],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "在这里",
+          "explanation": "地点状语。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "until you come back",
+          "base_form": "until you come back",
+          "range": [17, 36],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "直到你回来",
+          "explanation": "until 引导的时间状语从句。注意：主将从现（主句将来时，从句用一般现在时）。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ADVERBIAL_002",
+      "sentence_info": {
+        "original": "Because it was raining, we stayed at home",
+        "translation": "因为下雨，我们待在家里",
+        "sentence_pattern": "Because + 原因状语从句, + 主句",
+        "pattern_code": "CLAUSE_SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["clause", "adverbial_clause", "reason_clause"]
+      },
+      "analysis": [
+        {
+          "word": "Because it was raining",
+          "base_form": "Because it was raining",
+          "range": [0, 22],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (原因状语从句)",
+          "chinese_definition": "因为正在下雨",
+          "explanation": "Because 引导的原因状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "we",
+          "base_form": "we",
+          "range": [24, 26],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "stayed",
+          "base_form": "stay",
+          "range": [27, 33],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "待/停留",
+          "explanation": "主句谓语，一般过去时。",
+          "phonetics": {
+            "uk": "/steɪd/", "us": "/steɪd/"
+          }
+        },
+        {
+          "word": "at home",
+          "base_form": "at home",
+          "range": [34, 41],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在家里",
+          "explanation": "介词短语作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

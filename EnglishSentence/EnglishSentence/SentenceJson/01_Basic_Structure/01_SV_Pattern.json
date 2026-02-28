@@ -1,0 +1,104 @@
+{
+  "unit_name": "五大句型 (1/5) - SV 主谓结构",
+  "description": "最简单的句子结构，由主语和不及物动词构成。",
+  "category": "Basic_Structure",
+  "code": "BS_SV",
+  "sentences": [
+    {
+      "id": "BS_SV_001",
+      "sentence_info": {
+        "original": "Birds fly",
+        "translation": "鸟儿飞翔",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern"]
+      },
+      "analysis": [
+        {
+          "word": "Birds",
+          "base_form": "bird",
+          "range": [0, 5],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "鸟",
+          "explanation": "复数名词，作主语。",
+          "phonetics": {
+            "uk": "/bɜːdz/", "us": "/bɜːrdz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "fly",
+          "base_form": "fly",
+          "range": [6, 9],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "飞",
+          "explanation": "不及物动词，不需要宾语。",
+          "phonetics": {
+            "uk": "/flaɪ/", "us": "/flaɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_002",
+      "sentence_info": {
+        "original": "The sun rises",
+        "translation": "太阳升起",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词，特指独一无二的事物。",
+          "phonetics": {
+             "uk": "/ðə/", "us": "/ðə/",
+             "audio_uk": "",
+             "audio_us": ""
+          }
+        },
+        {
+          "word": "sun",
+          "base_form": "sun",
+          "range": [4, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "太阳",
+          "explanation": "名词作主语。",
+          "phonetics": {
+             "uk": "/sʌn/", "us": "/sʌn/",
+             "audio_uk": "",
+             "audio_us": ""
+          }
+        },
+        {
+          "word": "rises",
+          "base_form": "rise",
+          "range": [8, 13],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "升起",
+          "explanation": "rise 的第三人称单数形式。",
+          "phonetics": {
+             "uk": "/ˈraɪzɪz/", "us": "/ˈraɪzɪz/",
+             "audio_uk": "",
+             "audio_us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

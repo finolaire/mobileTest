@@ -1,0 +1,154 @@
+{
+  "unit_name": "核心时态 (9/16) - 过去完成进行时",
+  "description": "表示在过去某一时间之前一直进行的动作，强调动作在过去的持续性。",
+  "category": "Tenses",
+  "code": "TENS_PAST_PERF_CONT",
+  "sentences": [
+    {
+      "id": "TENS_PAST_PERF_CONT_001",
+      "sentence_info": {
+        "original": "He had been working for 10 hours when I called him",
+        "translation": "当我给他打电话时，他已经工作了10个小时",
+        "sentence_pattern": "主语 + had + been + doing + 时间段 + 时间状语从句",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "past_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "had",
+          "base_form": "have",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词 have 的过去式。",
+          "phonetics": {
+            "uk": "/hæd/", "us": "/hæd/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "working",
+          "base_form": "work",
+          "range": [12, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "工作",
+          "explanation": "work 的现在分词，表示动作持续。",
+          "phonetics": {
+            "uk": "/ˈwɜːkɪŋ/", "us": "/ˈwɜːrkɪŋ/"
+          }
+        },
+        {
+          "word": "for 10 hours",
+          "base_form": "for 10 hours",
+          "range": [20, 32],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "10个小时",
+          "explanation": "介词短语表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "when I called him",
+          "base_form": "when I called him",
+          "range": [33, 50],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "当我给他打电话时",
+          "explanation": "when 引导的时间状语从句，called 是过去式，主句动作发生在 called 之前并持续。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_PERF_CONT_002",
+      "sentence_info": {
+        "original": "It had been raining for a week before the flood started",
+        "translation": "洪水开始前，雨已经下了一个星期",
+        "sentence_pattern": "主语 + had + been + doing + 时间段 + 时间状语从句",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "past_perfect_continuous", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "代词，指代天气。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "had been raining",
+          "base_form": "rain",
+          "range": [3, 19],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "一直在下雨",
+          "explanation": "过去完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for a week",
+          "base_form": "for a week",
+          "range": [20, 30],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一个星期",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "before the flood started",
+          "base_form": "before the flood started",
+          "range": [31, 55],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "洪水开始前",
+          "explanation": "before 引导的时间状语从句，started 是过去式。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

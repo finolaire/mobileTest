@@ -1,0 +1,118 @@
+{
+  "unit_name": "核心时态 (1/16) - 一般现在时",
+  "description": "表示习惯性动作、客观真理或现在的状态。",
+  "category": "Tenses",
+  "code": "TENS_PRES_SIMPLE",
+  "sentences": [
+    {
+      "id": "TENS_PRES_SIMPLE_001",
+      "sentence_info": {
+        "original": "I wake up at 7 every day",
+        "translation": "我每天7点醒来",
+        "sentence_pattern": "主语 + 动词原形 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "daily_routine"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "wake up",
+          "base_form": "wake up",
+          "range": [2, 9],
+          "tag": "verb_phrase",
+          "type": "Verb Phrase (动词短语)",
+          "chinese_definition": "醒来",
+          "explanation": "动词短语，一般现在时使用原形。",
+          "phonetics": {
+            "uk": "/weɪk ʌp/", "us": "/weɪk ʌp/"
+          }
+        },
+        {
+          "word": "at 7",
+          "base_form": "at 7",
+          "range": [10, 14],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在7点",
+          "explanation": "时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "every day",
+          "base_form": "every day",
+          "range": [15, 24],
+          "tag": "adverb_frequency",
+          "type": "Adverbial (频度状语)",
+          "chinese_definition": "每天",
+          "explanation": "表示频率的时间状语，是一般现在时的标志词。",
+          "phonetics": {
+            "uk": "/ˈevri deɪ/", "us": "/ˈevri deɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_002",
+      "sentence_info": {
+        "original": "The earth goes around the sun",
+        "translation": "地球绕着太阳转",
+        "sentence_pattern": "主语 + 动词(三单) + 地点状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "nature", "truth"]
+      },
+      "analysis": [
+        {
+          "word": "The earth",
+          "base_form": "earth",
+          "range": [0, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "地球",
+          "explanation": "第三人称单数名词，表示客观真理的主体。",
+          "phonetics": {
+            "uk": "/ði ɜːθ/", "us": "/ði ɜːrθ/"
+          }
+        },
+        {
+          "word": "goes",
+          "base_form": "go",
+          "range": [10, 14],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "走/转动",
+          "explanation": "go 的第三人称单数形式 (go + es)。",
+          "phonetics": {
+            "uk": "/ɡəʊz/", "us": "/ɡoʊz/"
+          }
+        },
+        {
+          "word": "around the sun",
+          "base_form": "around the sun",
+          "range": [15, 29],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "绕着太阳",
+          "explanation": "介词短语作地点/方向状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "unit_name": "核心时态 (11/16) - 将来完成时",
+  "description": "表示在将来某一时刻之前已经完成的动作，常与 by + 将来时间连用。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PERF",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PERF_001",
+      "sentence_info": {
+        "original": "By next year, I will have graduated",
+        "translation": "到明年，我就已经毕业了",
+        "sentence_pattern": "By + 时间状语 + 主语 + will have + 过去分词",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "milestone"]
+      },
+      "analysis": [
+        {
+          "word": "By next year",
+          "base_form": "by next year",
+          "range": [0, 12],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到明年",
+          "explanation": "By 引导的时间状语，是将来完成时的典型标志。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [14, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [16, 25],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "graduated",
+          "base_form": "graduate",
+          "range": [26, 35],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "毕业",
+          "explanation": "动词 graduate 的过去分词。",
+          "phonetics": {
+            "uk": "/ˈɡrædʒuˌeɪtɪd/", "us": "/ˈɡrædʒuˌeɪtɪd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_002",
+      "sentence_info": {
+        "original": "They will have finished the project by Friday",
+        "translation": "到周五，他们将已经完成了这个项目",
+        "sentence_pattern": "主语 + will have + 过去分词 + 宾语 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "deadline"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "will have finished",
+          "base_form": "finish",
+          "range": [5, 23],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经完成",
+          "explanation": "将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the project",
+          "base_form": "project",
+          "range": [24, 35],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "项目",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/ˈprɒdʒekt/", "us": "/ˈprɑːdʒekt/"
+          }
+        },
+        {
+          "word": "by Friday",
+          "base_form": "by Friday",
+          "range": [36, 45],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到周五",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

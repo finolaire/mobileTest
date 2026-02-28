@@ -1,0 +1,190 @@
+{
+  "unit_name": "核心时态 (16/16) - 过去将来完成进行时",
+  "description": "表示从过去某一时间看将来某一时刻之前一直进行的动作，强调动作的持续性。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PAST_PERF_CONT",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_001",
+      "sentence_info": {
+        "original": "He said that by next year he would have been working here for 20 years",
+        "translation": "他说到明年，他在这里工作就满20年了",
+        "sentence_pattern": "主语 + said + (that) + by + 时间 + 主语 + would have been + doing + 时间段",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "indirect_speech", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "by next year",
+          "base_form": "by next year",
+          "range": [13, 25],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到明年",
+          "explanation": "by 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [26, 28],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would have been working",
+          "base_form": "work",
+          "range": [29, 52],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直工作",
+          "explanation": "过去将来完成进行时结构 (would have been doing)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [53, 57],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "这里",
+          "explanation": "地点状语。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "for 20 years",
+          "base_form": "for 20 years",
+          "range": [58, 70],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "20年了",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_002",
+      "sentence_info": {
+        "original": "She told me that by sunset she would have been driving for 10 hours",
+        "translation": "她告诉我，到日落时，她就已经开了10个小时的车了",
+        "sentence_pattern": "主语 + told + 宾语 + (that) + by + 时间 + 主语 + would have been + doing + 时间段",
+        "pattern_code": "SVOO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "告诉",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "by sunset",
+          "base_form": "by sunset",
+          "range": [17, 26],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到日落时",
+          "explanation": "by 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [27, 30],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would have been driving",
+          "base_form": "drive",
+          "range": [31, 54],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直开车",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for 10 hours",
+          "base_form": "for 10 hours",
+          "range": [55, 67],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "10个小时",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

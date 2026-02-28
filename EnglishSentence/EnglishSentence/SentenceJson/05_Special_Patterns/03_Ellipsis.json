@@ -1,0 +1,118 @@
+{
+  "unit_name": "特殊句型 (3/3) - 省略句",
+  "description": "为了避免重复、突出重点或使语言简洁，省略句子中某些成分，但意思仍然清楚。",
+  "category": "Special_Patterns",
+  "code": "PATTERN_ELLIPSIS",
+  "sentences": [
+    {
+      "id": "PATTERN_ELLIPSIS_001",
+      "sentence_info": {
+        "original": "Sounds good",
+        "translation": "听起来不错",
+        "sentence_pattern": "(It) + Sounds + good",
+        "pattern_code": "VP",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "spoken_english"]
+      },
+      "analysis": [
+        {
+          "word": "(It)",
+          "base_form": "it",
+          "range": [],
+          "tag": "ellipsis_subject",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "它（省略）",
+          "explanation": "口语中常省略主语 It。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "Sounds",
+          "base_form": "sound",
+          "range": [0, 6],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "听起来",
+          "explanation": "感官系动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/saʊndz/", "us": "/saʊndz/"
+          }
+        },
+        {
+          "word": "good",
+          "base_form": "good",
+          "range": [7, 11],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "不错/好",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ɡʊd/", "us": "/ɡʊd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_002",
+      "sentence_info": {
+        "original": "I'll help you if necessary",
+        "translation": "如果有必要，我会帮你",
+        "sentence_pattern": "主句 + if + (it is) + necessary",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "ellipsis", "conditional"]
+      },
+      "analysis": [
+        {
+          "word": "I'll help you",
+          "base_form": "I will help you",
+          "range": [0, 13],
+          "tag": "clause_main",
+          "type": "Main Clause (主句)",
+          "chinese_definition": "我会帮你",
+          "explanation": "完整的将来时主句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "if",
+          "base_form": "if",
+          "range": [14, 16],
+          "tag": "conjunction_subordinating",
+          "type": "Conjunction (连词)",
+          "chinese_definition": "如果",
+          "explanation": "引导条件状语从句。",
+          "phonetics": {
+            "uk": "/ɪf/", "us": "/ɪf/"
+          }
+        },
+        {
+          "word": "(it is)",
+          "base_form": "it is",
+          "range": [],
+          "tag": "ellipsis_clause_subject_verb",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "它是（省略）",
+          "explanation": "状语从句主语与主句一致或为 it is 时常省略。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "necessary",
+          "base_form": "necessary",
+          "range": [17, 26],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "必要的",
+          "explanation": "形容词保留作表语。",
+          "phonetics": {
+            "uk": "/ˈnesəsəri/", "us": "/ˈnesəseri/"
+          }
+        }
+      ]
+    }
+  ]
+}

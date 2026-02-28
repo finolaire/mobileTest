@@ -1,0 +1,130 @@
+{
+  "unit_name": "核心时态 (5/16) - 一般将来时",
+  "description": "表示将来发生的动作或存在的状态，常用 will 或 be going to。",
+  "category": "Tenses",
+  "code": "TENS_FUT_SIMPLE",
+  "sentences": [
+    {
+      "id": "TENS_FUT_SIMPLE_001",
+      "sentence_info": {
+        "original": "I will help you",
+        "translation": "我会帮你的",
+        "sentence_pattern": "主语 + will + 动词原形 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "promise"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will",
+          "base_form": "will",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将/会",
+          "explanation": "助动词，表示将来，常用于临时决定或承诺。",
+          "phonetics": {
+            "uk": "/wɪl/", "us": "/wɪl/"
+          }
+        },
+        {
+          "word": "help",
+          "base_form": "help",
+          "range": [7, 11],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "帮助",
+          "explanation": "实义动词，will 后面接原形。",
+          "phonetics": {
+            "uk": "/help/", "us": "/help/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [12, 15],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "宾格代词。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_002",
+      "sentence_info": {
+        "original": "It is going to rain",
+        "translation": "天要下雨了",
+        "sentence_pattern": "主语 + be going to + 动词原形",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "prediction"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "代词，指代天气。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [3, 5],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "是",
+          "explanation": "be going to 结构中的 be 动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "going to",
+          "base_form": "go",
+          "range": [6, 14],
+          "tag": "phrase_future",
+          "type": "Future Marker (将来时标志)",
+          "chinese_definition": "将要",
+          "explanation": "be going to 表示根据迹象推测或计划好的将来。",
+          "phonetics": {
+            "uk": "/ˈɡəʊɪŋ tuː/", "us": "/ˈɡoʊɪŋ tuː/"
+          }
+        },
+        {
+          "word": "rain",
+          "base_form": "rain",
+          "range": [15, 19],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "下雨",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/reɪn/", "us": "/reɪn/"
+          }
+        }
+      ]
+    }
+  ]
+}

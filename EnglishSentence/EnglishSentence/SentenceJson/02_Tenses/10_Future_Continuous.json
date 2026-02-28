@@ -1,0 +1,142 @@
+{
+  "unit_name": "核心时态 (10/16) - 将来进行时",
+  "description": "表示将来某一时刻或某段时间正在进行的动作。",
+  "category": "Tenses",
+  "code": "TENS_FUT_CONT",
+  "sentences": [
+    {
+      "id": "TENS_FUT_CONT_001",
+      "sentence_info": {
+        "original": "I will be waiting for you at the station",
+        "translation": "我会在车站等你的",
+        "sentence_pattern": "主语 + will be + doing + 宾语 + 地点状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [2, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [10, 17],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "等待",
+          "explanation": "动词 wait 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        },
+        {
+          "word": "for you",
+          "base_form": "for you",
+          "range": [18, 25],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "等你",
+          "explanation": "wait for sb. 固定搭配。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "at the station",
+          "base_form": "at the station",
+          "range": [26, 40],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在车站",
+          "explanation": "介词短语表示地点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_002",
+      "sentence_info": {
+        "original": "This time tomorrow, we will be flying to Paris",
+        "translation": "明天这个时候，我们正飞往巴黎",
+        "sentence_pattern": "时间状语 + 主语 + will be + doing + 地点状语",
+        "pattern_code": "ADV_SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "specific_time"]
+      },
+      "analysis": [
+        {
+          "word": "This time tomorrow",
+          "base_form": "this time tomorrow",
+          "range": [0, 18],
+          "tag": "phrase_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天这个时候",
+          "explanation": "将来具体的时刻，将来进行时的标志。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "we",
+          "base_form": "we",
+          "range": [20, 22],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "will be flying",
+          "base_form": "fly",
+          "range": [23, 37],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将正在飞",
+          "explanation": "将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "to Paris",
+          "base_form": "to Paris",
+          "range": [38, 46],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (方向状语)",
+          "chinese_definition": "去巴黎",
+          "explanation": "介词短语表示方向。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,14 +1,21 @@
 import Foundation
 
 // MARK: - CourseUnit
-struct CourseUnit: Codable {
+struct CourseUnit: Codable, Identifiable {
+    var id: String {
+        return code ?? unitName
+    }
     let unitName: String
     let description: String
+    let category: String?
+    let code: String?
     let sentences: [Sentence]
 
     enum CodingKeys: String, CodingKey {
         case unitName = "unit_name"
         case description
+        case category
+        case code
         case sentences
     }
 }

@@ -1,0 +1,142 @@
+{
+  "unit_name": "核心时态 (14/16) - 过去将来进行时",
+  "description": "表示从过去某一时间看将来某一时刻正在进行的动作。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PAST_CONT",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PAST_CONT_001",
+      "sentence_info": {
+        "original": "He said he would be waiting for me",
+        "translation": "他说他会一直在等我",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would be + doing",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would be waiting",
+          "base_form": "wait",
+          "range": [11, 27],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在等待",
+          "explanation": "过去将来进行时结构 (would be doing)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for me",
+          "base_form": "for me",
+          "range": [28, 34],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "等我",
+          "explanation": "wait for sb.",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_002",
+      "sentence_info": {
+        "original": "I thought you would be sleeping",
+        "translation": "我以为你会正在睡觉",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would be + doing",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "assumption"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [2, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为/想",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [10, 13],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "你",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "would be sleeping",
+          "base_form": "sleep",
+          "range": [14, 31],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在睡觉",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

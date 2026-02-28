@@ -1,0 +1,166 @@
+{
+  "unit_name": "核心时态 (12/16) - 将来完成进行时",
+  "description": "表示动作从过去或现在一直持续到将来的某一个时间，强调动作在将来的持续性。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PERF_CONT",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PERF_CONT_001",
+      "sentence_info": {
+        "original": "By next month, I will have been living here for 10 years",
+        "translation": "到下个月，我住在这里就满10年了",
+        "sentence_pattern": "By + 时间 + 主语 + will have been + doing + 地点 + 时间段",
+        "pattern_code": "ADV_SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "By next month",
+          "base_form": "by next month",
+          "range": [0, 13],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到下个月",
+          "explanation": "By 引导的时间截止点，将来完成进行时的标志。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [15, 16],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [17, 31],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "living",
+          "base_form": "live",
+          "range": [32, 38],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "居住",
+          "explanation": "动词 live 的现在分词，表示持续。",
+          "phonetics": {
+            "uk": "/ˈlɪvɪŋ/", "us": "/ˈlɪvɪŋ/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [39, 43],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "这里",
+          "explanation": "地点状语。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "for 10 years",
+          "base_form": "for 10 years",
+          "range": [44, 56],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "10年了",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_002",
+      "sentence_info": {
+        "original": "In 2030, she will have been working at this company for 20 years",
+        "translation": "到2030年，她在这家公司工作就满20年了",
+        "sentence_pattern": "时间状语 + 主语 + will have been + doing + 地点 + 时间段",
+        "pattern_code": "ADV_SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "career"]
+      },
+      "analysis": [
+        {
+          "word": "In 2030",
+          "base_form": "in 2030",
+          "range": [0, 7],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在2030年",
+          "explanation": "将来的时间点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [9, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will have been working",
+          "base_form": "work",
+          "range": [13, 35],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直工作",
+          "explanation": "将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "at this company",
+          "base_form": "at this company",
+          "range": [36, 51],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在这家公司",
+          "explanation": "介词短语表示地点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for 20 years",
+          "base_form": "for 20 years",
+          "range": [52, 64],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "20年了",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

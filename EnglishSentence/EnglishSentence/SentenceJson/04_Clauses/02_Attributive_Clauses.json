@@ -1,0 +1,130 @@
+{
+  "unit_name": "从句 (2/3) - 定语从句",
+  "description": "修饰名词或代词的从句，也称为关系从句，通常由关系代词或关系副词引导。",
+  "category": "Clauses",
+  "code": "CLAUSE_ATTRIBUTIVE",
+  "sentences": [
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_001",
+      "sentence_info": {
+        "original": "The man who is standing there is my teacher",
+        "translation": "站在那里的那个男人是我的老师",
+        "sentence_pattern": "主语 + 定语从句 + 系动词 + 表语",
+        "pattern_code": "S_CLAUSE_VP",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_who"]
+      },
+      "analysis": [
+        {
+          "word": "The man",
+          "base_form": "man",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语/先行词)",
+          "chinese_definition": "那个男人",
+          "explanation": "主句的主语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/mæn/", "us": "/mæn/"
+          }
+        },
+        {
+          "word": "who is standing there",
+          "base_form": "who is standing there",
+          "range": [8, 29],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "站在那里的",
+          "explanation": "修饰 The man 的定语从句。who 是关系代词，在从句中作主语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [30, 32],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "主句的系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "my teacher",
+          "base_form": "teacher",
+          "range": [33, 43],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "我的老师",
+          "explanation": "名词短语作表语。",
+          "phonetics": {
+            "uk": "/ˈtiːtʃə(r)/", "us": "/ˈtiːtʃər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_002",
+      "sentence_info": {
+        "original": "This is the book which I bought yesterday",
+        "translation": "这就是我昨天买的那本书",
+        "sentence_pattern": "主语 + 系动词 + 表语 + 定语从句",
+        "pattern_code": "SVP_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_which"]
+      },
+      "analysis": [
+        {
+          "word": "This",
+          "base_form": "this",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "这",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðɪs/", "us": "/ðɪs/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [5, 7],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "the book",
+          "base_form": "book",
+          "range": [8, 16],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语/先行词)",
+          "chinese_definition": "那本书",
+          "explanation": "主句表语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/bʊk/", "us": "/bʊk/"
+          }
+        },
+        {
+          "word": "which I bought yesterday",
+          "base_form": "which I bought yesterday",
+          "range": [17, 41],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "我昨天买的",
+          "explanation": "修饰 the book 的定语从句。which 是关系代词，在从句中作 bought 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

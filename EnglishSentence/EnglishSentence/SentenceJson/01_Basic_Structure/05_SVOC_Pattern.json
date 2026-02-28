@@ -1,0 +1,130 @@
+{
+  "unit_name": "五大句型 (5/5) - SVOC 主谓宾补结构",
+  "description": "动词后面接宾语，但宾语意思不完整，需要一个补语来补充说明宾语的状态或身份。",
+  "category": "Basic_Structure",
+  "code": "BS_SVOC",
+  "sentences": [
+    {
+      "id": "BS_SVOC_001",
+      "sentence_info": {
+        "original": "We call him Tom",
+        "translation": "我们叫他汤姆",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(名词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "naming"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格代词。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "call",
+          "base_form": "call",
+          "range": [3, 7],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "称呼",
+          "explanation": "及物动词，需要接宾语补足语。",
+          "phonetics": {
+            "uk": "/kɔːl/", "us": "/kɔːl/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [8, 11],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词，作宾语。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "Tom",
+          "base_form": "Tom",
+          "range": [12, 15],
+          "tag": "noun_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "汤姆",
+          "explanation": "专有名词，作宾语补足语，说明宾语是谁。",
+          "phonetics": {
+            "uk": "/tɒm/", "us": "/tɑːm/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_002",
+      "sentence_info": {
+        "original": "She made me happy",
+        "translation": "她让我很开心",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(形容词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "emotion"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "made",
+          "base_form": "make",
+          "range": [4, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "使/让",
+          "explanation": "使役动词 make 的过去式。",
+          "phonetics": {
+            "uk": "/meɪd/", "us": "/meɪd/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [9, 11],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我",
+          "explanation": "宾格代词，作宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "happy",
+          "base_form": "happy",
+          "range": [12, 17],
+          "tag": "adjective_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "开心的",
+          "explanation": "形容词，作宾语补足语，说明宾语的状态。",
+          "phonetics": {
+            "uk": "/ˈhæpi/", "us": "/ˈhæpi/"
+          }
+        }
+      ]
+    }
+  ]
+}

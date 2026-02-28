@@ -1,0 +1,118 @@
+{
+  "unit_name": "语态与语气 (2/3) - 虚拟语气",
+  "description": "表示假设、愿望、建议或非事实的情况，而非客观事实。",
+  "category": "Voice_Mood",
+  "code": "MOOD_SUBJUNCTIVE",
+  "sentences": [
+    {
+      "id": "MOOD_SUBJUNCTIVE_001",
+      "sentence_info": {
+        "original": "If I were you, I would go",
+        "translation": "如果我是你，我就去",
+        "sentence_pattern": "If + 主语 + were + ..., 主语 + would + 动词原形",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "conditional_2"]
+      },
+      "analysis": [
+        {
+          "word": "If I were you",
+          "base_form": "If I were you",
+          "range": [0, 13],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (条件状语从句)",
+          "chinese_definition": "如果我是你",
+          "explanation": "与现在事实相反的假设。注意：在虚拟语气中，be 动词通常用 were，即使主语是 I。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [15, 16],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would go",
+          "base_form": "go",
+          "range": [17, 25],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "就会去",
+          "explanation": "主句谓语用 would/should/could/might + 动词原形。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_002",
+      "sentence_info": {
+        "original": "I wish I were a bird",
+        "translation": "我希望我是一只鸟",
+        "sentence_pattern": "主语 + wish + (that) + 主语 + were + 表语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "wish"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "wish",
+          "base_form": "wish",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (动词)",
+          "chinese_definition": "希望",
+          "explanation": "表达愿望，后接虚拟语气。",
+          "phonetics": {
+            "uk": "/wɪʃ/", "us": "/wɪʃ/"
+          }
+        },
+        {
+          "word": "I were",
+          "base_form": "be",
+          "range": [7, 13],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "我是",
+          "explanation": "与现在事实相反的愿望，用过去式（be 动词用 were）。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "a bird",
+          "base_form": "bird",
+          "range": [14, 20],
+          "tag": "noun_object",
+          "type": "Predicative (表语)",
+          "chinese_definition": "一只鸟",
+          "explanation": "名词作表语。",
+          "phonetics": {
+            "uk": "/bɜːd/", "us": "/bɜːrd/"
+          }
+        }
+      ]
+    }
+  ]
+}

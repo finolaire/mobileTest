@@ -1,0 +1,106 @@
+{
+  "unit_name": "语态与语气 (3/3) - 祈使句",
+  "description": "表示请求、命令、劝告或建议，通常省略主语 you。",
+  "category": "Voice_Mood",
+  "code": "MOOD_IMPERATIVE",
+  "sentences": [
+    {
+      "id": "MOOD_IMPERATIVE_001",
+      "sentence_info": {
+        "original": "Open the door, please",
+        "translation": "请开门",
+        "sentence_pattern": "动词原形 + 宾语 + please",
+        "pattern_code": "VO",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "request"]
+      },
+      "analysis": [
+        {
+          "word": "Open",
+          "base_form": "open",
+          "range": [0, 4],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "打开",
+          "explanation": "祈使句以动词原形开头。",
+          "phonetics": {
+            "uk": "/ˈəʊpən/", "us": "/ˈoʊpən/"
+          }
+        },
+        {
+          "word": "the door",
+          "base_form": "door",
+          "range": [5, 13],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "门",
+          "explanation": "open 的宾语。",
+          "phonetics": {
+            "uk": "/dɔː(r)/", "us": "/dɔːr/"
+          }
+        },
+        {
+          "word": "please",
+          "base_form": "please",
+          "range": [15, 21],
+          "tag": "adverb_politeness",
+          "type": "Interjection (语气词)",
+          "chinese_definition": "请",
+          "explanation": "表示礼貌的请求。",
+          "phonetics": {
+            "uk": "/pliːz/", "us": "/pliːz/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_002",
+      "sentence_info": {
+        "original": "Don't be late",
+        "translation": "不要迟到",
+        "sentence_pattern": "Don't + be + 表语",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "negative"]
+      },
+      "analysis": [
+        {
+          "word": "Don't",
+          "base_form": "do not",
+          "range": [0, 5],
+          "tag": "verb_auxiliary_negative",
+          "type": "Auxiliary Verb (助动词否定)",
+          "chinese_definition": "不要",
+          "explanation": "祈使句的否定形式，通常用 Don't 开头。",
+          "phonetics": {
+            "uk": "/dəʊnt/", "us": "/doʊnt/"
+          }
+        },
+        {
+          "word": "be",
+          "base_form": "be",
+          "range": [6, 8],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "是/变得",
+          "explanation": "系动词原形。",
+          "phonetics": {
+            "uk": "/biː/", "us": "/biː/"
+          }
+        },
+        {
+          "word": "late",
+          "base_form": "late",
+          "range": [9, 13],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "迟到的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/leɪt/", "us": "/leɪt/"
+          }
+        }
+      ]
+    }
+  ]
+}

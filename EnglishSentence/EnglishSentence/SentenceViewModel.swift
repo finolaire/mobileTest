@@ -142,15 +142,29 @@ class SentenceViewModel {
     }
     
     // MARK: - Methods
-    func loadData() {
-        // Try to load from Bundle
+    func loadData(unit: CourseUnit? = nil) {
+        if let unit = unit {
+            self.courseUnit = unit
+            self.currentSentenceIndex = 0
+            onDataUpdated?()
+            return
+        }
+        
+        // Try to load from Bundle (default fallback)
         if let url = Bundle.main.url(forResource: "sentence_01", withExtension: "json") {
             parseJSON(from: url)
         } else {
-            // Error handling if file is missing from Bundle
-            let errorMsg = "Could not find sentence_01.json in Bundle. Please ensure it is added to 'Copy Bundle Resources' in Build Phases."
-            print(errorMsg)
-            onError?(errorMsg)
+            // If default file is missing, try to load the first available course from CourseManager
+            let sections = CourseManager.shared.getAllCourses()
+            if let firstSection = sections.first, let firstCourse = firstSection.courses.first {
+                self.courseUnit = firstCourse
+                self.currentSentenceIndex = 0
+                onDataUpdated?()
+            } else {
+                let errorMsg = "No course data found."
+                print(errorMsg)
+                onError?(errorMsg)
+            }
         }
     }
     

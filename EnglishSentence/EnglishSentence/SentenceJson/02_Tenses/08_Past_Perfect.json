@@ -1,0 +1,154 @@
+{
+  "unit_name": "核心时态 (8/16) - 过去完成时",
+  "description": "表示在过去某一时间或动作之前已经发生或完成的动作，即'过去的过去'。",
+  "category": "Tenses",
+  "code": "TENS_PAST_PERF",
+  "sentences": [
+    {
+      "id": "TENS_PAST_PERF_001",
+      "sentence_info": {
+        "original": "When I arrived, the train had left",
+        "translation": "当我到达时，火车已经离开了",
+        "sentence_pattern": "时间状语从句 + 主语 + had + 过去分词",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["tense", "past_perfect", "sequence_of_events"]
+      },
+      "analysis": [
+        {
+          "word": "When I arrived",
+          "base_form": "when I arrived",
+          "range": [0, 14],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "当我到达时",
+          "explanation": "表示过去的时间点，arrived 是一般过去时。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the train",
+          "base_form": "train",
+          "range": [16, 25],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "火车",
+          "explanation": "主句的主语。",
+          "phonetics": {
+            "uk": "/treɪn/", "us": "/treɪn/"
+          }
+        },
+        {
+          "word": "had",
+          "base_form": "have",
+          "range": [26, 29],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词 have 的过去式，用于构成过去完成时。",
+          "phonetics": {
+            "uk": "/hæd/", "us": "/hæd/"
+          }
+        },
+        {
+          "word": "left",
+          "base_form": "leave",
+          "range": [30, 34],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "离开",
+          "explanation": "动词 leave 的过去分词，表示动作发生在 arrived 之前。",
+          "phonetics": {
+            "uk": "/left/", "us": "/left/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_PERF_002",
+      "sentence_info": {
+        "original": "She had already eaten dinner before he came",
+        "translation": "在他来之前，她已经吃过晚饭了",
+        "sentence_pattern": "主语 + had + already + 过去分词 + 宾语 + 时间状语从句",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "past_perfect", "already"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "had",
+          "base_form": "have",
+          "range": [4, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæd/", "us": "/hæd/"
+          }
+        },
+        {
+          "word": "already",
+          "base_form": "already",
+          "range": [8, 15],
+          "tag": "adverb_time",
+          "type": "Adverb (副词)",
+          "chinese_definition": "已经",
+          "explanation": "强调动作完成的副词。",
+          "phonetics": {
+            "uk": "/ɔːlˈredi/", "us": "/ɔːlˈredi/"
+          }
+        },
+        {
+          "word": "eaten",
+          "base_form": "eat",
+          "range": [16, 21],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "吃",
+          "explanation": "动词 eat 的过去分词。",
+          "phonetics": {
+            "uk": "/ˈiːtn/", "us": "/ˈiːtn/"
+          }
+        },
+        {
+          "word": "dinner",
+          "base_form": "dinner",
+          "range": [22, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "晚饭",
+          "explanation": "eat 的宾语。",
+          "phonetics": {
+            "uk": "/ˈdɪnə(r)/", "us": "/ˈdɪnər/"
+          }
+        },
+        {
+          "word": "before he came",
+          "base_form": "before he came",
+          "range": [29, 43],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "在他来之前",
+          "explanation": "before 引导的时间状语从句，came 是过去式，主句动作发生在 came 之前。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "unit_name": "特殊句型 (2/3) - 强调句",
+  "description": "使用 'It is/was ... that/who ...' 结构来强调句子中的某个成分（通常是主语、宾语或状语）。",
+  "category": "Special_Patterns",
+  "code": "PATTERN_EMPHASIS",
+  "sentences": [
+    {
+      "id": "PATTERN_EMPHASIS_001",
+      "sentence_info": {
+        "original": "It was yesterday that I met him",
+        "translation": "我是在昨天遇见他的",
+        "sentence_pattern": "It was + 被强调部分(时间状语) + that + 剩余部分",
+        "pattern_code": "IT_BE_ADV_THAT",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "time_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "It was",
+          "base_form": "it be",
+          "range": [0, 6],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句的开头结构，因为 met 是过去式，所以用 was。",
+          "phonetics": {
+            "uk": "/ɪt wɒz/", "us": "/ɪt wɑːz/"
+          }
+        },
+        {
+          "word": "yesterday",
+          "base_form": "yesterday",
+          "range": [7, 16],
+          "tag": "adverb_time",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "昨天",
+          "explanation": "被强调的时间状语。",
+          "phonetics": {
+            "uk": "/ˈjestədeɪ/", "us": "/ˈjestərdeɪ/"
+          }
+        },
+        {
+          "word": "that",
+          "base_form": "that",
+          "range": [17, 21],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "强调句的连接词。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        },
+        {
+          "word": "I met him",
+          "base_form": "I met him",
+          "range": [22, 31],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "我遇见他",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_002",
+      "sentence_info": {
+        "original": "It is Tom who broke the window",
+        "translation": "打破窗户的人正是汤姆",
+        "sentence_pattern": "It is + 被强调部分(主语人) + who + 剩余部分",
+        "pattern_code": "IT_BE_S_WHO",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "subject_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "It is",
+          "base_form": "it be",
+          "range": [0, 5],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句开头，时态为一般现在时（或表示客观事实）。",
+          "phonetics": {
+            "uk": "/ɪt ɪz/", "us": "/ɪt ɪz/"
+          }
+        },
+        {
+          "word": "Tom",
+          "base_form": "Tom",
+          "range": [6, 9],
+          "tag": "noun_proper",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "汤姆",
+          "explanation": "被强调的主语（人）。",
+          "phonetics": {
+            "uk": "/tɒm/", "us": "/tɑːm/"
+          }
+        },
+        {
+          "word": "who",
+          "base_form": "who",
+          "range": [10, 13],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "强调人时，连接词可以用 who 也可以用 that。",
+          "phonetics": {
+            "uk": "/huː/", "us": "/huː/"
+          }
+        },
+        {
+          "word": "broke the window",
+          "base_form": "break the window",
+          "range": [14, 30],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "打破了窗户",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

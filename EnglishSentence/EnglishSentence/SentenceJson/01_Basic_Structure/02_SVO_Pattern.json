@@ -1,0 +1,106 @@
+{
+  "unit_name": "五大句型 (2/5) - SVO 主谓宾结构",
+  "description": "最常见的句子结构，动作有一个承受者。",
+  "category": "Basic_Structure",
+  "code": "BS_SVO",
+  "sentences": [
+    {
+      "id": "BS_SVO_001",
+      "sentence_info": {
+        "original": "I love you",
+        "translation": "我爱你",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "emotion"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格代词。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "love",
+          "base_form": "love",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "爱",
+          "explanation": "及物动词，表示情感。",
+          "phonetics": {
+            "uk": "/lʌv/", "us": "/lʌv/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [7, 10],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "第二人称代词，此处作宾语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_002",
+      "sentence_info": {
+        "original": "He plays soccer",
+        "translation": "他踢足球",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "sports"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格代词。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "plays",
+          "base_form": "play",
+          "range": [3, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "玩/踢",
+          "explanation": "及物动词，第三人称单数形式。",
+          "phonetics": {
+            "uk": "/pleɪz/", "us": "/pleɪz/"
+          }
+        },
+        {
+          "word": "soccer",
+          "base_form": "soccer",
+          "range": [9, 15],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "名词，作动词 play 的宾语。",
+          "phonetics": {
+            "uk": "/ˈsɒkə(r)/", "us": "/ˈsɑːkər/"
+          }
+        }
+      ]
+    }
+  ]
+}
