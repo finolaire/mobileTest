@@ -146,25 +146,34 @@ class SentenceViewModel {
         if let unit = unit {
             self.courseUnit = unit
             self.currentSentenceIndex = 0
+            // Save the newly loaded unit as last played
+            CourseManager.shared.saveLastPlayedCourseId(unit.id)
             onDataUpdated?()
             return
         }
         
-        // Try to load from Bundle (default fallback)
-        if let url = Bundle.main.url(forResource: "sentence_01", withExtension: "json") {
-            parseJSON(from: url)
+        // Try to load last played course
+        if let lastId = CourseManager.shared.getLastPlayedCourseId(),
+           let lastCourse = CourseManager.shared.getCourse(byId: lastId) {
+            print("Loading last played course: \(lastCourse.unitName)")
+            self.courseUnit = lastCourse
+            self.currentSentenceIndex = 0
+            onDataUpdated?()
+            return
+        }
+        
+        // Fallback: Try to load the first available course from CourseManager
+        let sections = CourseManager.shared.getAllCourses()
+        if let firstSection = sections.first, let firstCourse = firstSection.courses.first {
+            self.courseUnit = firstCourse
+            self.currentSentenceIndex = 0
+            // Save the default course as last played
+            CourseManager.shared.saveLastPlayedCourseId(firstCourse.id)
+            onDataUpdated?()
         } else {
-            // If default file is missing, try to load the first available course from CourseManager
-            let sections = CourseManager.shared.getAllCourses()
-            if let firstSection = sections.first, let firstCourse = firstSection.courses.first {
-                self.courseUnit = firstCourse
-                self.currentSentenceIndex = 0
-                onDataUpdated?()
-            } else {
-                let errorMsg = "No course data found."
-                print(errorMsg)
-                onError?(errorMsg)
-            }
+            let errorMsg = "No course data found."
+            print(errorMsg)
+            onError?(errorMsg)
         }
     }
     

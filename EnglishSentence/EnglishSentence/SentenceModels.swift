@@ -77,10 +77,10 @@ struct WordAnalysis: Codable {
 
 // MARK: - Phonetics
 struct Phonetics: Codable {
-    let uk: String
-    let us: String
-    let audioUk: String
-    let audioUs: String
+    let uk: String?
+    let us: String?
+    let audioUk: String?
+    let audioUs: String?
 
     enum CodingKeys: String, CodingKey {
         case uk

@@ -16,9 +16,9 @@ struct WordCellViewModel {
         
         switch config.phoneticType {
         case .uk:
-            self.phonetic = analysis.phonetics.uk
+            self.phonetic = analysis.phonetics.uk ?? ""
         case .us:
-            self.phonetic = analysis.phonetics.us
+            self.phonetic = analysis.phonetics.us ?? ""
         }
         
         self.type = analysis.type
@@ -113,7 +113,7 @@ class WordCell: UICollectionViewCell {
     func configure(with viewModel: WordCellViewModel) {
         wordLabel.text = viewModel.word
         wordLabel.textColor = viewModel.wordColor
-        phoneticLabel.text = viewModel.phonetic
+        phoneticLabel.text = viewModel.phonetic.isEmpty ? " " : viewModel.phonetic
         phoneticLabel.isHidden = viewModel.isPhoneticsHidden
         typeLabel.text = viewModel.type
         typeLabel.isHidden = viewModel.isTypeHidden

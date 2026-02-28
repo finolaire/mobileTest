@@ -22,6 +22,7 @@ class BookshelfViewController: UIViewController {
     }()
     
     private var sections: [SectionViewModel] = []
+    private var currentCourseId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,13 @@ class BookshelfViewController: UIViewController {
         
         setupUI()
         loadCourses()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Refresh current course ID in case it changed elsewhere
+        currentCourseId = CourseManager.shared.getLastPlayedCourseId()
+        tableView.reloadData()
     }
     
     private func setupUI() {
@@ -76,7 +84,7 @@ class BookshelfViewController: UIViewController {
     }
     
     private func showMissingFilesAlert(count: Int) {
-        let message = "Found \(count) courses. Expected at least 5.\n\nPossible causes:\n1. 'SentenceJson' folder is not added to Xcode.\n2. 'course_manifest.json' is missing or not added to target.\n\nTry this:\n1. Ensure 'SentenceJson' folder is added to Xcode (blue folder icon preferred).\n2. Clean Build Folder (Shift+Cmd+K)."
+        let message = "Found \(count) courses. Expected at least 5.\n\nDebug Info:\n- Manifest loaded: \(CourseManager.shared.isManifestLoaded ? "Yes" : "No")\n\nTry this:\n1. Ensure 'SentenceJson' folder is added to Xcode (blue folder icon preferred).\n2. Clean Build Folder (Shift+Cmd+K)."
         let alert = UIAlertController(title: "Missing Files", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
@@ -141,7 +149,8 @@ extension BookshelfViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let course = sections[indexPath.section].courses[indexPath.row]
-        cell.configure(title: course.unitName)
+        let isCurrent = course.id == currentCourseId
+        cell.configure(title: course.unitName, isCurrent: isCurrent)
         return cell
     }
     
@@ -150,6 +159,14 @@ extension BookshelfViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let course = sections[indexPath.section].courses[indexPath.row]
+        
+        // Save as current course
+        currentCourseId = course.id
+        CourseManager.shared.saveLastPlayedCourseId(course.id)
+        
+        // Reload to update visuals
+        tableView.reloadData()
+        
         onCourseSelected?(course)
         dismiss(animated: true, completion: nil)
     }
@@ -291,7 +308,19 @@ class CourseTreeCell: UITableViewCell {
         }
     }
     
-    func configure(title: String) {
+    func configure(title: String, isCurrent: Bool) {
         titleLabel.text = title
+        
+        if isCurrent {
+            // Highlight style: Bold, Large, Red
+            titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
+            titleLabel.textColor = .systemRed
+            fileImageView.tintColor = .systemRed
+        } else {
+            // Normal style
+            titleLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+            titleLabel.textColor = .label
+            fileImageView.tintColor = .secondaryLabel
+        }
     }
 }
