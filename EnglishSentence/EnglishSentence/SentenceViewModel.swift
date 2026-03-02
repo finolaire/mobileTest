@@ -5,6 +5,8 @@ class SentenceViewModel {
     // MARK: - Properties
     private var courseUnit: CourseUnit?
     private var currentSentenceIndex: Int = 0
+    private var allCourses: [CourseUnit] = []
+    private var currentCourseIndex: Int = 0
     var displayConfig = DisplayConfig.load()
     
     // MARK: - Output Properties
@@ -133,42 +135,37 @@ class SentenceViewModel {
     }
     
     var isPrevEnabled: Bool {
-        return currentSentenceIndex > 0
+        return currentSentenceIndex > 0 || currentCourseIndex > 0
     }
     
     var isNextEnabled: Bool {
         guard let unit = courseUnit else { return false }
-        return currentSentenceIndex < unit.sentences.count - 1
+        if currentSentenceIndex < unit.sentences.count - 1 { return true }
+        return currentCourseIndex < allCourses.count - 1
     }
     
     // MARK: - Methods
     func loadData(unit: CourseUnit? = nil) {
+        refreshCourseList()
+        
         if let unit = unit {
-            self.courseUnit = unit
-            self.currentSentenceIndex = 0
-            // Save the newly loaded unit as last played
-            CourseManager.shared.saveLastPlayedCourseId(unit.id)
+            applyCourse(unit, sentenceIndex: 0, shouldPersist: true)
             onDataUpdated?()
             return
         }
         
         // Try to load last played course
         if let lastId = CourseManager.shared.getLastPlayedCourseId(),
-           let lastCourse = CourseManager.shared.getCourse(byId: lastId) {
+           let lastCourse = allCourses.first(where: { $0.id == lastId }) {
             print("Loading last played course: \(lastCourse.unitName)")
-            self.courseUnit = lastCourse
-            self.currentSentenceIndex = 0
+            applyCourse(lastCourse, sentenceIndex: 0, shouldPersist: false)
             onDataUpdated?()
             return
         }
         
         // Fallback: Try to load the first available course from CourseManager
-        let sections = CourseManager.shared.getAllCourses()
-        if let firstSection = sections.first, let firstCourse = firstSection.courses.first {
-            self.courseUnit = firstCourse
-            self.currentSentenceIndex = 0
-            // Save the default course as last played
-            CourseManager.shared.saveLastPlayedCourseId(firstCourse.id)
+        if let firstCourse = allCourses.first {
+            applyCourse(firstCourse, sentenceIndex: 0, shouldPersist: true)
             onDataUpdated?()
         } else {
             let errorMsg = "No course data found."
@@ -193,14 +190,31 @@ class SentenceViewModel {
         if currentSentenceIndex < unit.sentences.count - 1 {
             currentSentenceIndex += 1
             onDataUpdated?()
+            return
         }
+        
+        // Current JSON finished: jump to next JSON's first sentence
+        let nextCourseIndex = currentCourseIndex + 1
+        guard nextCourseIndex < allCourses.count else { return }
+        let nextCourse = allCourses[nextCourseIndex]
+        applyCourse(nextCourse, sentenceIndex: 0, shouldPersist: true)
+        onDataUpdated?()
     }
     
     func prevSentence() {
         if currentSentenceIndex > 0 {
             currentSentenceIndex -= 1
             onDataUpdated?()
+            return
         }
+        
+        // At first sentence: jump to previous JSON's last sentence
+        let prevCourseIndex = currentCourseIndex - 1
+        guard prevCourseIndex >= 0 else { return }
+        let prevCourse = allCourses[prevCourseIndex]
+        let lastSentenceIndex = max(prevCourse.sentences.count - 1, 0)
+        applyCourse(prevCourse, sentenceIndex: lastSentenceIndex, shouldPersist: true)
+        onDataUpdated?()
     }
     
     func updateConfig(_ newConfig: DisplayConfig) {
@@ -227,5 +241,27 @@ class SentenceViewModel {
             return nil
         }
         return unit.sentences[currentSentenceIndex].analysis[index]
+    }
+    
+    private func refreshCourseList() {
+        let sections = CourseManager.shared.getAllCourses()
+        allCourses = sections.flatMap { $0.courses }
+        
+        if let current = courseUnit,
+           let idx = allCourses.firstIndex(where: { $0.id == current.id }) {
+            currentCourseIndex = idx
+        }
+    }
+    
+    private func applyCourse(_ course: CourseUnit, sentenceIndex: Int, shouldPersist: Bool) {
+        courseUnit = course
+        currentSentenceIndex = min(max(sentenceIndex, 0), max(course.sentences.count - 1, 0))
+        if let idx = allCourses.firstIndex(where: { $0.id == course.id }) {
+            currentCourseIndex = idx
+        }
+        
+        if shouldPersist {
+            CourseManager.shared.saveLastPlayedCourseId(course.id)
+        }
     }
 }

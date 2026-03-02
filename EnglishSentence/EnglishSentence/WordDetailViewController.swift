@@ -10,10 +10,13 @@ class WordDetailViewController: UIViewController {
         return label
     }()
     
+    private let typeColor: UIColor
+    
     init(analysis: WordAnalysis, color: UIColor) {
+        self.typeColor = color
         super.init(nibName: nil, bundle: nil)
         setupContent(with: analysis)
-        view.backgroundColor = color
+        view.backgroundColor = UIColor.white.withAlphaComponent(0.95)
     }
     
     required init?(coder: NSCoder) {
@@ -35,11 +38,15 @@ class WordDetailViewController: UIViewController {
     
     private func setupContent(with analysis: WordAnalysis) {
         let attributedText = NSMutableAttributedString()
+        let firstLineStyle = NSMutableParagraphStyle()
+        firstLineStyle.alignment = .center
+        firstLineStyle.paragraphSpacing = 10
         
         // Chinese Definition (Bold, larger)
         let defAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont.boldSystemFont(ofSize: 18),
-            .foregroundColor: UIColor.white
+            .font: UIFont.systemFont(ofSize: 20, weight: .black),//boldSystemFont(ofSize: 18),
+            .foregroundColor: typeColor,
+            .paragraphStyle: firstLineStyle
         ]
         attributedText.append(NSAttributedString(string: analysis.chineseDefinition, attributes: defAttributes))
         
@@ -48,8 +55,8 @@ class WordDetailViewController: UIViewController {
         
         // Explanation (Regular, smaller, lighter color)
         let expAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 14),
-            .foregroundColor: UIColor(white: 0.95, alpha: 1.0)
+            .font: UIFont.systemFont(ofSize: 14, weight: .medium),
+            .foregroundColor: UIColor.black.withAlphaComponent(0.7)
         ]
         attributedText.append(NSAttributedString(string: analysis.explanation, attributes: expAttributes))
         

@@ -86,26 +86,20 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     
     private let prevButton: UIButton = {
         let btn = UIButton(type: .system)
-        btn.setTitle("Previous", for: .normal)
-        btn.setTitleColor(.systemBlue, for: .normal)
+        let config = UIImage.SymbolConfiguration(pointSize: 40, weight: .light)
+        btn.setImage(UIImage(systemName: "chevron.left.circle", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
         btn.addTarget(self, action: #selector(prevTapped), for: .touchUpInside)
         return btn
     }()
     
     private let nextButton: UIButton = {
         let btn = UIButton(type: .system)
-        btn.setTitle("Next", for: .normal)
-        btn.setTitleColor(.systemBlue, for: .normal)
+        let config = UIImage.SymbolConfiguration(pointSize: 40, weight: .light)
+        btn.setImage(UIImage(systemName: "chevron.right.circle", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
         btn.addTarget(self, action: #selector(nextTapped), for: .touchUpInside)
         return btn
-    }()
-    
-    private let controlsStack: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .horizontal
-        stack.distribution = .equalSpacing
-        stack.alignment = .center
-        return stack
     }()
     
     private let settingsButton: UIButton = {
@@ -159,9 +153,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         view.addSubview(settingsButton)
         view.addSubview(bookshelfButton)
         
-        controlsStack.addArrangedSubview(prevButton)
-        controlsStack.addArrangedSubview(nextButton)
-        view.addSubview(controlsStack)
+        view.addSubview(prevButton)
+        view.addSubview(nextButton)
         
         backgroundImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -221,11 +214,16 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             make.width.height.equalTo(30)
         }
         
-        controlsStack.snp.makeConstraints { make in
+        prevButton.snp.makeConstraints { make in
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
-            make.leading.equalToSuperview().offset(40)
-            make.trailing.equalToSuperview().offset(-40)
-            make.height.equalTo(44)
+            make.leading.equalToSuperview().offset(44)
+            make.width.height.equalTo(50)
+        }
+        
+        nextButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+            make.trailing.equalToSuperview().offset(-44)
+            make.width.height.equalTo(50)
         }
     }
     
