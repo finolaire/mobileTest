@@ -5,17 +5,41 @@ class TTSManager: NSObject {
     static let shared = TTSManager()
     
     private let synthesizer = AVSpeechSynthesizer()
+    private var lockScreenPlaybackEnabled = true
+    
+    var onSpeechFinished: (() -> Void)?
+    var onSpeechCancelled: (() -> Void)?
     
     override private init() {
         super.init()
         synthesizer.delegate = self
         
-        // 配置音频会话，确保在静音模式下也能播放声音（可选）
+        configureAudioSession()
+    }
+    
+    private func configureAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            let category: AVAudioSession.Category = lockScreenPlaybackEnabled ? .playback : .ambient
+            try AVAudioSession.sharedInstance().setCategory(category, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("Audio session setup failed: \(error)")
+        }
+    }
+    
+    func setLockScreenPlaybackEnabled(_ enabled: Bool) {
+        lockScreenPlaybackEnabled = enabled
+        configureAudioSession()
+    }
+    
+    /// 预热语音引擎，减少首次播放延迟
+    /// - Note: 语音列表加载放后台，音频会话配置回主线程，避免阻塞 UI。
+    func warmUpAsync() {
+        DispatchQueue.global(qos: .userInitiated).async {
+            _ = AVSpeechSynthesisVoice.speechVoices()
+            DispatchQueue.main.async { [weak self] in
+                self?.configureAudioSession()
+            }
         }
     }
     
@@ -67,5 +91,10 @@ extension TTSManager: AVSpeechSynthesizerDelegate {
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         print("播放结束")
+        onSpeechFinished?()
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        onSpeechCancelled?()
     }
 }

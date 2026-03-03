@@ -1,5 +1,46 @@
 import UIKit
 import SnapKit
+import AVFoundation
+
+struct ImmersiveReadingConfig: Codable {
+    var enableSound: Bool
+    var playbackRate: Float
+    var lockScreenPlayback: Bool
+    var autoStopEnabled: Bool
+    var autoStopMinutes: Int
+    var playSentencePattern: Bool
+    var playTranslation: Bool
+    var playOriginal: Bool
+}
+
+private enum ImmersiveConfigStore {
+    static let key = "ImmersiveReadingConfig"
+    
+    static let defaultConfig = ImmersiveReadingConfig(
+        enableSound: true,
+        playbackRate: AVSpeechUtteranceDefaultSpeechRate,
+        lockScreenPlayback: true,
+        autoStopEnabled: false,
+        autoStopMinutes: 15,
+        playSentencePattern: true,
+        playTranslation: true,
+        playOriginal: true
+    )
+    
+    static func load() -> ImmersiveReadingConfig {
+        guard let data = UserDefaults.standard.data(forKey: key),
+              let cfg = try? JSONDecoder().decode(ImmersiveReadingConfig.self, from: data) else {
+            return defaultConfig
+        }
+        return cfg
+    }
+    
+    static func save(_ config: ImmersiveReadingConfig) {
+        if let data = try? JSONEncoder().encode(config) {
+            UserDefaults.standard.set(data, forKey: key)
+        }
+    }
+}
 
 // MARK: - Configuration
 // Moved to shared location or keep here if it's app-wide config
@@ -10,6 +51,21 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
 
     // MARK: - ViewModel
     private var viewModel = SentenceViewModel()
+    
+    // MARK: - Immersive Reading
+    private var immersiveConfig = ImmersiveConfigStore.load()
+    private var isImmersivePlaying = false
+    private var isImmersivePaused = false
+    private var immersiveQueue: [(text: String, language: String)] = []
+    private var immersiveQueueIndex = 0
+    private var immersiveStopTimer: Timer?
+    private var immersivePauseOverlay: UIView?
+    private let immersiveTouchLayer: UIControl = {
+        let layer = UIControl()
+        layer.backgroundColor = .clear
+        layer.isHidden = true
+        return layer
+    }()
     
     // MARK: - UI Components
     private let backgroundImageView: UIImageView = {
@@ -115,6 +171,18 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         return btn
     }()
     
+    private let immersiveButton: UIButton = {
+        let btn = UIButton(type: .system)
+        if let image = UIImage(systemName: "headphones.over.ear") {
+            btn.setImage(image, for: .normal)
+        } else {
+            btn.setTitle("Read", for: .normal)
+        }
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(immersiveTapped), for: .touchUpInside)
+        return btn
+    }()
+    
     private let bookshelfButton: UIButton = {
         let btn = UIButton(type: .system)
         if let image = UIImage(systemName: "books.vertical.fill") {
@@ -131,9 +199,11 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
+        TTSManager.shared.warmUpAsync()
         
         setupUI()
         setupBindings()
+        setupImmersiveCallbacks()
         viewModel.loadData()
         updateBackground() // Set initial background
         
@@ -151,10 +221,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         view.addSubview(translationAudioButton)
         view.addSubview(englishAudioButton)
         view.addSubview(settingsButton)
+        view.addSubview(immersiveButton)
         view.addSubview(bookshelfButton)
         
         view.addSubview(prevButton)
         view.addSubview(nextButton)
+        view.addSubview(immersiveTouchLayer)
         
         backgroundImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -167,6 +239,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         settingsButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
             make.trailing.equalToSuperview().offset(-20)
+            make.width.height.equalTo(44)
+        }
+        
+        immersiveButton.snp.makeConstraints { make in
+            make.centerY.equalTo(settingsButton)
+            make.trailing.equalTo(settingsButton.snp.leading).offset(-12)
             make.width.height.equalTo(44)
         }
         
@@ -225,6 +303,11 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             make.trailing.equalToSuperview().offset(-44)
             make.width.height.equalTo(50)
         }
+        
+        immersiveTouchLayer.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        immersiveTouchLayer.addTarget(self, action: #selector(handleImmersiveScreenTap), for: .touchUpInside)
     }
     
     private func setupBindings() {
@@ -241,6 +324,183 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
                 self?.present(alert, animated: true)
             }
         }
+    }
+    
+    private func setupImmersiveCallbacks() {
+        TTSManager.shared.onSpeechFinished = { [weak self] in
+            DispatchQueue.main.async {
+                self?.handleImmersiveSpeechFinished()
+            }
+        }
+        TTSManager.shared.onSpeechCancelled = { [weak self] in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                // Ignore cancel callback during pause/stop flow.
+                if self.isImmersivePaused || !self.isImmersivePlaying { return }
+            }
+        }
+    }
+    
+    private func buildImmersiveQueueForCurrentSentence() {
+        immersiveQueue.removeAll()
+        immersiveQueueIndex = 0
+        
+        guard immersiveConfig.enableSound, let sentence = viewModel.currentSentence else { return }
+        
+        if immersiveConfig.playSentencePattern {
+            immersiveQueue.append((sentence.sentenceInfo.sentencePattern, "zh-CN"))
+        }
+        if immersiveConfig.playTranslation {
+            immersiveQueue.append((sentence.sentenceInfo.translation, "zh-CN"))
+        }
+        if immersiveConfig.playOriginal {
+            let englishLang = viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
+            immersiveQueue.append((sentence.sentenceInfo.original, englishLang))
+        }
+    }
+    
+    private func playCurrentImmersiveItem() {
+        guard isImmersivePlaying, !isImmersivePaused else { return }
+        guard immersiveQueueIndex < immersiveQueue.count else {
+            handleImmersiveSpeechFinished()
+            return
+        }
+        
+        let item = immersiveQueue[immersiveQueueIndex]
+        TTSManager.shared.play(item.text, language: item.language, rate: immersiveConfig.playbackRate)
+    }
+    
+    private func handleImmersiveSpeechFinished() {
+        guard isImmersivePlaying, !isImmersivePaused else { return }
+        
+        immersiveQueueIndex += 1
+        if immersiveQueueIndex < immersiveQueue.count {
+            playCurrentImmersiveItem()
+            return
+        }
+        
+        // Current sentence finished, move to next sentence (cross JSON supported by ViewModel)
+        if viewModel.isNextEnabled {
+            viewModel.nextSentence()
+            buildImmersiveQueueForCurrentSentence()
+            if immersiveQueue.isEmpty {
+                stopImmersivePlayback()
+                return
+            }
+            playCurrentImmersiveItem()
+        } else {
+            stopImmersivePlayback()
+        }
+    }
+    
+    private func startImmersivePlayback() {
+        isImmersivePlaying = true
+        isImmersivePaused = false
+        setMainControlButtonsHidden(true)
+        
+        TTSManager.shared.setLockScreenPlaybackEnabled(immersiveConfig.lockScreenPlayback)
+        
+        immersiveStopTimer?.invalidate()
+        immersiveStopTimer = nil
+        if immersiveConfig.autoStopEnabled {
+            immersiveStopTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(immersiveConfig.autoStopMinutes * 60), repeats: false) { [weak self] _ in
+                self?.stopImmersivePlayback()
+            }
+        }
+        
+        buildImmersiveQueueForCurrentSentence()
+        if immersiveQueue.isEmpty {
+            stopImmersivePlayback()
+            return
+        }
+        playCurrentImmersiveItem()
+    }
+    
+    private func pauseImmersiveAndShowOverlay() {
+        guard isImmersivePlaying else { return }
+        isImmersivePaused = true
+        TTSManager.shared.stop()
+        showImmersivePauseOverlay()
+    }
+    
+    private func resumeImmersivePlayback() {
+        guard isImmersivePlaying else { return }
+        isImmersivePaused = false
+        removeImmersivePauseOverlay()
+        playCurrentImmersiveItem()
+    }
+    
+    private func stopImmersivePlayback() {
+        isImmersivePlaying = false
+        isImmersivePaused = false
+        immersiveStopTimer?.invalidate()
+        immersiveStopTimer = nil
+        immersiveQueue.removeAll()
+        immersiveQueueIndex = 0
+        TTSManager.shared.stop()
+        removeImmersivePauseOverlay()
+        setMainControlButtonsHidden(false)
+    }
+    
+    private func setMainControlButtonsHidden(_ hidden: Bool) {
+        bookshelfButton.isHidden = hidden
+        settingsButton.isHidden = hidden
+        immersiveButton.isHidden = hidden
+        prevButton.isHidden = hidden
+        nextButton.isHidden = hidden
+        immersiveTouchLayer.isHidden = !hidden
+    }
+    
+    private func showImmersivePauseOverlay() {
+        removeImmersivePauseOverlay()
+        
+        let overlay = UIControl()
+        overlay.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+        overlay.addTarget(self, action: #selector(continueImmersiveTapped), for: .touchUpInside)
+        view.addSubview(overlay)
+        overlay.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        let continueButton = UIButton(type: .system)
+        continueButton.setTitle("继续播放", for: .normal)
+        continueButton.setTitleColor(.white, for: .normal)
+        continueButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
+        continueButton.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.9)
+        continueButton.layer.cornerRadius = 12
+        continueButton.addTarget(self, action: #selector(continueImmersiveTapped), for: .touchUpInside)
+        
+        let stopButton = UIButton(type: .system)
+        stopButton.setTitle("停止播放", for: .normal)
+        stopButton.setTitleColor(.white, for: .normal)
+        stopButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
+        stopButton.backgroundColor = UIColor.systemRed.withAlphaComponent(0.9)
+        stopButton.layer.cornerRadius = 12
+        stopButton.addTarget(self, action: #selector(stopImmersiveTapped), for: .touchUpInside)
+        
+        overlay.addSubview(continueButton)
+        overlay.addSubview(stopButton)
+        
+        continueButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().offset(-36)
+            make.width.equalTo(220)
+            make.height.equalTo(56)
+        }
+        
+        stopButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(continueButton.snp.bottom).offset(16)
+            make.width.equalTo(220)
+            make.height.equalTo(56)
+        }
+        
+        immersivePauseOverlay = overlay
+    }
+    
+    private func removeImmersivePauseOverlay() {
+        immersivePauseOverlay?.removeFromSuperview()
+        immersivePauseOverlay = nil
     }
     
     private func updateUI() {//更新数据
@@ -297,6 +557,30 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     // MARK: - Actions
+    @objc private func immersiveTapped() {
+        let configVC = ImmersiveReadingConfigViewController(config: immersiveConfig)
+        configVC.onStart = { [weak self] config in
+            self?.immersiveConfig = config
+            ImmersiveConfigStore.save(config)
+            self?.startImmersivePlayback()
+        }
+        present(configVC, animated: true)
+    }
+    
+    @objc private func handleImmersiveScreenTap() {
+        if isImmersivePlaying && immersivePauseOverlay == nil {
+            pauseImmersiveAndShowOverlay()
+        }
+    }
+    
+    @objc private func continueImmersiveTapped() {
+        resumeImmersivePlayback()
+    }
+    
+    @objc private func stopImmersiveTapped() {
+        stopImmersivePlayback()
+    }
+    
     @objc private func prevTapped() {
         viewModel.prevSentence()
     }
@@ -372,5 +656,320 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     // MARK: - UIPopoverPresentationControllerDelegate
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none // Force popover on iPhone
+    }
+}
+
+final class ImmersiveReadingConfigViewController: UIViewController {
+    var onStart: ((ImmersiveReadingConfig) -> Void)?
+    
+    private let containerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 0.15, alpha: 0.88)
+        view.layer.cornerRadius = 16
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    private let dragHandleView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 0.5, alpha: 1.0)
+        view.layer.cornerRadius = 2.5
+        return view
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "沉浸式阅读"
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 20, weight: .bold)
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let contentStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 14
+        return stack
+    }()
+    
+    private let soundSwitch = UISwitch()
+    private let rateSlider: UISlider = {
+        let slider = UISlider()
+        slider.minimumValue = 0.5
+        slider.maximumValue = 2.0
+        return slider
+    }()
+    private let rateValueLabel = UILabel()
+    
+    private let lockScreenSwitch = UISwitch()
+    private let autoStopSwitch = UISwitch()
+    private let autoStopSegment: UISegmentedControl = {
+        let segment = UISegmentedControl(items: ["自定义", "5分钟", "15分钟", "30分钟"])
+        segment.selectedSegmentIndex = 2
+        return segment
+    }()
+    private let autoStopSlider: UISlider = {
+        let slider = UISlider()
+        slider.minimumValue = 1
+        slider.maximumValue = 120
+        return slider
+    }()
+    private let autoStopValueLabel = UILabel()
+    
+    private let patternSwitch = UISwitch()
+    private let translationSwitch = UISwitch()
+    private let originalSwitch = UISwitch()
+    private let closeButton = UIButton(type: .system)
+    private let startButton = UIButton(type: .system)
+    
+    private var config: ImmersiveReadingConfig
+    private var isApplyingConfig = false
+    
+    init(config: ImmersiveReadingConfig) {
+        self.config = config
+        super.init(nibName: nil, bundle: nil)
+        modalPresentationStyle = .overFullScreen
+        modalTransitionStyle = .crossDissolve
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        setupUI()
+        applyConfig()
+    }
+    
+    private func setupUI() {
+        view.addSubview(containerView)
+        containerView.addSubview(dragHandleView)
+        containerView.addSubview(titleLabel)
+        
+        let scroll = UIScrollView()
+        scroll.alwaysBounceVertical = true
+        containerView.addSubview(scroll)
+        scroll.addSubview(contentStack)
+        
+        closeButton.setTitle("Close", for: .normal)
+        closeButton.setTitleColor(.systemBlue, for: .normal)
+        closeButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
+        closeButton.addTarget(self, action: #selector(closeTapped), for: .touchUpInside)
+        containerView.addSubview(closeButton)
+        
+        containerView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(320)
+            make.height.equalTo(560).priority(750)
+            make.height.greaterThanOrEqualTo(360)
+            make.height.lessThanOrEqualTo(view.safeAreaLayoutGuide).multipliedBy(0.86)
+        }
+        
+        dragHandleView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(10)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(40)
+            make.height.equalTo(5)
+        }
+        
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(dragHandleView.snp.bottom).offset(10)
+            make.centerX.equalToSuperview()
+        }
+        
+        scroll.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(16)
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.bottom.equalTo(closeButton.snp.top).offset(-12)
+            make.height.greaterThanOrEqualTo(220)
+        }
+        contentStack.snp.makeConstraints { make in
+            make.edges.equalTo(scroll.contentLayoutGuide).inset(16)
+            make.width.equalTo(scroll.frameLayoutGuide).offset(-32)
+        }
+        
+        closeButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-12)
+            make.height.equalTo(38)
+        }
+        
+        contentStack.addArrangedSubview(makeSwitchRow(title: "是否开启声音", switchView: soundSwitch))
+        
+        let rateTitle = UILabel()
+        rateTitle.text = "播放速度调整 (0.5 - 2.0)"
+        rateTitle.font = .systemFont(ofSize: 16, weight: .medium)
+        rateTitle.textColor = .white
+        contentStack.addArrangedSubview(rateTitle)
+        contentStack.addArrangedSubview(rateSlider)
+        rateValueLabel.font = .systemFont(ofSize: 14, weight: .regular)
+        rateValueLabel.textColor = UIColor(white: 0.9, alpha: 1.0)
+        contentStack.addArrangedSubview(rateValueLabel)
+        
+        contentStack.addArrangedSubview(makeSwitchRow(title: "支持锁定屏幕播放", switchView: lockScreenSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: "定时自动关闭播放", switchView: autoStopSwitch))
+        contentStack.addArrangedSubview(autoStopSegment)
+        contentStack.addArrangedSubview(autoStopSlider)
+        autoStopValueLabel.font = .systemFont(ofSize: 14, weight: .regular)
+        autoStopValueLabel.textColor = UIColor(white: 0.9, alpha: 1.0)
+        contentStack.addArrangedSubview(autoStopValueLabel)
+        
+        let playOptionsTitle = UILabel()
+        playOptionsTitle.text = "播放选项"
+        playOptionsTitle.font = .systemFont(ofSize: 16, weight: .semibold)
+        playOptionsTitle.textColor = .white
+        contentStack.addArrangedSubview(playOptionsTitle)
+        contentStack.addArrangedSubview(makeSwitchRow(title: "播放语法 sentence_pattern", switchView: patternSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: "播放中文 translation", switchView: translationSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: "播放英文 original", switchView: originalSwitch))
+        
+        startButton.setTitle("开始播放", for: .normal)
+        startButton.setTitleColor(.white, for: .normal)
+        startButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
+        startButton.backgroundColor = .systemBlue
+        startButton.layer.cornerRadius = 12
+        startButton.addTarget(self, action: #selector(startTapped), for: .touchUpInside)
+        contentStack.addArrangedSubview(startButton)
+        startButton.snp.makeConstraints { make in
+            make.height.equalTo(52)
+        }
+        
+        rateSlider.addTarget(self, action: #selector(rateChanged), for: .valueChanged)
+        autoStopSlider.addTarget(self, action: #selector(autoStopChanged), for: .valueChanged)
+        autoStopSegment.addTarget(self, action: #selector(autoStopPresetChanged), for: .valueChanged)
+        soundSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
+        lockScreenSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
+        autoStopSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
+        patternSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
+        translationSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
+        originalSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(closeTapped))
+        view.addGestureRecognizer(tapGesture)
+        containerView.addGestureRecognizer(UITapGestureRecognizer())
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        containerView.addGestureRecognizer(panGesture)
+    }
+    
+    private func applyConfig() {
+        isApplyingConfig = true
+        soundSwitch.isOn = config.enableSound
+        rateSlider.value = config.playbackRate
+        lockScreenSwitch.isOn = config.lockScreenPlayback
+        autoStopSwitch.isOn = config.autoStopEnabled
+        autoStopSlider.value = Float(config.autoStopMinutes)
+        patternSwitch.isOn = config.playSentencePattern
+        translationSwitch.isOn = config.playTranslation
+        originalSwitch.isOn = config.playOriginal
+        
+        rateChanged()
+        autoStopChanged()
+        autoStopPresetChanged()
+        isApplyingConfig = false
+    }
+    
+    private func makeSwitchRow(title: String, switchView: UISwitch) -> UIView {
+        let row = UIView()
+        let label = UILabel()
+        label.text = title
+        label.font = .systemFont(ofSize: 16, weight: .regular)
+        label.textColor = .white
+        row.addSubview(label)
+        row.addSubview(switchView)
+        label.snp.makeConstraints { make in
+            make.leading.top.bottom.equalToSuperview()
+            make.trailing.lessThanOrEqualTo(switchView.snp.leading).offset(-8)
+        }
+        switchView.snp.makeConstraints { make in
+            make.trailing.equalToSuperview()
+            make.centerY.equalToSuperview()
+        }
+        return row
+    }
+    
+    @objc private func closeTapped() {
+        persistCurrentConfig()
+        dismiss(animated: true)
+    }
+    
+    @objc private func handlePan(_ gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: view)
+        
+        switch gesture.state {
+        case .began, .changed:
+            if translation.y > 0 {
+                containerView.transform = CGAffineTransform(translationX: 0, y: translation.y)
+            }
+        case .ended, .cancelled:
+            let velocity = gesture.velocity(in: view).y
+            if translation.y > 120 || velocity > 900 {
+                dismiss(animated: true)
+            } else {
+                UIView.animate(withDuration: 0.22) {
+                    self.containerView.transform = .identity
+                }
+            }
+        default:
+            break
+        }
+    }
+    
+    @objc private func rateChanged() {
+        rateValueLabel.text = String(format: "当前速度: %.2fx", rateSlider.value)
+        persistCurrentConfig()
+    }
+    
+    @objc private func autoStopChanged() {
+        let minutes = Int(autoStopSlider.value.rounded())
+        autoStopValueLabel.text = "自定义: \(minutes) 分钟"
+        persistCurrentConfig()
+    }
+    
+    @objc private func autoStopPresetChanged() {
+        switch autoStopSegment.selectedSegmentIndex {
+        case 1: autoStopSlider.value = 5
+        case 2: autoStopSlider.value = 15
+        case 3: autoStopSlider.value = 30
+        default: break
+        }
+        autoStopChanged()
+    }
+    
+    @objc private func anySwitchChanged() {
+        persistCurrentConfig()
+    }
+    
+    @objc private func startTapped() {
+        let newConfig = currentConfigFromUI()
+        ImmersiveConfigStore.save(newConfig)
+        let startHandler = onStart
+        dismiss(animated: true) {
+            startHandler?(newConfig)
+        }
+    }
+    
+    private func currentConfigFromUI() -> ImmersiveReadingConfig {
+        let minutes = Int(autoStopSlider.value.rounded())
+        return ImmersiveReadingConfig(
+            enableSound: soundSwitch.isOn,
+            playbackRate: rateSlider.value,
+            lockScreenPlayback: lockScreenSwitch.isOn,
+            autoStopEnabled: autoStopSwitch.isOn,
+            autoStopMinutes: minutes,
+            playSentencePattern: patternSwitch.isOn,
+            playTranslation: translationSwitch.isOn,
+            playOriginal: originalSwitch.isOn
+        )
+    }
+    
+    private func persistCurrentConfig() {
+        if isApplyingConfig { return }
+        let newConfig = currentConfigFromUI()
+        config = newConfig
+        ImmersiveConfigStore.save(newConfig)
     }
 }
