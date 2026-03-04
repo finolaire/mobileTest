@@ -144,6 +144,22 @@ class SentenceViewModel {
         return currentCourseIndex < allCourses.count - 1
     }
     
+    var currentCourseId: String? {
+        return courseUnit?.id
+    }
+    
+    var currentCourseSentenceCount: Int {
+        return courseUnit?.sentences.count ?? 0
+    }
+    
+    var currentSentencePosition: Int {
+        return currentSentenceIndex
+    }
+    
+    var hasNextCourse: Bool {
+        return currentCourseIndex < allCourses.count - 1
+    }
+    
     // MARK: - Methods
     func loadData(unit: CourseUnit? = nil) {
         refreshCourseList()
@@ -214,6 +230,14 @@ class SentenceViewModel {
         let prevCourse = allCourses[prevCourseIndex]
         let lastSentenceIndex = max(prevCourse.sentences.count - 1, 0)
         applyCourse(prevCourse, sentenceIndex: lastSentenceIndex, shouldPersist: true)
+        onDataUpdated?()
+    }
+    
+    func moveToNextCourseFirstSentence() {
+        let nextCourseIndex = currentCourseIndex + 1
+        guard nextCourseIndex < allCourses.count else { return }
+        let nextCourse = allCourses[nextCourseIndex]
+        applyCourse(nextCourse, sentenceIndex: 0, shouldPersist: true)
         onDataUpdated?()
     }
     
