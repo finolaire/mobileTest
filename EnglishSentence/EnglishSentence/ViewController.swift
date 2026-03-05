@@ -16,6 +16,10 @@ struct ImmersiveReadingConfig: Codable {
     var orderPattern: Int
     var orderTranslation: Int
     var orderOriginal: Int
+    var enableIntervalSound: Bool
+    var intervalSoundFile: String
+    var smallSentenceInterval: Double
+    var largeSentenceInterval: Double
 }
 
 enum ImmersiveConfigStore {
@@ -23,7 +27,7 @@ enum ImmersiveConfigStore {
     
     static let defaultConfig = ImmersiveReadingConfig(
         enableSound: true,
-        playbackRate: AVSpeechUtteranceDefaultSpeechRate,
+        playbackRate: 1.0,
         lockScreenPlayback: true,
         autoStopEnabled: false,
         autoStopMinutes: 15,
@@ -34,7 +38,11 @@ enum ImmersiveConfigStore {
         customSentenceCount: 10,
         orderPattern: 3,
         orderTranslation: 2,
-        orderOriginal: 1
+        orderOriginal: 1,
+        enableIntervalSound: true,
+        intervalSoundFile: IntervalSoundDefinitions.defaultSound,
+        smallSentenceInterval: 1.0,
+        largeSentenceInterval: 1.0
     )
     
     static func load() -> ImmersiveReadingConfig {
@@ -60,7 +68,7 @@ enum ImmersiveConfigStore {
 // For now, it's used by ViewModel, so we can keep it here or move to a separate file.
 // Since SentenceViewModel uses it, and WordCell uses it (via VM), it's fine.
 
-class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate, AVAudioPlayerDelegate {
 
     // MARK: - ViewModel
     private var viewModel = SentenceViewModel()
@@ -73,6 +81,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     private var immersiveQueueIndex = 0
     private var immersiveStopTimer: Timer?
     private var immersivePauseOverlay: UIView?
+    private var audioPlayer: AVAudioPlayer?
     private let immersiveTouchLayer: UIControl = {
         let layer = UIControl()
         layer.backgroundColor = .clear
@@ -134,11 +143,46 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         return cv
     }()
     
+    // New Container for bottom elements
+    private let bottomCardView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 0.1, alpha: 0.9) // Dark background
+        view.layer.cornerRadius = 16
+        //view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    private let contentStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 20
+        stack.alignment = .fill
+        stack.distribution = .fill
+        return stack
+    }()
+    
+    private let translationContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(hex: 0x172033)
+        view.layer.cornerRadius = 8
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    private let patternContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(hex: 0x172033)
+        view.layer.cornerRadius = 8
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
     private let patternLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        label.textAlignment = .center
+        label.textAlignment = .left
         label.numberOfLines = 0
         return label
     }()
@@ -146,51 +190,72 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     private let translationLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        label.textAlignment = .left // Changed to left
         label.numberOfLines = 0
         return label
+    }()
+    
+    private let englishContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(hex: 0x172033)
+        view.layer.cornerRadius = 8
+        view.layer.masksToBounds = true
+        return view
     }()
     
     private let englishSentenceLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        label.textAlignment = .left // Changed to left
         label.numberOfLines = 0
         return label
     }()
     
     private let translationAudioButton: UIButton = {
-        let btn = UIButton(type: .system)
-        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
-        btn.setImage(UIImage(systemName: "speaker.wave.3.fill", withConfiguration: config), for: .normal)
-        btn.tintColor = .white
+        let btn = UIButton()
+        // Use custom image if available, else fallback
+        if let image = UIImage(named: "audio_play_off") {
+            btn.setImage(image, for: .normal)
+        } else {
+            let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
+            btn.setImage(UIImage(systemName: "speaker.wave.3.circle.fill", withConfiguration: config), for: .normal)
+            btn.tintColor = .white // Use tint color if template image, or remove if original
+        }
         return btn
     }()
     
     private let englishAudioButton: UIButton = {
-        let btn = UIButton(type: .system)
-        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
-        btn.setImage(UIImage(systemName: "speaker.wave.3.fill", withConfiguration: config), for: .normal)
-        btn.tintColor = .white
+        let btn = UIButton()
+        if let image = UIImage(named: "audio_play_off") {
+            btn.setImage(image, for: .normal)
+        } else {
+            let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
+            btn.setImage(UIImage(systemName: "speaker.wave.3.circle.fill", withConfiguration: config), for: .normal)
+            btn.tintColor = .white
+        }
         return btn
     }()
     
     private let prevButton: UIButton = {
         let btn = UIButton(type: .system)
-        let config = UIImage.SymbolConfiguration(pointSize: 40, weight: .light)
-        btn.setImage(UIImage(systemName: "chevron.left.circle", withConfiguration: config), for: .normal)
+        let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .bold)
+        btn.setImage(UIImage(systemName: "chevron.left", withConfiguration: config), for: .normal)
         btn.tintColor = .white
+        btn.backgroundColor = UIColor(white: 0.2, alpha: 1.0)
+        btn.layer.cornerRadius = 25
         btn.addTarget(self, action: #selector(prevTapped), for: .touchUpInside)
         return btn
     }()
     
     private let nextButton: UIButton = {
         let btn = UIButton(type: .system)
-        let config = UIImage.SymbolConfiguration(pointSize: 40, weight: .light)
-        btn.setImage(UIImage(systemName: "chevron.right.circle", withConfiguration: config), for: .normal)
+        let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .bold)
+        btn.setImage(UIImage(systemName: "chevron.right", withConfiguration: config), for: .normal)
         btn.tintColor = .white
+        btn.backgroundColor = .systemBlue
+        btn.layer.cornerRadius = 30
         btn.addTarget(self, action: #selector(nextTapped), for: .touchUpInside)
         return btn
     }()
@@ -205,6 +270,15 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         }
         btn.tintColor = .white
         btn.addTarget(self, action: #selector(settingsTapped), for: .touchUpInside)
+        return btn
+    }()
+    
+    private let quickPlayButton: UIButton = {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 22, weight: .medium)
+        btn.setImage(UIImage(systemName: "play.circle.fill", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(quickPlayTapped), for: .touchUpInside)
         return btn
     }()
     
@@ -232,6 +306,18 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         return btn
     }()
     
+    // Audio State
+    private enum PlayingType {
+        case none
+        case translation
+        case english
+    }
+    private var currentPlayingType: PlayingType = .none {
+        didSet {
+            updateAudioButtonIcons()
+        }
+    }
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -252,13 +338,28 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         view.addSubview(backgroundImageView)
         view.addSubview(backgroundDimmingView)
         view.addSubview(collectionView)
-        view.addSubview(patternLabel)
-        view.addSubview(translationLabel)
-        view.addSubview(englishSentenceLabel)
-        view.addSubview(translationAudioButton)
-        view.addSubview(englishAudioButton)
+        
+        // Add Bottom Card
+        view.addSubview(bottomCardView)
+        bottomCardView.addSubview(contentStackView)
+        
+        // Add Translation Container
+        contentStackView.addArrangedSubview(translationContainerView)
+        translationContainerView.addSubview(translationLabel)
+        translationContainerView.addSubview(translationAudioButton)
+        
+        // Add English Container
+        contentStackView.addArrangedSubview(englishContainerView)
+        englishContainerView.addSubview(englishSentenceLabel)
+        englishContainerView.addSubview(englishAudioButton)
+        
+        // Add Pattern Container
+        contentStackView.addArrangedSubview(patternContainerView)
+        patternContainerView.addSubview(patternLabel)
+        
         view.addSubview(settingsButton)
         view.addSubview(immersiveButton)
+        view.addSubview(quickPlayButton)
         view.addSubview(bookshelfButton)
         
         view.addSubview(prevButton)
@@ -288,59 +389,84 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             make.width.height.equalTo(44)
         }
         
+        quickPlayButton.snp.makeConstraints { make in
+            make.centerY.equalTo(settingsButton)
+            make.trailing.equalTo(immersiveButton.snp.leading).offset(-4)
+            make.width.height.equalTo(44)
+        }
+        
         bookshelfButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
             make.leading.equalToSuperview().offset(20)
             make.width.height.equalTo(44)
         }
         
+        // CollectionView takes upper part
         collectionView.snp.makeConstraints { make in
             make.top.equalTo(settingsButton.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.55) // Adjusted height
+            make.bottom.equalTo(bottomCardView.snp.top).offset(-20)
         }
         
-        patternLabel.snp.makeConstraints { make in
-            make.top.equalTo(collectionView.snp.bottom).offset(20)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().offset(-20)
+        // Bottom Card Constraints
+        bottomCardView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalTo(prevButton.snp.top).offset(-20)
         }
         
+        contentStackView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(24)
+            make.leading.equalToSuperview().offset(24)
+            make.trailing.equalToSuperview().offset(-24)
+            make.bottom.equalToSuperview().offset(-24)
+        }
+        
+        // Translation Constraints
         translationLabel.snp.makeConstraints { make in
-            make.top.equalTo(patternLabel.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-            make.leading.greaterThanOrEqualToSuperview().offset(20)
-            make.trailing.lessThanOrEqualToSuperview().offset(-50) // Make room for audio button
+            make.top.equalToSuperview().offset(12)
+            make.leading.equalToSuperview().offset(12)
+            make.trailing.equalTo(translationAudioButton.snp.leading).offset(-12)
+            make.bottom.equalToSuperview().offset(-12)
         }
         
         translationAudioButton.snp.makeConstraints { make in
-            make.centerY.equalTo(translationLabel)
-            make.leading.equalTo(translationLabel.snp.trailing).offset(10)
-            make.width.height.equalTo(30)
+            make.centerY.equalToSuperview()
+            make.trailing.equalToSuperview().offset(-12)
+            make.width.height.equalTo(32)
         }
         
+        // English Constraints
         englishSentenceLabel.snp.makeConstraints { make in
-            make.top.equalTo(translationLabel.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-            make.leading.greaterThanOrEqualToSuperview().offset(20)
-            make.trailing.lessThanOrEqualToSuperview().offset(-50) // Make room for audio button
+            make.top.equalToSuperview().offset(12)
+            make.leading.equalToSuperview().offset(12)
+            make.trailing.equalTo(englishAudioButton.snp.leading).offset(-12)
+            make.bottom.equalToSuperview().offset(-12)
         }
         
         englishAudioButton.snp.makeConstraints { make in
-            make.centerY.equalTo(englishSentenceLabel)
-            make.leading.equalTo(englishSentenceLabel.snp.trailing).offset(10)
-            make.width.height.equalTo(30)
+            make.centerY.equalToSuperview()
+            make.trailing.equalToSuperview().offset(-12)
+            make.width.height.equalTo(32)
+        }
+        
+        // Pattern Constraints
+        patternLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(12)
+            make.leading.equalToSuperview().offset(12)
+            make.trailing.equalToSuperview().offset(-12)
+            make.bottom.equalToSuperview().offset(-12)
+        }
+        
+        // Navigation Buttons
+        nextButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-30)
+            make.centerX.equalToSuperview().offset(40)
+            make.width.height.equalTo(60)
         }
         
         prevButton.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
-            make.leading.equalToSuperview().offset(44)
-            make.width.height.equalTo(50)
-        }
-        
-        nextButton.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
-            make.trailing.equalToSuperview().offset(-44)
+            make.centerY.equalTo(nextButton)
+            make.trailing.equalTo(nextButton.snp.leading).offset(-30)
             make.width.height.equalTo(50)
         }
         
@@ -377,15 +503,29 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     private func setupImmersiveCallbacks() {
         TTSManager.shared.onSpeechFinished = { [weak self] in
             DispatchQueue.main.async {
-                self?.handleImmersiveSpeechFinished()
+                self?.handleSpeechFinished()
             }
         }
         TTSManager.shared.onSpeechCancelled = { [weak self] in
             DispatchQueue.main.async {
                 guard let self = self else { return }
-                // Ignore cancel callback during pause/stop flow.
-                if self.isImmersivePaused || !self.isImmersivePlaying { return }
+                // If immersive mode is active, handle it there
+                if self.isImmersivePlaying {
+                    if self.isImmersivePaused { return }
+                } else {
+                    // Manual playback cancelled
+                    self.currentPlayingType = .none
+                }
             }
+        }
+    }
+    
+    private func handleSpeechFinished() {
+        if isImmersivePlaying {
+            handleImmersiveSpeechFinished()
+        } else {
+            // Manual playback finished
+            currentPlayingType = .none
         }
     }
     
@@ -442,7 +582,13 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         }
         
         let item = immersiveQueue[immersiveQueueIndex]
-        TTSManager.shared.play(item.text, language: item.language, rate: immersiveConfig.playbackRate)
+        // Convert multiplier (0.5 ~ 2.0) to AVSpeechUtterance rate
+        // Base is AVSpeechUtteranceDefaultSpeechRate (0.5)
+        let baseRate = AVSpeechUtteranceDefaultSpeechRate
+        let adjustedRate = baseRate * immersiveConfig.playbackRate
+        print("DEBUG: Playing immersive item. Multiplier: \(immersiveConfig.playbackRate), Base: \(baseRate), Adjusted: \(adjustedRate)")
+        
+        TTSManager.shared.play(item.text, language: item.language, rate: adjustedRate)
     }
     
     private func effectiveSentenceLimit(for totalInCourse: Int) -> Int {
@@ -466,10 +612,54 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         
         immersiveQueueIndex += 1
         if immersiveQueueIndex < immersiveQueue.count {
-            playCurrentImmersiveItem()
+            // Small interval delay
+            let delay = immersiveConfig.smallSentenceInterval
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+                guard let self = self, self.isImmersivePlaying, !self.isImmersivePaused else { return }
+                self.playCurrentImmersiveItem()
+            }
             return
         }
         
+        // Large interval delay
+        let delay = immersiveConfig.largeSentenceInterval
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+            guard let self = self, self.isImmersivePlaying, !self.isImmersivePaused else { return }
+            if self.immersiveConfig.enableIntervalSound {
+                self.playIntervalSound()
+            } else {
+                self.proceedToNextImmersiveSentence()
+            }
+        }
+    }
+    
+    private func playIntervalSound() {
+        let soundName = immersiveConfig.intervalSoundFile.isEmpty ? IntervalSoundDefinitions.defaultSound : immersiveConfig.intervalSoundFile
+        let fileName = IntervalSoundDefinitions.soundFileMapping[soundName] ?? soundName
+        
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "mp3") else {
+            proceedToNextImmersiveSentence()
+            return
+        }
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.delegate = self
+            audioPlayer?.play()
+        } catch {
+            print("Failed to play interval sound: \(error)")
+            proceedToNextImmersiveSentence()
+        }
+    }
+    
+    // MARK: - AVAudioPlayerDelegate
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if isImmersivePlaying && !isImmersivePaused {
+            proceedToNextImmersiveSentence()
+        }
+    }
+    
+    private func proceedToNextImmersiveSentence() {
         // Sentence-level playback finished, decide whether to continue in current JSON.
         let totalInCurrentCourse = viewModel.currentCourseSentenceCount
         let limit = effectiveSentenceLimit(for: totalInCurrentCourse)
@@ -513,7 +703,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         immersiveStopTimer = nil
         if immersiveConfig.autoStopEnabled {
             immersiveStopTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(immersiveConfig.autoStopMinutes * 60), repeats: false) { [weak self] _ in
-                self?.stopImmersivePlayback()
+            self?.stopImmersivePlayback()
             }
         }
         
@@ -547,6 +737,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         immersiveQueue.removeAll()
         immersiveQueueIndex = 0
         TTSManager.shared.stop()
+        audioPlayer?.stop()
         removeImmersivePauseOverlay()
         setMainControlButtonsHidden(false)
     }
@@ -555,10 +746,21 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         bookshelfButton.isHidden = hidden
         settingsButton.isHidden = hidden
         immersiveButton.isHidden = hidden
+        quickPlayButton.isHidden = hidden
         prevButton.isHidden = hidden
         nextButton.isHidden = hidden
+        translationAudioButton.isHidden = hidden
+        englishAudioButton.isHidden = hidden
         immersiveTouchLayer.isHidden = !hidden
         immersiveStatusView.isHidden = !hidden
+        
+        // If unhiding, restore state based on config
+        if !hidden {
+            updateUI()
+        } else {
+            // Refresh collection view to hide audio buttons in cells
+            collectionView.reloadData()
+        }
     }
     
     private func showImmersivePauseOverlay() {
@@ -615,16 +817,21 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     
     private func updateUI() {//更新数据
         patternLabel.attributedText = viewModel.currentPatternAttributed
-        patternLabel.isHidden = !viewModel.displayConfig.showSentencePattern
+        patternContainerView.isHidden = !viewModel.displayConfig.showSentencePattern
         
         translationLabel.attributedText = viewModel.currentTranslationAttributed
-        translationLabel.isHidden = !viewModel.displayConfig.showTranslation
+        translationContainerView.isHidden = !viewModel.displayConfig.showTranslation
         
         englishSentenceLabel.attributedText = viewModel.currentEnglishSentenceAttributed
-        englishSentenceLabel.isHidden = !viewModel.displayConfig.showEnglishSentence
+        englishContainerView.isHidden = !viewModel.displayConfig.showEnglishSentence
         
-        translationAudioButton.isHidden = !viewModel.displayConfig.showTranslationAudioButton || !viewModel.displayConfig.showTranslation
-        englishAudioButton.isHidden = !viewModel.displayConfig.showEnglishAudioButton || !viewModel.displayConfig.showEnglishSentence
+        if isImmersivePlaying {
+            translationAudioButton.isHidden = true
+            englishAudioButton.isHidden = true
+        } else {
+            translationAudioButton.isHidden = !viewModel.displayConfig.showTranslationAudioButton || !viewModel.displayConfig.showTranslation
+            englishAudioButton.isHidden = !viewModel.displayConfig.showEnglishAudioButton || !viewModel.displayConfig.showEnglishSentence
+        }
         
         collectionView.reloadData()
         
@@ -634,20 +841,59 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         updateBackground()
     }
     
+    private func updateAudioButtonIcons() {
+        let playIcon = UIImage(named: "audio_play_on")
+        let stopIcon = UIImage(named: "audio_play_off")
+        
+        // Fallback to system icons if custom assets not found
+        let systemPlay = UIImage(systemName: "speaker.wave.3.circle.fill")
+        let systemStop = UIImage(systemName: "speaker.circle")
+        
+        let activeIcon = playIcon ?? systemPlay
+        let inactiveIcon = stopIcon ?? systemStop
+        
+        switch currentPlayingType {
+        case .translation:
+            translationAudioButton.setImage(activeIcon, for: .normal)
+            englishAudioButton.setImage(inactiveIcon, for: .normal)
+        case .english:
+            translationAudioButton.setImage(inactiveIcon, for: .normal)
+            englishAudioButton.setImage(activeIcon, for: .normal)
+        case .none:
+            translationAudioButton.setImage(inactiveIcon, for: .normal)
+            englishAudioButton.setImage(inactiveIcon, for: .normal)
+        }
+    }
+    
     @objc private func translationAudioTapped() {
         guard let sentence = viewModel.currentSentence else { return }
-        TTSManager.shared.play(sentence.sentenceInfo.translation, language: "zh-CN")
+        
+        if currentPlayingType == .translation {
+            TTSManager.shared.stop()
+            currentPlayingType = .none
+        } else {
+            currentPlayingType = .translation
+            TTSManager.shared.play(sentence.sentenceInfo.translation, language: "zh-CN")
+        }
     }
     
     @objc private func englishAudioTapped() {
         guard let sentence = viewModel.currentSentence else { return }
         
-        // Determine language based on config
-        let language = viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
-        let voiceId = viewModel.displayConfig.selectedVoiceIdentifier
-        TTSManager.shared.play(sentence.sentenceInfo.original, language: language, voiceIdentifier: voiceId)
+        if currentPlayingType == .english {
+            TTSManager.shared.stop()
+            currentPlayingType = .none
+        } else {
+            currentPlayingType = .english
+            // Determine language based on config
+            let language = viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
+            let voiceId = viewModel.displayConfig.selectedVoiceIdentifier
+            TTSManager.shared.play(sentence.sentenceInfo.original, language: language, voiceIdentifier: voiceId)
+        }
     }
     
+    
+    /// 更新背景透明度
     private func updateBackground() {
         if viewModel.displayConfig.useCustomBackground,
            let filename = viewModel.displayConfig.customBackgroundImageName {
@@ -663,7 +909,23 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             let imageName = "BackgroundImage\(viewModel.displayConfig.backgroundImageIndex)"
             backgroundImageView.image = UIImage(named: imageName)
         }
-        backgroundDimmingView.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(viewModel.displayConfig.maskOpacity))
+        
+        let opacity = CGFloat(viewModel.displayConfig.maskOpacity)
+        backgroundDimmingView.backgroundColor = UIColor.black.withAlphaComponent(opacity)
+        
+        // Update container opacities
+        let containerColor = UIColor(hex: 0x172033).withAlphaComponent(opacity)
+        translationContainerView.backgroundColor = containerColor
+        englishContainerView.backgroundColor = containerColor
+        patternContainerView.backgroundColor = containerColor
+        
+        // Update bottomCardView opacity
+        if (opacity != 1) {
+            bottomCardView.backgroundColor = .clear
+        }
+        else {
+            bottomCardView.backgroundColor = UIColor(white: 0.1, alpha: 1.0).withAlphaComponent(opacity)
+        }
     }
     
     // MARK: - Actions
@@ -675,6 +937,10 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             self?.startImmersivePlayback()
         }
         present(configVC, animated: true)
+    }
+    
+    @objc private func quickPlayTapped() {
+        startImmersivePlayback()
     }
     
     @objc private func handleImmersiveScreenTap() {
@@ -728,7 +994,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         }
         
         if let cellViewModel = viewModel.viewModelForCell(at: indexPath.item) {
-            cell.configure(with: cellViewModel)
+            cell.configure(with: cellViewModel, isImmersiveMode: isImmersivePlaying)
             
             // Handle audio tap
             cell.onAudioTapped = { [weak self] in
@@ -768,4 +1034,3 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         return .none // Force popover on iPhone
     }
 }
-

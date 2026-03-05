@@ -35,10 +35,12 @@ struct WordCellViewModel {
 class WordCell: UICollectionViewCell {
     static let identifier = "WordCell"
     
+    static let allTextAlignment = NSTextAlignment.center
+    
     private let wordLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        label.textAlignment = .center
+        label.textAlignment = allTextAlignment
         return label
     }()
     
@@ -46,7 +48,7 @@ class WordCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.textColor = .lightGray
-        label.textAlignment = .center
+        label.textAlignment = allTextAlignment
         return label
     }()
     
@@ -54,7 +56,7 @@ class WordCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
         label.textColor = .orange
-        label.textAlignment = .center
+        label.textAlignment = allTextAlignment
         return label
     }()
     
@@ -110,14 +112,14 @@ class WordCell: UICollectionViewCell {
         }
     }
     
-    func configure(with viewModel: WordCellViewModel) {
+    func configure(with viewModel: WordCellViewModel, isImmersiveMode: Bool = false) {
         wordLabel.text = viewModel.word
         wordLabel.textColor = viewModel.wordColor
         phoneticLabel.text = viewModel.phonetic.isEmpty ? " " : viewModel.phonetic
         phoneticLabel.isHidden = viewModel.isPhoneticsHidden
         typeLabel.text = viewModel.type
         typeLabel.isHidden = viewModel.isTypeHidden
-        audioButton.isHidden = viewModel.isAudioButtonHidden
+        audioButton.isHidden = isImmersiveMode ? true : viewModel.isAudioButtonHidden
     }
     
     @objc private func audioButtonTapped() {

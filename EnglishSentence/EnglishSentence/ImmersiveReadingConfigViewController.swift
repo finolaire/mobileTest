@@ -1,5 +1,6 @@
 import UIKit
 import SnapKit
+import AVFoundation
 
 final class ImmersiveReadingConfigViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var onStart: ((ImmersiveReadingConfig) -> Void)?
@@ -21,7 +22,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "沉浸式阅读"
+        label.text = AppStrings.Immersive.title
         label.textColor = .white
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.textAlignment = .center
@@ -35,19 +36,59 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         return stack
     }()
     
-    private let soundSwitch = UISwitch()
+    private let rateSegment: UISegmentedControl = {
+        let segment = UISegmentedControl(items: ["0.5x", "1.0x", "1.5x", AppStrings.Immersive.custom])
+        segment.selectedSegmentIndex = 1
+        return segment
+    }()
+    
     private let rateSlider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 0.5
         slider.maximumValue = 2.0
+        slider.isHidden = true
         return slider
     }()
     private let rateValueLabel = UILabel()
     
+    // Small Sentence Interval
+    private let smallIntervalSegment: UISegmentedControl = {
+        let segment = UISegmentedControl(items: ["1s", "2s", "3s", AppStrings.Immersive.custom])
+        segment.selectedSegmentIndex = 0
+        return segment
+    }()
+    private let smallIntervalSlider: UISlider = {
+        let slider = UISlider()
+        slider.minimumValue = 0.5
+        slider.maximumValue = 5.0
+        slider.isHidden = true
+        return slider
+    }()
+    private let smallIntervalValueLabel = UILabel()
+    
+    // Large Sentence Interval
+    private let largeIntervalSegment: UISegmentedControl = {
+        let segment = UISegmentedControl(items: ["1s", "2s", "3s", AppStrings.Immersive.custom])
+        segment.selectedSegmentIndex = 0
+        return segment
+    }()
+    private let largeIntervalSlider: UISlider = {
+        let slider = UISlider()
+        slider.minimumValue = 0.5
+        slider.maximumValue = 5.0
+        slider.isHidden = true
+        return slider
+    }()
+    private let largeIntervalValueLabel = UILabel()
+    
+    private let intervalSoundSwitch = UISwitch()
+    private let intervalSoundButton = UIButton(type: .system)
+    private var previewPlayer: AVAudioPlayer?
+    
     private let lockScreenSwitch = UISwitch()
     private let autoStopSwitch = UISwitch()
     private let autoStopSegment: UISegmentedControl = {
-        let segment = UISegmentedControl(items: ["自定义", "5分钟", "15分钟", "30分钟"])
+        let segment = UISegmentedControl(items: [AppStrings.Immersive.custom, AppStrings.Immersive.time5Min, AppStrings.Immersive.time15Min, AppStrings.Immersive.time30Min])
         segment.selectedSegmentIndex = 2
         return segment
     }()
@@ -64,7 +105,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
     private let originalSwitch = UISwitch()
     private let orderSectionTitle: UILabel = {
         let label = UILabel()
-        label.text = "排序菜单（仅显示已开启项）"
+        label.text = AppStrings.Immersive.orderMenuTitle
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         label.textColor = .white
         return label
@@ -80,7 +121,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         return table
     }()
     private let sentenceCountSegment: UISegmentedControl = {
-        let segment = UISegmentedControl(items: ["3", "5", "全部", "自定义"])
+        let segment = UISegmentedControl(items: ["3", "5", AppStrings.Immersive.all, AppStrings.Immersive.custom])
         segment.selectedSegmentIndex = 2
         return segment
     }()
@@ -139,7 +180,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         containerView.addSubview(scroll)
         scroll.addSubview(contentStack)
         
-        closeButton.setTitle("Close", for: .normal)
+        closeButton.setTitle(AppStrings.Immersive.close, for: .normal)
         closeButton.setTitleColor(.systemBlue, for: .normal)
         closeButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
         closeButton.addTarget(self, action: #selector(closeTapped), for: .touchUpInside)
@@ -182,20 +223,76 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
             make.height.equalTo(38)
         }
         
-        contentStack.addArrangedSubview(makeSwitchRow(title: "是否开启声音", switchView: soundSwitch))
-        
+        // Playback Speed
         let rateTitle = UILabel()
-        rateTitle.text = "播放速度调整 (0.5 - 2.0)"
+        rateTitle.text = AppStrings.Immersive.rateTitle
         rateTitle.font = .systemFont(ofSize: 16, weight: .medium)
         rateTitle.textColor = .white
         contentStack.addArrangedSubview(rateTitle)
+        contentStack.addArrangedSubview(rateSegment)
         contentStack.addArrangedSubview(rateSlider)
         rateValueLabel.font = .systemFont(ofSize: 14, weight: .regular)
         rateValueLabel.textColor = UIColor(white: 0.9, alpha: 1.0)
+        rateValueLabel.isHidden = true
         contentStack.addArrangedSubview(rateValueLabel)
         
-        contentStack.addArrangedSubview(makeSwitchRow(title: "支持锁定屏幕播放", switchView: lockScreenSwitch))
-        contentStack.addArrangedSubview(makeSwitchRow(title: "定时自动关闭播放", switchView: autoStopSwitch))
+        // Small Sentence Interval
+        let smallIntervalTitle = UILabel()
+        smallIntervalTitle.text = AppStrings.Immersive.smallIntervalTitle
+        smallIntervalTitle.font = .systemFont(ofSize: 16, weight: .medium)
+        smallIntervalTitle.textColor = .white
+        contentStack.addArrangedSubview(smallIntervalTitle)
+        contentStack.addArrangedSubview(smallIntervalSegment)
+        contentStack.addArrangedSubview(smallIntervalSlider)
+        smallIntervalValueLabel.font = .systemFont(ofSize: 14, weight: .regular)
+        smallIntervalValueLabel.textColor = UIColor(white: 0.9, alpha: 1.0)
+        smallIntervalValueLabel.isHidden = true
+        contentStack.addArrangedSubview(smallIntervalValueLabel)
+        
+        // Large Sentence Interval
+        let largeIntervalTitle = UILabel()
+        largeIntervalTitle.text = AppStrings.Immersive.largeIntervalTitle
+        largeIntervalTitle.font = .systemFont(ofSize: 16, weight: .medium)
+        largeIntervalTitle.textColor = .white
+        contentStack.addArrangedSubview(largeIntervalTitle)
+        contentStack.addArrangedSubview(largeIntervalSegment)
+        contentStack.addArrangedSubview(largeIntervalSlider)
+        largeIntervalValueLabel.font = .systemFont(ofSize: 14, weight: .regular)
+        largeIntervalValueLabel.textColor = UIColor(white: 0.9, alpha: 1.0)
+        largeIntervalValueLabel.isHidden = true
+        contentStack.addArrangedSubview(largeIntervalValueLabel)
+        
+        // Interval Sound
+        let intervalRow = UIView()
+        let intervalLabel = UILabel()
+        intervalLabel.text = AppStrings.Immersive.intervalSound
+        intervalLabel.font = .systemFont(ofSize: 16, weight: .regular)
+        intervalLabel.textColor = .white
+        
+        intervalSoundButton.setTitle("NotificationSound2", for: .normal)
+        intervalSoundButton.setTitleColor(.systemBlue, for: .normal)
+        intervalSoundButton.titleLabel?.font = .systemFont(ofSize: 14, weight: .medium)
+        intervalSoundButton.addTarget(self, action: #selector(intervalSoundButtonTapped), for: .touchUpInside)
+        
+        let intervalSpacer = UIView()
+        intervalSpacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        
+        let intervalStack = UIStackView(arrangedSubviews: [intervalLabel, intervalSpacer, intervalSoundButton, intervalSoundSwitch])
+        intervalStack.axis = .horizontal
+        intervalStack.alignment = .center
+        intervalStack.spacing = 12
+        
+        intervalRow.addSubview(intervalStack)
+        intervalStack.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        contentStack.addArrangedSubview(intervalRow)
+        intervalRow.snp.makeConstraints { make in
+            make.height.greaterThanOrEqualTo(31)
+        }
+        
+        contentStack.addArrangedSubview(makeSwitchRow(title: AppStrings.Immersive.lockScreen, switchView: lockScreenSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: AppStrings.Immersive.autoStop, switchView: autoStopSwitch))
         contentStack.addArrangedSubview(autoStopSegment)
         contentStack.addArrangedSubview(autoStopSlider)
         autoStopValueLabel.font = .systemFont(ofSize: 14, weight: .regular)
@@ -203,13 +300,13 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         contentStack.addArrangedSubview(autoStopValueLabel)
         
         let playOptionsTitle = UILabel()
-        playOptionsTitle.text = "播放选项"
+        playOptionsTitle.text = AppStrings.Immersive.playOptionsTitle
         playOptionsTitle.font = .systemFont(ofSize: 16, weight: .semibold)
         playOptionsTitle.textColor = .white
         contentStack.addArrangedSubview(playOptionsTitle)
-        contentStack.addArrangedSubview(makeSwitchRow(title: "播放英文 ", switchView: originalSwitch))
-        contentStack.addArrangedSubview(makeSwitchRow(title: "播放中文 ", switchView: translationSwitch))
-        contentStack.addArrangedSubview(makeSwitchRow(title: "播放语法 ", switchView: patternSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: AppStrings.Immersive.playEnglish, switchView: originalSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: AppStrings.Immersive.playChinese, switchView: translationSwitch))
+        contentStack.addArrangedSubview(makeSwitchRow(title: AppStrings.Immersive.playPattern, switchView: patternSwitch))
         contentStack.addArrangedSubview(orderSectionTitle)
         contentStack.addArrangedSubview(orderTableView)
         orderTableView.snp.makeConstraints { make in
@@ -221,7 +318,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         orderTableView.setEditing(true, animated: false)
         
         let sentenceCountTitle = UILabel()
-        sentenceCountTitle.text = "播放句型数量"
+        sentenceCountTitle.text = AppStrings.Immersive.sentenceCountTitle
         sentenceCountTitle.font = .systemFont(ofSize: 16, weight: .semibold)
         sentenceCountTitle.textColor = .white
         contentStack.addArrangedSubview(sentenceCountTitle)
@@ -231,7 +328,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         contentStack.addArrangedSubview(customSentenceSlider)
         contentStack.addArrangedSubview(customSentenceValueLabel)
         
-        startButton.setTitle("开始播放", for: .normal)
+        startButton.setTitle(AppStrings.Immersive.start, for: .normal)
         startButton.setTitleColor(.white, for: .normal)
         startButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         startButton.backgroundColor = .systemBlue
@@ -242,10 +339,19 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
             make.height.equalTo(52)
         }
         
+        // Targets
+        rateSegment.addTarget(self, action: #selector(rateSegmentChanged), for: .valueChanged)
         rateSlider.addTarget(self, action: #selector(rateChanged), for: .valueChanged)
+        
+        smallIntervalSegment.addTarget(self, action: #selector(smallIntervalSegmentChanged), for: .valueChanged)
+        smallIntervalSlider.addTarget(self, action: #selector(smallIntervalChanged), for: .valueChanged)
+        
+        largeIntervalSegment.addTarget(self, action: #selector(largeIntervalSegmentChanged), for: .valueChanged)
+        largeIntervalSlider.addTarget(self, action: #selector(largeIntervalChanged), for: .valueChanged)
+        
+        intervalSoundSwitch.addTarget(self, action: #selector(intervalSoundSwitchChanged), for: .valueChanged)
         autoStopSlider.addTarget(self, action: #selector(autoStopChanged), for: .valueChanged)
         autoStopSegment.addTarget(self, action: #selector(autoStopPresetChanged), for: .valueChanged)
-        soundSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
         lockScreenSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
         autoStopSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
         patternSwitch.addTarget(self, action: #selector(anySwitchChanged), for: .valueChanged)
@@ -264,8 +370,34 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
     
     private func applyConfig() {
         isApplyingConfig = true
-        soundSwitch.isOn = config.enableSound
         rateSlider.value = config.playbackRate
+        
+        // Rate Segment
+        let rate = config.playbackRate
+        if abs(rate - 0.5) < 0.01 { rateSegment.selectedSegmentIndex = 0 }
+        else if abs(rate - 1.0) < 0.01 { rateSegment.selectedSegmentIndex = 1 }
+        else if abs(rate - 1.5) < 0.01 { rateSegment.selectedSegmentIndex = 2 }
+        else { rateSegment.selectedSegmentIndex = 3 }
+        
+        // Small Interval
+        smallIntervalSlider.value = Float(config.smallSentenceInterval)
+        let small = config.smallSentenceInterval
+        if abs(small - 1.0) < 0.01 { smallIntervalSegment.selectedSegmentIndex = 0 }
+        else if abs(small - 2.0) < 0.01 { smallIntervalSegment.selectedSegmentIndex = 1 }
+        else if abs(small - 3.0) < 0.01 { smallIntervalSegment.selectedSegmentIndex = 2 }
+        else { smallIntervalSegment.selectedSegmentIndex = 3 }
+        
+        // Large Interval
+        largeIntervalSlider.value = Float(config.largeSentenceInterval)
+        let large = config.largeSentenceInterval
+        if abs(large - 1.0) < 0.01 { largeIntervalSegment.selectedSegmentIndex = 0 }
+        else if abs(large - 2.0) < 0.01 { largeIntervalSegment.selectedSegmentIndex = 1 }
+        else if abs(large - 3.0) < 0.01 { largeIntervalSegment.selectedSegmentIndex = 2 }
+        else { largeIntervalSegment.selectedSegmentIndex = 3 }
+        
+        intervalSoundSwitch.isOn = config.enableIntervalSound
+        intervalSoundButton.setTitle(config.intervalSoundFile, for: .normal)
+        intervalSoundButton.isHidden = !config.enableIntervalSound
         lockScreenSwitch.isOn = config.lockScreenPlayback
         autoStopSwitch.isOn = config.autoStopEnabled
         autoStopSlider.value = Float(config.autoStopMinutes)
@@ -275,17 +407,20 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         originalSwitch.isEnabled = false
         customSentenceSlider.value = Float(min(max(config.customSentenceCount ?? 10, 1), 50))
         switch config.sentenceCountOption ?? "all" {
-        case "three":
-            sentenceCountSegment.selectedSegmentIndex = 0
-        case "five":
-            sentenceCountSegment.selectedSegmentIndex = 1
-        case "custom":
-            sentenceCountSegment.selectedSegmentIndex = 3
-        default:
-            sentenceCountSegment.selectedSegmentIndex = 2
+        case "three": sentenceCountSegment.selectedSegmentIndex = 0
+        case "five": sentenceCountSegment.selectedSegmentIndex = 1
+        case "custom": sentenceCountSegment.selectedSegmentIndex = 3
+        default: sentenceCountSegment.selectedSegmentIndex = 2
         }
         
+        rateSegmentChanged()
+        smallIntervalSegmentChanged()
+        largeIntervalSegmentChanged()
+        
         rateChanged()
+        smallIntervalChanged()
+        largeIntervalChanged()
+        
         autoStopChanged()
         autoStopPresetChanged()
         updateSentenceCountUI()
@@ -348,14 +483,83 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         }
     }
     
+    @objc private func rateSegmentChanged() {
+        let isCustom = rateSegment.selectedSegmentIndex == 3
+        rateSlider.isHidden = !isCustom
+        rateValueLabel.isHidden = !isCustom
+        
+        switch rateSegment.selectedSegmentIndex {
+        case 0: rateSlider.setValue(0.5, animated: true)
+        case 1: rateSlider.setValue(1.0, animated: true)
+        case 2: rateSlider.setValue(1.5, animated: true)
+        default: break
+        }
+        
+        rateChanged()
+    }
+    
     @objc private func rateChanged() {
-        rateValueLabel.text = String(format: "当前速度: %.2fx", rateSlider.value)
+        rateValueLabel.text = AppStrings.Immersive.rateValue(value: rateSlider.value)
         persistCurrentConfig()
+    }
+    
+    @objc private func smallIntervalSegmentChanged() {
+        let isCustom = smallIntervalSegment.selectedSegmentIndex == 3
+        smallIntervalSlider.isHidden = !isCustom
+        smallIntervalValueLabel.isHidden = !isCustom
+        
+        switch smallIntervalSegment.selectedSegmentIndex {
+        case 0: smallIntervalSlider.setValue(1.0, animated: true)
+        case 1: smallIntervalSlider.setValue(2.0, animated: true)
+        case 2: smallIntervalSlider.setValue(3.0, animated: true)
+        default: break
+        }
+        smallIntervalChanged()
+    }
+    
+    @objc private func smallIntervalChanged() {
+        smallIntervalValueLabel.text = AppStrings.Immersive.smallIntervalValue(value: smallIntervalSlider.value)
+        persistCurrentConfig()
+    }
+    
+    @objc private func largeIntervalSegmentChanged() {
+        let isCustom = largeIntervalSegment.selectedSegmentIndex == 3
+        largeIntervalSlider.isHidden = !isCustom
+        largeIntervalValueLabel.isHidden = !isCustom
+        
+        switch largeIntervalSegment.selectedSegmentIndex {
+        case 0: largeIntervalSlider.setValue(1.0, animated: true)
+        case 1: largeIntervalSlider.setValue(2.0, animated: true)
+        case 2: largeIntervalSlider.setValue(3.0, animated: true)
+        default: break
+        }
+        largeIntervalChanged()
+    }
+    
+    @objc private func largeIntervalChanged() {
+        largeIntervalValueLabel.text = AppStrings.Immersive.largeIntervalValue(value: largeIntervalSlider.value)
+        persistCurrentConfig()
+    }
+    
+    @objc private func intervalSoundSwitchChanged() {
+        intervalSoundButton.isHidden = !intervalSoundSwitch.isOn
+        persistCurrentConfig()
+    }
+    
+    @objc private func intervalSoundButtonTapped() {
+        let selectorVC = IntervalSoundSelectorViewController()
+        selectorVC.currentSelection = intervalSoundButton.title(for: .normal)
+        selectorVC.onSelect = { [weak self] selectedSound in
+            self?.intervalSoundButton.setTitle(selectedSound, for: .normal)
+            self?.persistCurrentConfig()
+        }
+        
+        present(selectorVC, animated: true)
     }
     
     @objc private func autoStopChanged() {
         let minutes = Int(autoStopSlider.value.rounded())
-        autoStopValueLabel.text = "自定义: \(minutes) 分钟"
+        autoStopValueLabel.text = AppStrings.Immersive.autoStopValue(minutes: minutes)
         persistCurrentConfig()
     }
     
@@ -370,7 +574,6 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
     }
     
     @objc private func anySwitchChanged() {
-        // English is mandatory and cannot be turned off.
         originalSwitch.isOn = true
         originalSwitch.isEnabled = false
         rebuildOrderItemsPreservingCurrentOrder()
@@ -390,6 +593,7 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
     
     @objc private func startTapped() {
         let newConfig = currentConfigFromUI()
+        print("DEBUG: Start tapped. Config rate: \(newConfig.playbackRate)")
         ImmersiveConfigStore.save(newConfig)
         let startHandler = onStart
         dismiss(animated: true) {
@@ -401,17 +605,13 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         let minutes = Int(autoStopSlider.value.rounded())
         let option: String
         switch sentenceCountSegment.selectedSegmentIndex {
-        case 0:
-            option = "three"
-        case 1:
-            option = "five"
-        case 3:
-            option = "custom"
-        default:
-            option = "all"
+        case 0: option = "three"
+        case 1: option = "five"
+        case 3: option = "custom"
+        default: option = "all"
         }
         return ImmersiveReadingConfig(
-            enableSound: soundSwitch.isOn,
+            enableSound: true,
             playbackRate: rateSlider.value,
             lockScreenPlayback: lockScreenSwitch.isOn,
             autoStopEnabled: autoStopSwitch.isOn,
@@ -423,7 +623,11 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
             customSentenceCount: Int(customSentenceSlider.value.rounded()),
             orderPattern: orderValue(for: .pattern),
             orderTranslation: orderValue(for: .translation),
-            orderOriginal: orderValue(for: .original)
+            orderOriginal: orderValue(for: .original),
+            enableIntervalSound: intervalSoundSwitch.isOn,
+            intervalSoundFile: intervalSoundButton.title(for: .normal) ?? IntervalSoundDefinitions.defaultSound,
+            smallSentenceInterval: Double(smallIntervalSlider.value),
+            largeSentenceInterval: Double(largeIntervalSlider.value)
         )
     }
     
@@ -438,15 +642,15 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         let isCustom = sentenceCountSegment.selectedSegmentIndex == 3
         customSentenceSlider.isHidden = !isCustom
         customSentenceValueLabel.isHidden = !isCustom
-        customSentenceValueLabel.text = "自定义数量: \(Int(customSentenceSlider.value.rounded()))"
+        customSentenceValueLabel.text = AppStrings.Immersive.customSentenceCount(count: Int(customSentenceSlider.value.rounded()))
     }
     
     private func rebuildOrderItemsFromConfig() {
         let enabledKinds = currentEnabledKinds()
         let source: [(OrderKind, Int, String)] = [
-            (.original, config.orderOriginal, "播放英文"),
-            (.translation, config.orderTranslation, "播放中文"),
-            (.pattern, config.orderPattern, "播放语法")
+            (.original, config.orderOriginal, AppStrings.Immersive.playEnglish),
+            (.translation, config.orderTranslation, AppStrings.Immersive.playChinese),
+            (.pattern, config.orderPattern, AppStrings.Immersive.playPattern)
         ]
         
         orderItems = source
@@ -461,9 +665,9 @@ final class ImmersiveReadingConfigViewController: UIViewController, UITableViewD
         
         let existingKinds = Set(newItems.map(\.kind))
         let source: [(OrderKind, Int, String)] = [
-            (.pattern, config.orderPattern, "播放语法"),
-            (.translation, config.orderTranslation, "播放中文"),
-            (.original, config.orderOriginal, "播放英文")
+            (.pattern, config.orderPattern, AppStrings.Immersive.playPattern),
+            (.translation, config.orderTranslation, AppStrings.Immersive.playChinese),
+            (.original, config.orderOriginal, AppStrings.Immersive.playEnglish)
         ]
         let additions = source
             .filter { enabledKinds.contains($0.0) && !existingKinds.contains($0.0) }

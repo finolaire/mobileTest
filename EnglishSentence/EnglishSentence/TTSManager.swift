@@ -39,6 +39,11 @@ class TTSManager: NSObject {
             _ = AVSpeechSynthesisVoice.speechVoices()
             DispatchQueue.main.async { [weak self] in
                 self?.configureAudioSession()
+                
+                // 播放一个极短的无声片段，彻底唤醒音频硬件，解决首次播放吞字问题
+                let silentUtterance = AVSpeechUtterance(string: " ")
+                silentUtterance.volume = 0
+                self?.synthesizer.speak(silentUtterance)
             }
         }
     }
@@ -66,6 +71,9 @@ class TTSManager: NSObject {
         utterance.rate = rate
         utterance.pitchMultiplier = 1.0 // 音调，1.0 为正常
         utterance.volume = 1.0 // 音量
+        
+        // 增加微小的播放前延迟，确保音频会话完全激活，防止首字被吞
+        utterance.preUtteranceDelay = 0.05
         
         synthesizer.speak(utterance)
     }

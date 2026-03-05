@@ -30,7 +30,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Settings"
+        label.text = AppStrings.Settings.title
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         label.textAlignment = .center
@@ -46,7 +46,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
     
     private let closeButton: UIButton = {
         let btn = UIButton(type: .system)
-        btn.setTitle("Close", for: .normal)
+        btn.setTitle(AppStrings.Settings.close, for: .normal)
         btn.setTitleColor(.systemBlue, for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         btn.addTarget(self, action: #selector(closeTapped), for: .touchUpInside)
@@ -82,22 +82,22 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         containerView.addSubview(closeButton)
         
         // Add switches
-        addSwitchRow(title: "Show Phonetics", isOn: currentConfig.showPhonetics, action: #selector(phoneticsToggled(_:)))
+        addSwitchRow(title: AppStrings.Settings.showPhonetics, isOn: currentConfig.showPhonetics, action: #selector(phoneticsToggled(_:)))
         
         // Add Accent and Voice settings
         addPhoneticSettings()
         
-        addSwitchRow(title: "Show Word Type", isOn: currentConfig.showWordType, action: #selector(wordTypeToggled(_:)))
-        addSwitchRow(title: "Show Pattern", isOn: currentConfig.showSentencePattern, action: #selector(patternToggled(_:)))
+        addSwitchRow(title: AppStrings.Settings.showWordType, isOn: currentConfig.showWordType, action: #selector(wordTypeToggled(_:)))
+        addSwitchRow(title: AppStrings.Settings.showPattern, isOn: currentConfig.showSentencePattern, action: #selector(patternToggled(_:)))
         
         // Combined rows for Translation and English Sentence with their audio toggles
-        addCombinedRow(title1: "Translation", isOn1: currentConfig.showTranslation, action1: #selector(translationToggled(_:)),
-                      title2: "Audio", isOn2: currentConfig.showTranslationAudioButton, action2: #selector(translationAudioButtonToggled(_:)))
+        addCombinedRow(title1: AppStrings.Settings.translation, isOn1: currentConfig.showTranslation, action1: #selector(translationToggled(_:)),
+                      title2: AppStrings.Settings.audio, isOn2: currentConfig.showTranslationAudioButton, action2: #selector(translationAudioButtonToggled(_:)))
         
-        addCombinedRow(title1: "English", isOn1: currentConfig.showEnglishSentence, action1: #selector(englishSentenceToggled(_:)),
-                      title2: "Audio", isOn2: currentConfig.showEnglishAudioButton, action2: #selector(englishAudioButtonToggled(_:)))
+        addCombinedRow(title1: AppStrings.Settings.english, isOn1: currentConfig.showEnglishSentence, action1: #selector(englishSentenceToggled(_:)),
+                      title2: AppStrings.Settings.audio, isOn2: currentConfig.showEnglishAudioButton, action2: #selector(englishAudioButtonToggled(_:)))
         
-        addSwitchRow(title: "Show Word Audio", isOn: currentConfig.showAudioButton, action: #selector(audioButtonToggled(_:)))
+        addSwitchRow(title: AppStrings.Settings.showWordAudio, isOn: currentConfig.showAudioButton, action: #selector(audioButtonToggled(_:)))
         
         // Add Background Selector
         addBackgroundSelector()
@@ -155,11 +155,11 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         accentStack.alignment = .center
         
         let accentLabel = UILabel()
-        accentLabel.text = "Accent"
+        accentLabel.text = AppStrings.Settings.accent
         accentLabel.textColor = .white
         accentLabel.font = UIFont.systemFont(ofSize: 16)
         
-        let accentSegment = UISegmentedControl(items: ["UK", "US"])
+        let accentSegment = UISegmentedControl(items: [AppStrings.Settings.accentUK, AppStrings.Settings.accentUS])
         accentSegment.selectedSegmentIndex = currentConfig.phoneticType == .uk ? 0 : 1
         accentSegment.selectedSegmentTintColor = .systemBlue
         accentSegment.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
@@ -177,7 +177,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         voiceStack.alignment = .center
         
         let voiceLabel = UILabel()
-        voiceLabel.text = "Voice"
+        voiceLabel.text = AppStrings.Settings.voice
         voiceLabel.textColor = .white
         voiceLabel.font = UIFont.systemFont(ofSize: 16)
         
@@ -197,7 +197,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
            let voice = AVSpeechSynthesisVoice(identifier: id) {
             return voice.name
         }
-        return "Default"
+        return AppStrings.Settings.voiceDefault
     }
     
     @objc private func accentChanged(_ sender: UISegmentedControl) {
@@ -205,7 +205,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         if currentConfig.phoneticType != newType {
             currentConfig.phoneticType = newType
             currentConfig.selectedVoiceIdentifier = nil // Reset voice when accent changes
-            voiceButton?.setTitle("Default", for: .normal)
+            voiceButton?.setTitle(AppStrings.Settings.voiceDefault, for: .normal)
             onConfigChanged?(currentConfig)
         }
     }
@@ -214,13 +214,13 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         let language = currentConfig.phoneticType == .uk ? "en-GB" : "en-US"
         let voices = TTSManager.shared.getVoices(for: language)
         
-        let alert = UIAlertController(title: "Select Voice", message: nil, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: AppStrings.Settings.selectVoiceTitle, message: nil, preferredStyle: .actionSheet)
         
         // Default option
-        let defaultAction = UIAlertAction(title: "Default", style: .default) { [weak self] _ in
+        let defaultAction = UIAlertAction(title: AppStrings.Settings.voiceDefault, style: .default) { [weak self] _ in
             guard let self = self else { return }
             self.currentConfig.selectedVoiceIdentifier = nil
-            self.voiceButton?.setTitle("Default", for: .normal)
+            self.voiceButton?.setTitle(AppStrings.Settings.voiceDefault, for: .normal)
             self.onConfigChanged?(self.currentConfig)
         }
         alert.addAction(defaultAction)
@@ -235,7 +235,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
             alert.addAction(action)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: AppStrings.Settings.cancel, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         
         // For iPad support
@@ -321,7 +321,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         rowStack.alignment = .center
         
         let label = UILabel()
-        label.text = "Background"
+        label.text = AppStrings.Settings.background
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16)
         
@@ -330,7 +330,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         controlsStack.spacing = 16
         controlsStack.alignment = .center
         
-        let segmentedControl = UISegmentedControl(items: ["BG 0", "BG 1", "BG 2", "BG 3"])
+        let segmentedControl = UISegmentedControl(items: [AppStrings.Settings.bg0, AppStrings.Settings.bg1, AppStrings.Settings.bg2, AppStrings.Settings.bg3])
         if currentConfig.useCustomBackground {
             segmentedControl.selectedSegmentIndex = UISegmentedControl.noSegment
         } else {
@@ -365,7 +365,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         rowStack.alignment = .fill
         
         let label = UILabel()
-        label.text = "Mask Opacity: \(String(format: "%.1f", currentConfig.maskOpacity))"
+        label.text = AppStrings.Settings.maskOpacity(value: Float(currentConfig.maskOpacity))
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
@@ -381,7 +381,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         
         // Use a wrapper action to update label text
         slider.addAction(UIAction { [weak label] _ in
-            label?.text = "Mask Opacity: \(String(format: "%.1f", slider.value))"
+            label?.text = AppStrings.Settings.maskOpacity(value: slider.value)
         }, for: .valueChanged)
         
         rowStack.addArrangedSubview(label)
