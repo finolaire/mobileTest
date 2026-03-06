@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "jimeng-2025-12-02-1881-画面中的女子妆容精致、有着大眼睛，佩戴着精致的耳饰和手镯，身着长裙且外搭粉色针织....png",
       "idiom" : "universal",
       "scale" : "3x"
     }

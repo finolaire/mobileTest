@@ -8,7 +8,7 @@ struct AppStrings {
         static let showPhonetics = "显示音标"
         static let showWordType = "显示词性"
         static let showPattern = "显示句型"
-        static let showWordAudio = "显示单词发音"
+        static let showWordAudio = "显示单词朗读"
         
         static let accent = "口音"
         static let accentUK = "英式"
@@ -25,10 +25,10 @@ struct AppStrings {
         static let english = "英文原句"
         
         static let background = "背景图片"
-        static let bg0 = "背景 1"
-        static let bg1 = "背景 2"
-        static let bg2 = "背景 3"
-        static let bg3 = "背景 4"
+        static let bg0 = "  清  "
+        static let bg1 = "  禅  "
+        static let bg2 = "  忍  "
+        static let bg3 = "  空  "
         
         static func maskOpacity(value: Float) -> String {
             return String(format: "遮罩透明度: %.1f", value)

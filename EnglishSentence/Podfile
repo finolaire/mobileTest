@@ -8,6 +8,7 @@ target 'EnglishSentence' do
   pod 'SnapKit'
   pod 'EasyTipView'
   pod 'AMPopTip'
+  pod 'SDWebImage'
   
 end
 
