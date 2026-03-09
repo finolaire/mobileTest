@@ -214,27 +214,27 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }()
     
     private let translationAudioButton: UIButton = {
-        let btn = UIButton()
-        // Use custom image if available, else fallback
-        if let image = UIImage(named: "audio_play_off") {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
+        // Try to use speaker.wave.2.circle (iOS 14+), fallback to speaker.circle
+        if let image = UIImage(systemName: "speaker.wave.2.circle", withConfiguration: config) {
             btn.setImage(image, for: .normal)
         } else {
-            let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
-            btn.setImage(UIImage(systemName: "speaker.wave.3.circle.fill", withConfiguration: config), for: .normal)
-            btn.tintColor = .white // Use tint color if template image, or remove if original
+            btn.setImage(UIImage(systemName: "speaker.circle", withConfiguration: config), for: .normal)
         }
+        btn.tintColor = .white
         return btn
     }()
     
     private let englishAudioButton: UIButton = {
-        let btn = UIButton()
-        if let image = UIImage(named: "audio_play_off") {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
+        if let image = UIImage(systemName: "speaker.wave.2.circle", withConfiguration: config) {
             btn.setImage(image, for: .normal)
         } else {
-            let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium)
-            btn.setImage(UIImage(systemName: "speaker.wave.3.circle.fill", withConfiguration: config), for: .normal)
-            btn.tintColor = .white
+            btn.setImage(UIImage(systemName: "speaker.circle", withConfiguration: config), for: .normal)
         }
+        btn.tintColor = .white
         return btn
     }()
     
@@ -307,16 +307,32 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }()
     
     // Audio State
-    private enum PlayingType {
+    private enum PlayingType: Equatable {
         case none
         case translation
         case english
+        case word(Int)
     }
     private var currentPlayingType: PlayingType = .none {
         didSet {
             updateAudioButtonIcons()
+            
+            // Update cells directly without reloading to avoid flickering
+            if case .word(let index) = oldValue {
+                let indexPath = IndexPath(item: index, section: 0)
+                if let cell = collectionView.cellForItem(at: indexPath) as? WordCell {
+                    cell.updatePlaybackState(isPlaying: false)
+                }
+            }
+            if case .word(let index) = currentPlayingType {
+                let indexPath = IndexPath(item: index, section: 0)
+                if let cell = collectionView.cellForItem(at: indexPath) as? WordCell {
+                    cell.updatePlaybackState(isPlaying: true)
+                }
+            }
         }
     }
+    private var currentUtterance: AVSpeechUtterance?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -501,12 +517,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }
     
     private func setupImmersiveCallbacks() {
-        TTSManager.shared.onSpeechFinished = { [weak self] in
+        TTSManager.shared.onSpeechFinished = { [weak self] utterance in
             DispatchQueue.main.async {
-                self?.handleSpeechFinished()
+                self?.handleSpeechFinished(utterance: utterance)
             }
         }
-        TTSManager.shared.onSpeechCancelled = { [weak self] in
+        TTSManager.shared.onSpeechCancelled = { [weak self] utterance in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 // If immersive mode is active, handle it there
@@ -514,18 +530,25 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
                     if self.isImmersivePaused { return }
                 } else {
                     // Manual playback cancelled
-                    self.currentPlayingType = .none
+                    // Only reset if the cancelled utterance matches our current tracking
+                    if utterance == self.currentUtterance {
+                        self.currentPlayingType = .none
+                        self.currentUtterance = nil
+                    }
                 }
             }
         }
     }
     
-    private func handleSpeechFinished() {
+    private func handleSpeechFinished(utterance: AVSpeechUtterance) {
         if isImmersivePlaying {
             handleImmersiveSpeechFinished()
         } else {
             // Manual playback finished
-            currentPlayingType = .none
+            if utterance == self.currentUtterance {
+                currentPlayingType = .none
+                currentUtterance = nil
+            }
         }
     }
     
@@ -695,6 +718,10 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     private func startImmersivePlayback() {
         isImmersivePlaying = true
         isImmersivePaused = false
+        // Reset manual playback state
+        currentPlayingType = .none
+        currentUtterance = nil
+        
         setMainControlButtonsHidden(true)
         
         TTSManager.shared.setLockScreenPlaybackEnabled(immersiveConfig.lockScreenPlayback)
@@ -842,26 +869,16 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }
     
     private func updateAudioButtonIcons() {
-        let playIcon = UIImage(named: "audio_play_on")
-        let stopIcon = UIImage(named: "audio_play_off")
-        
-        // Fallback to system icons if custom assets not found
-        let systemPlay = UIImage(systemName: "speaker.wave.3.circle.fill")
-        let systemStop = UIImage(systemName: "speaker.circle")
-        
-        let activeIcon = playIcon ?? systemPlay
-        let inactiveIcon = stopIcon ?? systemStop
-        
         switch currentPlayingType {
         case .translation:
-            translationAudioButton.setImage(activeIcon, for: .normal)
-            englishAudioButton.setImage(inactiveIcon, for: .normal)
+            translationAudioButton.tintColor = .systemBlue
+            englishAudioButton.tintColor = .white
         case .english:
-            translationAudioButton.setImage(inactiveIcon, for: .normal)
-            englishAudioButton.setImage(activeIcon, for: .normal)
-        case .none:
-            translationAudioButton.setImage(inactiveIcon, for: .normal)
-            englishAudioButton.setImage(inactiveIcon, for: .normal)
+            translationAudioButton.tintColor = .white
+            englishAudioButton.tintColor = .systemBlue
+        case .none, .word:
+            translationAudioButton.tintColor = .white
+            englishAudioButton.tintColor = .white
         }
     }
     
@@ -871,9 +888,13 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         if currentPlayingType == .translation {
             TTSManager.shared.stop()
             currentPlayingType = .none
+            currentUtterance = nil
         } else {
+            // Stop any existing playback first implicitly via TTSManager.play
+            // Reset currentUtterance so cancellation of previous doesn't affect state
+            currentUtterance = nil
             currentPlayingType = .translation
-            TTSManager.shared.play(sentence.sentenceInfo.translation, language: "zh-CN")
+            currentUtterance = TTSManager.shared.play(sentence.sentenceInfo.translation, language: "zh-CN")
         }
     }
     
@@ -883,12 +904,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         if currentPlayingType == .english {
             TTSManager.shared.stop()
             currentPlayingType = .none
+            currentUtterance = nil
         } else {
+            currentUtterance = nil
             currentPlayingType = .english
             // Determine language based on config
             let language = viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
             let voiceId = viewModel.displayConfig.selectedVoiceIdentifier
-            TTSManager.shared.play(sentence.sentenceInfo.original, language: language, voiceIdentifier: voiceId)
+            currentUtterance = TTSManager.shared.play(sentence.sentenceInfo.original, language: language, voiceIdentifier: voiceId)
         }
     }
     
@@ -994,17 +1017,38 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         }
         
         if let cellViewModel = viewModel.viewModelForCell(at: indexPath.item) {
-            cell.configure(with: cellViewModel, isImmersiveMode: isImmersivePlaying)
+            // Check if this cell is currently playing
+            var isPlaying = false
+            if case .word(let index) = currentPlayingType, index == indexPath.item {
+                isPlaying = true
+            }
+            
+            cell.configure(with: cellViewModel, isImmersiveMode: isImmersivePlaying, isPlaying: isPlaying)
             
             // Handle audio tap
             cell.onAudioTapped = { [weak self] in
                 guard let self = self,
                       let analysis = self.viewModel.analysisForCell(at: indexPath.item) else { return }
                 
+                // If already playing this word, stop it
+                if case .word(let index) = self.currentPlayingType, index == indexPath.item {
+                    TTSManager.shared.stop()
+                    self.currentPlayingType = .none
+                    self.currentUtterance = nil
+                    return
+                }
+                
+                // Stop any existing playback
+                TTSManager.shared.stop()
+                self.currentUtterance = nil
+                
+                // Set new state
+                self.currentPlayingType = .word(indexPath.item)
+                
                 // Determine language based on config
                 let language = self.viewModel.displayConfig.phoneticType == .uk ? "en-GB" : "en-US"
                 let voiceId = self.viewModel.displayConfig.selectedVoiceIdentifier
-                TTSManager.shared.play(analysis.word, language: language, voiceIdentifier: voiceId)
+                self.currentUtterance = TTSManager.shared.play(analysis.word, language: language, voiceIdentifier: voiceId)
             }
         }
         

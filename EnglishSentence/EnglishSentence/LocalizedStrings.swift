@@ -25,7 +25,7 @@ struct AppStrings {
         static let english = "英文原句"
         
         static let background = "背景图片"
-        static let bg0 = "  清  "
+        static let bg0 = "  梦  "
         static let bg1 = "  禅  "
         static let bg2 = "  忍  "
         static let bg3 = "  空  "

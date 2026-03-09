@@ -112,7 +112,7 @@ class WordCell: UICollectionViewCell {
         }
     }
     
-    func configure(with viewModel: WordCellViewModel, isImmersiveMode: Bool = false) {
+    func configure(with viewModel: WordCellViewModel, isImmersiveMode: Bool = false, isPlaying: Bool = false) {
         wordLabel.text = viewModel.word
         wordLabel.textColor = viewModel.wordColor
         phoneticLabel.text = viewModel.phonetic.isEmpty ? " " : viewModel.phonetic
@@ -120,6 +120,13 @@ class WordCell: UICollectionViewCell {
         typeLabel.text = viewModel.type
         typeLabel.isHidden = viewModel.isTypeHidden
         audioButton.isHidden = isImmersiveMode ? true : viewModel.isAudioButtonHidden
+        
+        updatePlaybackState(isPlaying: isPlaying)
+    }
+    
+    func updatePlaybackState(isPlaying: Bool) {
+        audioButton.tintColor = isPlaying ? .systemBlue : .white
+        audioButton.alpha = isPlaying ? 1.0 : 0.7
     }
     
     @objc private func audioButtonTapped() {

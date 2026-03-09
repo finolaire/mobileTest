@@ -7,8 +7,9 @@ class TTSManager: NSObject {
     private let synthesizer = AVSpeechSynthesizer()
     private var lockScreenPlaybackEnabled = true
     
-    var onSpeechFinished: (() -> Void)?
-    var onSpeechCancelled: (() -> Void)?
+    var onSpeechFinished: ((AVSpeechUtterance) -> Void)?
+    var onSpeechCancelled: ((AVSpeechUtterance) -> Void)?
+    var onSpeechStarted: ((AVSpeechUtterance) -> Void)?
     
     override private init() {
         super.init()
@@ -54,7 +55,9 @@ class TTSManager: NSObject {
     ///   - language: 语言代码 (例如 "en-US", "zh-CN")，默认美式英语
     ///   - voiceIdentifier: 指定发音人 ID (可选)
     ///   - rate: 语速 (0.0 ~ 1.0)，默认标准语速
-    func play(_ text: String, language: String = "en-US", voiceIdentifier: String? = nil, rate: Float = AVSpeechUtteranceDefaultSpeechRate) {
+    /// - Returns: 创建的 AVSpeechUtterance 对象
+    @discardableResult
+    func play(_ text: String, language: String = "en-US", voiceIdentifier: String? = nil, rate: Float = AVSpeechUtteranceDefaultSpeechRate) -> AVSpeechUtterance {
         // 如果正在说话，先停止
         if synthesizer.isSpeaking {
             synthesizer.stopSpeaking(at: .immediate)
@@ -76,6 +79,7 @@ class TTSManager: NSObject {
         utterance.preUtteranceDelay = 0.05
         
         synthesizer.speak(utterance)
+        return utterance
     }
     
     /// 获取指定语言的可用发音人列表
@@ -95,14 +99,15 @@ class TTSManager: NSObject {
 extension TTSManager: AVSpeechSynthesizerDelegate {
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
         print("开始播放: \(utterance.speechString)")
+        onSpeechStarted?(utterance)
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         print("播放结束")
-        onSpeechFinished?()
+        onSpeechFinished?(utterance)
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
-        onSpeechCancelled?()
+        onSpeechCancelled?(utterance)
     }
 }
