@@ -125,6 +125,578 @@
           }
         }
       ]
+    },
+    {
+      "id": "BS_SVOC_003",
+      "sentence_info": {
+        "original": "I found the book interesting",
+        "translation": "我发现这本书很有趣",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(形容词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "opinion"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "found",
+          "base_form": "find",
+          "range": [2, 7],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "发现/觉得",
+          "explanation": "find 的过去式，表示看法。",
+          "phonetics": {
+            "uk": "/faʊnd/", "us": "/faʊnd/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [8, 11],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这本",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "book",
+          "base_form": "book",
+          "range": [12, 16],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "书",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/bʊk/", "us": "/bʊk/"
+          }
+        },
+        {
+          "word": "interesting",
+          "base_form": "interesting",
+          "range": [17, 28],
+          "tag": "adjective_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "有趣的",
+          "explanation": "形容词作宾补，说明书的性质。",
+          "phonetics": {
+            "uk": "/ˈɪntrəstɪŋ/", "us": "/ˈɪntrəstɪŋ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_004",
+      "sentence_info": {
+        "original": "They elected him president",
+        "translation": "他们选他做总统",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(名词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "politics"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "elected",
+          "base_form": "elect",
+          "range": [5, 12],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "选举",
+          "explanation": "elect 的过去式。",
+          "phonetics": {
+            "uk": "/ɪˈlektɪd/", "us": "/ɪˈlektɪd/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [13, 16],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "president",
+          "base_form": "president",
+          "range": [17, 26],
+          "tag": "noun_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "总统",
+          "explanation": "名词作宾补，说明职位。",
+          "phonetics": {
+            "uk": "/ˈprezɪdənt/", "us": "/ˈprezɪdənt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_005",
+      "sentence_info": {
+        "original": "He painted the wall red",
+        "translation": "他把墙漆成了红色",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(形容词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "action"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "painted",
+          "base_form": "paint",
+          "range": [3, 10],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "漆/画",
+          "explanation": "paint 的过去式。",
+          "phonetics": {
+            "uk": "/ˈpeɪntɪd/", "us": "/ˈpeɪntɪd/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [11, 14],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这面",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "wall",
+          "base_form": "wall",
+          "range": [15, 19],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "墙",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/wɔːl/", "us": "/wɔːl/"
+          }
+        },
+        {
+          "word": "red",
+          "base_form": "red",
+          "range": [20, 23],
+          "tag": "adjective_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "红色的",
+          "explanation": "形容词作宾补，说明结果状态。",
+          "phonetics": {
+            "uk": "/red/", "us": "/red/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_006",
+      "sentence_info": {
+        "original": "Please keep the room clean",
+        "translation": "请保持房间整洁",
+        "sentence_pattern": "动词 + 宾语 + 宾语补足语(形容词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "imperative"]
+      },
+      "analysis": [
+        {
+          "word": "Please",
+          "base_form": "please",
+          "range": [0, 6],
+          "tag": "adverb",
+          "type": "Adverb (副词)",
+          "chinese_definition": "请",
+          "explanation": "礼貌用语。",
+          "phonetics": {
+            "uk": "/pliːz/", "us": "/pliːz/"
+          }
+        },
+        {
+          "word": "keep",
+          "base_form": "keep",
+          "range": [7, 11],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "保持",
+          "explanation": "动词原形，祈使句。",
+          "phonetics": {
+            "uk": "/kiːp/", "us": "/kiːp/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [12, 15],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这个",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "room",
+          "base_form": "room",
+          "range": [16, 20],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "房间",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/ruːm/", "us": "/ruːm/"
+          }
+        },
+        {
+          "word": "clean",
+          "base_form": "clean",
+          "range": [21, 26],
+          "tag": "adjective_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "整洁的",
+          "explanation": "形容词作宾补。",
+          "phonetics": {
+            "uk": "/kliːn/", "us": "/kliːn/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_007",
+      "sentence_info": {
+        "original": "We named the baby Alice",
+        "translation": "我们给婴儿取名为爱丽丝",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(名词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "naming"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "named",
+          "base_form": "name",
+          "range": [3, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "命名",
+          "explanation": "name 的过去式。",
+          "phonetics": {
+            "uk": "/neɪmd/", "us": "/neɪmd/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [9, 12],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这个",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "baby",
+          "base_form": "baby",
+          "range": [13, 17],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "婴儿",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/ˈbeɪbi/", "us": "/ˈbeɪbi/"
+          }
+        },
+        {
+          "word": "Alice",
+          "base_form": "Alice",
+          "range": [18, 23],
+          "tag": "noun_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "爱丽丝",
+          "explanation": "专有名词作宾补。",
+          "phonetics": {
+            "uk": "/ˈælɪs/", "us": "/ˈælɪs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_008",
+      "sentence_info": {
+        "original": "The news made us sad",
+        "translation": "这消息让我们很难过",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(形容词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "emotion"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "news",
+          "base_form": "news",
+          "range": [4, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "消息",
+          "explanation": "不可数名词作主语。",
+          "phonetics": {
+            "uk": "/njuːz/", "us": "/nuːz/"
+          }
+        },
+        {
+          "word": "made",
+          "base_form": "make",
+          "range": [9, 13],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "使",
+          "explanation": "make 的过去式。",
+          "phonetics": {
+            "uk": "/meɪd/", "us": "/meɪd/"
+          }
+        },
+        {
+          "word": "us",
+          "base_form": "we",
+          "range": [14, 16],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我们",
+          "explanation": "宾格代词。",
+          "phonetics": {
+            "uk": "/ʌs/", "us": "/ʌs/"
+          }
+        },
+        {
+          "word": "sad",
+          "base_form": "sad",
+          "range": [17, 20],
+          "tag": "adjective_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "难过的",
+          "explanation": "形容词作宾补。",
+          "phonetics": {
+            "uk": "/sæd/", "us": "/sæd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_009",
+      "sentence_info": {
+        "original": "I consider him a friend",
+        "translation": "我把他当作朋友",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(名词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "opinion"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "consider",
+          "base_form": "consider",
+          "range": [2, 10],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "认为",
+          "explanation": "动词。",
+          "phonetics": {
+            "uk": "/kənˈsɪdə(r)/", "us": "/kənˈsɪdər/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [11, 14],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [15, 16],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "friend",
+          "base_form": "friend",
+          "range": [17, 23],
+          "tag": "noun_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "朋友",
+          "explanation": "名词作宾补。",
+          "phonetics": {
+            "uk": "/frend/", "us": "/frend/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOC_010",
+      "sentence_info": {
+        "original": "She left the door open",
+        "translation": "她让门开着",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 宾语补足语(形容词)",
+        "pattern_code": "SVOC",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoc_pattern", "state"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "left",
+          "base_form": "leave",
+          "range": [4, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "让...处于",
+          "explanation": "leave 的过去式，表示使保持某种状态。",
+          "phonetics": {
+            "uk": "/left/", "us": "/left/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [9, 12],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这扇",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "door",
+          "base_form": "door",
+          "range": [13, 17],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "门",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/dɔː(r)/", "us": "/dɔːr/"
+          }
+        },
+        {
+          "word": "open",
+          "base_form": "open",
+          "range": [18, 22],
+          "tag": "adjective_complement",
+          "type": "Object Complement (宾补)",
+          "chinese_definition": "开着的",
+          "explanation": "形容词作宾补，说明门的状态。",
+          "phonetics": {
+            "uk": "/ˈəʊpən/", "us": "/ˈoʊpən/"
+          }
+        }
+      ]
     }
   ]
 }

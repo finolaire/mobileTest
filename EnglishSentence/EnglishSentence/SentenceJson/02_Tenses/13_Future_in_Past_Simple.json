@@ -149,6 +149,590 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_003",
+      "sentence_info": {
+        "original": "She told me she would call later",
+        "translation": "她告诉我她晚点会打电话",
+        "sentence_pattern": "主语 + told + 宾语 + (that) + 主语 + would + 动词原形 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "告诉",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [9, 11],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我",
+          "explanation": "told 的宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [12, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would call",
+          "base_form": "call",
+          "range": [16, 26],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "会打电话",
+          "explanation": "过去将来时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "later",
+          "base_form": "later",
+          "range": [27, 32],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "晚点",
+          "explanation": "时间副词。",
+          "phonetics": {
+            "uk": "/ˈleɪtə(r)/", "us": "/ˈleɪtər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_004",
+      "sentence_info": {
+        "original": "They promised they would finish the work",
+        "translation": "他们承诺他们会完成这项工作",
+        "sentence_pattern": "主语 + promised + (that) + 主语 + would + 动词原形 + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "promise"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "promised",
+          "base_form": "promise",
+          "range": [5, 13],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "承诺",
+          "explanation": "promise 的过去式。",
+          "phonetics": {
+            "uk": "/ˈprɒmɪst/", "us": "/ˈprɑːmɪst/"
+          }
+        },
+        {
+          "word": "they",
+          "base_form": "they",
+          "range": [14, 18],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "would finish",
+          "base_form": "finish",
+          "range": [19, 31],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "会完成",
+          "explanation": "过去将来时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the work",
+          "base_form": "work",
+          "range": [32, 40],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "工作",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/wɜːk/", "us": "/wɜːrk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_005",
+      "sentence_info": {
+        "original": "I thought it would rain",
+        "translation": "我以为会下雨",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would + 动词原形",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [2, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为/想",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "it",
+          "base_form": "it",
+          "range": [10, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "would rain",
+          "base_form": "rain",
+          "range": [13, 23],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "会下雨",
+          "explanation": "过去将来时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_006",
+      "sentence_info": {
+        "original": "We knew we would win",
+        "translation": "我们知道我们会赢",
+        "sentence_pattern": "主语 + knew + (that) + 主语 + would + 动词原形",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "knew",
+          "base_form": "know",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "知道",
+          "explanation": "know 的过去式。",
+          "phonetics": {
+            "uk": "/njuː/", "us": "/nuː/"
+          }
+        },
+        {
+          "word": "we",
+          "base_form": "we",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "我们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "would win",
+          "base_form": "win",
+          "range": [11, 20],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "会赢",
+          "explanation": "过去将来时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_007",
+      "sentence_info": {
+        "original": "He was going to call you, but he forgot",
+        "translation": "他本打算给你打电话，但他忘了",
+        "sentence_pattern": "主语 + was/were going to + 动词原形 + 宾语 + but + 句子",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "plan_changed"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "was going to",
+          "base_form": "go",
+          "range": [3, 15],
+          "tag": "phrase_verb",
+          "type": "Predicate (谓语部分)",
+          "chinese_definition": "本打算",
+          "explanation": "was going to 表示过去打算做某事。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "call",
+          "base_form": "call",
+          "range": [16, 20],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "打电话",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/kɔːl/", "us": "/kɔːl/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [21, 24],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "call 的宾语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "but he forgot",
+          "base_form": "but he forgot",
+          "range": [26, 39],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列句)",
+          "chinese_definition": "但他忘了",
+          "explanation": "but 连接的转折句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_008",
+      "sentence_info": {
+        "original": "She was going to buy that dress, but it was too expensive",
+        "translation": "她本打算买那件连衣裙，但太贵了",
+        "sentence_pattern": "主语 + was/were going to + 动词原形 + 宾语 + but + 句子",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "plan_changed"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "was going to",
+          "base_form": "go",
+          "range": [4, 16],
+          "tag": "phrase_verb",
+          "type": "Predicate (谓语部分)",
+          "chinese_definition": "本打算",
+          "explanation": "was going to 表示过去打算做某事。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "buy",
+          "base_form": "buy",
+          "range": [17, 20],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "买",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/baɪ/", "us": "/baɪ/"
+          }
+        },
+        {
+          "word": "that dress",
+          "base_form": "dress",
+          "range": [21, 31],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "那件连衣裙",
+          "explanation": "buy 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "but it was too expensive",
+          "base_form": "but it was too expensive",
+          "range": [33, 57],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列句)",
+          "chinese_definition": "但太贵了",
+          "explanation": "but 连接的转折句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_009",
+      "sentence_info": {
+        "original": "I was going to visit you, but I got sick",
+        "translation": "我本打算去拜访你，但我生病了",
+        "sentence_pattern": "主语 + was/were going to + 动词原形 + 宾语 + but + 句子",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "plan_changed"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "was going to",
+          "base_form": "go",
+          "range": [2, 14],
+          "tag": "phrase_verb",
+          "type": "Predicate (谓语部分)",
+          "chinese_definition": "本打算",
+          "explanation": "was going to 表示过去打算做某事。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "visit",
+          "base_form": "visit",
+          "range": [15, 20],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "拜访",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/ˈvɪzɪt/", "us": "/ˈvɪzɪt/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [21, 24],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "visit 的宾语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "but I got sick",
+          "base_form": "but I got sick",
+          "range": [26, 40],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列句)",
+          "chinese_definition": "但我生病了",
+          "explanation": "but 连接的转折句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_SIMPLE_010",
+      "sentence_info": {
+        "original": "He said he would be back soon",
+        "translation": "他说他很快会回来",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would + 动词原形 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_in_past_simple", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would be",
+          "base_form": "be",
+          "range": [11, 19],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "会是/回来",
+          "explanation": "would + be。",
+          "phonetics": {
+            "uk": "/wʊd biː/", "us": "/wʊd biː/"
+          }
+        },
+        {
+          "word": "back",
+          "base_form": "back",
+          "range": [20, 24],
+          "tag": "adverb_place",
+          "type": "Adverb (副词)",
+          "chinese_definition": "回来",
+          "explanation": "表示状态。",
+          "phonetics": {
+            "uk": "/bæk/", "us": "/bæk/"
+          }
+        },
+        {
+          "word": "soon",
+          "base_form": "soon",
+          "range": [25, 29],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "很快",
+          "explanation": "时间副词。",
+          "phonetics": {
+            "uk": "/suːn/", "us": "/suːn/"
+          }
+        }
+      ]
     }
   ]
 }

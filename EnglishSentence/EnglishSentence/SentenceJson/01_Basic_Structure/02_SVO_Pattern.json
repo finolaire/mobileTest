@@ -101,6 +101,434 @@
           }
         }
       ]
+    },
+    {
+      "id": "BS_SVO_003",
+      "sentence_info": {
+        "original": "Cats chase mice",
+        "translation": "猫抓老鼠",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "animal"]
+      },
+      "analysis": [
+        {
+          "word": "Cats",
+          "base_form": "cat",
+          "range": [0, 4],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "猫",
+          "explanation": "复数名词作主语。",
+          "phonetics": {
+            "uk": "/kæts/", "us": "/kæts/"
+          }
+        },
+        {
+          "word": "chase",
+          "base_form": "chase",
+          "range": [5, 10],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "追逐",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/tʃeɪs/", "us": "/tʃeɪs/"
+          }
+        },
+        {
+          "word": "mice",
+          "base_form": "mouse",
+          "range": [11, 15],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "老鼠",
+          "explanation": "mouse 的复数形式，作宾语。",
+          "phonetics": {
+            "uk": "/maɪs/", "us": "/maɪs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_004",
+      "sentence_info": {
+        "original": "She reads books",
+        "translation": "她读书",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "hobby"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "reads",
+          "base_form": "read",
+          "range": [4, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "读",
+          "explanation": "及物动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/riːdz/", "us": "/riːdz/"
+          }
+        },
+        {
+          "word": "books",
+          "base_form": "book",
+          "range": [10, 15],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "书",
+          "explanation": "复数名词作宾语。",
+          "phonetics": {
+            "uk": "/bʊks/", "us": "/bʊks/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_005",
+      "sentence_info": {
+        "original": "We eat apples",
+        "translation": "我们吃苹果",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "food"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "eat",
+          "base_form": "eat",
+          "range": [3, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "吃",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/iːt/", "us": "/iːt/"
+          }
+        },
+        {
+          "word": "apples",
+          "base_form": "apple",
+          "range": [7, 13],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "苹果",
+          "explanation": "复数名词作宾语。",
+          "phonetics": {
+            "uk": "/ˈæplz/", "us": "/ˈæplz/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_006",
+      "sentence_info": {
+        "original": "They drink water",
+        "translation": "他们喝水",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "daily"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "drink",
+          "base_form": "drink",
+          "range": [5, 10],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "喝",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/drɪŋk/", "us": "/drɪŋk/"
+          }
+        },
+        {
+          "word": "water",
+          "base_form": "water",
+          "range": [11, 16],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "水",
+          "explanation": "不可数名词作宾语。",
+          "phonetics": {
+            "uk": "/ˈwɔːtə(r)/", "us": "/ˈwɔːtər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_007",
+      "sentence_info": {
+        "original": "Birds build nests",
+        "translation": "鸟筑巢",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "Birds",
+          "base_form": "bird",
+          "range": [0, 5],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "鸟",
+          "explanation": "复数名词作主语。",
+          "phonetics": {
+            "uk": "/bɜːdz/", "us": "/bɜːrdz/"
+          }
+        },
+        {
+          "word": "build",
+          "base_form": "build",
+          "range": [6, 11],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "建造",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/bɪld/", "us": "/bɪld/"
+          }
+        },
+        {
+          "word": "nests",
+          "base_form": "nest",
+          "range": [12, 17],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "巢",
+          "explanation": "复数名词作宾语。",
+          "phonetics": {
+            "uk": "/nests/", "us": "/nests/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_008",
+      "sentence_info": {
+        "original": "I open the door",
+        "translation": "我开门",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "action"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "open",
+          "base_form": "open",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "打开",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/ˈəʊpən/", "us": "/ˈoʊpən/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [7, 10],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "door",
+          "base_form": "door",
+          "range": [11, 15],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "门",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/dɔː(r)/", "us": "/dɔːr/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_009",
+      "sentence_info": {
+        "original": "He drives a car",
+        "translation": "他开车",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "transport"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "drives",
+          "base_form": "drive",
+          "range": [3, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "驾驶",
+          "explanation": "及物动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/draɪvz/", "us": "/draɪvz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [10, 11],
+          "tag": "article_indefinite",
+          "type": "Article (不定冠词)",
+          "chinese_definition": "一辆",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "car",
+          "base_form": "car",
+          "range": [12, 15],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "车",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/kɑː(r)/", "us": "/kɑːr/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVO_010",
+      "sentence_info": {
+        "original": "She sings a song",
+        "translation": "她唱歌",
+        "sentence_pattern": "主语 + 及物动词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svo_pattern", "music"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "sings",
+          "base_form": "sing",
+          "range": [4, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "唱",
+          "explanation": "及物动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/sɪŋz/", "us": "/sɪŋz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [10, 11],
+          "tag": "article_indefinite",
+          "type": "Article (不定冠词)",
+          "chinese_definition": "一首",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "song",
+          "base_form": "song",
+          "range": [12, 16],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "歌",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/sɒŋ/", "us": "/sɔːŋ/"
+          }
+        }
+      ]
     }
   ]
 }

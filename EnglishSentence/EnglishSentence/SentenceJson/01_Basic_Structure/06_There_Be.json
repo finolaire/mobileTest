@@ -149,6 +149,566 @@
           }
         }
       ]
+    },
+    {
+      "id": "BS_THERE_BE_003",
+      "sentence_info": {
+        "original": "There is a bird in the sky",
+        "translation": "天空中有一只鸟",
+        "sentence_pattern": "There + be + 主语 + 地点状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "there_be", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [6, 8],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "单数形式。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [9, 10],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一只",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "bird",
+          "base_form": "bird",
+          "range": [11, 15],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "鸟",
+          "explanation": "单数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/bɜːd/", "us": "/bɜːrd/"
+          }
+        },
+        {
+          "word": "in the sky",
+          "base_form": "in the sky",
+          "range": [16, 26],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在天空中",
+          "explanation": "介词短语作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_004",
+      "sentence_info": {
+        "original": "There are many stars at night",
+        "translation": "晚上有许多星星",
+        "sentence_pattern": "There + be + 主语 + 时间状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "there_be", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [6, 9],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "many",
+          "base_form": "many",
+          "range": [10, 14],
+          "tag": "adjective_quantifier",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "许多",
+          "explanation": "修饰复数名词。",
+          "phonetics": {
+            "uk": "/ˈmeni/", "us": "/ˈmeni/"
+          }
+        },
+        {
+          "word": "stars",
+          "base_form": "star",
+          "range": [15, 20],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "星星",
+          "explanation": "复数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/stɑːz/", "us": "/stɑːrz/"
+          }
+        },
+        {
+          "word": "at night",
+          "base_form": "at night",
+          "range": [21, 29],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在晚上",
+          "explanation": "介词短语作时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_005",
+      "sentence_info": {
+        "original": "There was a meeting yesterday",
+        "translation": "昨天有一个会议",
+        "sentence_pattern": "There + be + 主语 + 时间状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "there_be", "past_tense"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "was",
+          "base_form": "be",
+          "range": [6, 9],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "过去式单数形式。",
+          "phonetics": {
+            "uk": "/wɒz/", "us": "/wʌz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [10, 11],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "meeting",
+          "base_form": "meeting",
+          "range": [12, 19],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "会议",
+          "explanation": "单数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/ˈmiːtɪŋ/", "us": "/ˈmiːtɪŋ/"
+          }
+        },
+        {
+          "word": "yesterday",
+          "base_form": "yesterday",
+          "range": [20, 29],
+          "tag": "adverb_time",
+          "type": "Adverb (副词)",
+          "chinese_definition": "昨天",
+          "explanation": "时间副词作状语。",
+          "phonetics": {
+            "uk": "/ˈjestədeɪ/", "us": "/ˈjestərdeɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_006",
+      "sentence_info": {
+        "original": "There will be rain tomorrow",
+        "translation": "明天会有雨",
+        "sentence_pattern": "There + will be + 主语 + 时间状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "there_be", "future_tense"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "will be",
+          "range": [6, 13],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "将有",
+          "explanation": "将来时态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "rain",
+          "base_form": "rain",
+          "range": [14, 18],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "雨",
+          "explanation": "不可数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/reɪn/", "us": "/reɪn/"
+          }
+        },
+        {
+          "word": "tomorrow",
+          "base_form": "tomorrow",
+          "range": [19, 27],
+          "tag": "adverb_time",
+          "type": "Adverb (副词)",
+          "chinese_definition": "明天",
+          "explanation": "时间副词作状语。",
+          "phonetics": {
+            "uk": "/təˈmɒrəʊ/", "us": "/təˈmɔːroʊ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_007",
+      "sentence_info": {
+        "original": "There is no milk in the fridge",
+        "translation": "冰箱里没有牛奶",
+        "sentence_pattern": "There + be + no + 主语 + 地点状语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "there_be", "negative"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [6, 8],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "单数形式。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "no",
+          "base_form": "no",
+          "range": [9, 11],
+          "tag": "adjective_negative",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "没有",
+          "explanation": "否定词，修饰名词。",
+          "phonetics": {
+            "uk": "/nəʊ/", "us": "/noʊ/"
+          }
+        },
+        {
+          "word": "milk",
+          "base_form": "milk",
+          "range": [12, 16],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "牛奶",
+          "explanation": "不可数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/mɪlk/", "us": "/mɪlk/"
+          }
+        },
+        {
+          "word": "in the fridge",
+          "base_form": "in the fridge",
+          "range": [17, 30],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在冰箱里",
+          "explanation": "介词短语作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_008",
+      "sentence_info": {
+        "original": "There are some people waiting",
+        "translation": "有一些人在等待",
+        "sentence_pattern": "There + be + 主语 + 现在分词",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "there_be", "people"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [6, 9],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "some",
+          "base_form": "some",
+          "range": [10, 14],
+          "tag": "adjective_quantifier",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "一些",
+          "explanation": "量词。",
+          "phonetics": {
+            "uk": "/sʌm/", "us": "/sʌm/"
+          }
+        },
+        {
+          "word": "people",
+          "base_form": "people",
+          "range": [15, 21],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "人",
+          "explanation": "复数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/ˈpiːpl/", "us": "/ˈpiːpl/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [22, 29],
+          "tag": "verb_participle",
+          "type": "Participle (分词)",
+          "chinese_definition": "等待",
+          "explanation": "现在分词作后置定语。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_009",
+      "sentence_info": {
+        "original": "There is a dog sleeping",
+        "translation": "有一只狗在睡觉",
+        "sentence_pattern": "There + be + 主语 + 现在分词",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "there_be", "animals"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [6, 8],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "有",
+          "explanation": "单数形式。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [9, 10],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一只",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "dog",
+          "base_form": "dog",
+          "range": [11, 14],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "狗",
+          "explanation": "单数名词，真正的主语。",
+          "phonetics": {
+            "uk": "/dɒɡ/", "us": "/dɔːɡ/"
+          }
+        },
+        {
+          "word": "sleeping",
+          "base_form": "sleep",
+          "range": [15, 23],
+          "tag": "verb_participle",
+          "type": "Participle (分词)",
+          "chinese_definition": "睡觉",
+          "explanation": "现在分词作后置定语。",
+          "phonetics": {
+            "uk": "/ˈsliːpɪŋ/", "us": "/ˈsliːpɪŋ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_THERE_BE_010",
+      "sentence_info": {
+        "original": "There must be a mistake",
+        "translation": "一定有个错误",
+        "sentence_pattern": "There + 情态动词 + be + 主语",
+        "pattern_code": "THERE_BE",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "there_be", "modal"]
+      },
+      "analysis": [
+        {
+          "word": "There",
+          "base_form": "there",
+          "range": [0, 5],
+          "tag": "adverb_guide",
+          "type": "Guide Word (引导词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "引导词。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "must be",
+          "base_form": "must be",
+          "range": [6, 13],
+          "tag": "verb_modal",
+          "type": "Modal Verb (情态动词)",
+          "chinese_definition": "一定有",
+          "explanation": "情态动词表推测。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [14, 15],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "mistake",
+          "base_form": "mistake",
+          "range": [16, 23],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "错误",
+          "explanation": "名词，真正的主语。",
+          "phonetics": {
+            "uk": "/mɪˈsteɪk/", "us": "/mɪˈsteɪk/"
+          }
+        }
+      ]
     }
   ]
 }

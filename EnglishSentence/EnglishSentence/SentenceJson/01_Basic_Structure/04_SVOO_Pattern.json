@@ -149,6 +149,626 @@
           }
         }
       ]
+    },
+    {
+      "id": "BS_SVOO_003",
+      "sentence_info": {
+        "original": "My father made me a kite",
+        "translation": "我父亲给我做了一个风筝",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "family"]
+      },
+      "analysis": [
+        {
+          "word": "My",
+          "base_form": "my",
+          "range": [0, 2],
+          "tag": "pronoun_possessive",
+          "type": "Subject (主语修饰语)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/", "us": "/maɪ/"
+          }
+        },
+        {
+          "word": "father",
+          "base_form": "father",
+          "range": [3, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "父亲",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/ˈfɑːðə(r)/", "us": "/ˈfɑːðər/"
+          }
+        },
+        {
+          "word": "made",
+          "base_form": "make",
+          "range": [10, 14],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "制作",
+          "explanation": "make 的过去式。",
+          "phonetics": {
+            "uk": "/meɪd/", "us": "/meɪd/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [15, 17],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [18, 19],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "kite",
+          "base_form": "kite",
+          "range": [20, 24],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "风筝",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/kaɪt/", "us": "/kaɪt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_004",
+      "sentence_info": {
+        "original": "Please show me your passport",
+        "translation": "请出示你的护照",
+        "sentence_pattern": "动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "travel", "imperative"]
+      },
+      "analysis": [
+        {
+          "word": "Please",
+          "base_form": "please",
+          "range": [0, 6],
+          "tag": "adverb",
+          "type": "Adverb (副词)",
+          "chinese_definition": "请",
+          "explanation": "表示礼貌的副词。",
+          "phonetics": {
+            "uk": "/pliːz/", "us": "/pliːz/"
+          }
+        },
+        {
+          "word": "show",
+          "base_form": "show",
+          "range": [7, 11],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "出示",
+          "explanation": "祈使句动词原形。",
+          "phonetics": {
+            "uk": "/ʃəʊ/", "us": "/ʃoʊ/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [12, 14],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [15, 19],
+          "tag": "pronoun_possessive",
+          "type": "Adjective (形容词性物主代词)",
+          "chinese_definition": "你的",
+          "explanation": "修饰名词 passport。",
+          "phonetics": {
+            "uk": "/jɔː(r)/", "us": "/jɔːr/"
+          }
+        },
+        {
+          "word": "passport",
+          "base_form": "passport",
+          "range": [20, 28],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "护照",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/ˈpɑːspɔːt/", "us": "/ˈpæspɔːrt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_005",
+      "sentence_info": {
+        "original": "I told him the truth",
+        "translation": "我告诉了他真相",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "communication"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "告诉",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [7, 10],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [11, 14],
+          "tag": "article_definite",
+          "type": "Article (冠词)",
+          "chinese_definition": "这个",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "truth",
+          "base_form": "truth",
+          "range": [15, 20],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "真相",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/truːθ/", "us": "/truːθ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_006",
+      "sentence_info": {
+        "original": "She sent her mother a letter",
+        "translation": "她给她母亲寄了一封信",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "communication"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "sent",
+          "base_form": "send",
+          "range": [4, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "寄送",
+          "explanation": "send 的过去式。",
+          "phonetics": {
+            "uk": "/sent/", "us": "/sent/"
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [9, 12],
+          "tag": "pronoun_possessive",
+          "type": "Adjective (形容词性物主代词)",
+          "chinese_definition": "她的",
+          "explanation": "修饰 mother。",
+          "phonetics": {
+            "uk": "/hɜː(r)/", "us": "/hɜːr/"
+          }
+        },
+        {
+          "word": "mother",
+          "base_form": "mother",
+          "range": [13, 19],
+          "tag": "noun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "母亲",
+          "explanation": "名词，作间接宾语。",
+          "phonetics": {
+            "uk": "/ˈmʌðə(r)/", "us": "/ˈmʌðər/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [20, 21],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一封",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "letter",
+          "base_form": "letter",
+          "range": [22, 28],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "信",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/ˈletə(r)/", "us": "/ˈletər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_007",
+      "sentence_info": {
+        "original": "He lent me his car",
+        "translation": "他借给了我他的车",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "lending"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "lent",
+          "base_form": "lend",
+          "range": [3, 7],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "借出",
+          "explanation": "lend 的过去式。",
+          "phonetics": {
+            "uk": "/lent/", "us": "/lent/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [8, 10],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [11, 14],
+          "tag": "pronoun_possessive",
+          "type": "Adjective (形容词性物主代词)",
+          "chinese_definition": "他的",
+          "explanation": "修饰 car。",
+          "phonetics": {
+            "uk": "/hɪz/", "us": "/hɪz/"
+          }
+        },
+        {
+          "word": "car",
+          "base_form": "car",
+          "range": [15, 18],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "车",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/kɑː(r)/", "us": "/kɑːr/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_008",
+      "sentence_info": {
+        "original": "They offered him a job",
+        "translation": "他们提供给了他一份工作",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "work"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "offered",
+          "base_form": "offer",
+          "range": [5, 12],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "提供",
+          "explanation": "offer 的过去式。",
+          "phonetics": {
+            "uk": "/ˈɒfəd/", "us": "/ˈɔːfərd/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [13, 16],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [17, 18],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一份",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "job",
+          "base_form": "job",
+          "range": [19, 22],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "工作",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/dʒɒb/", "us": "/dʒɑːb/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_009",
+      "sentence_info": {
+        "original": "The teacher asked us a question",
+        "translation": "老师问了我们一个问题",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "education"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这位",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "teacher",
+          "base_form": "teacher",
+          "range": [4, 11],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "老师",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/ˈtiːtʃə(r)/", "us": "/ˈtiːtʃər/"
+          }
+        },
+        {
+          "word": "asked",
+          "base_form": "ask",
+          "range": [12, 17],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "问",
+          "explanation": "ask 的过去式。",
+          "phonetics": {
+            "uk": "/ɑːskt/", "us": "/æskt/"
+          }
+        },
+        {
+          "word": "us",
+          "base_form": "we",
+          "range": [18, 20],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我们",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/ʌs/", "us": "/ʌs/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [21, 22],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "question",
+          "base_form": "question",
+          "range": [23, 31],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "问题",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/ˈkwestʃən/", "us": "/ˈkwestʃən/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVOO_010",
+      "sentence_info": {
+        "original": "Grandma told us a story",
+        "translation": "奶奶给我们讲了一个故事",
+        "sentence_pattern": "主语 + 动词 + 间接宾语(人) + 直接宾语(物)",
+        "pattern_code": "SVOO",
+        "difficulty_level": 2,
+        "tags": ["basic_structure", "svoo_pattern", "family"]
+      },
+      "analysis": [
+        {
+          "word": "Grandma",
+          "base_form": "grandma",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "奶奶",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/ˈɡrænmɑː/", "us": "/ˈɡrænmɑː/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [8, 12],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "讲",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "us",
+          "base_form": "we",
+          "range": [13, 15],
+          "tag": "pronoun_object_indirect",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我们",
+          "explanation": "宾格代词，作间接宾语。",
+          "phonetics": {
+            "uk": "/ʌs/", "us": "/ʌs/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [16, 17],
+          "tag": "article_indefinite",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "story",
+          "base_form": "story",
+          "range": [18, 23],
+          "tag": "noun_object_direct",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "故事",
+          "explanation": "名词，作直接宾语。",
+          "phonetics": {
+            "uk": "/ˈstɔːri/", "us": "/ˈstɔːri/"
+          }
+        }
+      ]
     }
   ]
 }

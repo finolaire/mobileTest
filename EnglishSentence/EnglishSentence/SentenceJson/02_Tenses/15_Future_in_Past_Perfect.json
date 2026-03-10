@@ -161,6 +161,638 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_003",
+      "sentence_info": {
+        "original": "He said he would have finished the work by 5 pm",
+        "translation": "他说他会在下午5点前完成这项工作",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would have + 过去分词 + 宾语 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would have finished",
+          "base_form": "finish",
+          "range": [11, 30],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经完成",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the work",
+          "base_form": "work",
+          "range": [31, 39],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "工作",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/wɜːk/", "us": "/wɜːrk/"
+          }
+        },
+        {
+          "word": "by 5 pm",
+          "base_form": "by 5 pm",
+          "range": [40, 47],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在下午5点前",
+          "explanation": "by 引导的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_004",
+      "sentence_info": {
+        "original": "She told me she would have left by then",
+        "translation": "她告诉我到那时她已经离开了",
+        "sentence_pattern": "主语 + told + 宾语 + (that) + 主语 + would have + 过去分词 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "告诉",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [9, 11],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我",
+          "explanation": "told 的宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [12, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would have left",
+          "base_form": "leave",
+          "range": [16, 31],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经离开",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by then",
+          "base_form": "by then",
+          "range": [32, 39],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到那时",
+          "explanation": "by 引导的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_005",
+      "sentence_info": {
+        "original": "They thought they would have arrived by noon",
+        "translation": "他们以为他们中午前就能到达",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would have + 过去分词 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [5, 12],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "they",
+          "base_form": "they",
+          "range": [13, 17],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "would have arrived",
+          "base_form": "arrive",
+          "range": [18, 36],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经到达",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by noon",
+          "base_form": "by noon",
+          "range": [37, 44],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在中午前",
+          "explanation": "by 引导的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_006",
+      "sentence_info": {
+        "original": "I knew I would have completed the task",
+        "translation": "我知道我会完成这项任务的",
+        "sentence_pattern": "主语 + knew + (that) + 主语 + would have + 过去分词 + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "knew",
+          "base_form": "know",
+          "range": [2, 6],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "知道",
+          "explanation": "know 的过去式。",
+          "phonetics": {
+            "uk": "/njuː/", "us": "/nuː/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [7, 8],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "我",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would have completed",
+          "base_form": "complete",
+          "range": [9, 29],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经完成",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the task",
+          "base_form": "task",
+          "range": [30, 38],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "任务",
+          "explanation": "completed 的宾语。",
+          "phonetics": {
+            "uk": "/tɑːsk/", "us": "/tæsk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_007",
+      "sentence_info": {
+        "original": "We hoped we would have won the game",
+        "translation": "我们曾希望我们能赢得比赛",
+        "sentence_pattern": "主语 + hoped + (that) + 主语 + would have + 过去分词 + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "hope"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "hoped",
+          "base_form": "hope",
+          "range": [3, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "希望",
+          "explanation": "hope 的过去式。",
+          "phonetics": {
+            "uk": "/həʊpt/", "us": "/hoʊpt/"
+          }
+        },
+        {
+          "word": "we",
+          "base_form": "we",
+          "range": [9, 11],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "我们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "would have won",
+          "base_form": "win",
+          "range": [12, 26],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经赢",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the game",
+          "base_form": "game",
+          "range": [27, 35],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "比赛",
+          "explanation": "won 的宾语。",
+          "phonetics": {
+            "uk": "/ɡeɪm/", "us": "/ɡeɪm/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_008",
+      "sentence_info": {
+        "original": "He promised he would have returned the money by Friday",
+        "translation": "他承诺他会在周五前归还这笔钱",
+        "sentence_pattern": "主语 + promised + (that) + 主语 + would have + 过去分词 + 宾语 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "promise"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "promised",
+          "base_form": "promise",
+          "range": [3, 11],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "承诺",
+          "explanation": "promise 的过去式。",
+          "phonetics": {
+            "uk": "/ˈprɒmɪst/", "us": "/ˈprɑːmɪst/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [12, 14],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would have returned",
+          "base_form": "return",
+          "range": [15, 34],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经归还",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the money",
+          "base_form": "money",
+          "range": [35, 44],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "钱",
+          "explanation": "returned 的宾语。",
+          "phonetics": {
+            "uk": "/ˈmʌni/", "us": "/ˈmʌni/"
+          }
+        },
+        {
+          "word": "by Friday",
+          "base_form": "by Friday",
+          "range": [45, 54],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在周五前",
+          "explanation": "by 引导的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_009",
+      "sentence_info": {
+        "original": "She said she would have cooked dinner by the time we got home",
+        "translation": "她说等我们到家时她已经做好晚饭了",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would have + 过去分词 + 宾语 + 时间状语从句",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [9, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would have cooked",
+          "base_form": "cook",
+          "range": [13, 30],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经做好",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "dinner",
+          "base_form": "dinner",
+          "range": [31, 37],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "晚饭",
+          "explanation": "cooked 的宾语。",
+          "phonetics": {
+            "uk": "/ˈdɪnə(r)/", "us": "/ˈdɪnər/"
+          }
+        },
+        {
+          "word": "by the time we got home",
+          "base_form": "by the time we got home",
+          "range": [38, 61],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "到我们到家时",
+          "explanation": "by the time 引导的时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_010",
+      "sentence_info": {
+        "original": "I thought you would have forgotten about it",
+        "translation": "我以为你已经把它忘了",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would have + 过去分词 + 状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_perfect", "assumption"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [2, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [10, 13],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "你",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "would have forgotten",
+          "base_form": "forget",
+          "range": [14, 34],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经忘记",
+          "explanation": "过去将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "about it",
+          "base_form": "about it",
+          "range": [35, 43],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "关于它",
+          "explanation": "介词短语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }

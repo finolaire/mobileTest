@@ -44,6 +44,8 @@ class BookshelfViewController: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableView.automaticDimension
         
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -140,7 +142,7 @@ extension BookshelfViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -151,7 +153,27 @@ extension BookshelfViewController: UITableViewDelegate, UITableViewDataSource {
         let course = sections[indexPath.section].courses[indexPath.row]
         let isCurrent = course.id == currentCourseId
         cell.configure(title: course.unitName, isCurrent: isCurrent)
+        
+        cell.onReadTapped = { [weak self] in
+            self?.openReadingPage(for: course)
+        }
+        
         return cell
+    }
+    
+    private func openReadingPage(for course: CourseUnit) {
+        let readingVC = ReadingViewController(courseUnit: course)
+        let nav = UINavigationController(rootViewController: readingVC)
+        nav.modalPresentationStyle = .fullScreen
+        
+        // Add close button to reading VC
+        readingVC.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(closeReadingPage))
+        
+        present(nav, animated: true, completion: nil)
+    }
+    
+    @objc private func closeReadingPage() {
+        dismiss(animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -272,12 +294,24 @@ class CourseTreeCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = .label
+        label.numberOfLines = 0
         return label
     }()
+    
+    private let readButton: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("查看全文", for: .normal)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        btn.setTitleColor(.systemBlue, for: .normal)
+        return btn
+    }()
+    
+    var onReadTapped: (() -> Void)?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
+        readButton.addTarget(self, action: #selector(readButtonTapped), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -290,6 +324,7 @@ class CourseTreeCell: UITableViewCell {
         
         contentView.addSubview(fileImageView)
         contentView.addSubview(titleLabel)
+        contentView.addSubview(readButton)
         
         // Indentation for child level (Arrow + Folder + Spacing)
         // 16 + 14 + 8 + 18 + 8 = 64 approx
@@ -301,11 +336,23 @@ class CourseTreeCell: UITableViewCell {
             make.width.height.equalTo(16)
         }
         
+        readButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-16)
+            make.centerY.equalToSuperview()
+            make.width.equalTo(64) // Adjusted width for text
+            make.height.equalTo(44)
+        }
+        
         titleLabel.snp.makeConstraints { make in
             make.leading.equalTo(fileImageView.snp.trailing).offset(8)
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview().offset(-16)
+            make.top.equalToSuperview().offset(8)
+            make.bottom.equalToSuperview().offset(-8)
+            make.trailing.equalTo(readButton.snp.leading).offset(-8)
         }
+    }
+    
+    @objc private func readButtonTapped() {
+        onReadTapped?()
     }
     
     func configure(title: String, isCurrent: Bool) {

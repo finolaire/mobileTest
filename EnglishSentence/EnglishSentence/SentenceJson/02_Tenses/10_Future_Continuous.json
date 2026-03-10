@@ -137,6 +137,542 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_FUT_CONT_003",
+      "sentence_info": {
+        "original": "I will be sleeping at midnight",
+        "translation": "午夜时我将正在睡觉",
+        "sentence_pattern": "主语 + will be + doing + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "specific_time"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [2, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "sleeping",
+          "base_form": "sleep",
+          "range": [10, 18],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "睡觉",
+          "explanation": "动词 sleep 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈsliːpɪŋ/", "us": "/ˈsliːpɪŋ/"
+          }
+        },
+        {
+          "word": "at midnight",
+          "base_form": "at midnight",
+          "range": [19, 30],
+          "tag": "phrase_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在午夜",
+          "explanation": "具体的将来时刻。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_004",
+      "sentence_info": {
+        "original": "She will be working all day tomorrow",
+        "translation": "明天她将整天都在工作",
+        "sentence_pattern": "主语 + will be + doing + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [4, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "working",
+          "base_form": "work",
+          "range": [12, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "工作",
+          "explanation": "动词 work 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈwɜːkɪŋ/", "us": "/ˈwɜːrkɪŋ/"
+          }
+        },
+        {
+          "word": "all day tomorrow",
+          "base_form": "all day tomorrow",
+          "range": [20, 36],
+          "tag": "phrase_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天一整天",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_005",
+      "sentence_info": {
+        "original": "They will be playing football at this time next Sunday",
+        "translation": "下周日的这个时候，他们将正在踢足球",
+        "sentence_pattern": "主语 + will be + doing + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "specific_time"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [5, 12],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "playing",
+          "base_form": "play",
+          "range": [13, 20],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "踢/玩",
+          "explanation": "动词 play 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈpleɪɪŋ/", "us": "/ˈpleɪɪŋ/"
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [21, 29],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "playing 的宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        },
+        {
+          "word": "at this time next Sunday",
+          "base_form": "at this time next Sunday",
+          "range": [30, 54],
+          "tag": "phrase_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "下周日的这个时候",
+          "explanation": "将来具体的时刻。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_006",
+      "sentence_info": {
+        "original": "We will be having dinner when you come",
+        "translation": "当你来的时候，我们将正在吃晚饭",
+        "sentence_pattern": "主语 + will be + doing + 宾语 + 时间状语从句",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "interrupted_action"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [3, 10],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "having",
+          "base_form": "have",
+          "range": [11, 17],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "吃/进行",
+          "explanation": "动词 have 的现在分词形式（去 e 加 ing）。",
+          "phonetics": {
+            "uk": "/ˈhævɪŋ/", "us": "/ˈhævɪŋ/"
+          }
+        },
+        {
+          "word": "dinner",
+          "base_form": "dinner",
+          "range": [18, 24],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "晚饭",
+          "explanation": "having 的宾语。",
+          "phonetics": {
+            "uk": "/ˈdɪnə(r)/", "us": "/ˈdɪnər/"
+          }
+        },
+        {
+          "word": "when you come",
+          "base_form": "when you come",
+          "range": [25, 38],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "当你来的时候",
+          "explanation": "when 引导的时间状语从句，用一般现在时表将来。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_007",
+      "sentence_info": {
+        "original": "He will be flying to New York tomorrow morning",
+        "translation": "明天早上他将飞往纽约",
+        "sentence_pattern": "主语 + will be + doing + 地点状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [3, 10],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "flying",
+          "base_form": "fly",
+          "range": [11, 17],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "飞",
+          "explanation": "动词 fly 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈflaɪɪŋ/", "us": "/ˈflaɪɪŋ/"
+          }
+        },
+        {
+          "word": "to New York",
+          "base_form": "to New York",
+          "range": [18, 29],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "去纽约",
+          "explanation": "介词短语表示目的地。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "tomorrow morning",
+          "base_form": "tomorrow morning",
+          "range": [30, 46],
+          "tag": "phrase_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天早上",
+          "explanation": "将来时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_008",
+      "sentence_info": {
+        "original": "The sun will be shining tomorrow",
+        "translation": "明天阳光将会照耀",
+        "sentence_pattern": "主语 + will be + doing + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "The sun",
+          "base_form": "sun",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "太阳",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/ðə sʌn/", "us": "/ðə sʌn/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [8, 15],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "shining",
+          "base_form": "shine",
+          "range": [16, 23],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "照耀",
+          "explanation": "动词 shine 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈʃaɪnɪŋ/", "us": "/ˈʃaɪnɪŋ/"
+          }
+        },
+        {
+          "word": "tomorrow",
+          "base_form": "tomorrow",
+          "range": [24, 32],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天",
+          "explanation": "将来时间状语。",
+          "phonetics": {
+            "uk": "/təˈmɒrəʊ/", "us": "/təˈmɔːroʊ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_009",
+      "sentence_info": {
+        "original": "You will be learning English this time next year",
+        "translation": "明年的这个时候，你将正在学习英语",
+        "sentence_pattern": "主语 + will be + doing + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "specific_time"]
+      },
+      "analysis": [
+        {
+          "word": "You",
+          "base_form": "you",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "你",
+          "explanation": "第二人称主格。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [4, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "learning",
+          "base_form": "learn",
+          "range": [12, 20],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "学习",
+          "explanation": "动词 learn 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈlɜːnɪŋ/", "us": "/ˈlɜːrnɪŋ/"
+          }
+        },
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [21, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "英语",
+          "explanation": "learning 的宾语。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        },
+        {
+          "word": "this time next year",
+          "base_form": "this time next year",
+          "range": [29, 48],
+          "tag": "phrase_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明年的这个时候",
+          "explanation": "将来具体的时刻。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_CONT_010",
+      "sentence_info": {
+        "original": "I will be waiting for you",
+        "translation": "我会等你的",
+        "sentence_pattern": "主语 + will be + doing + 状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "future_continuous", "promise"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will be",
+          "base_form": "be",
+          "range": [2, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会正在",
+          "explanation": "将来进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl biː/", "us": "/wɪl biː/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [10, 17],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "等待",
+          "explanation": "动词 wait 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        },
+        {
+          "word": "for you",
+          "base_form": "for you",
+          "range": [18, 25],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "等你",
+          "explanation": "wait for sb. 固定搭配。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }

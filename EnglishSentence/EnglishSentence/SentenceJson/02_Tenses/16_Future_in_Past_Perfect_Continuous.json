@@ -185,6 +185,638 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_003",
+      "sentence_info": {
+        "original": "He said he would have been working for ten hours by then",
+        "translation": "他说到那时他将已经工作了十个小时",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would have been + doing + 时间段 + by + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would have been working",
+          "base_form": "work",
+          "range": [11, 34],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直工作",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for ten hours",
+          "base_form": "for ten hours",
+          "range": [35, 48],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "十个小时",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by then",
+          "base_form": "by then",
+          "range": [49, 56],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到那时",
+          "explanation": "by 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_004",
+      "sentence_info": {
+        "original": "She told me she would have been waiting for an hour",
+        "translation": "她告诉我她将已经等了一个小时",
+        "sentence_pattern": "主语 + told + 宾语 + (that) + 主语 + would have been + doing + 时间段",
+        "pattern_code": "SVOO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "告诉",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [9, 11],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我",
+          "explanation": "told 的宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [12, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would have been waiting",
+          "base_form": "wait",
+          "range": [16, 39],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直等待",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for an hour",
+          "base_form": "for an hour",
+          "range": [40, 51],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一个小时",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_005",
+      "sentence_info": {
+        "original": "They thought they would have been playing for a while",
+        "translation": "他们以为他们将已经玩了一会儿",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would have been + doing + 时间段",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [5, 12],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "they",
+          "base_form": "they",
+          "range": [13, 17],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "would have been playing",
+          "base_form": "play",
+          "range": [18, 41],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直玩",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for a while",
+          "base_form": "for a while",
+          "range": [42, 53],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一会儿",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_006",
+      "sentence_info": {
+        "original": "I knew I would have been studying all day",
+        "translation": "我知道我将已经学习了一整天",
+        "sentence_pattern": "主语 + knew + (that) + 主语 + would have been + doing + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "knew",
+          "base_form": "know",
+          "range": [2, 6],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "知道",
+          "explanation": "know 的过去式。",
+          "phonetics": {
+            "uk": "/njuː/", "us": "/nuː/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [7, 8],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "我",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would have been studying",
+          "base_form": "study",
+          "range": [9, 33],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直学习",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "all day",
+          "base_form": "all day",
+          "range": [34, 41],
+          "tag": "phrase_noun",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一整天",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "/ɔːl deɪ/", "us": "/ɔːl deɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_007",
+      "sentence_info": {
+        "original": "We hoped we would have been living there for a year",
+        "translation": "我们曾希望我们将在那里住满一年",
+        "sentence_pattern": "主语 + hoped + (that) + 主语 + would have been + doing + 地点 + 时间段",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "hope"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "hoped",
+          "base_form": "hope",
+          "range": [3, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "希望",
+          "explanation": "hope 的过去式。",
+          "phonetics": {
+            "uk": "/həʊpt/", "us": "/hoʊpt/"
+          }
+        },
+        {
+          "word": "we",
+          "base_form": "we",
+          "range": [9, 11],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "我们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "would have been living",
+          "base_form": "live",
+          "range": [12, 34],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直居住",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "there",
+          "base_form": "there",
+          "range": [35, 40],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "那里",
+          "explanation": "地点状语。",
+          "phonetics": {
+            "uk": "/ðeə(r)/", "us": "/ðer/"
+          }
+        },
+        {
+          "word": "for a year",
+          "base_form": "for a year",
+          "range": [41, 51],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一年",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_008",
+      "sentence_info": {
+        "original": "He said he would have been driving for six hours",
+        "translation": "他说他将已经开了六个小时的车",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would have been + doing + 时间段",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would have been driving",
+          "base_form": "drive",
+          "range": [11, 34],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直开车",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for six hours",
+          "base_form": "for six hours",
+          "range": [35, 48],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "六个小时",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_009",
+      "sentence_info": {
+        "original": "She said she would have been sleeping by the time you arrived",
+        "translation": "她说等你到达时，她将一直在睡觉",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would have been + doing + 时间状语从句",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [9, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would have been sleeping",
+          "base_form": "sleep",
+          "range": [13, 37],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直睡觉",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by the time you arrived",
+          "base_form": "by the time you arrived",
+          "range": [38, 61],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "到你到达时",
+          "explanation": "by the time 引导的时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_PERF_CONT_010",
+      "sentence_info": {
+        "original": "I thought you would have been watching TV for hours",
+        "translation": "我以为你将已经看了好几个小时的电视了",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would have been + doing + 宾语 + 时间段",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 4,
+        "tags": ["tense", "future_in_past_perfect_continuous", "assumption"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [2, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [10, 13],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "你",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "would have been watching",
+          "base_form": "watch",
+          "range": [14, 38],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直看",
+          "explanation": "过去将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "TV",
+          "base_form": "TV",
+          "range": [39, 41],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "电视",
+          "explanation": "watching 的宾语。",
+          "phonetics": {
+            "uk": "/ˌtiː ˈviː/", "us": "/ˌtiː ˈviː/"
+          }
+        },
+        {
+          "word": "for hours",
+          "base_form": "for hours",
+          "range": [42, 51],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "好几个小时",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }
