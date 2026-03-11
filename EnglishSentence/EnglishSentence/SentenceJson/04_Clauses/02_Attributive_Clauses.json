@@ -125,6 +125,482 @@
           }
         }
       ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_003",
+      "sentence_info": {
+        "original": "The girl whose hair is long is my sister",
+        "translation": "那个长头发的女孩是我的妹妹",
+        "sentence_pattern": "主语 + 定语从句 + 系动词 + 表语",
+        "pattern_code": "S_CLAUSE_VP",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_whose"]
+      },
+      "analysis": [
+        {
+          "word": "The girl",
+          "base_form": "girl",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语/先行词)",
+          "chinese_definition": "那个女孩",
+          "explanation": "主句的主语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/ɡɜːl/", "us": "/ɡɜːrl/"
+          }
+        },
+        {
+          "word": "whose hair is long",
+          "base_form": "whose hair is long",
+          "range": [9, 27],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "头发很长的",
+          "explanation": "修饰 The girl 的定语从句。whose 是关系代词，表示所属关系。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [28, 30],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "主句的系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "my sister",
+          "base_form": "sister",
+          "range": [31, 40],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "我的妹妹",
+          "explanation": "名词短语作表语。",
+          "phonetics": {
+            "uk": "/ˈsɪstə(r)/", "us": "/ˈsɪstər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_004",
+      "sentence_info": {
+        "original": "I still remember the day when we met",
+        "translation": "我仍然记得我们相遇的那一天",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 定语从句",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_adverb_when"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "still remember",
+          "base_form": "remember",
+          "range": [2, 16],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "仍然记得",
+          "explanation": "主句谓语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the day",
+          "base_form": "day",
+          "range": [17, 24],
+          "tag": "noun_object",
+          "type": "Object (宾语/先行词)",
+          "chinese_definition": "那一天",
+          "explanation": "主句宾语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/deɪ/", "us": "/deɪ/"
+          }
+        },
+        {
+          "word": "when we met",
+          "base_form": "when we met",
+          "range": [25, 36],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "我们相遇的",
+          "explanation": "修饰 the day 的定语从句。when 是关系副词，在从句中作时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_005",
+      "sentence_info": {
+        "original": "This is the house where I was born",
+        "translation": "这就是我出生的房子",
+        "sentence_pattern": "主语 + 系动词 + 表语 + 定语从句",
+        "pattern_code": "SVP_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_adverb_where"]
+      },
+      "analysis": [
+        {
+          "word": "This",
+          "base_form": "this",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "这",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðɪs/", "us": "/ðɪs/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [5, 7],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "the house",
+          "base_form": "house",
+          "range": [8, 17],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语/先行词)",
+          "chinese_definition": "房子",
+          "explanation": "主句表语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/haʊs/", "us": "/haʊs/"
+          }
+        },
+        {
+          "word": "where I was born",
+          "base_form": "where I was born",
+          "range": [18, 34],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "我出生的",
+          "explanation": "修饰 the house 的定语从句。where 是关系副词，在从句中作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_006",
+      "sentence_info": {
+        "original": "The reason why he left is unknown",
+        "translation": "他离开的原因不为人知",
+        "sentence_pattern": "主语 + 定语从句 + 系动词 + 表语",
+        "pattern_code": "S_CLAUSE_VP",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_adverb_why"]
+      },
+      "analysis": [
+        {
+          "word": "The reason",
+          "base_form": "reason",
+          "range": [0, 10],
+          "tag": "noun_subject",
+          "type": "Subject (主语/先行词)",
+          "chinese_definition": "原因",
+          "explanation": "主句的主语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/ˈriːzn/", "us": "/ˈriːzn/"
+          }
+        },
+        {
+          "word": "why he left",
+          "base_form": "why he left",
+          "range": [11, 22],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "他离开的",
+          "explanation": "修饰 The reason 的定语从句。why 是关系副词，在从句中作原因状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [23, 25],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "主句的系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "unknown",
+          "base_form": "unknown",
+          "range": [26, 33],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "未知的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ˌʌnˈnəʊn/", "us": "/ˌʌnˈnoʊn/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_007",
+      "sentence_info": {
+        "original": "He is the man whom I saw yesterday",
+        "translation": "他就是我昨天见到的那个男人",
+        "sentence_pattern": "主语 + 系动词 + 表语 + 定语从句",
+        "pattern_code": "SVP_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_whom"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [3, 5],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "the man",
+          "base_form": "man",
+          "range": [6, 13],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语/先行词)",
+          "chinese_definition": "那个男人",
+          "explanation": "主句表语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/mæn/", "us": "/mæn/"
+          }
+        },
+        {
+          "word": "whom I saw yesterday",
+          "base_form": "whom I saw yesterday",
+          "range": [14, 34],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "我昨天见到的",
+          "explanation": "修饰 the man 的定语从句。whom 是关系代词，在从句中作宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_008",
+      "sentence_info": {
+        "original": "The car that he drives is expensive",
+        "translation": "他开的那辆车很贵",
+        "sentence_pattern": "主语 + 定语从句 + 系动词 + 表语",
+        "pattern_code": "S_CLAUSE_VP",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_that"]
+      },
+      "analysis": [
+        {
+          "word": "The car",
+          "base_form": "car",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语/先行词)",
+          "chinese_definition": "那辆车",
+          "explanation": "主句的主语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/kɑː(r)/", "us": "/kɑːr/"
+          }
+        },
+        {
+          "word": "that he drives",
+          "base_form": "that he drives",
+          "range": [8, 22],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "他开的",
+          "explanation": "修饰 The car 的定语从句。that 是关系代词，在从句中作宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [23, 25],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "主句的系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "expensive",
+          "base_form": "expensive",
+          "range": [26, 35],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "贵的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ɪkˈspensɪv/", "us": "/ɪkˈspensɪv/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_009",
+      "sentence_info": {
+        "original": "Those who work hard will succeed",
+        "translation": "那些努力工作的人将会成功",
+        "sentence_pattern": "主语 + 定语从句 + 动词",
+        "pattern_code": "S_CLAUSE_V",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_who"]
+      },
+      "analysis": [
+        {
+          "word": "Those",
+          "base_form": "those",
+          "range": [0, 5],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语/先行词)",
+          "chinese_definition": "那些人",
+          "explanation": "主句的主语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/ðəʊz/", "us": "/ðoʊz/"
+          }
+        },
+        {
+          "word": "who work hard",
+          "base_form": "who work hard",
+          "range": [6, 19],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "努力工作的",
+          "explanation": "修饰 Those 的定语从句。who 是关系代词，在从句中作主语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "will succeed",
+          "base_form": "succeed",
+          "range": [20, 32],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会成功",
+          "explanation": "主句谓语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_ATTRIBUTIVE_010",
+      "sentence_info": {
+        "original": "This is the best movie that I have ever seen",
+        "translation": "这是我看过的最好的电影",
+        "sentence_pattern": "主语 + 系动词 + 表语 + 定语从句",
+        "pattern_code": "SVP_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "attributive_clause", "relative_pronoun_that"]
+      },
+      "analysis": [
+        {
+          "word": "This",
+          "base_form": "this",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "这",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðɪs/", "us": "/ðɪs/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [5, 7],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "the best movie",
+          "base_form": "movie",
+          "range": [8, 22],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语/先行词)",
+          "chinese_definition": "最好的电影",
+          "explanation": "主句表语，也是定语从句修饰的先行词。",
+          "phonetics": {
+            "uk": "/ˌbest ˈmuːvi/", "us": "/ˌbest ˈmuːvi/"
+          }
+        },
+        {
+          "word": "that I have ever seen",
+          "base_form": "that I have ever seen",
+          "range": [23, 44],
+          "tag": "clause_attributive",
+          "type": "Attributive Clause (定语从句)",
+          "chinese_definition": "我看过的",
+          "explanation": "修饰 the best movie 的定语从句。先行词有最高级修饰时，关系代词常用 that。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }

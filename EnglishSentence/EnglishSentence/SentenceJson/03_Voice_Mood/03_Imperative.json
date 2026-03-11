@@ -101,6 +101,374 @@
           }
         }
       ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_003",
+      "sentence_info": {
+        "original": "Let's go for a walk",
+        "translation": "我们去散步吧",
+        "sentence_pattern": "Let's + 动词原形 + 状语",
+        "pattern_code": "VO",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "suggestion"]
+      },
+      "analysis": [
+        {
+          "word": "Let's",
+          "base_form": "let us",
+          "range": [0, 5],
+          "tag": "phrase_imperative",
+          "type": "Imperative (祈使短语)",
+          "chinese_definition": "让我们",
+          "explanation": "Let's = Let us，表示建议。",
+          "phonetics": {
+            "uk": "/lets/", "us": "/lets/"
+          }
+        },
+        {
+          "word": "go",
+          "base_form": "go",
+          "range": [6, 8],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "去",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/ɡəʊ/", "us": "/ɡoʊ/"
+          }
+        },
+        {
+          "word": "for a walk",
+          "base_form": "for a walk",
+          "range": [9, 19],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (目的状语)",
+          "chinese_definition": "散步",
+          "explanation": "介词短语表示目的。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_004",
+      "sentence_info": {
+        "original": "Be careful",
+        "translation": "小心",
+        "sentence_pattern": "Be + 表语",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "warning"]
+      },
+      "analysis": [
+        {
+          "word": "Be",
+          "base_form": "be",
+          "range": [0, 2],
+          "tag": "verb_be",
+          "type": "Be-Verb (系动词)",
+          "chinese_definition": "要/变得",
+          "explanation": "系动词原形。",
+          "phonetics": {
+            "uk": "/biː/", "us": "/biː/"
+          }
+        },
+        {
+          "word": "careful",
+          "base_form": "careful",
+          "range": [3, 10],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "小心的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ˈkeəfl/", "us": "/ˈkerfl/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_005",
+      "sentence_info": {
+        "original": "Pass me the salt, please",
+        "translation": "请把盐递给我",
+        "sentence_pattern": "动词原形 + 间接宾语 + 直接宾语 + please",
+        "pattern_code": "VOO",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "request"]
+      },
+      "analysis": [
+        {
+          "word": "Pass",
+          "base_form": "pass",
+          "range": [0, 4],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "递",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/pɑːs/", "us": "/pæs/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [5, 7],
+          "tag": "pronoun_object",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我",
+          "explanation": "宾格代词。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "the salt",
+          "base_form": "salt",
+          "range": [8, 16],
+          "tag": "noun_object",
+          "type": "Direct Object (直接宾语)",
+          "chinese_definition": "盐",
+          "explanation": "名词短语。",
+          "phonetics": {
+            "uk": "/sɔːlt/", "us": "/sɔːlt/"
+          }
+        },
+        {
+          "word": "please",
+          "base_form": "please",
+          "range": [18, 24],
+          "tag": "adverb_politeness",
+          "type": "Interjection (语气词)",
+          "chinese_definition": "请",
+          "explanation": "表示礼貌。",
+          "phonetics": {
+            "uk": "/pliːz/", "us": "/pliːz/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_006",
+      "sentence_info": {
+        "original": "Turn right at the corner",
+        "translation": "在拐角处右转",
+        "sentence_pattern": "动词原形 + 副词 + 地点状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "instruction"]
+      },
+      "analysis": [
+        {
+          "word": "Turn",
+          "base_form": "turn",
+          "range": [0, 4],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "转",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/tɜːn/", "us": "/tɜːrn/"
+          }
+        },
+        {
+          "word": "right",
+          "base_form": "right",
+          "range": [5, 10],
+          "tag": "adverb_direction",
+          "type": "Adverbial (方向状语)",
+          "chinese_definition": "向右",
+          "explanation": "副词。",
+          "phonetics": {
+            "uk": "/raɪt/", "us": "/raɪt/"
+          }
+        },
+        {
+          "word": "at the corner",
+          "base_form": "at the corner",
+          "range": [11, 24],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在拐角处",
+          "explanation": "介词短语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_007",
+      "sentence_info": {
+        "original": "Have a nice day",
+        "translation": "祝你过得愉快",
+        "sentence_pattern": "动词原形 + 宾语",
+        "pattern_code": "VO",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "wish"]
+      },
+      "analysis": [
+        {
+          "word": "Have",
+          "base_form": "have",
+          "range": [0, 4],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "有/度过",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "a nice day",
+          "base_form": "day",
+          "range": [5, 15],
+          "tag": "phrase_noun",
+          "type": "Object (宾语)",
+          "chinese_definition": "愉快的一天",
+          "explanation": "名词短语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_008",
+      "sentence_info": {
+        "original": "Don't touch that",
+        "translation": "别碰那个",
+        "sentence_pattern": "Don't + 动词原形 + 宾语",
+        "pattern_code": "VO",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "prohibition"]
+      },
+      "analysis": [
+        {
+          "word": "Don't",
+          "base_form": "do not",
+          "range": [0, 5],
+          "tag": "verb_auxiliary_negative",
+          "type": "Auxiliary Verb (助动词否定)",
+          "chinese_definition": "不要",
+          "explanation": "表示禁止。",
+          "phonetics": {
+            "uk": "/dəʊnt/", "us": "/doʊnt/"
+          }
+        },
+        {
+          "word": "touch",
+          "base_form": "touch",
+          "range": [6, 11],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "碰",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/tʌtʃ/", "us": "/tʌtʃ/"
+          }
+        },
+        {
+          "word": "that",
+          "base_form": "that",
+          "range": [12, 16],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "那个",
+          "explanation": "指示代词。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_009",
+      "sentence_info": {
+        "original": "Please sit down",
+        "translation": "请坐",
+        "sentence_pattern": "Please + 动词原形 + 副词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "request"]
+      },
+      "analysis": [
+        {
+          "word": "Please",
+          "base_form": "please",
+          "range": [0, 6],
+          "tag": "adverb_politeness",
+          "type": "Interjection (语气词)",
+          "chinese_definition": "请",
+          "explanation": "表示礼貌。",
+          "phonetics": {
+            "uk": "/pliːz/", "us": "/pliːz/"
+          }
+        },
+        {
+          "word": "sit",
+          "base_form": "sit",
+          "range": [7, 10],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "坐",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/sɪt/", "us": "/sɪt/"
+          }
+        },
+        {
+          "word": "down",
+          "base_form": "down",
+          "range": [11, 15],
+          "tag": "adverb_direction",
+          "type": "Adverbial (方向状语)",
+          "chinese_definition": "下",
+          "explanation": "副词修饰动词。",
+          "phonetics": {
+            "uk": "/daʊn/", "us": "/daʊn/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_IMPERATIVE_010",
+      "sentence_info": {
+        "original": "Stop talking",
+        "translation": "别说话",
+        "sentence_pattern": "动词原形 + 动名词",
+        "pattern_code": "VO",
+        "difficulty_level": 1,
+        "tags": ["mood", "imperative", "command"]
+      },
+      "analysis": [
+        {
+          "word": "Stop",
+          "base_form": "stop",
+          "range": [0, 4],
+          "tag": "verb_imperative",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "停止",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/stɒp/", "us": "/stɑːp/"
+          }
+        },
+        {
+          "word": "talking",
+          "base_form": "talk",
+          "range": [5, 12],
+          "tag": "verb_gerund",
+          "type": "Gerund (动名词)",
+          "chinese_definition": "说话",
+          "explanation": "stop doing sth. 表示停止做某事。",
+          "phonetics": {
+            "uk": "/ˈtɔːkɪŋ/", "us": "/ˈtɔːkɪŋ/"
+          }
+        }
+      ]
     }
   ]
 }
