@@ -37,7 +37,7 @@ struct AppStrings {
     }
     
     struct Immersive {
-        static let title = "沉浸式阅读"
+        static let title = "自动播放"
         static let close = "关闭"
         static let start = "开始播放"
         
