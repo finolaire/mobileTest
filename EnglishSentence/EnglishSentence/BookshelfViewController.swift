@@ -16,7 +16,7 @@ class BookshelfViewController: UIViewController {
         let tv = UITableView(frame: .zero, style: .plain) // Changed to plain for tree look
         tv.register(CourseTreeCell.self, forCellReuseIdentifier: "CourseTreeCell")
         tv.register(CourseSectionHeaderView.self, forHeaderFooterViewReuseIdentifier: "SectionHeader")
-        tv.backgroundColor = .systemBackground
+        tv.backgroundColor = .clear
         tv.separatorStyle = .none // Remove separators for cleaner tree look
         return tv
     }()
@@ -26,7 +26,7 @@ class BookshelfViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = UIColor(hex: 0x111823)
         title = "Bookshelf"
         
         setupUI()
@@ -210,8 +210,8 @@ class CourseSectionHeaderView: UITableViewHeaderFooterView {
     
     private let folderImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(systemName: "folder.fill")
-        iv.tintColor = .systemBlue
+        iv.image = UIImage(systemName: "character.book.closed.fill")
+        iv.tintColor = .systemYellow
         iv.contentMode = .scaleAspectFit
         return iv
     }()
@@ -219,7 +219,7 @@ class CourseSectionHeaderView: UITableViewHeaderFooterView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-        label.textColor = .label
+        label.textColor = .white
         return label
     }()
     
@@ -233,7 +233,7 @@ class CourseSectionHeaderView: UITableViewHeaderFooterView {
     }
     
     private func setupUI() {
-        contentView.backgroundColor = .systemBackground
+        contentView.backgroundColor = .clear//.systemBackground
         
         contentView.addSubview(arrowImageView)
         contentView.addSubview(folderImageView)
@@ -251,7 +251,7 @@ class CourseSectionHeaderView: UITableViewHeaderFooterView {
         folderImageView.snp.makeConstraints { make in
             make.leading.equalTo(arrowImageView.snp.trailing).offset(8)
             make.centerY.equalToSuperview()
-            make.width.height.equalTo(18)
+            make.width.height.equalTo(21)
         }
         
         titleLabel.snp.makeConstraints { make in
@@ -284,25 +284,30 @@ class CourseTreeCell: UITableViewCell {
     
     private let fileImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(systemName: "doc.text") // Or "curlybraces" for JSON look
-        iv.tintColor = .secondaryLabel
-        iv.contentMode = .scaleAspectFit
+        let config = UIImage.SymbolConfiguration(pointSize: 10, weight: .bold)
+        iv.image = UIImage(systemName: "play.fill", withConfiguration: config)
+        iv.tintColor = .red
+        iv.backgroundColor = .systemGray4
+        iv.contentMode = .center
+        iv.layer.cornerRadius = 12
+        iv.clipsToBounds = true
         return iv
     }()
     
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
-        label.textColor = .label
+        label.textColor = .white
         label.numberOfLines = 0
         return label
     }()
     
     private let readButton: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.setTitle("查看全文", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        btn.setTitleColor(.systemBlue, for: .normal)
+        let btn = UIButton()
+//        btn.setTitle("查看全文", for: .normal)
+        btn.setImage(UIImage(named: "icon_book_all"), for: .normal)
+//        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+//        btn.setTitleColor(.systemBlue, for: .normal)
         return btn
     }()
     
@@ -333,14 +338,14 @@ class CourseTreeCell: UITableViewCell {
         fileImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(indentation)
             make.centerY.equalToSuperview()
-            make.width.height.equalTo(16)
+            make.width.height.equalTo(24)
         }
         
         readButton.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-16)
             make.centerY.equalToSuperview()
-            make.width.equalTo(64) // Adjusted width for text
-            make.height.equalTo(44)
+            make.width.equalTo(20) // Adjusted width for text
+            make.height.equalTo(20)
         }
         
         titleLabel.snp.makeConstraints { make in
@@ -360,14 +365,23 @@ class CourseTreeCell: UITableViewCell {
         
         if isCurrent {
             // Highlight style: Bold, Large, Red
-            titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
-            titleLabel.textColor = .systemRed
-            fileImageView.tintColor = .systemRed
+            titleLabel.font = UIFont.systemFont(ofSize: 15, weight: .heavy)
+            titleLabel.textColor = UIColor(hex: 0x258cf4)
+            
+            let config = UIImage.SymbolConfiguration(pointSize: 10, weight: .bold)
+            fileImageView.image = UIImage(systemName: "play.fill", withConfiguration: config)
+            fileImageView.tintColor = .white
+            fileImageView.backgroundColor = UIColor(hex: 0x258cf4)
         } else {
             // Normal style
             titleLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
-            titleLabel.textColor = .label
-            fileImageView.tintColor = .secondaryLabel
+            titleLabel.textColor = .white
+
+            let config = UIImage.SymbolConfiguration(pointSize: 10, weight: .bold)
+            fileImageView.image = UIImage(systemName: "play.fill", withConfiguration: config)
+            fileImageView.tintColor = UIColor(hex: 0x258cf4)
+            fileImageView.backgroundColor = UIColor(hex: 0x163354)
+
         }
     }
 }
