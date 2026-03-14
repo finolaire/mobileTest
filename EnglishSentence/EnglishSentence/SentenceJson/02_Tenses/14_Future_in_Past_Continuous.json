@@ -137,6 +137,602 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_003",
+      "sentence_info": {
+        "original": "He said he would be working late",
+        "translation": "他说他会工作到很晚",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would be + doing + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would be working",
+          "base_form": "work",
+          "range": [11, 27],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在工作",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "late",
+          "base_form": "late",
+          "range": [28, 32],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "很晚",
+          "explanation": "时间副词。",
+          "phonetics": {
+            "uk": "/leɪt/", "us": "/leɪt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_004",
+      "sentence_info": {
+        "original": "They said they would be playing football",
+        "translation": "他们说他们会正在踢足球",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would be + doing + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [5, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "they",
+          "base_form": "they",
+          "range": [10, 14],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他们",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "would be playing",
+          "base_form": "play",
+          "range": [15, 31],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在踢",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [32, 40],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "playing 的宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_005",
+      "sentence_info": {
+        "original": "We thought it would be raining",
+        "translation": "我们以为会正在下雨",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would be + doing",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [3, 10],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为/想",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "it",
+          "base_form": "it",
+          "range": [11, 13],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "would be raining",
+          "base_form": "rain",
+          "range": [14, 30],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在下雨",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_006",
+      "sentence_info": {
+        "original": "He said he would be flying to Paris the next day",
+        "translation": "他说他第二天将飞往巴黎",
+        "sentence_pattern": "主语 + said + (that) + 主语 + would be + doing + 地点状语 + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "said",
+          "base_form": "say",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "说",
+          "explanation": "say 的过去式。",
+          "phonetics": {
+            "uk": "/sed/", "us": "/sed/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [8, 10],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would be flying",
+          "base_form": "fly",
+          "range": [11, 26],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在飞",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "to Paris",
+          "base_form": "to Paris",
+          "range": [27, 35],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "去巴黎",
+          "explanation": "介词短语表示目的地。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the next day",
+          "base_form": "the next day",
+          "range": [36, 48],
+          "tag": "phrase_noun",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "第二天",
+          "explanation": "过去将来时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_007",
+      "sentence_info": {
+        "original": "She promised she would be helping us",
+        "translation": "她承诺她会一直帮助我们",
+        "sentence_pattern": "主语 + promised + (that) + 主语 + would be + doing + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "promise"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "promised",
+          "base_form": "promise",
+          "range": [4, 12],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "承诺",
+          "explanation": "promise 的过去式。",
+          "phonetics": {
+            "uk": "/ˈprɒmɪst/", "us": "/ˈprɑːmɪst/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [13, 16],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would be helping",
+          "base_form": "help",
+          "range": [17, 33],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在帮助",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "us",
+          "base_form": "us",
+          "range": [34, 36],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我们",
+          "explanation": "helping 的宾语。",
+          "phonetics": {
+            "uk": "/ʌs/", "us": "/ʌs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_008",
+      "sentence_info": {
+        "original": "I thought you would be watching TV",
+        "translation": "我以为你会正在看电视",
+        "sentence_pattern": "主语 + thought + (that) + 主语 + would be + doing + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "assumption"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "thought",
+          "base_form": "think",
+          "range": [2, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "以为/想",
+          "explanation": "think 的过去式。",
+          "phonetics": {
+            "uk": "/θɔːt/", "us": "/θɔːt/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [10, 13],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "你",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "would be watching",
+          "base_form": "watch",
+          "range": [14, 31],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在看",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "TV",
+          "base_form": "TV",
+          "range": [32, 34],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "电视",
+          "explanation": "watching 的宾语。",
+          "phonetics": {
+            "uk": "/ˌtiː ˈviː/", "us": "/ˌtiː ˈviː/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_009",
+      "sentence_info": {
+        "original": "She told me she would be waiting for me",
+        "translation": "她告诉我她会一直在等我",
+        "sentence_pattern": "主语 + told + 宾语 + (that) + 主语 + would be + doing + 状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "indirect_speech"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "told",
+          "base_form": "tell",
+          "range": [4, 8],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "告诉",
+          "explanation": "tell 的过去式。",
+          "phonetics": {
+            "uk": "/təʊld/", "us": "/toʊld/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [9, 11],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我",
+          "explanation": "told 的宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [12, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "她",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "would be waiting",
+          "base_form": "wait",
+          "range": [16, 32],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在等待",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for me",
+          "base_form": "for me",
+          "range": [33, 39],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "等我",
+          "explanation": "wait for sb.",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PAST_CONT_010",
+      "sentence_info": {
+        "original": "I knew he would be sleeping at that time",
+        "translation": "我知道他那时会正在睡觉",
+        "sentence_pattern": "主语 + knew + (that) + 主语 + would be + doing + 时间状语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_in_past_continuous", "belief"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "knew",
+          "base_form": "know",
+          "range": [2, 6],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "知道",
+          "explanation": "know 的过去式。",
+          "phonetics": {
+            "uk": "/njuː/", "us": "/nuː/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [7, 9],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "他",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "would be sleeping",
+          "base_form": "sleep",
+          "range": [10, 27],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会正在睡觉",
+          "explanation": "过去将来进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "at that time",
+          "base_form": "at that time",
+          "range": [28, 40],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在那时",
+          "explanation": "过去的时间点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }

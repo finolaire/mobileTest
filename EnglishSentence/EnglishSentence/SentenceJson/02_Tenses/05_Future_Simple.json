@@ -125,6 +125,578 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_003",
+      "sentence_info": {
+        "original": "I will call you tomorrow",
+        "translation": "我明天会给你打电话",
+        "sentence_pattern": "主语 + will + 动词原形 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "promise"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will",
+          "base_form": "will",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将/会",
+          "explanation": "助动词，表示将来。",
+          "phonetics": {
+            "uk": "/wɪl/", "us": "/wɪl/"
+          }
+        },
+        {
+          "word": "call",
+          "base_form": "call",
+          "range": [7, 11],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "打电话",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/kɔːl/", "us": "/kɔːl/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [12, 15],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "宾格代词。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "tomorrow",
+          "base_form": "tomorrow",
+          "range": [16, 24],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天",
+          "explanation": "表示将来的时间状语。",
+          "phonetics": {
+            "uk": "/təˈmɒrəʊ/", "us": "/təˈmɔːroʊ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_004",
+      "sentence_info": {
+        "original": "She will buy a new dress",
+        "translation": "她将买一件新连衣裙",
+        "sentence_pattern": "主语 + will + 动词原形 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will",
+          "base_form": "will",
+          "range": [4, 8],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将/会",
+          "explanation": "助动词，表示将来。",
+          "phonetics": {
+            "uk": "/wɪl/", "us": "/wɪl/"
+          }
+        },
+        {
+          "word": "buy",
+          "base_form": "buy",
+          "range": [9, 12],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "买",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/baɪ/", "us": "/baɪ/"
+          }
+        },
+        {
+          "word": "a new dress",
+          "base_form": "dress",
+          "range": [13, 24],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "一件新连衣裙",
+          "explanation": "buy 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_005",
+      "sentence_info": {
+        "original": "We will visit our grandparents next week",
+        "translation": "我们下周将去拜访祖父母",
+        "sentence_pattern": "主语 + will + 动词原形 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "will",
+          "base_form": "will",
+          "range": [3, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将/会",
+          "explanation": "助动词，表示将来。",
+          "phonetics": {
+            "uk": "/wɪl/", "us": "/wɪl/"
+          }
+        },
+        {
+          "word": "visit",
+          "base_form": "visit",
+          "range": [8, 13],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "拜访",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/ˈvɪzɪt/", "us": "/ˈvɪzɪt/"
+          }
+        },
+        {
+          "word": "our grandparents",
+          "base_form": "grandparent",
+          "range": [14, 30],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我们的祖父母",
+          "explanation": "visit 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "next week",
+          "base_form": "next week",
+          "range": [31, 40],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "下周",
+          "explanation": "表示将来的时间状语。",
+          "phonetics": {
+            "uk": "/nekst wiːk/", "us": "/nekst wiːk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_006",
+      "sentence_info": {
+        "original": "They will play football on Saturday",
+        "translation": "他们周六将踢足球",
+        "sentence_pattern": "主语 + will + 动词原形 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "will",
+          "base_form": "will",
+          "range": [5, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将/会",
+          "explanation": "助动词，表示将来。",
+          "phonetics": {
+            "uk": "/wɪl/", "us": "/wɪl/"
+          }
+        },
+        {
+          "word": "play",
+          "base_form": "play",
+          "range": [10, 14],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "踢/玩",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/pleɪ/", "us": "/pleɪ/"
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [15, 23],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "play 的宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        },
+        {
+          "word": "on Saturday",
+          "base_form": "on Saturday",
+          "range": [24, 35],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在周六",
+          "explanation": "表示将来的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_007",
+      "sentence_info": {
+        "original": "He will finish the project soon",
+        "translation": "他很快就会完成这个项目",
+        "sentence_pattern": "主语 + will + 动词原形 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "prediction"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "will",
+          "base_form": "will",
+          "range": [3, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将/会",
+          "explanation": "助动词，表示将来。",
+          "phonetics": {
+            "uk": "/wɪl/", "us": "/wɪl/"
+          }
+        },
+        {
+          "word": "finish",
+          "base_form": "finish",
+          "range": [8, 14],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "完成",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/ˈfɪnɪʃ/", "us": "/ˈfɪnɪʃ/"
+          }
+        },
+        {
+          "word": "the project",
+          "base_form": "project",
+          "range": [15, 26],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "这个项目",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/ˈprɒdʒekt/", "us": "/ˈprɑːdʒekt/"
+          }
+        },
+        {
+          "word": "soon",
+          "base_form": "soon",
+          "range": [27, 31],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "很快",
+          "explanation": "表示将来的时间状语。",
+          "phonetics": {
+            "uk": "/suːn/", "us": "/suːn/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_008",
+      "sentence_info": {
+        "original": "I am going to study English",
+        "translation": "我打算学习英语",
+        "sentence_pattern": "主语 + be going to + 动词原形 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "am",
+          "base_form": "be",
+          "range": [2, 4],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "是",
+          "explanation": "be going to 结构中的 be 动词。",
+          "phonetics": {
+            "uk": "/æm/", "us": "/æm/"
+          }
+        },
+        {
+          "word": "going to",
+          "base_form": "go",
+          "range": [5, 13],
+          "tag": "phrase_future",
+          "type": "Future Marker (将来时标志)",
+          "chinese_definition": "打算",
+          "explanation": "be going to 表示计划或打算。",
+          "phonetics": {
+            "uk": "/ˈɡəʊɪŋ tuː/", "us": "/ˈɡoʊɪŋ tuː/"
+          }
+        },
+        {
+          "word": "study",
+          "base_form": "study",
+          "range": [14, 19],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "学习",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/ˈstʌdi/", "us": "/ˈstʌdi/"
+          }
+        },
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [20, 27],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "英语",
+          "explanation": "study 的宾语。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_009",
+      "sentence_info": {
+        "original": "She is going to travel to Paris",
+        "translation": "她打算去巴黎旅行",
+        "sentence_pattern": "主语 + be going to + 动词原形 + 地点状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [4, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "是",
+          "explanation": "be going to 结构中的 be 动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "going to",
+          "base_form": "go",
+          "range": [7, 15],
+          "tag": "phrase_future",
+          "type": "Future Marker (将来时标志)",
+          "chinese_definition": "打算",
+          "explanation": "be going to 表示计划或打算。",
+          "phonetics": {
+            "uk": "/ˈɡəʊɪŋ tuː/", "us": "/ˈɡoʊɪŋ tuː/"
+          }
+        },
+        {
+          "word": "travel",
+          "base_form": "travel",
+          "range": [16, 22],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "旅行",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/ˈtrævl/", "us": "/ˈtrævl/"
+          }
+        },
+        {
+          "word": "to Paris",
+          "base_form": "to Paris",
+          "range": [23, 31],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "去巴黎",
+          "explanation": "介词短语表示目的地。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_SIMPLE_010",
+      "sentence_info": {
+        "original": "We are going to have a party",
+        "translation": "我们打算举办一个派对",
+        "sentence_pattern": "主语 + be going to + 动词原形 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "future_simple", "plan"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "是",
+          "explanation": "be going to 结构中的 be 动词。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "going to",
+          "base_form": "go",
+          "range": [7, 15],
+          "tag": "phrase_future",
+          "type": "Future Marker (将来时标志)",
+          "chinese_definition": "打算",
+          "explanation": "be going to 表示计划或打算。",
+          "phonetics": {
+            "uk": "/ˈɡəʊɪŋ tuː/", "us": "/ˈɡoʊɪŋ tuː/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [16, 20],
+          "tag": "verb_base",
+          "type": "Verb (动词原形)",
+          "chinese_definition": "举办/有",
+          "explanation": "实义动词原形。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "a party",
+          "base_form": "party",
+          "range": [21, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "一个派对",
+          "explanation": "have 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }

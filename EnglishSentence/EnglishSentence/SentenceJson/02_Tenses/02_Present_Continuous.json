@@ -137,6 +137,470 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_PRES_CONT_003",
+      "sentence_info": {
+        "original": "They are playing football",
+        "translation": "他们正在踢足球",
+        "sentence_pattern": "主语 + are + doing + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "sports"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [5, 8],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词 be 的复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "playing",
+          "base_form": "play",
+          "range": [9, 16],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "踢",
+          "explanation": "动词 play 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈpleɪɪŋ/", "us": "/ˈpleɪɪŋ/"
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [17, 25],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "运动名称，作宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_004",
+      "sentence_info": {
+        "original": "She is listening to music",
+        "translation": "她正在听音乐",
+        "sentence_pattern": "主语 + is + doing + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "hobby"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [4, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词 be 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "listening to",
+          "base_form": "listen to",
+          "range": [7, 19],
+          "tag": "verb_phrase",
+          "type": "Verb Phrase (动词短语)",
+          "chinese_definition": "听",
+          "explanation": "动词短语 listen to 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈlɪsnɪŋ tuː/", "us": "/ˈlɪsnɪŋ tuː/"
+          }
+        },
+        {
+          "word": "music",
+          "base_form": "music",
+          "range": [20, 25],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "音乐",
+          "explanation": "不可数名词，作宾语。",
+          "phonetics": {
+            "uk": "/ˈmjuːzɪk/", "us": "/ˈmjuːzɪk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_005",
+      "sentence_info": {
+        "original": "We are learning English",
+        "translation": "我们正在学英语",
+        "sentence_pattern": "主语 + are + doing + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "education"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词 be 的复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "learning",
+          "base_form": "learn",
+          "range": [7, 15],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "学习",
+          "explanation": "动词 learn 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈlɜːnɪŋ/", "us": "/ˈlɜːrnɪŋ/"
+          }
+        },
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [16, 23],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "英语",
+          "explanation": "专有名词，作宾语。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_006",
+      "sentence_info": {
+        "original": "The baby is sleeping",
+        "translation": "宝宝正在睡觉",
+        "sentence_pattern": "主语 + is + doing",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "daily"]
+      },
+      "analysis": [
+        {
+          "word": "The baby",
+          "base_form": "baby",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "宝宝",
+          "explanation": "单数名词作主语。",
+          "phonetics": {
+            "uk": "/ðə ˈbeɪbi/", "us": "/ðə ˈbeɪbi/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [9, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词 be 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "sleeping",
+          "base_form": "sleep",
+          "range": [12, 20],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "睡觉",
+          "explanation": "动词 sleep 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈsliːpɪŋ/", "us": "/ˈsliːpɪŋ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_007",
+      "sentence_info": {
+        "original": "He is running fast",
+        "translation": "他正在快速奔跑",
+        "sentence_pattern": "主语 + is + doing + 状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "action"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [3, 5],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "running",
+          "base_form": "run",
+          "range": [6, 13],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "奔跑",
+          "explanation": "动词 run 的现在分词形式 (双写 n)。",
+          "phonetics": {
+            "uk": "/ˈrʌnɪŋ/", "us": "/ˈrʌnɪŋ/"
+          }
+        },
+        {
+          "word": "fast",
+          "base_form": "fast",
+          "range": [14, 18],
+          "tag": "adverb_manner",
+          "type": "Adverb (副词)",
+          "chinese_definition": "快速地",
+          "explanation": "方式状语。",
+          "phonetics": {
+            "uk": "/fɑːst/", "us": "/fæst/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_008",
+      "sentence_info": {
+        "original": "They are waiting for the bus",
+        "translation": "他们正在等公交车",
+        "sentence_pattern": "主语 + are + doing + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "daily"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [5, 8],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "waiting for",
+          "base_form": "wait for",
+          "range": [9, 20],
+          "tag": "verb_phrase",
+          "type": "Verb Phrase (动词短语)",
+          "chinese_definition": "等待",
+          "explanation": "动词短语 wait for 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ fɔː(r)/", "us": "/ˈweɪtɪŋ fɔːr/"
+          }
+        },
+        {
+          "word": "the bus",
+          "base_form": "bus",
+          "range": [21, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "公交车",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/ðə bʌs/", "us": "/ðə bʌs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_009",
+      "sentence_info": {
+        "original": "I am writing a letter",
+        "translation": "我正在写一封信",
+        "sentence_pattern": "主语 + am + doing + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "activity"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "am",
+          "base_form": "be",
+          "range": [2, 4],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/æm/", "us": "/æm/"
+          }
+        },
+        {
+          "word": "writing",
+          "base_form": "write",
+          "range": [5, 12],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "写",
+          "explanation": "动词 write 的现在分词形式 (去 e 加 ing)。",
+          "phonetics": {
+            "uk": "/ˈraɪtɪŋ/", "us": "/ˈraɪtɪŋ/"
+          }
+        },
+        {
+          "word": "a letter",
+          "base_form": "letter",
+          "range": [13, 21],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "一封信",
+          "explanation": "名词作宾语。",
+          "phonetics": {
+            "uk": "/ə ˈletə(r)/", "us": "/ə ˈletər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_CONT_010",
+      "sentence_info": {
+        "original": "The sun is shining",
+        "translation": "阳光正在照耀",
+        "sentence_pattern": "主语 + is + doing",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_continuous", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "The sun",
+          "base_form": "sun",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "太阳",
+          "explanation": "单数名词作主语。",
+          "phonetics": {
+            "uk": "/ðə sʌn/", "us": "/ðə sʌn/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [8, 10],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "shining",
+          "base_form": "shine",
+          "range": [11, 18],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "照耀",
+          "explanation": "动词 shine 的现在分词形式 (去 e 加 ing)。",
+          "phonetics": {
+            "uk": "/ˈʃaɪnɪŋ/", "us": "/ˈʃaɪnɪŋ/"
+          }
+        }
+      ]
     }
   ]
 }

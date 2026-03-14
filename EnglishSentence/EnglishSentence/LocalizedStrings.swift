@@ -20,9 +20,10 @@ struct AppStrings {
         static let cancel = "取消"
         
         static let translation = "中文翻译"
-        static let audio = "朗读"
+        static let translationAudio = "朗读"
         
         static let english = "英文原句"
+        static let englishAudio = "朗读"
         
         static let background = "背景图片"
         static let bg0 = "  梦  "
@@ -31,12 +32,12 @@ struct AppStrings {
         static let bg3 = "  空  "
         
         static func maskOpacity(value: Float) -> String {
-            return String(format: "遮罩透明度: %.1f", value)
+            return String(format: "背景透明度: %.1f", value)
         }
     }
     
     struct Immersive {
-        static let title = "沉浸式阅读"
+        static let title = "自动播放"
         static let close = "关闭"
         static let start = "开始播放"
         
@@ -58,7 +59,7 @@ struct AppStrings {
             return String(format: "大句子间隙: %.1fs", value)
         }
         
-        static let intervalSound = "句子间隔声音"
+        static let intervalSound = "句子间隔提示音"
         
         static let lockScreen = "支持锁定屏幕播放"
         static let autoStop = "定时自动关闭播放"

@@ -92,10 +92,10 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         
         // Combined rows for Translation and English Sentence with their audio toggles
         addCombinedRow(title1: AppStrings.Settings.translation, isOn1: currentConfig.showTranslation, action1: #selector(translationToggled(_:)),
-                      title2: AppStrings.Settings.audio, isOn2: currentConfig.showTranslationAudioButton, action2: #selector(translationAudioButtonToggled(_:)))
+                      title2: AppStrings.Settings.translationAudio, isOn2: currentConfig.showTranslationAudioButton, action2: #selector(translationAudioButtonToggled(_:)))
         
         addCombinedRow(title1: AppStrings.Settings.english, isOn1: currentConfig.showEnglishSentence, action1: #selector(englishSentenceToggled(_:)),
-                      title2: AppStrings.Settings.audio, isOn2: currentConfig.showEnglishAudioButton, action2: #selector(englishAudioButtonToggled(_:)))
+                      title2: AppStrings.Settings.englishAudio, isOn2: currentConfig.showEnglishAudioButton, action2: #selector(englishAudioButtonToggled(_:)))
         
         addSwitchRow(title: AppStrings.Settings.showWordAudio, isOn: currentConfig.showAudioButton, action: #selector(audioButtonToggled(_:)))
         

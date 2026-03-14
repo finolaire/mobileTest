@@ -113,6 +113,434 @@
           }
         }
       ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_003",
+      "sentence_info": {
+        "original": "She likes coffee",
+        "translation": "她喜欢咖啡",
+        "sentence_pattern": "主语 + 动词(三单) + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "preference"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格代词。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "likes",
+          "base_form": "like",
+          "range": [4, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "喜欢",
+          "explanation": "like 的第三人称单数形式 (加 s)。",
+          "phonetics": {
+            "uk": "/laɪks/", "us": "/laɪks/"
+          }
+        },
+        {
+          "word": "coffee",
+          "base_form": "coffee",
+          "range": [10, 16],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "咖啡",
+          "explanation": "不可数名词作宾语。",
+          "phonetics": {
+            "uk": "/ˈkɒfi/", "us": "/ˈkɔːfi/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_004",
+      "sentence_info": {
+        "original": "Water boils at 100 degrees",
+        "translation": "水在100度沸腾",
+        "sentence_pattern": "主语 + 动词(三单) + 状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "science", "truth"]
+      },
+      "analysis": [
+        {
+          "word": "Water",
+          "base_form": "water",
+          "range": [0, 5],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "水",
+          "explanation": "不可数名词，视为第三人称单数。",
+          "phonetics": {
+            "uk": "/ˈwɔːtə(r)/", "us": "/ˈwɔːtər/"
+          }
+        },
+        {
+          "word": "boils",
+          "base_form": "boil",
+          "range": [6, 11],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "沸腾",
+          "explanation": "boil 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/bɔɪlz/", "us": "/bɔɪlz/"
+          }
+        },
+        {
+          "word": "at 100 degrees",
+          "base_form": "at 100 degrees",
+          "range": [12, 26],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在100度",
+          "explanation": "条件状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_005",
+      "sentence_info": {
+        "original": "We play tennis on Sundays",
+        "translation": "我们每个星期天打网球",
+        "sentence_pattern": "主语 + 动词原形 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "habit", "sports"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "play",
+          "base_form": "play",
+          "range": [3, 7],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "打(球)",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/pleɪ/", "us": "/pleɪ/"
+          }
+        },
+        {
+          "word": "tennis",
+          "base_form": "tennis",
+          "range": [8, 14],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "网球",
+          "explanation": "运动名称，作宾语。",
+          "phonetics": {
+            "uk": "/ˈtenɪs/", "us": "/ˈtenɪs/"
+          }
+        },
+        {
+          "word": "on Sundays",
+          "base_form": "on Sundays",
+          "range": [15, 25],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在星期天",
+          "explanation": "表示习惯性的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_006",
+      "sentence_info": {
+        "original": "He works in a bank",
+        "translation": "他在一家银行工作",
+        "sentence_pattern": "主语 + 动词(三单) + 地点状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "job", "status"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "works",
+          "base_form": "work",
+          "range": [3, 8],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "工作",
+          "explanation": "work 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/wɜːks/", "us": "/wɜːrks/"
+          }
+        },
+        {
+          "word": "in a bank",
+          "base_form": "in a bank",
+          "range": [9, 18],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在银行",
+          "explanation": "介词短语作地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_007",
+      "sentence_info": {
+        "original": "The train leaves at 9 AM",
+        "translation": "火车上午9点发车",
+        "sentence_pattern": "主语 + 动词(三单) + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "schedule"]
+      },
+      "analysis": [
+        {
+          "word": "The train",
+          "base_form": "train",
+          "range": [0, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "火车",
+          "explanation": "单数名词作主语。",
+          "phonetics": {
+            "uk": "/ðə treɪn/", "us": "/ðə treɪn/"
+          }
+        },
+        {
+          "word": "leaves",
+          "base_form": "leave",
+          "range": [10, 16],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "离开/发车",
+          "explanation": "leave 的第三人称单数形式，表时刻表安排。",
+          "phonetics": {
+            "uk": "/liːvz/", "us": "/liːvz/"
+          }
+        },
+        {
+          "word": "at 9 AM",
+          "base_form": "at 9 AM",
+          "range": [17, 24],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在上午9点",
+          "explanation": "时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_008",
+      "sentence_info": {
+        "original": "Cats hate water",
+        "translation": "猫讨厌水",
+        "sentence_pattern": "主语 + 动词原形 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "nature", "animal"]
+      },
+      "analysis": [
+        {
+          "word": "Cats",
+          "base_form": "cat",
+          "range": [0, 4],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "猫",
+          "explanation": "复数名词，表示一类事物。",
+          "phonetics": {
+            "uk": "/kæts/", "us": "/kæts/"
+          }
+        },
+        {
+          "word": "hate",
+          "base_form": "hate",
+          "range": [5, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "讨厌",
+          "explanation": "动词原形，表达普遍事实。",
+          "phonetics": {
+            "uk": "/heɪt/", "us": "/heɪt/"
+          }
+        },
+        {
+          "word": "water",
+          "base_form": "water",
+          "range": [10, 15],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "水",
+          "explanation": "不可数名词作宾语。",
+          "phonetics": {
+            "uk": "/ˈwɔːtə(r)/", "us": "/ˈwɔːtər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_009",
+      "sentence_info": {
+        "original": "You speak English very well",
+        "translation": "你英语说得很好",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 程度状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "ability"]
+      },
+      "analysis": [
+        {
+          "word": "You",
+          "base_form": "you",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "你",
+          "explanation": "第二人称主格。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "speak",
+          "base_form": "speak",
+          "range": [4, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "说/讲",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/spiːk/", "us": "/spiːk/"
+          }
+        },
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [10, 17],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "英语",
+          "explanation": "专有名词作宾语。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        },
+        {
+          "word": "very well",
+          "base_form": "very well",
+          "range": [18, 27],
+          "tag": "adverb_degree",
+          "type": "Adverb (副词)",
+          "chinese_definition": "很好",
+          "explanation": "程度副词短语修饰动词。",
+          "phonetics": {
+            "uk": "/ˈveri wel/", "us": "/ˈveri wel/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_SIMPLE_010",
+      "sentence_info": {
+        "original": "It snows a lot in winter",
+        "translation": "冬天经常下雪",
+        "sentence_pattern": "主语 + 动词(三单) + 程度状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "present_simple", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它",
+          "explanation": "指代天气的代词，第三人称单数。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "snows",
+          "base_form": "snow",
+          "range": [3, 8],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "下雪",
+          "explanation": "snow 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/snəʊz/", "us": "/snoʊz/"
+          }
+        },
+        {
+          "word": "a lot",
+          "base_form": "a lot",
+          "range": [9, 14],
+          "tag": "adverb_degree",
+          "type": "Adverb (副词)",
+          "chinese_definition": "很多/经常",
+          "explanation": "程度副词短语。",
+          "phonetics": {
+            "uk": "/ə lɒt/", "us": "/ə lɑːt/"
+          }
+        },
+        {
+          "word": "in winter",
+          "base_form": "in winter",
+          "range": [15, 24],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在冬天",
+          "explanation": "时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
     }
   ]
 }
