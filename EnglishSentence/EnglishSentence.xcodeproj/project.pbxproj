@@ -8,12 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		8F8783D6CD93ACEEA36E4D47 /* Pods_EnglishSentence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203C4778885102A9D962BADD /* Pods_EnglishSentence.framework */; };
+		A10000072F3B3E6E009FC907 /* EnglishSentenceWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A100000B2F3B3E6E009FC90B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D591F972F3B3E6E009FC87E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000032F3B3E6E009FC903;
+			remoteInfo = EnglishSentenceWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10000082F3B3E6E009FC908 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10000072F3B3E6E009FC907 /* EnglishSentenceWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		203C4778885102A9D962BADD /* Pods_EnglishSentence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishSentence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7DB95EEDCB54D4347AD8A6 /* Pods-EnglishSentence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishSentence.release.xcconfig"; path = "Target Support Files/Pods-EnglishSentence/Pods-EnglishSentence.release.xcconfig"; sourceTree = "<group>"; };
 		5D591F9F2F3B3E6E009FC87E /* EnglishSentence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishSentence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnglishSentenceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3320798D8BF34D86E498A /* Pods-EnglishSentence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishSentence.debug.xcconfig"; path = "Target Support Files/Pods-EnglishSentence/Pods-EnglishSentence.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -24,6 +50,13 @@
 				Info.plist,
 			);
 			target = 5D591F9E2F3B3E6E009FC87E /* EnglishSentence */;
+		};
+		A100000A2F3B3E6E009FC90A /* Exceptions for "EnglishSentenceWidget" folder in "EnglishSentenceWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -36,6 +69,14 @@
 			path = EnglishSentence;
 			sourceTree = "<group>";
 		};
+		A10000022F3B3E6E009FC902 /* EnglishSentenceWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A100000A2F3B3E6E009FC90A /* Exceptions for "EnglishSentenceWidget" folder in "EnglishSentenceWidgetExtension" target */,
+			);
+			path = EnglishSentenceWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +85,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8783D6CD93ACEEA36E4D47 /* Pods_EnglishSentence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000052F3B3E6E009FC905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5D591FA12F3B3E6E009FC87E /* EnglishSentence */,
+				A10000022F3B3E6E009FC902 /* EnglishSentenceWidget */,
 				5D591FA02F3B3E6E009FC87E /* Products */,
 				6C610555C55C3EC3E25CAF6A /* Pods */,
 				378EC5782904B5EED2A5F99F /* Frameworks */,
@@ -72,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				5D591F9F2F3B3E6E009FC87E /* EnglishSentence.app */,
+				A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,11 +146,13 @@
 				5D591F9B2F3B3E6E009FC87E /* Sources */,
 				5D591F9C2F3B3E6E009FC87E /* Frameworks */,
 				5D591F9D2F3B3E6E009FC87E /* Resources */,
+				A10000082F3B3E6E009FC908 /* Embed Foundation Extensions */,
 				84C44CD69BD6D154E7060D3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A10000092F3B3E6E009FC909 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5D591FA12F3B3E6E009FC87E /* EnglishSentence */,
@@ -109,6 +161,26 @@
 			productName = EnglishSentence;
 			productReference = 5D591F9F2F3B3E6E009FC87E /* EnglishSentence.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A100000C2F3B3E6E009FC90C /* Build configuration list for PBXNativeTarget "EnglishSentenceWidgetExtension" */;
+			buildPhases = (
+				A10000042F3B3E6E009FC904 /* Sources */,
+				A10000052F3B3E6E009FC905 /* Frameworks */,
+				A10000062F3B3E6E009FC906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A10000022F3B3E6E009FC902 /* EnglishSentenceWidget */,
+			);
+			name = EnglishSentenceWidgetExtension;
+			productName = EnglishSentenceWidgetExtension;
+			productReference = A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -121,6 +193,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					5D591F9E2F3B3E6E009FC87E = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					A10000032F3B3E6E009FC903 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -140,12 +215,20 @@
 			projectRoot = "";
 			targets = (
 				5D591F9E2F3B3E6E009FC87E /* EnglishSentence */,
+				A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5D591F9D2F3B3E6E009FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000062F3B3E6E009FC906 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,7 +291,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10000042F3B3E6E009FC904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000092F3B3E6E009FC909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */;
+			targetProxy = A100000B2F3B3E6E009FC90B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5D591FB32F3B3E70009FC87E /* Debug */ = {
@@ -415,6 +513,65 @@
 			};
 			name = Release;
 		};
+		A100000D2F3B3E6E009FC90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EnglishSentenceWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "兔子英语";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.englist.EnglishSentenceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A100000E2F3B3E6E009FC90E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGL22JZ52C;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EnglishSentenceWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "兔子英语";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.englist.EnglishSentenceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,6 +589,15 @@
 			buildConfigurations = (
 				5D591FB32F3B3E70009FC87E /* Debug */,
 				5D591FB42F3B3E70009FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A100000C2F3B3E6E009FC90C /* Build configuration list for PBXNativeTarget "EnglishSentenceWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A100000D2F3B3E6E009FC90D /* Debug */,
+				A100000E2F3B3E6E009FC90E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
