@@ -305,6 +305,19 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         btn.addTarget(self, action: #selector(bookshelfTapped), for: .touchUpInside)
         return btn
     }()
+
+    private let eyebrowButton: UIButton = {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
+        if let image = UIImage(systemName: "eyebrow", withConfiguration: config) {
+            btn.setImage(image, for: .normal)
+        } else {
+            btn.setImage(UIImage(systemName: "eye"), for: .normal)
+        }
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(eyebrowTapped), for: .touchUpInside)
+        return btn
+    }()
     
     // Audio State
     private enum PlayingType: Equatable {
@@ -377,6 +390,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         view.addSubview(immersiveButton)
         view.addSubview(quickPlayButton)
         view.addSubview(bookshelfButton)
+        view.addSubview(eyebrowButton)
         
         view.addSubview(prevButton)
         view.addSubview(nextButton)
@@ -415,6 +429,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
             make.leading.equalToSuperview().offset(20)
             make.width.height.equalTo(44)
+        }
+
+        eyebrowButton.snp.makeConstraints { make in
+            make.centerY.equalTo(bookshelfButton)
+            make.leading.equalTo(bookshelfButton.snp.trailing).offset(8)
+            make.height.equalTo(44)
         }
         
         // CollectionView takes upper part
@@ -771,6 +791,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     
     private func setMainControlButtonsHidden(_ hidden: Bool) {
         bookshelfButton.isHidden = hidden
+        eyebrowButton.isHidden = hidden
         settingsButton.isHidden = hidden
         immersiveButton.isHidden = hidden
         quickPlayButton.isHidden = hidden
@@ -996,6 +1017,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         present(settingsVC, animated: true, completion: nil)
     }
     
+    @objc private func eyebrowTapped() {
+        let vc = EyesOverlayViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+
     @objc private func bookshelfTapped() {
         let bookshelfVC = BookshelfViewController()
         bookshelfVC.onCourseSelected = { [weak self] course in
