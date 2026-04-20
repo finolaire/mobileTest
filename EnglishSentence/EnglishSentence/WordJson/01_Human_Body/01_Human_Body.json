@@ -1,0 +1,5244 @@
+{
+  "unit_name": "人体词汇 - 头颈、躯干、四肢与内脏",
+  "description": "涵盖头部、躯干、上肢、下肢及内部器官共 47 个基础词；附例句与逐词解析（释义、英/美音、词性）。",
+  "category": "Human_Body",
+  "code": "HB_01",
+  "sentences": [
+    {
+      "id": "HB_001",
+      "sentence_info": {
+        "original": "She brushed her hair",
+        "translation": "她梳了梳头发",
+        "sentence_pattern": "头部 · hair",
+        "pattern_code": "HB_HAIR",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "hair",
+          "basic_vocabulary"
+        ],
+        "keyword": "hair",
+        "keyword_translation": "头发",
+        "keyword_phonetics": {
+          "uk": "/heə(r)/",
+          "us": "/heɪr/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "brushed",
+          "base_form": "brushed",
+          "range": [
+            4,
+            11
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "梳理",
+          "explanation": "brush 的过去式。",
+          "phonetics": {
+            "uk": "/brʌʃt/",
+            "us": "/brʌʃt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            12,
+            15
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hair",
+          "base_form": "hair",
+          "range": [
+            16,
+            20
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "头发",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/heə(r)/",
+            "us": "/heɪr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_002",
+      "sentence_info": {
+        "original": "He has a wide forehead",
+        "translation": "他前额很宽",
+        "sentence_pattern": "头部 · forehead",
+        "pattern_code": "HB_FOREHEAD",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "forehead",
+          "basic_vocabulary"
+        ],
+        "keyword": "forehead",
+        "keyword_translation": "前额",
+        "keyword_phonetics": {
+          "uk": "/ˈfɔːhed/",
+          "us": "/ˈfɔːrhed/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "has",
+          "range": [
+            3,
+            6
+          ],
+          "tag": "verb_have",
+          "type": "Verb (动词)",
+          "chinese_definition": "有",
+          "explanation": "have 的第三人称单数。",
+          "phonetics": {
+            "uk": "/hæz/",
+            "us": "/hæz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            7,
+            8
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wide",
+          "base_form": "wide",
+          "range": [
+            9,
+            13
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "宽的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/waɪd/",
+            "us": "/waɪd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "forehead",
+          "base_form": "forehead",
+          "range": [
+            14,
+            22
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "前额",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈfɔːhed/",
+            "us": "/ˈfɔːrhed/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_003",
+      "sentence_info": {
+        "original": "Close your eyes",
+        "translation": "闭上眼睛",
+        "sentence_pattern": "头部 · eye",
+        "pattern_code": "HB_EYE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "eye",
+          "basic_vocabulary"
+        ],
+        "keyword": "eye",
+        "keyword_translation": "眼睛",
+        "keyword_phonetics": {
+          "uk": "/aɪ/",
+          "us": "/aɪ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Close",
+          "base_form": "close",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "闭上",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/kləʊz/",
+            "us": "/kloʊz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            6,
+            10
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "eyes",
+          "base_form": "eyes",
+          "range": [
+            11,
+            15
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "眼睛",
+          "explanation": "eye 的复数。",
+          "phonetics": {
+            "uk": "/aɪz/",
+            "us": "/aɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_004",
+      "sentence_info": {
+        "original": "She raised an eyebrow",
+        "translation": "她扬了扬眉毛",
+        "sentence_pattern": "头部 · eyebrow",
+        "pattern_code": "HB_EYEBROW",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "eyebrow",
+          "basic_vocabulary"
+        ],
+        "keyword": "eyebrow",
+        "keyword_translation": "眉毛",
+        "keyword_phonetics": {
+          "uk": "/ˈaɪbraʊ/",
+          "us": "/ˈaɪbraʊ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "raised",
+          "base_form": "raised",
+          "range": [
+            4,
+            10
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "扬起",
+          "explanation": "raise 的过去式。",
+          "phonetics": {
+            "uk": "/reɪzd/",
+            "us": "/reɪzd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "an",
+          "base_form": "an",
+          "range": [
+            11,
+            13
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词，用于元音前。",
+          "phonetics": {
+            "uk": "/æn/",
+            "us": "/æn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "eyebrow",
+          "base_form": "eyebrow",
+          "range": [
+            14,
+            21
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "眉毛",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈaɪbraʊ/",
+            "us": "/ˈaɪbraʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_005",
+      "sentence_info": {
+        "original": "Her eyelashes are long",
+        "translation": "她的睫毛很长",
+        "sentence_pattern": "头部 · eyelash",
+        "pattern_code": "HB_EYELASH",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "eyelash",
+          "basic_vocabulary"
+        ],
+        "keyword": "eyelash",
+        "keyword_translation": "睫毛",
+        "keyword_phonetics": {
+          "uk": "/ˈaɪlæʃ/",
+          "us": "/ˈaɪlæʃ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Her",
+          "base_form": "her",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "eyelashes",
+          "base_form": "eyelashes",
+          "range": [
+            4,
+            13
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "睫毛",
+          "explanation": "eyelash 的复数。",
+          "phonetics": {
+            "uk": "/ˈaɪlæʃɪz/",
+            "us": "/ˈaɪlæʃɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "are",
+          "range": [
+            14,
+            17
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/",
+            "us": "/ɑːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "long",
+          "base_form": "long",
+          "range": [
+            18,
+            22
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "长的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/lɒŋ/",
+            "us": "/lɔːŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_006",
+      "sentence_info": {
+        "original": "Whisper in my ear",
+        "translation": "在我耳边低语",
+        "sentence_pattern": "头部 · ear",
+        "pattern_code": "HB_EAR",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "ear",
+          "basic_vocabulary"
+        ],
+        "keyword": "ear",
+        "keyword_translation": "耳朵",
+        "keyword_phonetics": {
+          "uk": "/ɪə(r)/",
+          "us": "/ɪr/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Whisper",
+          "base_form": "whisper",
+          "range": [
+            0,
+            7
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "低语",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/ˈwɪspə(r)/",
+            "us": "/ˈwɪspər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "in",
+          "base_form": "in",
+          "range": [
+            8,
+            10
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…里",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɪn/",
+            "us": "/ɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            11,
+            13
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ear",
+          "base_form": "ear",
+          "range": [
+            14,
+            17
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "耳朵",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ɪə(r)/",
+            "us": "/ɪr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_007",
+      "sentence_info": {
+        "original": "My nose is cold",
+        "translation": "我的鼻子很冷",
+        "sentence_pattern": "头部 · nose",
+        "pattern_code": "HB_NOSE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "nose",
+          "basic_vocabulary"
+        ],
+        "keyword": "nose",
+        "keyword_translation": "鼻子",
+        "keyword_phonetics": {
+          "uk": "/nəʊz/",
+          "us": "/noʊz/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "My",
+          "base_form": "my",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "nose",
+          "base_form": "nose",
+          "range": [
+            3,
+            7
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "鼻子",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/nəʊz/",
+            "us": "/noʊz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "is",
+          "range": [
+            8,
+            10
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词第三人称。",
+          "phonetics": {
+            "uk": "/ɪz/",
+            "us": "/ɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "cold",
+          "base_form": "cold",
+          "range": [
+            11,
+            15
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "冷的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/kəʊld/",
+            "us": "/koʊld/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_008",
+      "sentence_info": {
+        "original": "Tears ran down her cheek",
+        "translation": "泪水顺着她的脸颊流下",
+        "sentence_pattern": "头部 · cheek",
+        "pattern_code": "HB_CHEEK",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "cheek",
+          "basic_vocabulary"
+        ],
+        "keyword": "cheek",
+        "keyword_translation": "脸颊",
+        "keyword_phonetics": {
+          "uk": "/tʃiːk/",
+          "us": "/tʃiːk/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Tears",
+          "base_form": "tears",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "眼泪",
+          "explanation": "复数名词作主语。",
+          "phonetics": {
+            "uk": "/tɪəz/",
+            "us": "/tɪrz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ran",
+          "base_form": "ran",
+          "range": [
+            6,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "流；跑",
+          "explanation": "run 的过去式。",
+          "phonetics": {
+            "uk": "/ræn/",
+            "us": "/ræn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "down",
+          "base_form": "down",
+          "range": [
+            10,
+            14
+          ],
+          "tag": "prep",
+          "type": "Adverb/Prep (副词/介词)",
+          "chinese_definition": "向下",
+          "explanation": "与 ran 搭配。",
+          "phonetics": {
+            "uk": "/daʊn/",
+            "us": "/daʊn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            15,
+            18
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "cheek",
+          "base_form": "cheek",
+          "range": [
+            19,
+            24
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "脸颊",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/tʃiːk/",
+            "us": "/tʃiːk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_009",
+      "sentence_info": {
+        "original": "Open your mouth",
+        "translation": "张开嘴",
+        "sentence_pattern": "头部 · mouth",
+        "pattern_code": "HB_MOUTH",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "mouth",
+          "basic_vocabulary"
+        ],
+        "keyword": "mouth",
+        "keyword_translation": "嘴巴",
+        "keyword_phonetics": {
+          "uk": "/maʊθ/",
+          "us": "/maʊθ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Open",
+          "base_form": "open",
+          "range": [
+            0,
+            4
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "张开",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/ˈəʊpən/",
+            "us": "/ˈoʊpən/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            5,
+            9
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "mouth",
+          "base_form": "mouth",
+          "range": [
+            10,
+            15
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "嘴",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/maʊθ/",
+            "us": "/maʊθ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_010",
+      "sentence_info": {
+        "original": "Her lips are dry",
+        "translation": "她的嘴唇很干",
+        "sentence_pattern": "头部 · lip",
+        "pattern_code": "HB_LIP",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "lip",
+          "basic_vocabulary"
+        ],
+        "keyword": "lip",
+        "keyword_translation": "嘴唇",
+        "keyword_phonetics": {
+          "uk": "/lɪp/",
+          "us": "/lɪp/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Her",
+          "base_form": "her",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "lips",
+          "base_form": "lips",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "嘴唇",
+          "explanation": "lip 的复数。",
+          "phonetics": {
+            "uk": "/lɪps/",
+            "us": "/lɪps/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "are",
+          "range": [
+            9,
+            12
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/",
+            "us": "/ɑːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "dry",
+          "base_form": "dry",
+          "range": [
+            13,
+            16
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "干的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/draɪ/",
+            "us": "/draɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_011",
+      "sentence_info": {
+        "original": "I have a loose tooth",
+        "translation": "我有一颗牙松了",
+        "sentence_pattern": "头部 · tooth",
+        "pattern_code": "HB_TOOTH",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "tooth",
+          "basic_vocabulary"
+        ],
+        "keyword": "tooth",
+        "keyword_translation": "牙齿",
+        "keyword_phonetics": {
+          "uk": "/tuːθ/",
+          "us": "/tuːθ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [
+            0,
+            1
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我",
+          "explanation": "第一人称主格。",
+          "phonetics": {
+            "uk": "/aɪ/",
+            "us": "/aɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [
+            2,
+            6
+          ],
+          "tag": "verb_have",
+          "type": "Verb (动词)",
+          "chinese_definition": "有",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/hæv/",
+            "us": "/hæv/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            7,
+            8
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "loose",
+          "base_form": "loose",
+          "range": [
+            9,
+            14
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "松动的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/luːs/",
+            "us": "/luːs/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "tooth",
+          "base_form": "tooth",
+          "range": [
+            15,
+            20
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "牙齿",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/tuːθ/",
+            "us": "/tuːθ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_012",
+      "sentence_info": {
+        "original": "You might burn your tongue on hot soup",
+        "translation": "热汤可能会烫到舌头",
+        "sentence_pattern": "头部 · tongue",
+        "pattern_code": "HB_TONGUE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "tongue",
+          "basic_vocabulary"
+        ],
+        "keyword": "tongue",
+        "keyword_translation": "舌头",
+        "keyword_phonetics": {
+          "uk": "/tʌŋ/",
+          "us": "/tʌŋ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "You",
+          "base_form": "you",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你/您",
+          "explanation": "第二人称主格或宾格。",
+          "phonetics": {
+            "uk": "/juː/",
+            "us": "/juː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "might",
+          "base_form": "might",
+          "range": [
+            4,
+            9
+          ],
+          "tag": "modal",
+          "type": "Modal (情态动词)",
+          "chinese_definition": "可能",
+          "explanation": "情态动词。",
+          "phonetics": {
+            "uk": "/maɪt/",
+            "us": "/maɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "burn",
+          "base_form": "burn",
+          "range": [
+            10,
+            14
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "烫伤",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/bɜːn/",
+            "us": "/bɜːrn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            15,
+            19
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "tongue",
+          "base_form": "tongue",
+          "range": [
+            20,
+            26
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "舌头",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/tʌŋ/",
+            "us": "/tʌŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            27,
+            29
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hot",
+          "base_form": "hot",
+          "range": [
+            30,
+            33
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "烫的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/hɒt/",
+            "us": "/hɑːt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "soup",
+          "base_form": "soup",
+          "range": [
+            34,
+            38
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "汤",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/suːp/",
+            "us": "/suːp/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_013",
+      "sentence_info": {
+        "original": "He rested his chin on his hand",
+        "translation": "他用手托着下巴",
+        "sentence_pattern": "头部 · chin",
+        "pattern_code": "HB_CHIN",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "chin",
+          "basic_vocabulary"
+        ],
+        "keyword": "chin",
+        "keyword_translation": "下巴",
+        "keyword_phonetics": {
+          "uk": "/tʃɪn/",
+          "us": "/tʃɪn/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "rested",
+          "base_form": "rested",
+          "range": [
+            3,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "搁；休息",
+          "explanation": "rest 的过去式。",
+          "phonetics": {
+            "uk": "/ˈrestɪd/",
+            "us": "/ˈrestɪd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            10,
+            13
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "chin",
+          "base_form": "chin",
+          "range": [
+            14,
+            18
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "下巴",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/tʃɪn/",
+            "us": "/tʃɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            19,
+            21
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            22,
+            25
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hand",
+          "base_form": "hand",
+          "range": [
+            26,
+            30
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/hænd/",
+            "us": "/hænd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_014",
+      "sentence_info": {
+        "original": "The scarf covers my neck",
+        "translation": "围巾裹着我的脖子",
+        "sentence_pattern": "头部 · neck",
+        "pattern_code": "HB_NECK",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "head",
+          "neck",
+          "basic_vocabulary"
+        ],
+        "keyword": "neck",
+        "keyword_translation": "脖子；颈部",
+        "keyword_phonetics": {
+          "uk": "/nek/",
+          "us": "/nek/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "scarf",
+          "base_form": "scarf",
+          "range": [
+            4,
+            9
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "围巾",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/skɑːf/",
+            "us": "/skɑːrf/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "covers",
+          "base_form": "covers",
+          "range": [
+            10,
+            16
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "遮盖",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/ˈkʌvəz/",
+            "us": "/ˈkʌvərz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            17,
+            19
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "neck",
+          "base_form": "neck",
+          "range": [
+            20,
+            24
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "脖子",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/nek/",
+            "us": "/nek/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_015",
+      "sentence_info": {
+        "original": "He shrugged his shoulders",
+        "translation": "他耸了耸肩",
+        "sentence_pattern": "躯干 · shoulder",
+        "pattern_code": "HB_SHOULDER",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "shoulder",
+          "basic_vocabulary"
+        ],
+        "keyword": "shoulder",
+        "keyword_translation": "肩膀",
+        "keyword_phonetics": {
+          "uk": "/ˈʃəʊldə(r)/",
+          "us": "/ˈʃoʊldər/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "shrugged",
+          "base_form": "shrugged",
+          "range": [
+            3,
+            11
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "耸肩",
+          "explanation": "shrug 的过去式。",
+          "phonetics": {
+            "uk": "/ʃrʌɡd/",
+            "us": "/ʃrʌɡd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            12,
+            15
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "shoulders",
+          "base_form": "shoulders",
+          "range": [
+            16,
+            25
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肩膀",
+          "explanation": "shoulder 的复数。",
+          "phonetics": {
+            "uk": "/ˈʃəʊldəz/",
+            "us": "/ˈʃoʊldərz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_016",
+      "sentence_info": {
+        "original": "She felt pain in her chest",
+        "translation": "她感到胸口疼",
+        "sentence_pattern": "躯干 · chest",
+        "pattern_code": "HB_CHEST",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "chest",
+          "basic_vocabulary"
+        ],
+        "keyword": "chest",
+        "keyword_translation": "胸部",
+        "keyword_phonetics": {
+          "uk": "/tʃest/",
+          "us": "/tʃest/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "felt",
+          "base_form": "felt",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "感到",
+          "explanation": "feel 的过去式。",
+          "phonetics": {
+            "uk": "/felt/",
+            "us": "/felt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "pain",
+          "base_form": "pain",
+          "range": [
+            9,
+            13
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "疼痛",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/peɪn/",
+            "us": "/peɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "in",
+          "base_form": "in",
+          "range": [
+            14,
+            16
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…里",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɪn/",
+            "us": "/ɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            17,
+            20
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "chest",
+          "base_form": "chest",
+          "range": [
+            21,
+            26
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "胸部",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/tʃest/",
+            "us": "/tʃest/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_017",
+      "sentence_info": {
+        "original": "Lie on your back",
+        "translation": "仰面平躺",
+        "sentence_pattern": "躯干 · back",
+        "pattern_code": "HB_BACK",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "back",
+          "basic_vocabulary"
+        ],
+        "keyword": "back",
+        "keyword_translation": "背部",
+        "keyword_phonetics": {
+          "uk": "/bæk/",
+          "us": "/bæk/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Lie",
+          "base_form": "lie",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "躺",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/laɪ/",
+            "us": "/laɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            4,
+            6
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            7,
+            11
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "back",
+          "base_form": "back",
+          "range": [
+            12,
+            16
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "背部",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/bæk/",
+            "us": "/bæk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_018",
+      "sentence_info": {
+        "original": "The belt fits my waist",
+        "translation": "这条腰带合我的腰",
+        "sentence_pattern": "躯干 · waist",
+        "pattern_code": "HB_WAIST",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "waist",
+          "basic_vocabulary"
+        ],
+        "keyword": "waist",
+        "keyword_translation": "腰部",
+        "keyword_phonetics": {
+          "uk": "/weɪst/",
+          "us": "/weɪst/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "belt",
+          "base_form": "belt",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "腰带",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/belt/",
+            "us": "/belt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "fits",
+          "base_form": "fits",
+          "range": [
+            9,
+            13
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "合身",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/fɪts/",
+            "us": "/fɪts/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            14,
+            16
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "waist",
+          "base_form": "waist",
+          "range": [
+            17,
+            22
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "腰部",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/weɪst/",
+            "us": "/weɪst/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_019",
+      "sentence_info": {
+        "original": "The doctor pressed my abdomen",
+        "translation": "医生按了按我的腹部",
+        "sentence_pattern": "躯干 · abdomen",
+        "pattern_code": "HB_ABDOMEN",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "abdomen",
+          "basic_vocabulary"
+        ],
+        "keyword": "abdomen",
+        "keyword_translation": "腹部；肚子",
+        "keyword_phonetics": {
+          "uk": "/ˈæbdəmən/",
+          "us": "/ˈæbdəmən/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "doctor",
+          "base_form": "doctor",
+          "range": [
+            4,
+            10
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "医生",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈdɒktə(r)/",
+            "us": "/ˈdɑːktər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "pressed",
+          "base_form": "pressed",
+          "range": [
+            11,
+            18
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "按压",
+          "explanation": "press 的过去式。",
+          "phonetics": {
+            "uk": "/prest/",
+            "us": "/prest/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            19,
+            21
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "abdomen",
+          "base_form": "abdomen",
+          "range": [
+            22,
+            29
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "腹部",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈæbdəmən/",
+            "us": "/ˈæbdəmən/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_020",
+      "sentence_info": {
+        "original": "The baby has a tiny navel",
+        "translation": "婴儿的肚脐很小",
+        "sentence_pattern": "躯干 · navel",
+        "pattern_code": "HB_NAVEL",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "navel",
+          "basic_vocabulary"
+        ],
+        "keyword": "navel",
+        "keyword_translation": "肚脐",
+        "keyword_phonetics": {
+          "uk": "/ˈneɪv(ə)l/",
+          "us": "/ˈneɪv(ə)l/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "baby",
+          "base_form": "baby",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "婴儿",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈbeɪbi/",
+            "us": "/ˈbeɪbi/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "has",
+          "range": [
+            9,
+            12
+          ],
+          "tag": "verb_have",
+          "type": "Verb (动词)",
+          "chinese_definition": "有",
+          "explanation": "have 的第三人称单数。",
+          "phonetics": {
+            "uk": "/hæz/",
+            "us": "/hæz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            13,
+            14
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "tiny",
+          "base_form": "tiny",
+          "range": [
+            15,
+            19
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "很小的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/ˈtaɪni/",
+            "us": "/ˈtaɪni/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "navel",
+          "base_form": "navel",
+          "range": [
+            20,
+            25
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肚脐",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈneɪv(ə)l/",
+            "us": "/ˈneɪv(ə)l/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_021",
+      "sentence_info": {
+        "original": "She put her hands on her hips",
+        "translation": "她双手叉腰",
+        "sentence_pattern": "躯干 · hip",
+        "pattern_code": "HB_HIP",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "torso",
+          "hip",
+          "basic_vocabulary"
+        ],
+        "keyword": "hip",
+        "keyword_translation": "臀部；胯部",
+        "keyword_phonetics": {
+          "uk": "/hɪp/",
+          "us": "/hɪp/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "put",
+          "base_form": "put",
+          "range": [
+            4,
+            7
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "放",
+          "explanation": "put 的过去式（同形）。",
+          "phonetics": {
+            "uk": "/pʊt/",
+            "us": "/pʊt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            8,
+            11
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hands",
+          "base_form": "hands",
+          "range": [
+            12,
+            17
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手",
+          "explanation": "hand 的复数。",
+          "phonetics": {
+            "uk": "/hændz/",
+            "us": "/hændz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            18,
+            20
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            21,
+            24
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hips",
+          "base_form": "hips",
+          "range": [
+            25,
+            29
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "臀部",
+          "explanation": "hip 的复数。",
+          "phonetics": {
+            "uk": "/hɪps/",
+            "us": "/hɪps/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_022",
+      "sentence_info": {
+        "original": "He broke his left arm",
+        "translation": "他摔断了左臂",
+        "sentence_pattern": "上肢 · arm",
+        "pattern_code": "HB_ARM",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "arm",
+          "basic_vocabulary"
+        ],
+        "keyword": "arm",
+        "keyword_translation": "手臂",
+        "keyword_phonetics": {
+          "uk": "/ɑːm/",
+          "us": "/ɑːrm/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "broke",
+          "base_form": "broke",
+          "range": [
+            3,
+            8
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "折断",
+          "explanation": "break 的过去式。",
+          "phonetics": {
+            "uk": "/brəʊk/",
+            "us": "/broʊk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            9,
+            12
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "left",
+          "base_form": "left",
+          "range": [
+            13,
+            17
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "左边的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/left/",
+            "us": "/left/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "arm",
+          "base_form": "arm",
+          "range": [
+            18,
+            21
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手臂",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ɑːm/",
+            "us": "/ɑːrm/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_023",
+      "sentence_info": {
+        "original": "Use deodorant on your armpits",
+        "translation": "在腋下使用除臭剂",
+        "sentence_pattern": "上肢 · armpit",
+        "pattern_code": "HB_ARMPIT",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "armpit",
+          "basic_vocabulary"
+        ],
+        "keyword": "armpit",
+        "keyword_translation": "腋下",
+        "keyword_phonetics": {
+          "uk": "/ˈɑːmpɪt/",
+          "us": "/ˈɑːrmpɪt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Use",
+          "base_form": "use",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "使用",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/juːz/",
+            "us": "/juːz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "deodorant",
+          "base_form": "deodorant",
+          "range": [
+            4,
+            13
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "除臭剂",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/diˈəʊdərənt/",
+            "us": "/diˈoʊdərənt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            14,
+            16
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            17,
+            21
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "armpits",
+          "base_form": "armpits",
+          "range": [
+            22,
+            29
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "腋下",
+          "explanation": "armpit 的复数。",
+          "phonetics": {
+            "uk": "/ˈɑːmpɪts/",
+            "us": "/ˈɑːrmpɪts/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_024",
+      "sentence_info": {
+        "original": "He leaned on his elbow",
+        "translation": "他用胳膊肘撑着",
+        "sentence_pattern": "上肢 · elbow",
+        "pattern_code": "HB_ELBOW",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "elbow",
+          "basic_vocabulary"
+        ],
+        "keyword": "elbow",
+        "keyword_translation": "肘部",
+        "keyword_phonetics": {
+          "uk": "/ˈelbəʊ/",
+          "us": "/ˈelboʊ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "leaned",
+          "base_form": "leaned",
+          "range": [
+            3,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "倚靠",
+          "explanation": "lean 的过去式。",
+          "phonetics": {
+            "uk": "/liːnd/",
+            "us": "/liːnd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            10,
+            12
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            13,
+            16
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "elbow",
+          "base_form": "elbow",
+          "range": [
+            17,
+            22
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肘部",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈelbəʊ/",
+            "us": "/ˈelboʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_025",
+      "sentence_info": {
+        "original": "She wore a watch on her wrist",
+        "translation": "她手腕上戴着表",
+        "sentence_pattern": "上肢 · wrist",
+        "pattern_code": "HB_WRIST",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "wrist",
+          "basic_vocabulary"
+        ],
+        "keyword": "wrist",
+        "keyword_translation": "手腕",
+        "keyword_phonetics": {
+          "uk": "/rɪst/",
+          "us": "/rɪst/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wore",
+          "base_form": "wore",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "佩戴",
+          "explanation": "wear 的过去式。",
+          "phonetics": {
+            "uk": "/wɔː(r)/",
+            "us": "/wɔːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            9,
+            10
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "watch",
+          "base_form": "watch",
+          "range": [
+            11,
+            16
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "手表",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/wɒtʃ/",
+            "us": "/wɑːtʃ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "on",
+          "base_form": "on",
+          "range": [
+            17,
+            19
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…上",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɒn/",
+            "us": "/ɑːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            20,
+            23
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wrist",
+          "base_form": "wrist",
+          "range": [
+            24,
+            29
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手腕",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/rɪst/",
+            "us": "/rɪst/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_026",
+      "sentence_info": {
+        "original": "Raise your right hand",
+        "translation": "举起你的右手",
+        "sentence_pattern": "上肢 · hand",
+        "pattern_code": "HB_HAND",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "hand",
+          "basic_vocabulary"
+        ],
+        "keyword": "hand",
+        "keyword_translation": "手",
+        "keyword_phonetics": {
+          "uk": "/hænd/",
+          "us": "/hænd/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Raise",
+          "base_form": "raise",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "举起",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/reɪz/",
+            "us": "/reɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            6,
+            10
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "right",
+          "base_form": "right",
+          "range": [
+            11,
+            16
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "右边的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/raɪt/",
+            "us": "/raɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hand",
+          "base_form": "hand",
+          "range": [
+            17,
+            21
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/hænd/",
+            "us": "/hænd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_027",
+      "sentence_info": {
+        "original": "He held the coin in his palm",
+        "translation": "他把硬币握在掌心",
+        "sentence_pattern": "上肢 · palm",
+        "pattern_code": "HB_PALM",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "palm",
+          "basic_vocabulary"
+        ],
+        "keyword": "palm",
+        "keyword_translation": "手掌",
+        "keyword_phonetics": {
+          "uk": "/pɑːm/",
+          "us": "/pɑːm/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "held",
+          "base_form": "held",
+          "range": [
+            3,
+            7
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "握住",
+          "explanation": "hold 的过去式。",
+          "phonetics": {
+            "uk": "/held/",
+            "us": "/held/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [
+            8,
+            11
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "coin",
+          "base_form": "coin",
+          "range": [
+            12,
+            16
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "硬币",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/kɔɪn/",
+            "us": "/kɔɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "in",
+          "base_form": "in",
+          "range": [
+            17,
+            19
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…里",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɪn/",
+            "us": "/ɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            20,
+            23
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "palm",
+          "base_form": "palm",
+          "range": [
+            24,
+            28
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手掌",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/pɑːm/",
+            "us": "/pɑːm/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_028",
+      "sentence_info": {
+        "original": "She cut her finger",
+        "translation": "她割破了手指",
+        "sentence_pattern": "上肢 · finger",
+        "pattern_code": "HB_FINGER",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "finger",
+          "basic_vocabulary"
+        ],
+        "keyword": "finger",
+        "keyword_translation": "手指",
+        "keyword_phonetics": {
+          "uk": "/ˈfɪŋɡə(r)/",
+          "us": "/ˈfɪŋɡər/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "cut",
+          "base_form": "cut",
+          "range": [
+            4,
+            7
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "割破",
+          "explanation": "cut 的过去式（同形）。",
+          "phonetics": {
+            "uk": "/kʌt/",
+            "us": "/kʌt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            8,
+            11
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "finger",
+          "base_form": "finger",
+          "range": [
+            12,
+            18
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "手指",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈfɪŋɡə(r)/",
+            "us": "/ˈfɪŋɡər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_029",
+      "sentence_info": {
+        "original": "Give me a thumbs up",
+        "translation": "给我竖个大拇指",
+        "sentence_pattern": "上肢 · thumb",
+        "pattern_code": "HB_THUMB",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "thumb",
+          "basic_vocabulary"
+        ],
+        "keyword": "thumb",
+        "keyword_translation": "大拇指",
+        "keyword_phonetics": {
+          "uk": "/θʌm/",
+          "us": "/θʌm/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Give",
+          "base_form": "give",
+          "range": [
+            0,
+            4
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "给",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/ɡɪv/",
+            "us": "/ɡɪv/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "me",
+          "range": [
+            5,
+            7
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我",
+          "explanation": "宾格。",
+          "phonetics": {
+            "uk": "/miː/",
+            "us": "/miː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            8,
+            9
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "thumbs",
+          "base_form": "thumbs",
+          "range": [
+            10,
+            16
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "大拇指",
+          "explanation": "thumb 的复数形式（固定搭配）。",
+          "phonetics": {
+            "uk": "/θʌmz/",
+            "us": "/θʌmz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "up",
+          "base_form": "up",
+          "range": [
+            17,
+            19
+          ],
+          "tag": "adv",
+          "type": "Adverb (副词)",
+          "chinese_definition": "向上",
+          "explanation": "与 thumbs 构成短语。",
+          "phonetics": {
+            "uk": "/ʌp/",
+            "us": "/ʌp/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_030",
+      "sentence_info": {
+        "original": "She painted her nails red",
+        "translation": "她把指甲涂成红色",
+        "sentence_pattern": "上肢 · nail",
+        "pattern_code": "HB_NAIL",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "upper_limb",
+          "nail",
+          "basic_vocabulary"
+        ],
+        "keyword": "nail",
+        "keyword_translation": "指甲",
+        "keyword_phonetics": {
+          "uk": "/neɪl/",
+          "us": "/neɪl/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "painted",
+          "base_form": "painted",
+          "range": [
+            4,
+            11
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "涂",
+          "explanation": "paint 的过去式。",
+          "phonetics": {
+            "uk": "/ˈpeɪntɪd/",
+            "us": "/ˈpeɪntɪd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            12,
+            15
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "nails",
+          "base_form": "nails",
+          "range": [
+            16,
+            21
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "指甲",
+          "explanation": "nail 的复数。",
+          "phonetics": {
+            "uk": "/neɪlz/",
+            "us": "/neɪlz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "red",
+          "base_form": "red",
+          "range": [
+            22,
+            25
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "红的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/red/",
+            "us": "/red/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_031",
+      "sentence_info": {
+        "original": "The spider has eight legs",
+        "translation": "蜘蛛有八条腿",
+        "sentence_pattern": "下肢 · leg",
+        "pattern_code": "HB_LEG",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "leg",
+          "basic_vocabulary"
+        ],
+        "keyword": "leg",
+        "keyword_translation": "腿",
+        "keyword_phonetics": {
+          "uk": "/leɡ/",
+          "us": "/leɡ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "spider",
+          "base_form": "spider",
+          "range": [
+            4,
+            10
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "蜘蛛",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈspaɪdə(r)/",
+            "us": "/ˈspaɪdər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "has",
+          "range": [
+            11,
+            14
+          ],
+          "tag": "verb_have",
+          "type": "Verb (动词)",
+          "chinese_definition": "有",
+          "explanation": "have 的第三人称单数。",
+          "phonetics": {
+            "uk": "/hæz/",
+            "us": "/hæz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "eight",
+          "base_form": "eight",
+          "range": [
+            15,
+            20
+          ],
+          "tag": "numeral",
+          "type": "Numeral (数词)",
+          "chinese_definition": "八",
+          "explanation": "基数词。",
+          "phonetics": {
+            "uk": "/eɪt/",
+            "us": "/eɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "legs",
+          "base_form": "legs",
+          "range": [
+            21,
+            25
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "腿",
+          "explanation": "leg 的复数。",
+          "phonetics": {
+            "uk": "/leɡz/",
+            "us": "/leɡz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_032",
+      "sentence_info": {
+        "original": "He felt pain in his thigh",
+        "translation": "他大腿疼",
+        "sentence_pattern": "下肢 · thigh",
+        "pattern_code": "HB_THIGH",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "thigh",
+          "basic_vocabulary"
+        ],
+        "keyword": "thigh",
+        "keyword_translation": "大腿",
+        "keyword_phonetics": {
+          "uk": "/θaɪ/",
+          "us": "/θaɪ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "felt",
+          "base_form": "felt",
+          "range": [
+            3,
+            7
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "感到",
+          "explanation": "feel 的过去式。",
+          "phonetics": {
+            "uk": "/felt/",
+            "us": "/felt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "pain",
+          "base_form": "pain",
+          "range": [
+            8,
+            12
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "疼痛",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/peɪn/",
+            "us": "/peɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "in",
+          "base_form": "in",
+          "range": [
+            13,
+            15
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…里",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɪn/",
+            "us": "/ɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            16,
+            19
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "thigh",
+          "base_form": "thigh",
+          "range": [
+            20,
+            25
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "大腿",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/θaɪ/",
+            "us": "/θaɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_033",
+      "sentence_info": {
+        "original": "I hurt my knee",
+        "translation": "我弄伤了膝盖",
+        "sentence_pattern": "下肢 · knee",
+        "pattern_code": "HB_KNEE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "knee",
+          "basic_vocabulary"
+        ],
+        "keyword": "knee",
+        "keyword_translation": "膝盖",
+        "keyword_phonetics": {
+          "uk": "/niː/",
+          "us": "/niː/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [
+            0,
+            1
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我",
+          "explanation": "第一人称主格。",
+          "phonetics": {
+            "uk": "/aɪ/",
+            "us": "/aɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hurt",
+          "base_form": "hurt",
+          "range": [
+            2,
+            6
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "弄伤",
+          "explanation": "动词。",
+          "phonetics": {
+            "uk": "/hɜːt/",
+            "us": "/hɜːrt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            7,
+            9
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "knee",
+          "base_form": "knee",
+          "range": [
+            10,
+            14
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "膝盖",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/niː/",
+            "us": "/niː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_034",
+      "sentence_info": {
+        "original": "He kicked the ball with his shin",
+        "translation": "他用小腿前部踢球",
+        "sentence_pattern": "下肢 · shin",
+        "pattern_code": "HB_SHIN",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "shin",
+          "basic_vocabulary"
+        ],
+        "keyword": "shin",
+        "keyword_translation": "小腿前部",
+        "keyword_phonetics": {
+          "uk": "/ʃɪn/",
+          "us": "/ʃɪn/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "kicked",
+          "base_form": "kicked",
+          "range": [
+            3,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "踢",
+          "explanation": "kick 的过去式。",
+          "phonetics": {
+            "uk": "/kɪkt/",
+            "us": "/kɪkt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [
+            10,
+            13
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ball",
+          "base_form": "ball",
+          "range": [
+            14,
+            18
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "球",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/bɔːl/",
+            "us": "/bɔːl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "with",
+          "base_form": "with",
+          "range": [
+            19,
+            23
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "用；和",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/wɪð/",
+            "us": "/wɪð/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "his",
+          "base_form": "his",
+          "range": [
+            24,
+            27
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "shin",
+          "base_form": "shin",
+          "range": [
+            28,
+            32
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "小腿前部",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ʃɪn/",
+            "us": "/ʃɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_035",
+      "sentence_info": {
+        "original": "His calf muscles are strong",
+        "translation": "他的小腿肌肉很强壮",
+        "sentence_pattern": "下肢 · calf",
+        "pattern_code": "HB_CALF",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "calf",
+          "basic_vocabulary"
+        ],
+        "keyword": "calf",
+        "keyword_translation": "小腿肚",
+        "keyword_phonetics": {
+          "uk": "/kɑːf/",
+          "us": "/kæf/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "His",
+          "base_form": "his",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɪz/",
+            "us": "/hɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "calf",
+          "base_form": "calf",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "小腿肚",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/kɑːf/",
+            "us": "/kæf/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "muscles",
+          "base_form": "muscles",
+          "range": [
+            9,
+            16
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肌肉",
+          "explanation": "muscle 的复数。",
+          "phonetics": {
+            "uk": "/ˈmʌs(ə)lz/",
+            "us": "/ˈmʌs(ə)lz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "are",
+          "range": [
+            17,
+            20
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词复数形式。",
+          "phonetics": {
+            "uk": "/ɑː(r)/",
+            "us": "/ɑːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "strong",
+          "base_form": "strong",
+          "range": [
+            21,
+            27
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "强壮的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/strɒŋ/",
+            "us": "/strɔːŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_036",
+      "sentence_info": {
+        "original": "She twisted her ankle",
+        "translation": "她扭伤了脚踝",
+        "sentence_pattern": "下肢 · ankle",
+        "pattern_code": "HB_ANKLE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "ankle",
+          "basic_vocabulary"
+        ],
+        "keyword": "ankle",
+        "keyword_translation": "脚踝",
+        "keyword_phonetics": {
+          "uk": "/ˈæŋk(ə)l/",
+          "us": "/ˈæŋk(ə)l/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "twisted",
+          "base_form": "twisted",
+          "range": [
+            4,
+            11
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "扭伤",
+          "explanation": "twist 的过去式。",
+          "phonetics": {
+            "uk": "/ˈtwɪstɪd/",
+            "us": "/ˈtwɪstɪd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "her",
+          "base_form": "her",
+          "range": [
+            12,
+            15
+          ],
+          "tag": "pronoun_object",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她/她的",
+          "explanation": "宾格或物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ankle",
+          "base_form": "ankle",
+          "range": [
+            16,
+            21
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "脚踝",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/ˈæŋk(ə)l/",
+            "us": "/ˈæŋk(ə)l/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_037",
+      "sentence_info": {
+        "original": "My left foot hurts",
+        "translation": "我的左脚疼",
+        "sentence_pattern": "下肢 · foot",
+        "pattern_code": "HB_FOOT",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "foot",
+          "basic_vocabulary"
+        ],
+        "keyword": "foot",
+        "keyword_translation": "脚",
+        "keyword_phonetics": {
+          "uk": "/fʊt/",
+          "us": "/fʊt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "My",
+          "base_form": "my",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "left",
+          "base_form": "left",
+          "range": [
+            3,
+            7
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "左边的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/left/",
+            "us": "/left/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "foot",
+          "base_form": "foot",
+          "range": [
+            8,
+            12
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "脚",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/fʊt/",
+            "us": "/fʊt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "hurts",
+          "base_form": "hurts",
+          "range": [
+            13,
+            18
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "疼痛",
+          "explanation": "hurt 的第三人称单数。",
+          "phonetics": {
+            "uk": "/hɜːts/",
+            "us": "/hɜːrts/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_038",
+      "sentence_info": {
+        "original": "The shoe rubbed my heel",
+        "translation": "鞋子磨脚后跟",
+        "sentence_pattern": "下肢 · heel",
+        "pattern_code": "HB_HEEL",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "heel",
+          "basic_vocabulary"
+        ],
+        "keyword": "heel",
+        "keyword_translation": "脚后跟",
+        "keyword_phonetics": {
+          "uk": "/hiːl/",
+          "us": "/hiːl/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "shoe",
+          "base_form": "shoe",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "鞋",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ʃuː/",
+            "us": "/ʃuː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "rubbed",
+          "base_form": "rubbed",
+          "range": [
+            9,
+            15
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "摩擦",
+          "explanation": "rub 的过去式。",
+          "phonetics": {
+            "uk": "/rʌbd/",
+            "us": "/rʌbd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            16,
+            18
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "heel",
+          "base_form": "heel",
+          "range": [
+            19,
+            23
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "脚后跟",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/hiːl/",
+            "us": "/hiːl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_039",
+      "sentence_info": {
+        "original": "I stubbed my toe",
+        "translation": "我踢到脚趾了",
+        "sentence_pattern": "下肢 · toe",
+        "pattern_code": "HB_TOE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "lower_limb",
+          "toe",
+          "basic_vocabulary"
+        ],
+        "keyword": "toe",
+        "keyword_translation": "脚趾",
+        "keyword_phonetics": {
+          "uk": "/təʊ/",
+          "us": "/toʊ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [
+            0,
+            1
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我",
+          "explanation": "第一人称主格。",
+          "phonetics": {
+            "uk": "/aɪ/",
+            "us": "/aɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "stubbed",
+          "base_form": "stubbed",
+          "range": [
+            2,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "踢到",
+          "explanation": "stub 的过去式。",
+          "phonetics": {
+            "uk": "/stʌbd/",
+            "us": "/stʌbd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "my",
+          "base_form": "my",
+          "range": [
+            10,
+            12
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "toe",
+          "base_form": "toe",
+          "range": [
+            13,
+            16
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "脚趾",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/təʊ/",
+            "us": "/toʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_040",
+      "sentence_info": {
+        "original": "Use your brain",
+        "translation": "动动脑筋",
+        "sentence_pattern": "内部器官 · brain",
+        "pattern_code": "HB_BRAIN",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "brain",
+          "basic_vocabulary"
+        ],
+        "keyword": "brain",
+        "keyword_translation": "大脑",
+        "keyword_phonetics": {
+          "uk": "/breɪn/",
+          "us": "/breɪn/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Use",
+          "base_form": "use",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "verb_imperative",
+          "type": "Verb (动词)",
+          "chinese_definition": "使用",
+          "explanation": "祈使句动词。",
+          "phonetics": {
+            "uk": "/juːz/",
+            "us": "/juːz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "brain",
+          "base_form": "brain",
+          "range": [
+            9,
+            14
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "大脑",
+          "explanation": "器官名词。",
+          "phonetics": {
+            "uk": "/breɪn/",
+            "us": "/breɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_041",
+      "sentence_info": {
+        "original": "My heart beats fast",
+        "translation": "我的心跳得很快",
+        "sentence_pattern": "内部器官 · heart",
+        "pattern_code": "HB_HEART",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "heart",
+          "basic_vocabulary"
+        ],
+        "keyword": "heart",
+        "keyword_translation": "心脏",
+        "keyword_phonetics": {
+          "uk": "/hɑːt/",
+          "us": "/hɑːrt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "My",
+          "base_form": "my",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "heart",
+          "base_form": "heart",
+          "range": [
+            3,
+            8
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "心脏",
+          "explanation": "器官名词。",
+          "phonetics": {
+            "uk": "/hɑːt/",
+            "us": "/hɑːrt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "beats",
+          "base_form": "beats",
+          "range": [
+            9,
+            14
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "跳动",
+          "explanation": "beat 的第三人称单数。",
+          "phonetics": {
+            "uk": "/biːts/",
+            "us": "/biːts/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "fast",
+          "base_form": "fast",
+          "range": [
+            15,
+            19
+          ],
+          "tag": "adv",
+          "type": "Adverb (副词)",
+          "chinese_definition": "快地",
+          "explanation": "副词。",
+          "phonetics": {
+            "uk": "/fɑːst/",
+            "us": "/fæst/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_042",
+      "sentence_info": {
+        "original": "Smoking damages your lungs",
+        "translation": "吸烟损害肺部",
+        "sentence_pattern": "内部器官 · lung",
+        "pattern_code": "HB_LUNG",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "lung",
+          "basic_vocabulary"
+        ],
+        "keyword": "lung",
+        "keyword_translation": "肺",
+        "keyword_phonetics": {
+          "uk": "/lʌŋ/",
+          "us": "/lʌŋ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Smoking",
+          "base_form": "smoking",
+          "range": [
+            0,
+            7
+          ],
+          "tag": "noun_gerund",
+          "type": "Noun (名词)",
+          "chinese_definition": "吸烟",
+          "explanation": "动名词作主语。",
+          "phonetics": {
+            "uk": "/ˈsməʊkɪŋ/",
+            "us": "/ˈsmoʊkɪŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "damages",
+          "base_form": "damages",
+          "range": [
+            8,
+            15
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "损害",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/ˈdæmɪdʒɪz/",
+            "us": "/ˈdæmɪdʒɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "your",
+          "base_form": "your",
+          "range": [
+            16,
+            20
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "你的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/jɔː(r)/",
+            "us": "/jʊr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "lungs",
+          "base_form": "lungs",
+          "range": [
+            21,
+            26
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肺",
+          "explanation": "lung 的复数。",
+          "phonetics": {
+            "uk": "/lʌŋz/",
+            "us": "/lʌŋz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_043",
+      "sentence_info": {
+        "original": "My stomach is growling",
+        "translation": "我的肚子在咕咕叫",
+        "sentence_pattern": "内部器官 · stomach",
+        "pattern_code": "HB_STOMACH",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "stomach",
+          "basic_vocabulary"
+        ],
+        "keyword": "stomach",
+        "keyword_translation": "胃",
+        "keyword_phonetics": {
+          "uk": "/ˈstʌmək/",
+          "us": "/ˈstʌmək/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "My",
+          "base_form": "my",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/maɪ/",
+            "us": "/maɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "stomach",
+          "base_form": "stomach",
+          "range": [
+            3,
+            10
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "胃",
+          "explanation": "器官名词。",
+          "phonetics": {
+            "uk": "/ˈstʌmək/",
+            "us": "/ˈstʌmək/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "is",
+          "range": [
+            11,
+            13
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词第三人称。",
+          "phonetics": {
+            "uk": "/ɪz/",
+            "us": "/ɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "growling",
+          "base_form": "growling",
+          "range": [
+            14,
+            22
+          ],
+          "tag": "noun_verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "咕咕叫",
+          "explanation": "growl 的 -ing 形式。",
+          "phonetics": {
+            "uk": "/ˈɡraʊlɪŋ/",
+            "us": "/ˈɡraʊlɪŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_044",
+      "sentence_info": {
+        "original": "The liver filters blood",
+        "translation": "肝脏过滤血液",
+        "sentence_pattern": "内部器官 · liver",
+        "pattern_code": "HB_LIVER",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "liver",
+          "basic_vocabulary"
+        ],
+        "keyword": "liver",
+        "keyword_translation": "肝脏",
+        "keyword_phonetics": {
+          "uk": "/ˈlɪvə(r)/",
+          "us": "/ˈlɪvər/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "liver",
+          "base_form": "liver",
+          "range": [
+            4,
+            9
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肝脏",
+          "explanation": "器官名词。",
+          "phonetics": {
+            "uk": "/ˈlɪvə(r)/",
+            "us": "/ˈlɪvər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "filters",
+          "base_form": "filters",
+          "range": [
+            10,
+            17
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "过滤",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/ˈfɪltəz/",
+            "us": "/ˈfɪltərz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "blood",
+          "base_form": "blood",
+          "range": [
+            18,
+            23
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "血液",
+          "explanation": "身体组织名词。",
+          "phonetics": {
+            "uk": "/blʌd/",
+            "us": "/blʌd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_045",
+      "sentence_info": {
+        "original": "This bone is broken",
+        "translation": "这根骨头断了",
+        "sentence_pattern": "内部器官 · bone",
+        "pattern_code": "HB_BONE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "bone",
+          "basic_vocabulary"
+        ],
+        "keyword": "bone",
+        "keyword_translation": "骨骼",
+        "keyword_phonetics": {
+          "uk": "/bəʊn/",
+          "us": "/boʊn/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "This",
+          "base_form": "this",
+          "range": [
+            0,
+            4
+          ],
+          "tag": "determiner",
+          "type": "Determiner (限定词)",
+          "chinese_definition": "这",
+          "explanation": "指示限定词。",
+          "phonetics": {
+            "uk": "/ðɪs/",
+            "us": "/ðɪs/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "bone",
+          "base_form": "bone",
+          "range": [
+            5,
+            9
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "骨骼；骨头",
+          "explanation": "身体部位名词。",
+          "phonetics": {
+            "uk": "/bəʊn/",
+            "us": "/boʊn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "is",
+          "range": [
+            10,
+            12
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词第三人称。",
+          "phonetics": {
+            "uk": "/ɪz/",
+            "us": "/ɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "broken",
+          "base_form": "broken",
+          "range": [
+            13,
+            19
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "断了的",
+          "explanation": "形容词，表状态。",
+          "phonetics": {
+            "uk": "/ˈbrəʊkən/",
+            "us": "/ˈbroʊkən/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_046",
+      "sentence_info": {
+        "original": "Exercise builds muscle",
+        "translation": "锻炼长肌肉",
+        "sentence_pattern": "内部器官 · muscle",
+        "pattern_code": "HB_MUSCLE",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "muscle",
+          "basic_vocabulary"
+        ],
+        "keyword": "muscle",
+        "keyword_translation": "肌肉",
+        "keyword_phonetics": {
+          "uk": "/ˈmʌs(ə)l/",
+          "us": "/ˈmʌs(ə)l/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Exercise",
+          "base_form": "exercise",
+          "range": [
+            0,
+            8
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "锻炼",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/ˈeksəsaɪz/",
+            "us": "/ˈeksərsaɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "builds",
+          "base_form": "builds",
+          "range": [
+            9,
+            15
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "增强；练就",
+          "explanation": "build 的第三人称单数。",
+          "phonetics": {
+            "uk": "/bɪldz/",
+            "us": "/bɪldz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "muscle",
+          "base_form": "muscle",
+          "range": [
+            16,
+            22
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "肌肉",
+          "explanation": "身体组织名词。",
+          "phonetics": {
+            "uk": "/ˈmʌs(ə)l/",
+            "us": "/ˈmʌs(ə)l/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "HB_047",
+      "sentence_info": {
+        "original": "Blood flows in veins",
+        "translation": "血液在血管里流动",
+        "sentence_pattern": "内部器官 · blood",
+        "pattern_code": "HB_BLOOD",
+        "difficulty_level": 1,
+        "tags": [
+          "human_body",
+          "internal",
+          "blood",
+          "basic_vocabulary"
+        ],
+        "keyword": "blood",
+        "keyword_translation": "血液",
+        "keyword_phonetics": {
+          "uk": "/blʌd/",
+          "us": "/blʌd/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Blood",
+          "base_form": "blood",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "血液",
+          "explanation": "不可数名词，此处作主语。",
+          "phonetics": {
+            "uk": "/blʌd/",
+            "us": "/blʌd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "flows",
+          "base_form": "flows",
+          "range": [
+            6,
+            11
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "流动",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/fləʊz/",
+            "us": "/floʊz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "in",
+          "base_form": "in",
+          "range": [
+            12,
+            14
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…里",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɪn/",
+            "us": "/ɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "veins",
+          "base_form": "veins",
+          "range": [
+            15,
+            20
+          ],
+          "tag": "noun_body",
+          "type": "Noun (名词)",
+          "chinese_definition": "血管",
+          "explanation": "vein 的复数。",
+          "phonetics": {
+            "uk": "/veɪnz/",
+            "us": "/veɪnz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

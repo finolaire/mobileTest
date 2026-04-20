@@ -41,6 +41,12 @@ struct SentenceInfo: Codable {
     let patternCode: String
     let difficultyLevel: Int
     let tags: [String]
+    /// 本句对应的主题单词（如词汇课）；旧版 JSON 可无此字段。
+    let keyword: String?
+    /// 主题单词的中文释义；旧版 JSON 可无此字段。
+    let keywordTranslation: String?
+    /// 主题单词的英/美音；与 `phonetics` 结构一致。
+    let keywordPhonetics: Phonetics?
 
     enum CodingKeys: String, CodingKey {
         case original
@@ -49,6 +55,9 @@ struct SentenceInfo: Codable {
         case patternCode = "pattern_code"
         case difficultyLevel = "difficulty_level"
         case tags
+        case keyword
+        case keywordTranslation = "keyword_translation"
+        case keywordPhonetics = "keyword_phonetics"
     }
 }
 

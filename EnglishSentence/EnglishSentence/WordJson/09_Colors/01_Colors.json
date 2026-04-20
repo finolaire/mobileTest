@@ -1,0 +1,2710 @@
+{
+  "unit_name": "颜色词汇 - 彩虹色、中性色、进阶色与修饰词",
+  "description": "共 25 个词条：基础彩虹色 8 词、中性色 5 词、常见进阶色 8 词、亮度与饱和度修饰词（light / dark / bright / pale）4 词；附例句与逐词解析。",
+  "category": "Colors",
+  "code": "COL_01",
+  "sentences": [
+    {
+      "id": "COL_001",
+      "sentence_info": {
+        "original": "The red apple looks sweet",
+        "translation": "红苹果看起来很甜",
+        "sentence_pattern": "基础彩虹色 · red",
+        "pattern_code": "COL_RED",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "red",
+          "basic_vocabulary"
+        ],
+        "keyword": "red",
+        "keyword_translation": "红色",
+        "keyword_phonetics": {
+          "uk": "/red/",
+          "us": "/red/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "red",
+          "base_form": "red",
+          "range": [
+            4,
+            7
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "红色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/red/",
+            "us": "/red/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "apple",
+          "base_form": "apple",
+          "range": [
+            8,
+            13
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "苹果",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈæpl/",
+            "us": "/ˈæpl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "looks",
+          "base_form": "looks",
+          "range": [
+            14,
+            19
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "看起来",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/lʊks/",
+            "us": "/lʊks/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "sweet",
+          "base_form": "sweet",
+          "range": [
+            20,
+            25
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "甜的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/swiːt/",
+            "us": "/swiːt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_002",
+      "sentence_info": {
+        "original": "I like orange juice",
+        "translation": "我喜欢橙汁",
+        "sentence_pattern": "基础彩虹色 · orange",
+        "pattern_code": "COL_ORANGE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "orange",
+          "basic_vocabulary"
+        ],
+        "keyword": "orange",
+        "keyword_translation": "橙色",
+        "keyword_phonetics": {
+          "uk": "/ˈɒrɪndʒ/",
+          "us": "/ˈɔːrɪndʒ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [
+            0,
+            1
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "我",
+          "explanation": "第一人称主格。",
+          "phonetics": {
+            "uk": "/aɪ/",
+            "us": "/aɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "like",
+          "base_form": "like",
+          "range": [
+            2,
+            6
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "喜欢",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/laɪk/",
+            "us": "/laɪk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "orange",
+          "base_form": "orange",
+          "range": [
+            7,
+            13
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "橙色；橙汁",
+          "explanation": "颜色或饮品。",
+          "phonetics": {
+            "uk": "/ˈɒrɪndʒ/",
+            "us": "/ˈɔːrɪndʒ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "juice",
+          "base_form": "juice",
+          "range": [
+            14,
+            19
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "果汁",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/dʒuːs/",
+            "us": "/dʒuːs/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_003",
+      "sentence_info": {
+        "original": "The yellow taxi stopped",
+        "translation": "黄色出租车停了下来",
+        "sentence_pattern": "基础彩虹色 · yellow",
+        "pattern_code": "COL_YELLOW",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "yellow",
+          "basic_vocabulary"
+        ],
+        "keyword": "yellow",
+        "keyword_translation": "黄色",
+        "keyword_phonetics": {
+          "uk": "/ˈjeləʊ/",
+          "us": "/ˈjeloʊ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "yellow",
+          "base_form": "yellow",
+          "range": [
+            4,
+            10
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "黄色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ˈjeləʊ/",
+            "us": "/ˈjeloʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "taxi",
+          "base_form": "taxi",
+          "range": [
+            11,
+            15
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "出租车",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈtæksi/",
+            "us": "/ˈtæksi/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "stopped",
+          "base_form": "stopped",
+          "range": [
+            16,
+            23
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "停下",
+          "explanation": "stop 过去式。",
+          "phonetics": {
+            "uk": "/stɒpt/",
+            "us": "/stɑːpt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_004",
+      "sentence_info": {
+        "original": "Grass is green in spring",
+        "translation": "春天草是绿的",
+        "sentence_pattern": "基础彩虹色 · green",
+        "pattern_code": "COL_GREEN",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "green",
+          "basic_vocabulary"
+        ],
+        "keyword": "green",
+        "keyword_translation": "绿色",
+        "keyword_phonetics": {
+          "uk": "/ɡriːn/",
+          "us": "/ɡriːn/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Grass",
+          "base_form": "grass",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "草",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/ɡrɑːs/",
+            "us": "/ɡræs/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "is",
+          "range": [
+            6,
+            8
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词。",
+          "phonetics": {
+            "uk": "/ɪz/",
+            "us": "/ɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "green",
+          "base_form": "green",
+          "range": [
+            9,
+            14
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "绿色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ɡriːn/",
+            "us": "/ɡriːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "in",
+          "base_form": "in",
+          "range": [
+            15,
+            17
+          ],
+          "tag": "prep",
+          "type": "Preposition (介词)",
+          "chinese_definition": "在…里",
+          "explanation": "介词。",
+          "phonetics": {
+            "uk": "/ɪn/",
+            "us": "/ɪn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "spring",
+          "base_form": "spring",
+          "range": [
+            18,
+            24
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "春天",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/sprɪŋ/",
+            "us": "/sprɪŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_005",
+      "sentence_info": {
+        "original": "The blue sky is clear",
+        "translation": "蓝天很清澈",
+        "sentence_pattern": "基础彩虹色 · blue",
+        "pattern_code": "COL_BLUE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "blue",
+          "basic_vocabulary"
+        ],
+        "keyword": "blue",
+        "keyword_translation": "蓝色",
+        "keyword_phonetics": {
+          "uk": "/bluː/",
+          "us": "/bluː/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "blue",
+          "base_form": "blue",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "蓝色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/bluː/",
+            "us": "/bluː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "sky",
+          "base_form": "sky",
+          "range": [
+            9,
+            12
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "天空",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/skaɪ/",
+            "us": "/skaɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "is",
+          "range": [
+            13,
+            15
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词。",
+          "phonetics": {
+            "uk": "/ɪz/",
+            "us": "/ɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "clear",
+          "base_form": "clear",
+          "range": [
+            16,
+            21
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "清澈的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/klɪə(r)/",
+            "us": "/klɪr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_006",
+      "sentence_info": {
+        "original": "Indigo dye was precious",
+        "translation": "靛蓝染料曾很珍贵",
+        "sentence_pattern": "基础彩虹色 · indigo",
+        "pattern_code": "COL_INDIGO",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "indigo",
+          "basic_vocabulary"
+        ],
+        "keyword": "indigo",
+        "keyword_translation": "靛蓝色",
+        "keyword_phonetics": {
+          "uk": "/ˈɪndɪɡəʊ/",
+          "us": "/ˈɪndɪɡoʊ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Indigo",
+          "base_form": "indigo",
+          "range": [
+            0,
+            6
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "靛蓝",
+          "explanation": "颜色/染料名。",
+          "phonetics": {
+            "uk": "/ˈɪndɪɡəʊ/",
+            "us": "/ˈɪndɪɡoʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "dye",
+          "base_form": "dye",
+          "range": [
+            7,
+            10
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "染料",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/daɪ/",
+            "us": "/daɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "was",
+          "base_form": "was",
+          "range": [
+            11,
+            14
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词过去式。",
+          "phonetics": {
+            "uk": "/wɒz/",
+            "us": "/wɑːz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "precious",
+          "base_form": "precious",
+          "range": [
+            15,
+            23
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "珍贵的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/ˈpreʃəs/",
+            "us": "/ˈpreʃəs/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_007",
+      "sentence_info": {
+        "original": "She wore a violet dress",
+        "translation": "她穿了一条紫罗兰色连衣裙",
+        "sentence_pattern": "基础彩虹色 · violet",
+        "pattern_code": "COL_VIOLET",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "violet",
+          "basic_vocabulary"
+        ],
+        "keyword": "violet",
+        "keyword_translation": "紫罗兰色",
+        "keyword_phonetics": {
+          "uk": "/ˈvaɪələt/",
+          "us": "/ˈvaɪələt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wore",
+          "base_form": "wore",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "穿",
+          "explanation": "wear 过去式。",
+          "phonetics": {
+            "uk": "/wɔː(r)/",
+            "us": "/wɔːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            9,
+            10
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "violet",
+          "base_form": "violet",
+          "range": [
+            11,
+            17
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "紫罗兰色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ˈvaɪələt/",
+            "us": "/ˈvaɪələt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "dress",
+          "base_form": "dress",
+          "range": [
+            18,
+            23
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "连衣裙",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/dres/",
+            "us": "/dres/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_008",
+      "sentence_info": {
+        "original": "Purple grapes are ripe",
+        "translation": "紫葡萄熟了",
+        "sentence_pattern": "基础彩虹色 · purple",
+        "pattern_code": "COL_PURPLE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "basic_rainbow",
+          "purple",
+          "basic_vocabulary"
+        ],
+        "keyword": "purple",
+        "keyword_translation": "紫色",
+        "keyword_phonetics": {
+          "uk": "/ˈpɜːpl/",
+          "us": "/ˈpɜːrpl/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Purple",
+          "base_form": "purple",
+          "range": [
+            0,
+            6
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "紫色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ˈpɜːpl/",
+            "us": "/ˈpɜːrpl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "grapes",
+          "base_form": "grapes",
+          "range": [
+            7,
+            13
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "葡萄",
+          "explanation": "名词复数。",
+          "phonetics": {
+            "uk": "/ɡreɪps/",
+            "us": "/ɡreɪps/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "are",
+          "range": [
+            14,
+            17
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词复数。",
+          "phonetics": {
+            "uk": "/ɑː(r)/",
+            "us": "/ɑːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ripe",
+          "base_form": "ripe",
+          "range": [
+            18,
+            22
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "成熟的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/raɪp/",
+            "us": "/raɪp/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_009",
+      "sentence_info": {
+        "original": "Black coffee has no milk",
+        "translation": "黑咖啡不加奶",
+        "sentence_pattern": "中性色与基础色 · black",
+        "pattern_code": "COL_BLACK",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "neutrals",
+          "black",
+          "basic_vocabulary"
+        ],
+        "keyword": "black",
+        "keyword_translation": "黑色",
+        "keyword_phonetics": {
+          "uk": "/blæk/",
+          "us": "/blæk/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Black",
+          "base_form": "black",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "黑色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/blæk/",
+            "us": "/blæk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "coffee",
+          "base_form": "coffee",
+          "range": [
+            6,
+            12
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "咖啡",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈkɒfi/",
+            "us": "/ˈkɔːfi/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "has",
+          "range": [
+            13,
+            16
+          ],
+          "tag": "verb_have",
+          "type": "Verb (动词)",
+          "chinese_definition": "有",
+          "explanation": "have 第三人称单数。",
+          "phonetics": {
+            "uk": "/hæz/",
+            "us": "/hæz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "no",
+          "base_form": "no",
+          "range": [
+            17,
+            19
+          ],
+          "tag": "determiner",
+          "type": "Determiner (限定词)",
+          "chinese_definition": "没有",
+          "explanation": "限定词。",
+          "phonetics": {
+            "uk": "/nəʊ/",
+            "us": "/noʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "milk",
+          "base_form": "milk",
+          "range": [
+            20,
+            24
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "牛奶",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/mɪlk/",
+            "us": "/mɪlk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_010",
+      "sentence_info": {
+        "original": "White snow covers the ground",
+        "translation": "白雪覆盖大地",
+        "sentence_pattern": "中性色与基础色 · white",
+        "pattern_code": "COL_WHITE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "neutrals",
+          "white",
+          "basic_vocabulary"
+        ],
+        "keyword": "white",
+        "keyword_translation": "白色",
+        "keyword_phonetics": {
+          "uk": "/waɪt/",
+          "us": "/waɪt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "White",
+          "base_form": "white",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "白色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/waɪt/",
+            "us": "/waɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "snow",
+          "base_form": "snow",
+          "range": [
+            6,
+            10
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "雪",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/snəʊ/",
+            "us": "/snoʊ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "covers",
+          "base_form": "covers",
+          "range": [
+            11,
+            17
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "覆盖",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/ˈkʌvəz/",
+            "us": "/ˈkʌvərz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "the",
+          "base_form": "the",
+          "range": [
+            18,
+            21
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ground",
+          "base_form": "ground",
+          "range": [
+            22,
+            28
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "地面",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ɡraʊnd/",
+            "us": "/ɡraʊnd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_011",
+      "sentence_info": {
+        "original": "The gray cat slept",
+        "translation": "灰猫在睡觉",
+        "sentence_pattern": "中性色与基础色 · gray",
+        "pattern_code": "COL_GRAY",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "neutrals",
+          "gray",
+          "basic_vocabulary"
+        ],
+        "keyword": "gray",
+        "keyword_translation": "灰色",
+        "keyword_phonetics": {
+          "uk": "/ɡreɪ/",
+          "us": "/ɡreɪ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "gray",
+          "base_form": "gray",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "灰色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ɡreɪ/",
+            "us": "/ɡreɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "cat",
+          "base_form": "cat",
+          "range": [
+            9,
+            12
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "猫",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/kæt/",
+            "us": "/kæt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "slept",
+          "base_form": "slept",
+          "range": [
+            13,
+            18
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "睡觉",
+          "explanation": "sleep 过去式。",
+          "phonetics": {
+            "uk": "/slept/",
+            "us": "/slept/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_012",
+      "sentence_info": {
+        "original": "Brown leather feels soft",
+        "translation": "棕色皮革摸起来很软",
+        "sentence_pattern": "中性色与基础色 · brown",
+        "pattern_code": "COL_BROWN",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "neutrals",
+          "brown",
+          "basic_vocabulary"
+        ],
+        "keyword": "brown",
+        "keyword_translation": "棕色",
+        "keyword_phonetics": {
+          "uk": "/braʊn/",
+          "us": "/braʊn/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Brown",
+          "base_form": "brown",
+          "range": [
+            0,
+            5
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "棕色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/braʊn/",
+            "us": "/braʊn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "leather",
+          "base_form": "leather",
+          "range": [
+            6,
+            13
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "皮革",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈleðə(r)/",
+            "us": "/ˈleðər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "feels",
+          "base_form": "feels",
+          "range": [
+            14,
+            19
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "摸起来",
+          "explanation": "feel 第三人称单数。",
+          "phonetics": {
+            "uk": "/fiːlz/",
+            "us": "/fiːlz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "soft",
+          "base_form": "soft",
+          "range": [
+            20,
+            24
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "柔软的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/sɒft/",
+            "us": "/sɔːft/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_013",
+      "sentence_info": {
+        "original": "The walls are beige",
+        "translation": "墙是米色的",
+        "sentence_pattern": "中性色与基础色 · beige",
+        "pattern_code": "COL_BEIGE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "neutrals",
+          "beige",
+          "basic_vocabulary"
+        ],
+        "keyword": "beige",
+        "keyword_translation": "米色",
+        "keyword_phonetics": {
+          "uk": "/beɪʒ/",
+          "us": "/beɪʒ/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "walls",
+          "base_form": "walls",
+          "range": [
+            4,
+            9
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "墙",
+          "explanation": "名词复数。",
+          "phonetics": {
+            "uk": "/wɔːlz/",
+            "us": "/wɔːlz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "are",
+          "range": [
+            10,
+            13
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词复数。",
+          "phonetics": {
+            "uk": "/ɑː(r)/",
+            "us": "/ɑːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "beige",
+          "base_form": "beige",
+          "range": [
+            14,
+            19
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "米色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/beɪʒ/",
+            "us": "/beɪʒ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_014",
+      "sentence_info": {
+        "original": "Pink roses smell sweet",
+        "translation": "粉红玫瑰闻起来很香",
+        "sentence_pattern": "常见进阶色彩 · pink",
+        "pattern_code": "COL_PINK",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "pink",
+          "basic_vocabulary"
+        ],
+        "keyword": "pink",
+        "keyword_translation": "粉红色",
+        "keyword_phonetics": {
+          "uk": "/pɪŋk/",
+          "us": "/pɪŋk/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Pink",
+          "base_form": "pink",
+          "range": [
+            0,
+            4
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "粉红色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/pɪŋk/",
+            "us": "/pɪŋk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "roses",
+          "base_form": "roses",
+          "range": [
+            5,
+            10
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "玫瑰",
+          "explanation": "名词复数。",
+          "phonetics": {
+            "uk": "/ˈrəʊzɪz/",
+            "us": "/ˈroʊzɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "smell",
+          "base_form": "smell",
+          "range": [
+            11,
+            16
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "闻起来",
+          "explanation": "动词。",
+          "phonetics": {
+            "uk": "/smel/",
+            "us": "/smel/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "sweet",
+          "base_form": "sweet",
+          "range": [
+            17,
+            22
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "甜的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/swiːt/",
+            "us": "/swiːt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_015",
+      "sentence_info": {
+        "original": "The cyan screen flickered",
+        "translation": "青色屏幕在闪",
+        "sentence_pattern": "常见进阶色彩 · cyan",
+        "pattern_code": "COL_CYAN",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "cyan",
+          "basic_vocabulary"
+        ],
+        "keyword": "cyan",
+        "keyword_translation": "青色",
+        "keyword_phonetics": {
+          "uk": "/ˈsaɪən/",
+          "us": "/ˈsaɪən/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/",
+            "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "cyan",
+          "base_form": "cyan",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "青色",
+          "explanation": "颜色名。",
+          "phonetics": {
+            "uk": "/ˈsaɪən/",
+            "us": "/ˈsaɪən/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "screen",
+          "base_form": "screen",
+          "range": [
+            9,
+            15
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "屏幕",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/skriːn/",
+            "us": "/skriːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "flickered",
+          "base_form": "flickered",
+          "range": [
+            16,
+            25
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "闪烁",
+          "explanation": "flicker 过去式。",
+          "phonetics": {
+            "uk": "/ˈflɪkəd/",
+            "us": "/ˈflɪkərd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_016",
+      "sentence_info": {
+        "original": "Aqua water looks clear",
+        "translation": "水蓝色的水看起来很清",
+        "sentence_pattern": "常见进阶色彩 · aqua",
+        "pattern_code": "COL_AQUA",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "aqua",
+          "basic_vocabulary"
+        ],
+        "keyword": "aqua",
+        "keyword_translation": "水蓝色",
+        "keyword_phonetics": {
+          "uk": "/ˈækwə/",
+          "us": "/ˈækwə/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Aqua",
+          "base_form": "aqua",
+          "range": [
+            0,
+            4
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "水蓝色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ˈækwə/",
+            "us": "/ˈækwə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "water",
+          "base_form": "water",
+          "range": [
+            5,
+            10
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "水",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈwɔːtə(r)/",
+            "us": "/ˈwɔːtər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "looks",
+          "base_form": "looks",
+          "range": [
+            11,
+            16
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "看起来",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/lʊks/",
+            "us": "/lʊks/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "clear",
+          "base_form": "clear",
+          "range": [
+            17,
+            22
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "清澈的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/klɪə(r)/",
+            "us": "/klɪr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_017",
+      "sentence_info": {
+        "original": "She won a gold medal",
+        "translation": "她赢得了金牌",
+        "sentence_pattern": "常见进阶色彩 · gold",
+        "pattern_code": "COL_GOLD",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "gold",
+          "basic_vocabulary"
+        ],
+        "keyword": "gold",
+        "keyword_translation": "金色",
+        "keyword_phonetics": {
+          "uk": "/ɡəʊld/",
+          "us": "/ɡoʊld/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "won",
+          "base_form": "won",
+          "range": [
+            4,
+            7
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "赢得",
+          "explanation": "win 过去式。",
+          "phonetics": {
+            "uk": "/wʌn/",
+            "us": "/wʌn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            8,
+            9
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "gold",
+          "base_form": "gold",
+          "range": [
+            10,
+            14
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "金色；黄金",
+          "explanation": "颜色/材质。",
+          "phonetics": {
+            "uk": "/ɡəʊld/",
+            "us": "/ɡoʊld/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "medal",
+          "base_form": "medal",
+          "range": [
+            15,
+            20
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "奖牌",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈmedl/",
+            "us": "/ˈmedl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_018",
+      "sentence_info": {
+        "original": "He bought a silver ring",
+        "translation": "他买了一枚银戒指",
+        "sentence_pattern": "常见进阶色彩 · silver",
+        "pattern_code": "COL_SILVER",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "silver",
+          "basic_vocabulary"
+        ],
+        "keyword": "silver",
+        "keyword_translation": "银色",
+        "keyword_phonetics": {
+          "uk": "/ˈsɪlvə(r)/",
+          "us": "/ˈsɪlvər/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "bought",
+          "base_form": "bought",
+          "range": [
+            3,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "购买",
+          "explanation": "buy 过去式。",
+          "phonetics": {
+            "uk": "/bɔːt/",
+            "us": "/bɔːt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            10,
+            11
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "silver",
+          "base_form": "silver",
+          "range": [
+            12,
+            18
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "银色；银",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/ˈsɪlvə(r)/",
+            "us": "/ˈsɪlvər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "ring",
+          "base_form": "ring",
+          "range": [
+            19,
+            23
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "戒指",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/rɪŋ/",
+            "us": "/rɪŋ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_019",
+      "sentence_info": {
+        "original": "He wore a navy blue suit",
+        "translation": "他穿了一套藏青色西装",
+        "sentence_pattern": "常见进阶色彩 · navy blue",
+        "pattern_code": "COL_NAVY_BLUE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "navy_blue",
+          "basic_vocabulary"
+        ],
+        "keyword": "navy blue",
+        "keyword_translation": "藏青色",
+        "keyword_phonetics": {
+          "uk": "/ˈneɪvi ˈbluː/",
+          "us": "/ˈneɪvi ˈbluː/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wore",
+          "base_form": "wore",
+          "range": [
+            3,
+            7
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "穿",
+          "explanation": "wear 过去式。",
+          "phonetics": {
+            "uk": "/wɔː(r)/",
+            "us": "/wɔːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            8,
+            9
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "navy",
+          "base_form": "navy",
+          "range": [
+            10,
+            14
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "海军蓝的",
+          "explanation": "与 blue 搭配表藏青色。",
+          "phonetics": {
+            "uk": "/ˈneɪvi/",
+            "us": "/ˈneɪvi/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "blue",
+          "base_form": "blue",
+          "range": [
+            15,
+            19
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "蓝色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/bluː/",
+            "us": "/bluː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "suit",
+          "base_form": "suit",
+          "range": [
+            20,
+            24
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "西装",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/suːt/",
+            "us": "/suːt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_020",
+      "sentence_info": {
+        "original": "She chose turquoise paint",
+        "translation": "她选了青绿色油漆",
+        "sentence_pattern": "常见进阶色彩 · turquoise",
+        "pattern_code": "COL_TURQUOISE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "turquoise",
+          "basic_vocabulary"
+        ],
+        "keyword": "turquoise",
+        "keyword_translation": "蓝绿色",
+        "keyword_phonetics": {
+          "uk": "/ˈtɜːkwɔɪz/",
+          "us": "/ˈtɜːrkɔɪz/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "chose",
+          "base_form": "chose",
+          "range": [
+            4,
+            9
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "选择",
+          "explanation": "choose 过去式。",
+          "phonetics": {
+            "uk": "/tʃəʊz/",
+            "us": "/tʃoʊz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "turquoise",
+          "base_form": "turquoise",
+          "range": [
+            10,
+            19
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "青绿色",
+          "explanation": "颜色名。",
+          "phonetics": {
+            "uk": "/ˈtɜːkwɔɪz/",
+            "us": "/ˈtɜːrkɔɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "paint",
+          "base_form": "paint",
+          "range": [
+            20,
+            25
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "油漆；涂料",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/peɪnt/",
+            "us": "/peɪnt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_021",
+      "sentence_info": {
+        "original": "Lavender fields smell beautiful",
+        "translation": "薰衣草田闻起来很香",
+        "sentence_pattern": "常见进阶色彩 · lavender",
+        "pattern_code": "COL_LAVENDER",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "variations",
+          "lavender",
+          "basic_vocabulary"
+        ],
+        "keyword": "lavender",
+        "keyword_translation": "淡紫色",
+        "keyword_phonetics": {
+          "uk": "/ˈlævəndə(r)/",
+          "us": "/ˈlævəndər/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Lavender",
+          "base_form": "lavender",
+          "range": [
+            0,
+            8
+          ],
+          "tag": "noun_color",
+          "type": "Noun (名词)",
+          "chinese_definition": "薰衣草；淡紫色",
+          "explanation": "颜色名。",
+          "phonetics": {
+            "uk": "/ˈlævəndə(r)/",
+            "us": "/ˈlævəndər/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "fields",
+          "base_form": "fields",
+          "range": [
+            9,
+            15
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "田野",
+          "explanation": "名词复数。",
+          "phonetics": {
+            "uk": "/fiːldz/",
+            "us": "/fiːldz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "smell",
+          "base_form": "smell",
+          "range": [
+            16,
+            21
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "闻起来",
+          "explanation": "动词。",
+          "phonetics": {
+            "uk": "/smel/",
+            "us": "/smel/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "beautiful",
+          "base_form": "beautiful",
+          "range": [
+            22,
+            31
+          ],
+          "tag": "adj",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "美丽的",
+          "explanation": "形容词。",
+          "phonetics": {
+            "uk": "/ˈbjuːtɪfl/",
+            "us": "/ˈbjuːtɪfl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_022",
+      "sentence_info": {
+        "original": "She wore a light blue dress",
+        "translation": "她穿了一条浅蓝色连衣裙",
+        "sentence_pattern": "亮度与饱和度修饰词 · light",
+        "pattern_code": "COL_LIGHT",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "modifiers",
+          "light",
+          "basic_vocabulary"
+        ],
+        "keyword": "light",
+        "keyword_translation": "浅",
+        "keyword_phonetics": {
+          "uk": "/laɪt/",
+          "us": "/laɪt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/ʃiː/",
+            "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wore",
+          "base_form": "wore",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "穿",
+          "explanation": "wear 过去式。",
+          "phonetics": {
+            "uk": "/wɔː(r)/",
+            "us": "/wɔːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [
+            9,
+            10
+          ],
+          "tag": "article",
+          "type": "Article (冠词)",
+          "chinese_definition": "一个",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/",
+            "us": "/ə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "light",
+          "base_form": "light",
+          "range": [
+            11,
+            16
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "浅的；淡的",
+          "explanation": "修饰颜色。",
+          "phonetics": {
+            "uk": "/laɪt/",
+            "us": "/laɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "blue",
+          "base_form": "blue",
+          "range": [
+            17,
+            21
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "蓝色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/bluː/",
+            "us": "/bluː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "dress",
+          "base_form": "dress",
+          "range": [
+            22,
+            27
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "连衣裙",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/dres/",
+            "us": "/dres/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_023",
+      "sentence_info": {
+        "original": "He likes dark green tea",
+        "translation": "他喜欢深绿色的茶",
+        "sentence_pattern": "亮度与饱和度修饰词 · dark",
+        "pattern_code": "COL_DARK",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "modifiers",
+          "dark",
+          "basic_vocabulary"
+        ],
+        "keyword": "dark",
+        "keyword_translation": "深",
+        "keyword_phonetics": {
+          "uk": "/dɑːk/",
+          "us": "/dɑːrk/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [
+            0,
+            2
+          ],
+          "tag": "pronoun_subject",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "他",
+          "explanation": "第三人称主格。",
+          "phonetics": {
+            "uk": "/hiː/",
+            "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "likes",
+          "base_form": "likes",
+          "range": [
+            3,
+            8
+          ],
+          "tag": "verb",
+          "type": "Verb (动词)",
+          "chinese_definition": "喜欢",
+          "explanation": "第三人称单数。",
+          "phonetics": {
+            "uk": "/laɪks/",
+            "us": "/laɪks/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "dark",
+          "base_form": "dark",
+          "range": [
+            9,
+            13
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "深色的",
+          "explanation": "修饰颜色。",
+          "phonetics": {
+            "uk": "/dɑːk/",
+            "us": "/dɑːrk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "green",
+          "base_form": "green",
+          "range": [
+            14,
+            19
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "绿色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/ɡriːn/",
+            "us": "/ɡriːn/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "tea",
+          "base_form": "tea",
+          "range": [
+            20,
+            23
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "茶",
+          "explanation": "名词。",
+          "phonetics": {
+            "uk": "/tiː/",
+            "us": "/tiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_024",
+      "sentence_info": {
+        "original": "Bright red flowers bloomed",
+        "translation": "鲜红的花开了",
+        "sentence_pattern": "亮度与饱和度修饰词 · bright",
+        "pattern_code": "COL_BRIGHT",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "modifiers",
+          "bright",
+          "basic_vocabulary"
+        ],
+        "keyword": "bright",
+        "keyword_translation": "鲜艳的",
+        "keyword_phonetics": {
+          "uk": "/braɪt/",
+          "us": "/braɪt/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Bright",
+          "base_form": "bright",
+          "range": [
+            0,
+            6
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "鲜艳的",
+          "explanation": "修饰名词表颜色。",
+          "phonetics": {
+            "uk": "/braɪt/",
+            "us": "/braɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "red",
+          "base_form": "red",
+          "range": [
+            7,
+            10
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "红色的",
+          "explanation": "颜色形容词。",
+          "phonetics": {
+            "uk": "/red/",
+            "us": "/red/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "flowers",
+          "base_form": "flowers",
+          "range": [
+            11,
+            18
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "花",
+          "explanation": "名词复数。",
+          "phonetics": {
+            "uk": "/ˈflaʊəz/",
+            "us": "/ˈflaʊərz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "bloomed",
+          "base_form": "bloomed",
+          "range": [
+            19,
+            26
+          ],
+          "tag": "verb_past",
+          "type": "Verb (动词)",
+          "chinese_definition": "开花",
+          "explanation": "bloom 过去式。",
+          "phonetics": {
+            "uk": "/bluːmd/",
+            "us": "/bluːmd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "COL_025",
+      "sentence_info": {
+        "original": "Her lips were pale pink",
+        "translation": "她的嘴唇是淡粉色的",
+        "sentence_pattern": "亮度与饱和度修饰词 · pale",
+        "pattern_code": "COL_PALE",
+        "difficulty_level": 1,
+        "tags": [
+          "colors",
+          "modifiers",
+          "pale",
+          "basic_vocabulary"
+        ],
+        "keyword": "pale",
+        "keyword_translation": "苍白的；暗淡的",
+        "keyword_phonetics": {
+          "uk": "/peɪl/",
+          "us": "/peɪl/",
+          "audio_uk": "",
+          "audio_us": ""
+        }
+      },
+      "analysis": [
+        {
+          "word": "Her",
+          "base_form": "her",
+          "range": [
+            0,
+            3
+          ],
+          "tag": "pronoun_possessive",
+          "type": "Pronoun (代词)",
+          "chinese_definition": "她的",
+          "explanation": "形容词性物主代词。",
+          "phonetics": {
+            "uk": "/hɜː(r)/",
+            "us": "/hɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "lips",
+          "base_form": "lips",
+          "range": [
+            4,
+            8
+          ],
+          "tag": "noun",
+          "type": "Noun (名词)",
+          "chinese_definition": "嘴唇",
+          "explanation": "名词复数。",
+          "phonetics": {
+            "uk": "/lɪps/",
+            "us": "/lɪps/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "were",
+          "base_form": "were",
+          "range": [
+            9,
+            13
+          ],
+          "tag": "verb_be",
+          "type": "Verb (动词)",
+          "chinese_definition": "是",
+          "explanation": "be 动词过去式。",
+          "phonetics": {
+            "uk": "/wɜː(r)/",
+            "us": "/wɜːr/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "pale",
+          "base_form": "pale",
+          "range": [
+            14,
+            18
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "苍白的；淡的",
+          "explanation": "修饰颜色。",
+          "phonetics": {
+            "uk": "/peɪl/",
+            "us": "/peɪl/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "pink",
+          "base_form": "pink",
+          "range": [
+            19,
+            23
+          ],
+          "tag": "adj_color",
+          "type": "Adjective (形容词)",
+          "chinese_definition": "粉红色的",
+          "explanation": "颜色形容词（小写）。",
+          "phonetics": {
+            "uk": "/pɪŋk/",
+            "us": "/pɪŋk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+word	tag	type	chinese_definition	explanation	uk	us
+Aqua	adj_color	Adjective (形容词)	水蓝色的	颜色形容词。	/ˈækwə/	/ˈækwə/
+Black	adj_color	Adjective (形容词)	黑色的	颜色形容词。	/blæk/	/blæk/
+Bright	adj_color	Adjective (形容词)	鲜艳的	修饰名词表颜色。	/braɪt/	/braɪt/
+Brown	adj_color	Adjective (形容词)	棕色的	颜色形容词。	/braʊn/	/braʊn/
+Grass	noun	Noun (名词)	草	名词作主语。	/ɡrɑːs/	/ɡræs/
+He	pronoun_subject	Pronoun (代词)	他	第三人称主格。	/hiː/	/hiː/
+Her	pronoun_possessive	Pronoun (代词)	她的	形容词性物主代词。	/hɜː(r)/	/hɜːr/
+I	pronoun_subject	Pronoun (代词)	我	第一人称主格。	/aɪ/	/aɪ/
+Indigo	noun_color	Noun (名词)	靛蓝	颜色/染料名。	/ˈɪndɪɡəʊ/	/ˈɪndɪɡoʊ/
+Lavender	noun_color	Noun (名词)	薰衣草；淡紫色	颜色名。	/ˈlævəndə(r)/	/ˈlævəndər/
+Pink	adj_color	Adjective (形容词)	粉红色的	颜色形容词。	/pɪŋk/	/pɪŋk/
+Purple	adj_color	Adjective (形容词)	紫色的	颜色形容词。	/ˈpɜːpl/	/ˈpɜːrpl/
+She	pronoun_subject	Pronoun (代词)	她	第三人称主格。	/ʃiː/	/ʃiː/
+The	article	Article (冠词)	这/那	定冠词。	/ðə/	/ðə/
+White	adj_color	Adjective (形容词)	白色的	颜色形容词。	/waɪt/	/waɪt/
+a	article	Article (冠词)	一个	不定冠词。	/ə/	/ə/
+apple	noun	Noun (名词)	苹果	名词。	/ˈæpl/	/ˈæpl/
+are	verb_be	Verb (动词)	是	be 动词复数。	/ɑː(r)/	/ɑːr/
+beige	adj_color	Adjective (形容词)	米色的	颜色形容词。	/beɪʒ/	/beɪʒ/
+beautiful	adj	Adjective (形容词)	美丽的	形容词。	/ˈbjuːtɪfl/	/ˈbjuːtɪfl/
+bloomed	verb_past	Verb (动词)	开花	bloom 过去式。	/bluːmd/	/bluːmd/
+blue	adj_color	Adjective (形容词)	蓝色的	颜色形容词。	/bluː/	/bluː/
+bought	verb_past	Verb (动词)	购买	buy 过去式。	/bɔːt/	/bɔːt/
+cat	noun	Noun (名词)	猫	名词。	/kæt/	/kæt/
+chose	verb_past	Verb (动词)	选择	choose 过去式。	/tʃəʊz/	/tʃoʊz/
+clear	adj	Adjective (形容词)	清澈的	形容词。	/klɪə(r)/	/klɪr/
+coffee	noun	Noun (名词)	咖啡	名词。	/ˈkɒfi/	/ˈkɔːfi/
+covers	verb	Verb (动词)	覆盖	第三人称单数。	/ˈkʌvəz/	/ˈkʌvərz/
+cyan	noun_color	Noun (名词)	青色	颜色名。	/ˈsaɪən/	/ˈsaɪən/
+dark	adj_color	Adjective (形容词)	深色的	修饰颜色。	/dɑːk/	/dɑːrk/
+dress	noun	Noun (名词)	连衣裙	名词。	/dres/	/dres/
+dye	noun	Noun (名词)	染料	名词。	/daɪ/	/daɪ/
+feels	verb	Verb (动词)	摸起来	feel 第三人称单数。	/fiːlz/	/fiːlz/
+fields	noun	Noun (名词)	田野	名词复数。	/fiːldz/	/fiːldz/
+flickered	verb_past	Verb (动词)	闪烁	flicker 过去式。	/ˈflɪkəd/	/ˈflɪkərd/
+flowers	noun	Noun (名词)	花	名词复数。	/ˈflaʊəz/	/ˈflaʊərz/
+gold	noun_color	Noun (名词)	金色；黄金	颜色/材质。	/ɡəʊld/	/ɡoʊld/
+grapes	noun	Noun (名词)	葡萄	名词复数。	/ɡreɪps/	/ɡreɪps/
+gray	adj_color	Adjective (形容词)	灰色的	颜色形容词。	/ɡreɪ/	/ɡreɪ/
+green	adj_color	Adjective (形容词)	绿色的	颜色形容词。	/ɡriːn/	/ɡriːn/
+ground	noun	Noun (名词)	地面	名词。	/ɡraʊnd/	/ɡraʊnd/
+has	verb_have	Verb (动词)	有	have 第三人称单数。	/hæz/	/hæz/
+in	prep	Preposition (介词)	在…里	介词。	/ɪn/	/ɪn/
+is	verb_be	Verb (动词)	是	be 动词。	/ɪz/	/ɪz/
+juice	noun	Noun (名词)	果汁	名词。	/dʒuːs/	/dʒuːs/
+leather	noun	Noun (名词)	皮革	名词。	/ˈleðə(r)/	/ˈleðər/
+light	adj_color	Adjective (形容词)	浅的；淡的	修饰颜色。	/laɪt/	/laɪt/
+likes	verb	Verb (动词)	喜欢	第三人称单数。	/laɪks/	/laɪks/
+like	verb	Verb (动词)	喜欢	动词原形。	/laɪk/	/laɪk/
+lips	noun	Noun (名词)	嘴唇	名词复数。	/lɪps/	/lɪps/
+looks	verb	Verb (动词)	看起来	第三人称单数。	/lʊks/	/lʊks/
+medal	noun	Noun (名词)	奖牌	名词。	/ˈmedl/	/ˈmedl/
+milk	noun	Noun (名词)	牛奶	名词。	/mɪlk/	/mɪlk/
+navy	adj_color	Adjective (形容词)	海军蓝的	与 blue 搭配表藏青色。	/ˈneɪvi/	/ˈneɪvi/
+no	determiner	Determiner (限定词)	没有	限定词。	/nəʊ/	/noʊ/
+orange	noun_color	Noun (名词)	橙色；橙汁	颜色或饮品。	/ˈɒrɪndʒ/	/ˈɔːrɪndʒ/
+pale	adj_color	Adjective (形容词)	苍白的；淡的	修饰颜色。	/peɪl/	/peɪl/
+paint	noun	Noun (名词)	油漆；涂料	名词。	/peɪnt/	/peɪnt/
+pink	adj_color	Adjective (形容词)	粉红色的	颜色形容词（小写）。	/pɪŋk/	/pɪŋk/
+precious	adj	Adjective (形容词)	珍贵的	形容词。	/ˈpreʃəs/	/ˈpreʃəs/
+red	adj_color	Adjective (形容词)	红色的	颜色形容词。	/red/	/red/
+ring	noun	Noun (名词)	戒指	名词。	/rɪŋ/	/rɪŋ/
+ripe	adj	Adjective (形容词)	成熟的	形容词。	/raɪp/	/raɪp/
+roses	noun	Noun (名词)	玫瑰	名词复数。	/ˈrəʊzɪz/	/ˈroʊzɪz/
+silver	noun_color	Noun (名词)	银色；银	名词。	/ˈsɪlvə(r)/	/ˈsɪlvər/
+sky	noun	Noun (名词)	天空	名词。	/skaɪ/	/skaɪ/
+smell	verb	Verb (动词)	闻起来	动词。	/smel/	/smel/
+snow	noun	Noun (名词)	雪	名词。	/snəʊ/	/snoʊ/
+spring	noun	Noun (名词)	春天	名词。	/sprɪŋ/	/sprɪŋ/
+stopped	verb_past	Verb (动词)	停下	stop 过去式。	/stɒpt/	/stɑːpt/
+suit	noun	Noun (名词)	西装	名词。	/suːt/	/suːt/
+sweet	adj	Adjective (形容词)	甜的	形容词。	/swiːt/	/swiːt/
+taxi	noun	Noun (名词)	出租车	名词。	/ˈtæksi/	/ˈtæksi/
+tea	noun	Noun (名词)	茶	名词。	/tiː/	/tiː/
+the	article	Article (冠词)	这/那	定冠词。	/ðə/	/ðə/
+turquoise	noun_color	Noun (名词)	青绿色	颜色名。	/ˈtɜːkwɔɪz/	/ˈtɜːrkɔɪz/
+violet	adj_color	Adjective (形容词)	紫罗兰色的	颜色形容词。	/ˈvaɪələt/	/ˈvaɪələt/
+walls	noun	Noun (名词)	墙	名词复数。	/wɔːlz/	/wɔːlz/
+water	noun	Noun (名词)	水	名词。	/ˈwɔːtə(r)/	/ˈwɔːtər/
+were	verb_be	Verb (动词)	是	be 动词过去式。	/wɜː(r)/	/wɜːr/
+wore	verb_past	Verb (动词)	穿	wear 过去式。	/wɔː(r)/	/wɔːr/
+won	verb_past	Verb (动词)	赢得	win 过去式。	/wʌn/	/wʌn/
+yellow	adj_color	Adjective (形容词)	黄色的	颜色形容词。	/ˈjeləʊ/	/ˈjeloʊ/
+slept	verb_past	Verb (动词)	睡觉	sleep 过去式。	/slept/	/slept/
+soft	adj	Adjective (形容词)	柔软的	形容词。	/sɒft/	/sɔːft/
+screen	noun	Noun (名词)	屏幕	名词。	/skriːn/	/skriːn/
+was	verb_be	Verb (动词)	是	be 动词过去式。	/wɒz/	/wɑːz/
