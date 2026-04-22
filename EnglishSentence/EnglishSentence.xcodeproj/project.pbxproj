@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F8783D6CD93ACEEA36E4D47 /* Pods_EnglishSentence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203C4778885102A9D962BADD /* Pods_EnglishSentence.framework */; };
 		A10000072F3B3E6E009FC907 /* EnglishSentenceWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2E000022F3B3E6E009FC902 /* EnglishSentenceWidget2Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B2E000012F3B3E6E009FC901 /* EnglishSentenceWidget2Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,6 +19,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A10000032F3B3E6E009FC903;
 			remoteInfo = EnglishSentenceWidgetExtension;
+		};
+		B2E000032F3B3E6E009FC903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D591F972F3B3E6E009FC87E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E000072F3B3E6E009FC907;
+			remoteInfo = EnglishSentenceWidget2Extension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -29,6 +37,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				A10000072F3B3E6E009FC907 /* EnglishSentenceWidgetExtension.appex in Embed Foundation Extensions */,
+				B2E000022F3B3E6E009FC902 /* EnglishSentenceWidget2Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +49,7 @@
 		2E7DB95EEDCB54D4347AD8A6 /* Pods-EnglishSentence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishSentence.release.xcconfig"; path = "Target Support Files/Pods-EnglishSentence/Pods-EnglishSentence.release.xcconfig"; sourceTree = "<group>"; };
 		5D591F9F2F3B3E6E009FC87E /* EnglishSentence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishSentence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnglishSentenceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E000012F3B3E6E009FC901 /* EnglishSentenceWidget2Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnglishSentenceWidget2Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3320798D8BF34D86E498A /* Pods-EnglishSentence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishSentence.debug.xcconfig"; path = "Target Support Files/Pods-EnglishSentence/Pods-EnglishSentence.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +67,13 @@
 				Info.plist,
 			);
 			target = A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */;
+		};
+		B2E000062F3B3E6E009FC906 /* Exceptions for "EnglishSentenceWidget2" folder in "EnglishSentenceWidget2Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B2E000072F3B3E6E009FC907 /* EnglishSentenceWidget2Extension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -77,6 +94,14 @@
 			path = EnglishSentenceWidget;
 			sourceTree = "<group>";
 		};
+		B2E000052F3B3E6E009FC905 /* EnglishSentenceWidget2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B2E000062F3B3E6E009FC906 /* Exceptions for "EnglishSentenceWidget2" folder in "EnglishSentenceWidget2Extension" target */,
+			);
+			path = EnglishSentenceWidget2;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +114,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A10000052F3B3E6E009FC905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E000092F3B3E6E009FC909 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,6 +143,7 @@
 			children = (
 				5D591FA12F3B3E6E009FC87E /* EnglishSentence */,
 				A10000022F3B3E6E009FC902 /* EnglishSentenceWidget */,
+				B2E000052F3B3E6E009FC905 /* EnglishSentenceWidget2 */,
 				5D591FA02F3B3E6E009FC87E /* Products */,
 				6C610555C55C3EC3E25CAF6A /* Pods */,
 				378EC5782904B5EED2A5F99F /* Frameworks */,
@@ -122,6 +155,7 @@
 			children = (
 				5D591F9F2F3B3E6E009FC87E /* EnglishSentence.app */,
 				A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */,
+				B2E000012F3B3E6E009FC901 /* EnglishSentenceWidget2Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +187,7 @@
 			);
 			dependencies = (
 				A10000092F3B3E6E009FC909 /* PBXTargetDependency */,
+				B2E000042F3B3E6E009FC904 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5D591FA12F3B3E6E009FC87E /* EnglishSentence */,
@@ -182,6 +217,26 @@
 			productReference = A10000012F3B3E6E009FC901 /* EnglishSentenceWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		B2E000072F3B3E6E009FC907 /* EnglishSentenceWidget2Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E0000B2F3B3E6E009FC90B /* Build configuration list for PBXNativeTarget "EnglishSentenceWidget2Extension" */;
+			buildPhases = (
+				B2E000082F3B3E6E009FC908 /* Sources */,
+				B2E000092F3B3E6E009FC909 /* Frameworks */,
+				B2E0000A2F3B3E6E009FC90A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2E000052F3B3E6E009FC905 /* EnglishSentenceWidget2 */,
+			);
+			name = EnglishSentenceWidget2Extension;
+			productName = EnglishSentenceWidget2Extension;
+			productReference = B2E000012F3B3E6E009FC901 /* EnglishSentenceWidget2Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +251,9 @@
 						CreatedOnToolsVersion = 26.2;
 					};
 					A10000032F3B3E6E009FC903 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					B2E000072F3B3E6E009FC907 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -216,6 +274,7 @@
 			targets = (
 				5D591F9E2F3B3E6E009FC87E /* EnglishSentence */,
 				A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */,
+				B2E000072F3B3E6E009FC907 /* EnglishSentenceWidget2Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +288,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A10000062F3B3E6E009FC906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E0000A2F3B3E6E009FC90A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +364,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2E000082F3B3E6E009FC908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,6 +378,11 @@
 			isa = PBXTargetDependency;
 			target = A10000032F3B3E6E009FC903 /* EnglishSentenceWidgetExtension */;
 			targetProxy = A100000B2F3B3E6E009FC90B /* PBXContainerItemProxy */;
+		};
+		B2E000042F3B3E6E009FC904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E000072F3B3E6E009FC907 /* EnglishSentenceWidget2Extension */;
+			targetProxy = B2E000032F3B3E6E009FC903 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -573,6 +651,65 @@
 			};
 			name = Release;
 		};
+		B2E0000C2F3B3E6E009FC90C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EnglishSentenceWidget2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "兔子英语（二）";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.englist.EnglishSentenceWidget2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B2E0000D2F3B3E6E009FC90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGL22JZ52C;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EnglishSentenceWidget2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "兔子英语（二）";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.englist.EnglishSentenceWidget2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +736,15 @@
 			buildConfigurations = (
 				A100000D2F3B3E6E009FC90D /* Debug */,
 				A100000E2F3B3E6E009FC90E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E0000B2F3B3E6E009FC90B /* Build configuration list for PBXNativeTarget "EnglishSentenceWidget2Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E0000C2F3B3E6E009FC90C /* Debug */,
+				B2E0000D2F3B3E6E009FC90D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
