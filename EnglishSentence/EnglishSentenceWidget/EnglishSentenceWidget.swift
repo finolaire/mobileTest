@@ -113,8 +113,8 @@ struct EnglishSentenceWidget: Widget {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
-        .configurationDisplayName("兔子英语")
-        .description("按星期几显示图片（周日～周六对应 1～7），点按打开应用。")
+        .configurationDisplayName("提醒学习")
+        .description("每天更换不同的图片提醒你学习哦～")
         .supportedFamilies([.systemSmall])
     }
 }

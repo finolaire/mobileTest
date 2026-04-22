@@ -48,7 +48,7 @@ private struct EnglishSentenceWidget2PlaceholderView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        VStack(alignment: .leading, spacing: 10) {
+                        VStack(alignment: .leading, spacing: 13) {
                             HStack {
                                 Text("学习英语")
                                     .font(lineFont)
@@ -92,8 +92,8 @@ struct EnglishSentenceWidget2: Widget {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
-        .configurationDisplayName("兔子英语（二）")
-        .description("暂时占位：黑底提示文案。")
+        .configurationDisplayName("学习英语，报护眼睛")
+        .description("学习英语要坚持，也要报护好眼睛哦～")
         .supportedFamilies([.systemSmall])
     }
 }
