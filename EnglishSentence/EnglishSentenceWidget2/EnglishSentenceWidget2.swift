@@ -2,77 +2,74 @@
 //  EnglishSentenceWidget2.swift
 //  EnglishSentenceWidget2Extension
 //
-//  与主小组件相同：仅 systemSmall、按当月日期展示满幅图片。
+//  暂时占位：黑底 + 提示文案（systemSmall）。
 //
 
 import SwiftUI
-import UIKit
 import WidgetKit
 
 // MARK: - Timeline
 
 struct EnglishSentenceWidget2Provider: TimelineProvider {
     func placeholder(in context: Context) -> EnglishSentenceWidget2Entry {
-        makeEntry(for: Date())
+        EnglishSentenceWidget2Entry(date: Date())
     }
 
     func getSnapshot(in context: Context, completion: @escaping (EnglishSentenceWidget2Entry) -> Void) {
-        completion(makeEntry(for: Date()))
+        completion(EnglishSentenceWidget2Entry(date: Date()))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<EnglishSentenceWidget2Entry>) -> Void) {
-        let now = Date()
-        let calendar = Calendar.current
-        let entry = makeEntry(for: now)
-
-        let startOfToday = calendar.startOfDay(for: now)
-        let policy: TimelineReloadPolicy
-        if let nextMidnight = calendar.date(byAdding: .day, value: 1, to: startOfToday) {
-            policy = .after(nextMidnight)
-        } else {
-            policy = .never
-        }
-
-        completion(Timeline(entries: [entry], policy: policy))
-    }
-
-    private func makeEntry(for date: Date) -> EnglishSentenceWidget2Entry {
-        let day = Calendar.current.component(.day, from: date)
-        return EnglishSentenceWidget2Entry(date: date, dayOfMonth: day)
+        let entry = EnglishSentenceWidget2Entry(date: Date())
+        completion(Timeline(entries: [entry], policy: .never))
     }
 }
 
 struct EnglishSentenceWidget2Entry: TimelineEntry {
     let date: Date
-    let dayOfMonth: Int
 }
 
-// MARK: - 资源名
+// MARK: - 占位界面
 
-private enum EnglishSentenceWidget2DayBackground {
-    static func assetName(dayOfMonth: Int) -> String {
-        let day = min(max(dayOfMonth, 1), 31)
-        return "widget_background_\(day)"
-    }
-}
-
-// MARK: - 仅图片（无图标、无文字）
-
-private struct EnglishSentenceWidget2ImageOnlyView: View {
-    let entry: EnglishSentenceWidget2Entry
-
-    private let fallbackColor = Color(red: 0.067, green: 0.094, blue: 0.137)
+private struct EnglishSentenceWidget2PlaceholderView: View {
+    private let lineFont = Font.system(size: 22, weight: .bold, design: .rounded)
+    /// #2cc15f
+    private let lineGreen = Color(red: 44 / 255, green: 193 / 255, blue: 95 / 255)
+    /// #6367ef
+    private let linePurple = Color(red: 99 / 255, green: 103 / 255, blue: 239 / 255)
 
     var body: some View {
-        let name = EnglishSentenceWidget2DayBackground.assetName(dayOfMonth: entry.dayOfMonth)
-        Group {
-            if UIImage(named: name) != nil {
-                Image(name)
-                    .resizable()
-                    .scaledToFill()
-            } else {
-                fallbackColor
+        ZStack {
+            Color.black
+            GeometryReader { geo in
+                // 中间一块较窄区域：上行靠左、下行靠右，整体相对小组件水平垂直居中
+                let innerWidth = min(geo.size.width * 0.72, 148)
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack {
+                                Text("学习英语")
+                                    .font(lineFont)
+                                    .foregroundStyle(lineGreen)
+                                Spacer(minLength: 0)
+                            }
+                            HStack {
+                                Spacer(minLength: 0)
+                                Text("保护眼睛")
+                                    .font(lineFont)
+                                    .foregroundStyle(linePurple)
+                            }
+                        }
+                        .frame(width: innerWidth)
+                        Spacer()
+                    }
+                    Spacer()
+                }
+                .frame(width: geo.size.width, height: geo.size.height)
             }
+            .padding(.vertical, 14)
         }
     }
 }
@@ -83,21 +80,20 @@ struct EnglishSentenceWidget2: Widget {
     let kind: String = "EnglishSentenceWidget2"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: EnglishSentenceWidget2Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: EnglishSentenceWidget2Provider()) { _ in
             if #available(iOSApplicationExtension 17.0, *) {
                 Color.clear
                     .containerBackground(for: .widget) {
-                        EnglishSentenceWidget2ImageOnlyView(entry: entry)
+                        EnglishSentenceWidget2PlaceholderView()
                             .containerRelativeFrame([.horizontal, .vertical])
                     }
             } else {
-                EnglishSentenceWidget2ImageOnlyView(entry: entry)
+                EnglishSentenceWidget2PlaceholderView()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .clipped()
             }
         }
         .configurationDisplayName("兔子英语（二）")
-        .description("与主小组件相同尺寸与图片逻辑，独立扩展。")
+        .description("暂时占位：黑底提示文案。")
         .supportedFamilies([.systemSmall])
     }
 }
