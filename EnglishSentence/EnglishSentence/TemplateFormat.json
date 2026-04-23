@@ -23,8 +23,8 @@
           "explanation": "第一人称单数代词，在句中充当主语。",
           "phonetics": {
             "uk": "/aɪ/", "us": "/aɪ/",
-            "audio_uk": "https://example.com/audio/uk/i.mp3",
-            "audio_us": "https://example.com/audio/us/i.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/i.mp3",
+            "audio_us": "语音域名前缀/audio/us/i.mp3"
           }
         },
         {
@@ -37,8 +37,8 @@
           "explanation": "be 动词的第一人称单数现在时形式。",
           "phonetics": {
             "uk": "/æm/", "us": "/æm/",
-            "audio_uk": "https://example.com/audio/uk/am.mp3",
-            "audio_us": "https://example.com/audio/us/am.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/am.mp3",
+            "audio_us": "语音域名前缀/audio/us/am.mp3"
           }
         },
         {
@@ -51,8 +51,8 @@
           "explanation": "不定冠词，用于辅音音素开头的单数可数名词前。",
           "phonetics": {
             "uk": "/ə/", "us": "/ə/",
-            "audio_uk": "https://example.com/audio/uk/a.mp3",
-            "audio_us": "https://example.com/audio/us/a.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/a.mp3",
+            "audio_us": "语音域名前缀/audio/us/a.mp3"
           }
         },
         {
@@ -65,8 +65,8 @@
           "explanation": "指年轻的男性人类。",
           "phonetics": {
             "uk": "/bɔɪ/", "us": "/bɔɪ/",
-            "audio_uk": "https://example.com/audio/uk/boy.mp3",
-            "audio_us": "https://example.com/audio/us/boy.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/boy.mp3",
+            "audio_us": "语音域名前缀/audio/us/boy.mp3"
           }
         }
       ]
@@ -92,8 +92,8 @@
           "explanation": "第三人称单数女性代词，在句中充当主语。",
           "phonetics": {
             "uk": "/ʃiː/", "us": "/ʃiː/",
-            "audio_uk": "https://example.com/audio/uk/she.mp3",
-            "audio_us": "https://example.com/audio/us/she.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/she.mp3",
+            "audio_us": "语音域名前缀/audio/us/she.mp3"
           }
         },
         {
@@ -106,8 +106,8 @@
           "explanation": "be 动词的第三人称单数现在时形式。",
           "phonetics": {
             "uk": "/ɪz/", "us": "/ɪz/",
-            "audio_uk": "https://example.com/audio/uk/is.mp3",
-            "audio_us": "https://example.com/audio/us/is.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/is.mp3",
+            "audio_us": "语音域名前缀/audio/us/is.mp3"
           }
         },
         {
@@ -120,8 +120,8 @@
           "explanation": "不定冠词，表示职业或身份的泛指。",
           "phonetics": {
             "uk": "/ə/", "us": "/ə/",
-            "audio_uk": "https://example.com/audio/uk/a.mp3",
-            "audio_us": "https://example.com/audio/us/a.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/a.mp3",
+            "audio_us": "语音域名前缀/audio/us/a.mp3"
           }
         },
         {
@@ -134,8 +134,8 @@
           "explanation": "从事教学工作的人。",
           "phonetics": {
             "uk": "/ˈtiːtʃə(r)/", "us": "/ˈtiːtʃər/",
-            "audio_uk": "https://example.com/audio/uk/teacher.mp3",
-            "audio_us": "https://example.com/audio/us/teacher.mp3"
+            "audio_uk": "语音域名前缀/audio/uk/teacher.mp3",
+            "audio_us": "语音域名前缀/audio/us/teacher.mp3"
           }
         }
       ]
