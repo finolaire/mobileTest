@@ -53,8 +53,7 @@ struct EnglishSentenceEntry: TimelineEntry {
 private enum WidgetDayBackground {
     static func assetName(weekday: Int) -> String {
         let w = min(max(weekday, 1), 7)
-//        return "widget_background_\(w)"
-        return "widget_background_1"
+        return "widget_background_\(w)"
     }
 }
 

@@ -106,6 +106,8 @@ class ReadingCell: UITableViewCell, UITextViewDelegate {
         tv.textContainerInset = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
         tv.delegate = self
         tv.linkTextAttributes = [:] // Remove default link styling (blue/underline)
+        // 禁止自动把正文识别成电话/链接等；否则 shouldInteractWith 可能走系统默认打开网页（审核 2.3.1）
+        tv.dataDetectorTypes = []
         return tv
     }()
     
@@ -247,8 +249,8 @@ class ReadingCell: UITableViewCell, UITextViewDelegate {
             if let sentence = currentSentence, index < sentence.analysis.count {
                 onWordTapped?(sentence.analysis[index])
             }
-            return false // Don't try to open URL
         }
-        return true
+        // 一律不让系统处理链接（http/https 等），避免内嵌 Web / 外链打开被判定为「隐藏网页能力」（Guideline 2.3.1）
+        return false
     }
 }
