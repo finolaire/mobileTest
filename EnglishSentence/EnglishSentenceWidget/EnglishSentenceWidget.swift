@@ -55,6 +55,9 @@ private enum WidgetDayBackground {
         let w = min(max(weekday, 1), 7)
         return "widget_background_\(w)"
     }
+    //星期一 w 返回 2
+    //星期六 w 返回 7
+    //星期日 w 返回 1
 }
 
 // MARK: - 满幅背景图
