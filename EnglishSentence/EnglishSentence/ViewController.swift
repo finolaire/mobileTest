@@ -318,6 +318,15 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         btn.addTarget(self, action: #selector(eyebrowTapped), for: .touchUpInside)
         return btn
     }()
+
+    private let sleepButton: UIButton = {
+        let btn = UIButton(type: .system)
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
+        btn.setImage(UIImage(systemName: "moon.zzz.fill", withConfiguration: config), for: .normal)
+        btn.tintColor = .white
+        btn.addTarget(self, action: #selector(sleepTapped), for: .touchUpInside)
+        return btn
+    }()
     
     // Audio State
     private enum PlayingType: Equatable {
@@ -391,6 +400,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         view.addSubview(quickPlayButton)
         view.addSubview(bookshelfButton)
         view.addSubview(eyebrowButton)
+        view.addSubview(sleepButton)
         
         view.addSubview(prevButton)
         view.addSubview(nextButton)
@@ -434,7 +444,13 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         eyebrowButton.snp.makeConstraints { make in
             make.centerY.equalTo(bookshelfButton)
             make.leading.equalTo(bookshelfButton.snp.trailing).offset(8)
-            make.height.equalTo(44)
+            make.width.height.equalTo(44)
+        }
+
+        sleepButton.snp.makeConstraints { make in
+            make.centerY.equalTo(eyebrowButton)
+            make.leading.equalTo(eyebrowButton.snp.trailing).offset(8)
+            make.width.height.equalTo(44)
         }
         
         // CollectionView takes upper part
@@ -792,6 +808,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     private func setMainControlButtonsHidden(_ hidden: Bool) {
         bookshelfButton.isHidden = hidden
         eyebrowButton.isHidden = hidden
+        sleepButton.isHidden = hidden
         settingsButton.isHidden = hidden
         immersiveButton.isHidden = hidden
         quickPlayButton.isHidden = hidden
@@ -1019,6 +1036,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     
     @objc private func eyebrowTapped() {
         let vc = EyesOverlayViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+
+    @objc private func sleepTapped() {
+        let vc = SleepOverlayViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
