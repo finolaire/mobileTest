@@ -1,0 +1,558 @@
+{
+  "unit_name": "从句 (1/3) - 名词性从句",
+  "description": "在句子中起名词作用的从句，包括主语从句、宾语从句、表语从句和同位语从句。",
+  "category": "Clauses",
+  "code": "CLAUSE_NOUN",
+  "sentences": [
+    {
+      "id": "CLAUSE_NOUN_001",
+      "sentence_info": {
+        "original": "What he said is true",
+        "translation": "他说的是真的",
+        "sentence_pattern": "主语从句 + 系动词 + 表语",
+        "pattern_code": "CLAUSE_SVP",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "subject_clause"]
+      },
+      "analysis": [
+        {
+          "word": "What he said",
+          "base_form": "what he said",
+          "range": [0, 11],
+          "tag": "clause_subject",
+          "type": "Subject Clause (主语从句)",
+          "chinese_definition": "他说的话",
+          "explanation": "What 引导的主语从句，在整个句子中充当主语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [13, 14],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词，连接主语从句和表语。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "true",
+          "base_form": "true",
+          "range": [16, 19],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "真的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/truː/", "us": "/truː/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_002",
+      "sentence_info": {
+        "original": "I know that he is right",
+        "translation": "我知道他是对的",
+        "sentence_pattern": "主语 + 动词 + 宾语从句",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["clause", "noun_clause", "object_clause"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "know",
+          "base_form": "know",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "知道",
+          "explanation": "及物动词，接宾语从句。",
+          "phonetics": {
+            "uk": "/nəʊ/", "us": "/noʊ/"
+          }
+        },
+        {
+          "word": "that he is right",
+          "base_form": "that he is right",
+          "range": [7, 23],
+          "tag": "clause_object",
+          "type": "Object Clause (宾语从句)",
+          "chinese_definition": "他是对的",
+          "explanation": "that 引导的宾语从句，作 know 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_003",
+      "sentence_info": {
+        "original": "The problem is that we don't have enough money",
+        "translation": "问题是我们没有足够的钱",
+        "sentence_pattern": "主语 + 系动词 + 表语从句",
+        "pattern_code": "SVP_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "predicative_clause"]
+      },
+      "analysis": [
+        {
+          "word": "The problem",
+          "base_form": "problem",
+          "range": [0, 11],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "问题",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ˈprɒbləm/", "us": "/ˈprɑːbləm/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [12, 14],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "that we don't have enough money",
+          "base_form": "that we don't have enough money",
+          "range": [15, 46],
+          "tag": "clause_predicative",
+          "type": "Predicative Clause (表语从句)",
+          "chinese_definition": "我们没有足够的钱",
+          "explanation": "that 引导的表语从句，位于系动词之后。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_004",
+      "sentence_info": {
+        "original": "The news that he won the prize surprised us",
+        "translation": "他获奖的消息让我们很惊讶",
+        "sentence_pattern": "主语 + 同位语从句 + 动词 + 宾语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "appositive_clause"]
+      },
+      "analysis": [
+        {
+          "word": "The news",
+          "base_form": "news",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "消息",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/njuːz/", "us": "/nuːz/"
+          }
+        },
+        {
+          "word": "that he won the prize",
+          "base_form": "that he won the prize",
+          "range": [9, 30],
+          "tag": "clause_appositive",
+          "type": "Appositive Clause (同位语从句)",
+          "chinese_definition": "他获奖的",
+          "explanation": "that 引导的同位语从句，解释说明 news 的内容。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "surprised",
+          "base_form": "surprise",
+          "range": [31, 40],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "使惊讶",
+          "explanation": "主句谓语。",
+          "phonetics": {
+            "uk": "/səˈpraɪzd/", "us": "/sərˈpraɪzd/"
+          }
+        },
+        {
+          "word": "us",
+          "base_form": "us",
+          "range": [41, 43],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我们",
+          "explanation": "surprised 的宾语。",
+          "phonetics": {
+            "uk": "/ʌs/", "us": "/ʌs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_005",
+      "sentence_info": {
+        "original": "Whether he will come is still a question",
+        "translation": "他是否会来还是个问题",
+        "sentence_pattern": "主语从句 + 系动词 + 表语",
+        "pattern_code": "CLAUSE_SVP",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "subject_clause"]
+      },
+      "analysis": [
+        {
+          "word": "Whether he will come",
+          "base_form": "whether he will come",
+          "range": [0, 20],
+          "tag": "clause_subject",
+          "type": "Subject Clause (主语从句)",
+          "chinese_definition": "他是否会来",
+          "explanation": "Whether 引导的主语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [21, 23],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "still",
+          "base_form": "still",
+          "range": [24, 29],
+          "tag": "adverb_time",
+          "type": "Adverb (副词)",
+          "chinese_definition": "仍然",
+          "explanation": "修饰系动词。",
+          "phonetics": {
+            "uk": "/stɪl/", "us": "/stɪl/"
+          }
+        },
+        {
+          "word": "a question",
+          "base_form": "question",
+          "range": [30, 40],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "一个问题",
+          "explanation": "名词作表语。",
+          "phonetics": {
+            "uk": "/ˈkwestʃən/", "us": "/ˈkwestʃən/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_006",
+      "sentence_info": {
+        "original": "I wonder where he lives",
+        "translation": "我想知道他住在哪里",
+        "sentence_pattern": "主语 + 动词 + 宾语从句",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["clause", "noun_clause", "object_clause"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "wonder",
+          "base_form": "wonder",
+          "range": [2, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "想知道",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/ˈwʌndə(r)/", "us": "/ˈwʌndər/"
+          }
+        },
+        {
+          "word": "where he lives",
+          "base_form": "where he lives",
+          "range": [9, 23],
+          "tag": "clause_object",
+          "type": "Object Clause (宾语从句)",
+          "chinese_definition": "他住在哪里",
+          "explanation": "where 引导的宾语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_007",
+      "sentence_info": {
+        "original": "It is obvious that he is lying",
+        "translation": "很明显他在撒谎",
+        "sentence_pattern": "It is + adj. + 主语从句",
+        "pattern_code": "CLAUSE_SVP",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "subject_clause", "it_subject"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_dummy",
+          "type": "Subject (形式主语)",
+          "chinese_definition": "它",
+          "explanation": "形式主语，指代后面的 that 从句。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [3, 5],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "obvious",
+          "base_form": "obvious",
+          "range": [6, 13],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "明显的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ˈɒbviəs/", "us": "/ˈɑːbviəs/"
+          }
+        },
+        {
+          "word": "that he is lying",
+          "base_form": "that he is lying",
+          "range": [14, 30],
+          "tag": "clause_subject",
+          "type": "Subject Clause (主语从句)",
+          "chinese_definition": "他在撒谎",
+          "explanation": "真正的主语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_008",
+      "sentence_info": {
+        "original": "That is why I came here",
+        "translation": "这就是我来这里的原因",
+        "sentence_pattern": "主语 + 系动词 + 表语从句",
+        "pattern_code": "SVP_CLAUSE",
+        "difficulty_level": 2,
+        "tags": ["clause", "noun_clause", "predicative_clause"]
+      },
+      "analysis": [
+        {
+          "word": "That",
+          "base_form": "that",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "那",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [5, 7],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "why I came here",
+          "base_form": "why I came here",
+          "range": [8, 23],
+          "tag": "clause_predicative",
+          "type": "Predicative Clause (表语从句)",
+          "chinese_definition": "我来这里的原因",
+          "explanation": "why 引导的表语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_009",
+      "sentence_info": {
+        "original": "I have no idea what you mean",
+        "translation": "我不知道你是什么意思",
+        "sentence_pattern": "主语 + 动词 + 宾语 + 同位语从句",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "appositive_clause"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "有",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "no idea",
+          "base_form": "no idea",
+          "range": [7, 14],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "不知道",
+          "explanation": "have no idea 相当于 don't know。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "what you mean",
+          "base_form": "what you mean",
+          "range": [15, 28],
+          "tag": "clause_appositive",
+          "type": "Appositive Clause (同位语从句)",
+          "chinese_definition": "你的意思",
+          "explanation": "what 引导的同位语从句，解释 idea 的内容。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLAUSE_NOUN_010",
+      "sentence_info": {
+        "original": "He asked me if I was ready",
+        "translation": "他问我是否准备好了",
+        "sentence_pattern": "主语 + 动词 + 间接宾语 + 宾语从句",
+        "pattern_code": "SVOO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["clause", "noun_clause", "object_clause"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "asked",
+          "base_form": "ask",
+          "range": [3, 8],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "问",
+          "explanation": "及物动词。",
+          "phonetics": {
+            "uk": "/ɑːskt/", "us": "/æskt/"
+          }
+        },
+        {
+          "word": "me",
+          "base_form": "I",
+          "range": [9, 11],
+          "tag": "pronoun_object",
+          "type": "Indirect Object (间接宾语)",
+          "chinese_definition": "我",
+          "explanation": "asked 的间接宾语。",
+          "phonetics": {
+            "uk": "/miː/", "us": "/miː/"
+          }
+        },
+        {
+          "word": "if I was ready",
+          "base_form": "if I was ready",
+          "range": [12, 26],
+          "tag": "clause_object",
+          "type": "Object Clause (直接宾语从句)",
+          "chinese_definition": "是否准备好了",
+          "explanation": "if 引导的宾语从句，作直接宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

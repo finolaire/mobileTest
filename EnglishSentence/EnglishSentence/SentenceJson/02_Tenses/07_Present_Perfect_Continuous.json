@@ -1,0 +1,786 @@
+{
+  "unit_name": "核心时态 (7/16) - 现在完成进行时",
+  "description": "表示从过去某一时间开始一直延续到现在的动作，强调动作的持续性。",
+  "category": "Tenses",
+  "code": "TENS_PRES_PERF_CONT",
+  "sentences": [
+    {
+      "id": "TENS_PRES_PERF_CONT_001",
+      "sentence_info": {
+        "original": "I have been waiting for two hours",
+        "translation": "我已经等了两个小时了",
+        "sentence_pattern": "主语 + have/has + been + doing + 时间段",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词，用于构成完成时。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词，用于构成完成进行时。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [12, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "等待",
+          "explanation": "实义动词的现在分词形式，表示动作正在进行。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        },
+        {
+          "word": "for two hours",
+          "base_form": "for two hours",
+          "range": [20, 33],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "两个小时",
+          "explanation": "介词短语表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_002",
+      "sentence_info": {
+        "original": "It has been raining all day",
+        "translation": "雨下了一整天",
+        "sentence_pattern": "主语 + has + been + doing + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "代词，指代天气。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词 have 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "raining",
+          "base_form": "rain",
+          "range": [12, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "下雨",
+          "explanation": "动词 rain 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈreɪnɪŋ/", "us": "/ˈreɪnɪŋ/"
+          }
+        },
+        {
+          "word": "all day",
+          "base_form": "all day",
+          "range": [20, 27],
+          "tag": "phrase_noun",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一整天",
+          "explanation": "表示整个白天，强调持续性。",
+          "phonetics": {
+            "uk": "/ɔːl deɪ/", "us": "/ɔːl deɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_003",
+      "sentence_info": {
+        "original": "She has been working here since 2010",
+        "translation": "她自2010年以来一直在这里工作",
+        "sentence_pattern": "主语 + has + been + doing + 地点状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [4, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [8, 12],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "working",
+          "base_form": "work",
+          "range": [13, 20],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "工作",
+          "explanation": "动词 work 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈwɜːkɪŋ/", "us": "/ˈwɜːrkɪŋ/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [21, 25],
+          "tag": "adverb_place",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "这里",
+          "explanation": "地点副词。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "since 2010",
+          "base_form": "since 2010",
+          "range": [26, 36],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "自2010年以来",
+          "explanation": "since + 时间点，表示从那时起一直持续到现在。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_004",
+      "sentence_info": {
+        "original": "They have been playing football all afternoon",
+        "translation": "他们整个下午都在踢足球",
+        "sentence_pattern": "主语 + have/has + been + doing + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [5, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [10, 14],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "playing",
+          "base_form": "play",
+          "range": [15, 22],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "踢/玩",
+          "explanation": "动词 play 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈpleɪɪŋ/", "us": "/ˈpleɪɪŋ/"
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [23, 31],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "playing 的宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        },
+        {
+          "word": "all afternoon",
+          "base_form": "all afternoon",
+          "range": [32, 45],
+          "tag": "phrase_noun",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "整个下午",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_005",
+      "sentence_info": {
+        "original": "We have been studying English for three years",
+        "translation": "我们已经学了三年英语了",
+        "sentence_pattern": "主语 + have/has + been + doing + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [3, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [8, 12],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "studying",
+          "base_form": "study",
+          "range": [13, 21],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "学习",
+          "explanation": "动词 study 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈstʌdiɪŋ/", "us": "/ˈstʌdiɪŋ/"
+          }
+        },
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [22, 29],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "英语",
+          "explanation": "studying 的宾语。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        },
+        {
+          "word": "for three years",
+          "base_form": "for three years",
+          "range": [30, 45],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "三年了",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_006",
+      "sentence_info": {
+        "original": "He has been sleeping for ten hours",
+        "translation": "他已经睡了十个小时了",
+        "sentence_pattern": "主语 + has + been + doing + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "sleeping",
+          "base_form": "sleep",
+          "range": [12, 20],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "睡觉",
+          "explanation": "动词 sleep 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈsliːpɪŋ/", "us": "/ˈsliːpɪŋ/"
+          }
+        },
+        {
+          "word": "for ten hours",
+          "base_form": "for ten hours",
+          "range": [21, 34],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "十个小时",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_007",
+      "sentence_info": {
+        "original": "You have been talking on the phone for ages",
+        "translation": "你打电话打了很久了",
+        "sentence_pattern": "主语 + have/has + been + doing + 状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "You",
+          "base_form": "you",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "你",
+          "explanation": "第二人称主格。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [4, 8],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [9, 13],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "talking",
+          "base_form": "talk",
+          "range": [14, 21],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "说话",
+          "explanation": "动词 talk 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈtɔːkɪŋ/", "us": "/ˈtɔːkɪŋ/"
+          }
+        },
+        {
+          "word": "on the phone",
+          "base_form": "on the phone",
+          "range": [22, 34],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "在打电话",
+          "explanation": "介词短语表示方式。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for ages",
+          "base_form": "for ages",
+          "range": [35, 43],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "很久了",
+          "explanation": "夸张表达，表示很长时间。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_008",
+      "sentence_info": {
+        "original": "I have been thinking about you",
+        "translation": "我一直在想你",
+        "sentence_pattern": "主语 + have/has + been + doing + 状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [7, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "thinking",
+          "base_form": "think",
+          "range": [12, 20],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "思考/想",
+          "explanation": "动词 think 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈθɪŋkɪŋ/", "us": "/ˈθɪŋkɪŋ/"
+          }
+        },
+        {
+          "word": "about you",
+          "base_form": "about you",
+          "range": [21, 30],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "关于你",
+          "explanation": "介词短语表示对象。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_009",
+      "sentence_info": {
+        "original": "She has been crying",
+        "translation": "她一直在哭",
+        "sentence_pattern": "主语 + has + been + doing",
+        "pattern_code": "SV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "recent_action"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [4, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [8, 12],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "crying",
+          "base_form": "cry",
+          "range": [13, 19],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "哭泣",
+          "explanation": "动词 cry 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈkraɪɪŋ/", "us": "/ˈkraɪɪŋ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_CONT_010",
+      "sentence_info": {
+        "original": "They have been waiting here since noon",
+        "translation": "他们从中午开始就一直在这里等",
+        "sentence_pattern": "主语 + have/has + been + doing + 地点状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "present_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [5, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "been",
+          "base_form": "be",
+          "range": [10, 14],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "一直",
+          "explanation": "be 动词的过去分词。",
+          "phonetics": {
+            "uk": "/biːn/", "us": "/bɪn/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [15, 22],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "等待",
+          "explanation": "动词 wait 的现在分词形式。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [23, 27],
+          "tag": "adverb_place",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "这里",
+          "explanation": "地点副词。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "since noon",
+          "base_form": "since noon",
+          "range": [28, 38],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "自中午以来",
+          "explanation": "since + 时间点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

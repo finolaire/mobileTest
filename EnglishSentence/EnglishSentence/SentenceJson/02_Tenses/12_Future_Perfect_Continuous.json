@@ -1,0 +1,798 @@
+{
+  "unit_name": "核心时态 (12/16) - 将来完成进行时",
+  "description": "表示动作从过去或现在一直持续到将来的某一个时间，强调动作在将来的持续性。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PERF_CONT",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PERF_CONT_001",
+      "sentence_info": {
+        "original": "By next month, I will have been living here for 10 years",
+        "translation": "到下个月，我住在这里就满10年了",
+        "sentence_pattern": "By + 时间 + 主语 + will have been + doing + 地点 + 时间段",
+        "pattern_code": "ADV_SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "By next month",
+          "base_form": "by next month",
+          "range": [0, 13],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到下个月",
+          "explanation": "By 引导的时间截止点，将来完成进行时的标志。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [15, 16],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [17, 31],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "living",
+          "base_form": "live",
+          "range": [32, 38],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "居住",
+          "explanation": "动词 live 的现在分词，表示持续。",
+          "phonetics": {
+            "uk": "/ˈlɪvɪŋ/", "us": "/ˈlɪvɪŋ/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [39, 43],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "这里",
+          "explanation": "地点状语。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "for 10 years",
+          "base_form": "for 10 years",
+          "range": [44, 56],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "10年了",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_002",
+      "sentence_info": {
+        "original": "In 2030, she will have been working at this company for 20 years",
+        "translation": "到2030年，她在这家公司工作就满20年了",
+        "sentence_pattern": "时间状语 + 主语 + will have been + doing + 地点 + 时间段",
+        "pattern_code": "ADV_SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "career"]
+      },
+      "analysis": [
+        {
+          "word": "In 2030",
+          "base_form": "in 2030",
+          "range": [0, 7],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在2030年",
+          "explanation": "将来的时间点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "she",
+          "base_form": "she",
+          "range": [9, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will have been working",
+          "base_form": "work",
+          "range": [13, 35],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会一直工作",
+          "explanation": "将来完成进行时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "at this company",
+          "base_form": "at this company",
+          "range": [36, 51],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在这家公司",
+          "explanation": "介词短语表示地点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for 20 years",
+          "base_form": "for 20 years",
+          "range": [52, 64],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "20年了",
+          "explanation": "表示持续的时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_003",
+      "sentence_info": {
+        "original": "I will have been working here for five years by next month",
+        "translation": "到下个月，我将在这里工作满五年了",
+        "sentence_pattern": "主语 + will have been + doing + 地点 + 时间段 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [2, 16],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "working",
+          "base_form": "work",
+          "range": [17, 24],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "工作",
+          "explanation": "动词 work 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈwɜːkɪŋ/", "us": "/ˈwɜːrkɪŋ/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [25, 29],
+          "tag": "adverb_place",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "这里",
+          "explanation": "地点副词。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "for five years",
+          "base_form": "for five years",
+          "range": [30, 44],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "五年",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by next month",
+          "base_form": "by next month",
+          "range": [45, 58],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到下个月",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_004",
+      "sentence_info": {
+        "original": "She will have been waiting for two hours by the time he arrives",
+        "translation": "到他到达时，她将已经等了两个小时了",
+        "sentence_pattern": "主语 + will have been + doing + 时间段 + 时间状语从句",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [4, 18],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "waiting",
+          "base_form": "wait",
+          "range": [19, 26],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "等待",
+          "explanation": "动词 wait 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈweɪtɪŋ/", "us": "/ˈweɪtɪŋ/"
+          }
+        },
+        {
+          "word": "for two hours",
+          "base_form": "for two hours",
+          "range": [27, 40],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "两个小时",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by the time he arrives",
+          "base_form": "by the time he arrives",
+          "range": [41, 63],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "到他到达时",
+          "explanation": "by the time 引导的时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_005",
+      "sentence_info": {
+        "original": "They will have been playing football for an hour by 5 pm",
+        "translation": "到下午5点，他们将已经踢了一个小时的足球",
+        "sentence_pattern": "主语 + will have been + doing + 宾语 + 时间段 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [5, 19],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "playing",
+          "base_form": "play",
+          "range": [20, 27],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "踢/玩",
+          "explanation": "动词 play 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈpleɪɪŋ/", "us": "/ˈpleɪɪŋ/"
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [28, 36],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "playing 的宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        },
+        {
+          "word": "for an hour",
+          "base_form": "for an hour",
+          "range": [37, 48],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一个小时",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by 5 pm",
+          "base_form": "by 5 pm",
+          "range": [49, 56],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到下午5点",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_006",
+      "sentence_info": {
+        "original": "We will have been driving for six hours by noon",
+        "translation": "到中午，我们将已经开了六个小时的车",
+        "sentence_pattern": "主语 + will have been + doing + 时间段 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [3, 17],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "driving",
+          "base_form": "drive",
+          "range": [18, 25],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "开车",
+          "explanation": "动词 drive 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈdraɪvɪŋ/", "us": "/ˈdraɪvɪŋ/"
+          }
+        },
+        {
+          "word": "for six hours",
+          "base_form": "for six hours",
+          "range": [26, 39],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "六个小时",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by noon",
+          "base_form": "by noon",
+          "range": [40, 47],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到中午",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_007",
+      "sentence_info": {
+        "original": "He will have been sleeping for twelve hours by the time you wake him up",
+        "translation": "到你叫醒他时，他将已经睡了十二个小时",
+        "sentence_pattern": "主语 + will have been + doing + 时间段 + 时间状语从句",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [3, 17],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "sleeping",
+          "base_form": "sleep",
+          "range": [18, 26],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "睡觉",
+          "explanation": "动词 sleep 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈsliːpɪŋ/", "us": "/ˈsliːpɪŋ/"
+          }
+        },
+        {
+          "word": "for twelve hours",
+          "base_form": "for twelve hours",
+          "range": [27, 43],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "十二个小时",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by the time you wake him up",
+          "base_form": "by the time you wake him up",
+          "range": [44, 71],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "到你叫醒他时",
+          "explanation": "by the time 引导的时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_008",
+      "sentence_info": {
+        "original": "It will have been raining for a week by tomorrow",
+        "translation": "到明天，雨将已经下了一周了",
+        "sentence_pattern": "主语 + will have been + doing + 时间段 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它（指天气）",
+          "explanation": "代词，指代天气。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [3, 17],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "raining",
+          "base_form": "rain",
+          "range": [18, 25],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "下雨",
+          "explanation": "动词 rain 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈreɪnɪŋ/", "us": "/ˈreɪnɪŋ/"
+          }
+        },
+        {
+          "word": "for a week",
+          "base_form": "for a week",
+          "range": [26, 36],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一周",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by tomorrow",
+          "base_form": "by tomorrow",
+          "range": [37, 48],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到明天",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_009",
+      "sentence_info": {
+        "original": "I will have been studying English for ten years by next year",
+        "translation": "到明年，我将已经学习英语十年了",
+        "sentence_pattern": "主语 + will have been + doing + 宾语 + 时间段 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [2, 16],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "studying",
+          "base_form": "study",
+          "range": [17, 25],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "学习",
+          "explanation": "动词 study 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈstʌdiɪŋ/", "us": "/ˈstʌdiɪŋ/"
+          }
+        },
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [26, 33],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "英语",
+          "explanation": "studying 的宾语。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        },
+        {
+          "word": "for ten years",
+          "base_form": "for ten years",
+          "range": [34, 47],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "十年",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by next year",
+          "base_form": "by next year",
+          "range": [48, 60],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到明年",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_CONT_010",
+      "sentence_info": {
+        "original": "She will have been living in London for twenty years by 2030",
+        "translation": "到2030年，她将已经在伦敦住了二十年了",
+        "sentence_pattern": "主语 + will have been + doing + 地点状语 + 时间段 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect_continuous", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will have been",
+          "base_form": "will have been",
+          "range": [4, 18],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会一直",
+          "explanation": "将来完成进行时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv biːn/", "us": "/wɪl hæv bɪn/"
+          }
+        },
+        {
+          "word": "living",
+          "base_form": "live",
+          "range": [19, 25],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "居住",
+          "explanation": "动词 live 的现在分词。",
+          "phonetics": {
+            "uk": "/ˈlɪvɪŋ/", "us": "/ˈlɪvɪŋ/"
+          }
+        },
+        {
+          "word": "in London",
+          "base_form": "in London",
+          "range": [26, 35],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在伦敦",
+          "explanation": "介词短语表示地点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "for twenty years",
+          "base_form": "for twenty years",
+          "range": [36, 52],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "二十年",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by 2030",
+          "base_form": "by 2030",
+          "range": [53, 60],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到2030年",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

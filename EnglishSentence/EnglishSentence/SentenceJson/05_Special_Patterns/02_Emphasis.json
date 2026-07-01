@@ -1,0 +1,606 @@
+{
+  "unit_name": "特殊句型 (2/3) - 强调句",
+  "description": "使用 'It is/was ... that/who ...' 结构来强调句子中的某个成分（通常是主语、宾语或状语）。",
+  "category": "Special_Patterns",
+  "code": "PATTERN_EMPHASIS",
+  "sentences": [
+    {
+      "id": "PATTERN_EMPHASIS_001",
+      "sentence_info": {
+        "original": "It was yesterday that I met him",
+        "translation": "我是在昨天遇见他的",
+        "sentence_pattern": "It was + 被强调部分(时间状语) + that + 剩余部分",
+        "pattern_code": "IT_BE_ADV_THAT",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "time_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "It was",
+          "base_form": "it be",
+          "range": [0, 6],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句的开头结构，因为 met 是过去式，所以用 was。",
+          "phonetics": {
+            "uk": "/ɪt wɒz/", "us": "/ɪt wɑːz/"
+          }
+        },
+        {
+          "word": "yesterday",
+          "base_form": "yesterday",
+          "range": [7, 16],
+          "tag": "adverb_time",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "昨天",
+          "explanation": "被强调的时间状语。",
+          "phonetics": {
+            "uk": "/ˈjestədeɪ/", "us": "/ˈjestərdeɪ/"
+          }
+        },
+        {
+          "word": "that",
+          "base_form": "that",
+          "range": [17, 21],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "强调句的连接词。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        },
+        {
+          "word": "I met him",
+          "base_form": "I met him",
+          "range": [22, 31],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "我遇见他",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_002",
+      "sentence_info": {
+        "original": "It is Tom who broke the window",
+        "translation": "打破窗户的人正是汤姆",
+        "sentence_pattern": "It is + 被强调部分(主语人) + who + 剩余部分",
+        "pattern_code": "IT_BE_S_WHO",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "subject_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "It is",
+          "base_form": "it be",
+          "range": [0, 5],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句开头，时态为一般现在时（或表示客观事实）。",
+          "phonetics": {
+            "uk": "/ɪt ɪz/", "us": "/ɪt ɪz/"
+          }
+        },
+        {
+          "word": "Tom",
+          "base_form": "Tom",
+          "range": [6, 9],
+          "tag": "noun_proper",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "汤姆",
+          "explanation": "被强调的主语（人）。",
+          "phonetics": {
+            "uk": "/tɒm/", "us": "/tɑːm/"
+          }
+        },
+        {
+          "word": "who",
+          "base_form": "who",
+          "range": [10, 13],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "强调人时，连接词可以用 who 也可以用 that。",
+          "phonetics": {
+            "uk": "/huː/", "us": "/huː/"
+          }
+        },
+        {
+          "word": "broke the window",
+          "base_form": "break the window",
+          "range": [14, 30],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "打破了窗户",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_003",
+      "sentence_info": {
+        "original": "It was a new car that he bought",
+        "translation": "他买的是一辆新车",
+        "sentence_pattern": "It was + 被强调部分(宾语) + that + 剩余部分",
+        "pattern_code": "IT_BE_OBJ_THAT",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "object_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "It was",
+          "base_form": "it be",
+          "range": [0, 6],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句开头。",
+          "phonetics": {
+            "uk": "/ɪt wɒz/", "us": "/ɪt wɑːz/"
+          }
+        },
+        {
+          "word": "a new car",
+          "base_form": "new car",
+          "range": [7, 16],
+          "tag": "noun_phrase_object",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "一辆新车",
+          "explanation": "被强调的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "that",
+          "base_form": "that",
+          "range": [17, 21],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "连接词。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        },
+        {
+          "word": "he bought",
+          "base_form": "he bought",
+          "range": [22, 31],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "他买了",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_004",
+      "sentence_info": {
+        "original": "It was in the park that I lost my wallet",
+        "translation": "我是在公园里丢了钱包的",
+        "sentence_pattern": "It was + 被强调部分(地点状语) + that + 剩余部分",
+        "pattern_code": "IT_BE_PLACE_THAT",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "place_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "It was",
+          "base_form": "it be",
+          "range": [0, 6],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句开头。",
+          "phonetics": {
+            "uk": "/ɪt wɒz/", "us": "/ɪt wɑːz/"
+          }
+        },
+        {
+          "word": "in the park",
+          "base_form": "in the park",
+          "range": [7, 18],
+          "tag": "prepositional_phrase",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "在公园里",
+          "explanation": "被强调的地点状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "that",
+          "base_form": "that",
+          "range": [19, 23],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "连接词。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        },
+        {
+          "word": "I lost my wallet",
+          "base_form": "I lost my wallet",
+          "range": [24, 40],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "我丢了我的钱包",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_005",
+      "sentence_info": {
+        "original": "It was not until midnight that he came back",
+        "translation": "直到午夜他才回来",
+        "sentence_pattern": "It was + not until ... + that + 剩余部分",
+        "pattern_code": "IT_BE_NOT_UNTIL_THAT",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "emphasis", "not_until"]
+      },
+      "analysis": [
+        {
+          "word": "It was",
+          "base_form": "it be",
+          "range": [0, 6],
+          "tag": "phrase_emphasis_head",
+          "type": "Emphasis Structure (强调句型)",
+          "chinese_definition": "正是...",
+          "explanation": "强调句开头。",
+          "phonetics": {
+            "uk": "/ɪt wɒz/", "us": "/ɪt wɑːz/"
+          }
+        },
+        {
+          "word": "not until midnight",
+          "base_form": "not until midnight",
+          "range": [7, 25],
+          "tag": "adverb_phrase_time",
+          "type": "Emphasized Part (被强调部分)",
+          "chinese_definition": "直到午夜",
+          "explanation": "被强调的时间状语，注意 not until 放在一起。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "that",
+          "base_form": "that",
+          "range": [26, 30],
+          "tag": "conjunction_emphasis",
+          "type": "Emphasis Connector (连接词)",
+          "chinese_definition": "（无实义）",
+          "explanation": "连接词。",
+          "phonetics": {
+            "uk": "/ðæt/", "us": "/ðæt/"
+          }
+        },
+        {
+          "word": "he came back",
+          "base_form": "he came back",
+          "range": [31, 43],
+          "tag": "clause_remaining",
+          "type": "Remaining Part (剩余部分)",
+          "chinese_definition": "他回来",
+          "explanation": "句子的其余部分。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_006",
+      "sentence_info": {
+        "original": "I do love you",
+        "translation": "我真的爱你",
+        "sentence_pattern": "主语 + do/does/did + 动词原形...",
+        "pattern_code": "DO_EMPHASIS",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "emphasis", "do_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "do",
+          "base_form": "do",
+          "range": [2, 4],
+          "tag": "verb_auxiliary_emphasis",
+          "type": "Emphasis Auxiliary (强调助动词)",
+          "chinese_definition": "真的/确实",
+          "explanation": "放在谓语动词前表示强调。",
+          "phonetics": {
+            "uk": "/duː/", "us": "/duː/"
+          }
+        },
+        {
+          "word": "love",
+          "base_form": "love",
+          "range": [5, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "爱",
+          "explanation": "谓语动词原形。",
+          "phonetics": {
+            "uk": "/lʌv/", "us": "/lʌv/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [10, 13],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "宾语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_007",
+      "sentence_info": {
+        "original": "He did finish the work",
+        "translation": "他确实完成了工作",
+        "sentence_pattern": "主语 + did + 动词原形...",
+        "pattern_code": "DID_EMPHASIS",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "do_emphasis"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/hi/", "us": "/hi/"
+          }
+        },
+        {
+          "word": "did",
+          "base_form": "do",
+          "range": [3, 6],
+          "tag": "verb_auxiliary_emphasis",
+          "type": "Emphasis Auxiliary (强调助动词)",
+          "chinese_definition": "确实",
+          "explanation": "过去时态的强调助动词。",
+          "phonetics": {
+            "uk": "/dɪd/", "us": "/dɪd/"
+          }
+        },
+        {
+          "word": "finish",
+          "base_form": "finish",
+          "range": [7, 13],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "完成",
+          "explanation": "谓语动词原形。",
+          "phonetics": {
+            "uk": "/ˈfɪnɪʃ/", "us": "/ˈfɪnɪʃ/"
+          }
+        },
+        {
+          "word": "the work",
+          "base_form": "work",
+          "range": [14, 22],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "工作",
+          "explanation": "宾语。",
+          "phonetics": {
+            "uk": "/wɜːk/", "us": "/wɜːrk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_008",
+      "sentence_info": {
+        "original": "What I need is a break",
+        "translation": "我所需要的是休息",
+        "sentence_pattern": "What从句 + be + 表语",
+        "pattern_code": "PSEUDO_CLEFT_WHAT",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "emphasis", "pseudo_cleft"]
+      },
+      "analysis": [
+        {
+          "word": "What I need",
+          "base_form": "What I need",
+          "range": [0, 11],
+          "tag": "clause_subject",
+          "type": "Subject Clause (主语从句)",
+          "chinese_definition": "我所需要的",
+          "explanation": "What 引导的主语从句，起强调作用。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [12, 14],
+          "tag": "verb_be",
+          "type": "Be Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "a break",
+          "base_form": "break",
+          "range": [15, 22],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "休息",
+          "explanation": "表语。",
+          "phonetics": {
+            "uk": "/breɪk/", "us": "/breɪk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_009",
+      "sentence_info": {
+        "original": "All you have to do is wait",
+        "translation": "你所要做的就是等待",
+        "sentence_pattern": "All (that) ... + be + 动词原形",
+        "pattern_code": "PSEUDO_CLEFT_ALL",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "emphasis", "pseudo_cleft"]
+      },
+      "analysis": [
+        {
+          "word": "All you have to do",
+          "base_form": "All you have to do",
+          "range": [0, 18],
+          "tag": "clause_subject",
+          "type": "Subject Clause (主语从句)",
+          "chinese_definition": "你所要做的",
+          "explanation": "All 引导的从句，强调“唯一要做的事”。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [19, 21],
+          "tag": "verb_be",
+          "type": "Be Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "wait",
+          "base_form": "wait",
+          "range": [22, 26],
+          "tag": "verb_infinitive",
+          "type": "Infinitive (不定式)",
+          "chinese_definition": "等待",
+          "explanation": "作表语，前面省略了 to。",
+          "phonetics": {
+            "uk": "/weɪt/", "us": "/weɪt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_EMPHASIS_010",
+      "sentence_info": {
+        "original": "What on earth are you doing",
+        "translation": "你到底在做什么",
+        "sentence_pattern": "疑问词 + on earth + ...",
+        "pattern_code": "ON_EARTH_EMPHASIS",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "emphasis", "rhetorical"]
+      },
+      "analysis": [
+        {
+          "word": "What",
+          "base_form": "what",
+          "range": [0, 4],
+          "tag": "pronoun_interrogative",
+          "type": "Interrogative (疑问词)",
+          "chinese_definition": "什么",
+          "explanation": "疑问代词。",
+          "phonetics": {
+            "uk": "/wɒt/", "us": "/wʌt/"
+          }
+        },
+        {
+          "word": "on earth",
+          "base_form": "on earth",
+          "range": [5, 13],
+          "tag": "phrase_emphasis",
+          "type": "Emphasis Phrase (强调短语)",
+          "chinese_definition": "到底/究竟",
+          "explanation": "用于加强疑问语气的短语。",
+          "phonetics": {
+            "uk": "/ɒn ɜːθ/", "us": "/ɑːn ɜːrθ/"
+          }
+        },
+        {
+          "word": "are",
+          "base_form": "be",
+          "range": [14, 17],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "正在",
+          "explanation": "进行时助动词。",
+          "phonetics": {
+            "uk": "/ɑː(r)/", "us": "/ɑːr/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [18, 21],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "你",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "doing",
+          "base_form": "do",
+          "range": [22, 27],
+          "tag": "verb_present_participle",
+          "type": "Present Participle (现在分词)",
+          "chinese_definition": "做",
+          "explanation": "实义动词的现在分词。",
+          "phonetics": {
+            "uk": "/ˈduːɪŋ/", "us": "/ˈduːɪŋ/"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "unit_name": "语态与语气 (2/3) - 虚拟语气",
+  "description": "表示假设、愿望、建议或非事实的情况，而非客观事实。",
+  "category": "Voice_Mood",
+  "code": "MOOD_SUBJUNCTIVE",
+  "sentences": [
+    {
+      "id": "MOOD_SUBJUNCTIVE_001",
+      "sentence_info": {
+        "original": "If I were you, I would go",
+        "translation": "如果我是你，我就去",
+        "sentence_pattern": "If + 主语 + were + ..., 主语 + would + 动词原形",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "conditional_2"]
+      },
+      "analysis": [
+        {
+          "word": "If I were you",
+          "base_form": "If I were you",
+          "range": [0, 13],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (条件状语从句)",
+          "chinese_definition": "如果我是你",
+          "explanation": "与现在事实相反的假设。注意：在虚拟语气中，be 动词通常用 were，即使主语是 I。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [15, 16],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would go",
+          "base_form": "go",
+          "range": [17, 25],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "就会去",
+          "explanation": "主句谓语用 would/should/could/might + 动词原形。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_002",
+      "sentence_info": {
+        "original": "I wish I were a bird",
+        "translation": "我希望我是一只鸟",
+        "sentence_pattern": "主语 + wish + (that) + 主语 + were + 表语",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "wish"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "wish",
+          "base_form": "wish",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (动词)",
+          "chinese_definition": "希望",
+          "explanation": "表达愿望，后接虚拟语气。",
+          "phonetics": {
+            "uk": "/wɪʃ/", "us": "/wɪʃ/"
+          }
+        },
+        {
+          "word": "I were",
+          "base_form": "be",
+          "range": [7, 13],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "我是",
+          "explanation": "与现在事实相反的愿望，用过去式（be 动词用 were）。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "a bird",
+          "base_form": "bird",
+          "range": [14, 20],
+          "tag": "noun_object",
+          "type": "Predicative (表语)",
+          "chinese_definition": "一只鸟",
+          "explanation": "名词作表语。",
+          "phonetics": {
+            "uk": "/bɜːd/", "us": "/bɜːrd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_003",
+      "sentence_info": {
+        "original": "If I had known, I would have told you",
+        "translation": "如果我早知道，我就会告诉你了",
+        "sentence_pattern": "If + 主语 + had + 过去分词, 主语 + would have + 过去分词",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "conditional_3"]
+      },
+      "analysis": [
+        {
+          "word": "If I had known",
+          "base_form": "know",
+          "range": [0, 14],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (条件状语从句)",
+          "chinese_definition": "如果我早知道",
+          "explanation": "与过去事实相反的假设，从句用过去完成时 (had done)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [16, 17],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would have told",
+          "base_form": "tell",
+          "range": [18, 31],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "就会告诉",
+          "explanation": "主句用 would have done。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [32, 35],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "你",
+          "explanation": "told 的宾语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_004",
+      "sentence_info": {
+        "original": "I suggest that he go at once",
+        "translation": "我建议他马上走",
+        "sentence_pattern": "主语 + suggest + (that) + 主语 + (should) + 动词原形",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "suggestion"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "suggest",
+          "base_form": "suggest",
+          "range": [2, 9],
+          "tag": "verb_transitive",
+          "type": "Verb (动词)",
+          "chinese_definition": "建议",
+          "explanation": "表示建议的动词，后接从句用虚拟语气。",
+          "phonetics": {
+            "uk": "/səˈdʒest/", "us": "/səˈdʒest/"
+          }
+        },
+        {
+          "word": "he go",
+          "base_form": "go",
+          "range": [15, 20],
+          "tag": "verb_phrase",
+          "type": "Predicate (从句谓语)",
+          "chinese_definition": "他走",
+          "explanation": "从句谓语用 (should) + 动词原形，should 常省略。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "at once",
+          "base_form": "at once",
+          "range": [21, 28],
+          "tag": "phrase_adverbial",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "马上",
+          "explanation": "时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_005",
+      "sentence_info": {
+        "original": "It is important that we be on time",
+        "translation": "我们准时很重要",
+        "sentence_pattern": "It is + adj. + that + 主语 + (should) + 动词原形",
+        "pattern_code": "SV_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "impersonal"]
+      },
+      "analysis": [
+        {
+          "word": "It is important",
+          "base_form": "important",
+          "range": [0, 15],
+          "tag": "phrase_adjective",
+          "type": "Adjective Phrase (形容词短语)",
+          "chinese_definition": "重要的是",
+          "explanation": "It 作形式主语，真正的主语是后面的 that 从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "we be",
+          "base_form": "be",
+          "range": [21, 26],
+          "tag": "verb_phrase",
+          "type": "Predicate (从句谓语)",
+          "chinese_definition": "我们是",
+          "explanation": "从句谓语用 (should) + 动词原形。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "on time",
+          "base_form": "on time",
+          "range": [27, 34],
+          "tag": "phrase_prepositional",
+          "type": "Predicative (表语)",
+          "chinese_definition": "准时",
+          "explanation": "介词短语作表语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_006",
+      "sentence_info": {
+        "original": "If it should rain tomorrow, the match would be cancelled",
+        "translation": "万一明天下雨，比赛就会取消",
+        "sentence_pattern": "If + 主语 + should + 动词原形, 主语 + would + 动词原形",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "conditional_future"]
+      },
+      "analysis": [
+        {
+          "word": "If it should rain",
+          "base_form": "rain",
+          "range": [0, 17],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (条件状语从句)",
+          "chinese_definition": "万一下雨",
+          "explanation": "与将来事实相反的假设，从句可用 should + 动词原形。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "tomorrow",
+          "base_form": "tomorrow",
+          "range": [18, 26],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天",
+          "explanation": "时间副词。",
+          "phonetics": {
+            "uk": "/təˈmɒrəʊ/", "us": "/təˈmɔːroʊ/"
+          }
+        },
+        {
+          "word": "the match",
+          "base_form": "match",
+          "range": [28, 37],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "比赛",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/mætʃ/", "us": "/mætʃ/"
+          }
+        },
+        {
+          "word": "would be cancelled",
+          "base_form": "cancel",
+          "range": [38, 56],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "就会被取消",
+          "explanation": "主句用 would + be done (被动语态)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_007",
+      "sentence_info": {
+        "original": "I wish I had studied harder",
+        "translation": "我希望我当时更努力学习",
+        "sentence_pattern": "主语 + wish + (that) + 主语 + had + 过去分词",
+        "pattern_code": "SVO_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "wish", "past_regret"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "wish",
+          "base_form": "wish",
+          "range": [2, 6],
+          "tag": "verb_transitive",
+          "type": "Verb (动词)",
+          "chinese_definition": "希望",
+          "explanation": "表达愿望。",
+          "phonetics": {
+            "uk": "/wɪʃ/", "us": "/wɪʃ/"
+          }
+        },
+        {
+          "word": "I had studied",
+          "base_form": "study",
+          "range": [7, 20],
+          "tag": "verb_phrase",
+          "type": "Predicate (从句谓语)",
+          "chinese_definition": "我学习了",
+          "explanation": "与过去事实相反的愿望，用过去完成时 (had done)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "harder",
+          "base_form": "hard",
+          "range": [21, 27],
+          "tag": "adverb_degree",
+          "type": "Adverbial (程度状语)",
+          "chinese_definition": "更努力",
+          "explanation": "副词比较级。",
+          "phonetics": {
+            "uk": "/ˈhɑːdə(r)/", "us": "/ˈhɑːrdər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_008",
+      "sentence_info": {
+        "original": "Without your help, I would have failed",
+        "translation": "没有你的帮助，我就失败了",
+        "sentence_pattern": "Without + 名词短语, 主语 + would have + 过去分词",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "implicit_condition"]
+      },
+      "analysis": [
+        {
+          "word": "Without your help",
+          "base_form": "help",
+          "range": [0, 17],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (条件状语)",
+          "chinese_definition": "没有你的帮助",
+          "explanation": "含蓄条件句，相当于 If I hadn't had your help。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [19, 20],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would have failed",
+          "base_form": "fail",
+          "range": [21, 38],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "就会失败",
+          "explanation": "与过去事实相反，用 would have done。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_009",
+      "sentence_info": {
+        "original": "It is time you went to bed",
+        "translation": "你该去睡觉了",
+        "sentence_pattern": "It is time + (that) + 主语 + 动词过去式",
+        "pattern_code": "SV_CLAUSE",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "it_is_time"]
+      },
+      "analysis": [
+        {
+          "word": "It is time",
+          "base_form": "time",
+          "range": [0, 10],
+          "tag": "phrase_fixed",
+          "type": "Fixed Phrase (固定句型)",
+          "chinese_definition": "是时候了",
+          "explanation": "It is time 后接从句用虚拟语气。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [11, 14],
+          "tag": "pronoun_subject",
+          "type": "Subject (从句主语)",
+          "chinese_definition": "你",
+          "explanation": "从句主语。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "went",
+          "base_form": "go",
+          "range": [15, 19],
+          "tag": "verb_past",
+          "type": "Predicate (从句谓语)",
+          "chinese_definition": "去",
+          "explanation": "从句谓语用过去式表示虚拟。",
+          "phonetics": {
+            "uk": "/went/", "us": "/went/"
+          }
+        },
+        {
+          "word": "to bed",
+          "base_form": "bed",
+          "range": [20, 26],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "睡觉",
+          "explanation": "go to bed 固定搭配。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MOOD_SUBJUNCTIVE_010",
+      "sentence_info": {
+        "original": "If I were rich, I would travel the world",
+        "translation": "如果我有钱，我就环游世界",
+        "sentence_pattern": "If + 主语 + were + 表语, 主语 + would + 动词原形",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["mood", "subjunctive", "conditional_2"]
+      },
+      "analysis": [
+        {
+          "word": "If I were rich",
+          "base_form": "rich",
+          "range": [0, 14],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (条件状语从句)",
+          "chinese_definition": "如果我有钱",
+          "explanation": "与现在事实相反的假设，be 动词用 were。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [16, 17],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主句主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "would travel",
+          "base_form": "travel",
+          "range": [18, 30],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "就会旅行",
+          "explanation": "主句用 would + 动词原形。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the world",
+          "base_form": "world",
+          "range": [31, 40],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "世界",
+          "explanation": "travel 的宾语。",
+          "phonetics": {
+            "uk": "/wɜːld/", "us": "/wɜːrld/"
+          }
+        }
+      ]
+    }
+  ]
+}

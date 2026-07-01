@@ -1,0 +1,438 @@
+{
+  "unit_name": "语态与语气 (1/3) - 被动语态",
+  "description": "当主语是动作的承受者时使用，强调动作本身或动作的承受者。",
+  "category": "Voice_Mood",
+  "code": "VOICE_PASSIVE",
+  "sentences": [
+    {
+      "id": "VOICE_PASSIVE_001",
+      "sentence_info": {
+        "original": "The book was written by him",
+        "translation": "这本书是他写的",
+        "sentence_pattern": "主语 + be + 过去分词 + by + 施动者",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "past_simple"]
+      },
+      "analysis": [
+        {
+          "word": "The book",
+          "base_form": "book",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "书",
+          "explanation": "动作的承受者作主语。",
+          "phonetics": {
+            "uk": "/bʊk/", "us": "/bʊk/"
+          }
+        },
+        {
+          "word": "was written",
+          "base_form": "write",
+          "range": [9, 20],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "被写",
+          "explanation": "被动语态结构 (be + done)，was 是过去式。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by him",
+          "base_form": "by him",
+          "range": [21, 27],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "由他",
+          "explanation": "by 引出动作的执行者。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_002",
+      "sentence_info": {
+        "original": "The house is being built",
+        "translation": "这所房子正在建造中",
+        "sentence_pattern": "主语 + be + being + 过去分词",
+        "pattern_code": "SV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "present_continuous"]
+      },
+      "analysis": [
+        {
+          "word": "The house",
+          "base_form": "house",
+          "range": [0, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "房子",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/haʊs/", "us": "/haʊs/"
+          }
+        },
+        {
+          "word": "is being built",
+          "base_form": "build",
+          "range": [10, 24],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "正在被建造",
+          "explanation": "现在进行时的被动语态 (am/is/are + being + done)。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_003",
+      "sentence_info": {
+        "original": "English is spoken all over the world",
+        "translation": "全世界都讲英语",
+        "sentence_pattern": "主语 + be + 过去分词 + 地点状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "present_simple"]
+      },
+      "analysis": [
+        {
+          "word": "English",
+          "base_form": "English",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "英语",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/ˈɪŋɡlɪʃ/", "us": "/ˈɪŋɡlɪʃ/"
+          }
+        },
+        {
+          "word": "is spoken",
+          "base_form": "speak",
+          "range": [8, 17],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "被讲",
+          "explanation": "一般现在时的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "all over the world",
+          "base_form": "all over the world",
+          "range": [18, 36],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "全世界",
+          "explanation": "表示范围。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_004",
+      "sentence_info": {
+        "original": "The work will be finished tomorrow",
+        "translation": "工作将于明天完成",
+        "sentence_pattern": "主语 + will be + 过去分词 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "future_simple"]
+      },
+      "analysis": [
+        {
+          "word": "The work",
+          "base_form": "work",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "工作",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/wɜːk/", "us": "/wɜːrk/"
+          }
+        },
+        {
+          "word": "will be finished",
+          "base_form": "finish",
+          "range": [9, 25],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将被完成",
+          "explanation": "一般将来时的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "tomorrow",
+          "base_form": "tomorrow",
+          "range": [26, 34],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "明天",
+          "explanation": "时间副词。",
+          "phonetics": {
+            "uk": "/təˈmɒrəʊ/", "us": "/təˈmɔːroʊ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_005",
+      "sentence_info": {
+        "original": "The car has been repaired",
+        "translation": "这辆车已经修好了",
+        "sentence_pattern": "主语 + has been + 过去分词",
+        "pattern_code": "SV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "present_perfect"]
+      },
+      "analysis": [
+        {
+          "word": "The car",
+          "base_form": "car",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "车",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/kɑː(r)/", "us": "/kɑːr/"
+          }
+        },
+        {
+          "word": "has been repaired",
+          "base_form": "repair",
+          "range": [8, 25],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "已经被修理",
+          "explanation": "现在完成时的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_006",
+      "sentence_info": {
+        "original": "The room was being cleaned when I arrived",
+        "translation": "我到达时，房间正在被打扫",
+        "sentence_pattern": "主语 + was/were being + 过去分词 + 时间状语从句",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["voice", "passive", "past_continuous"]
+      },
+      "analysis": [
+        {
+          "word": "The room",
+          "base_form": "room",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "房间",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/ruːm/", "us": "/ruːm/"
+          }
+        },
+        {
+          "word": "was being cleaned",
+          "base_form": "clean",
+          "range": [9, 26],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "正在被打扫",
+          "explanation": "过去进行时的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "when I arrived",
+          "base_form": "when I arrived",
+          "range": [27, 41],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "当我到达时",
+          "explanation": "时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_007",
+      "sentence_info": {
+        "original": "This problem can be solved",
+        "translation": "这个问题可以被解决",
+        "sentence_pattern": "主语 + can be + 过去分词",
+        "pattern_code": "SV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "modal_verb"]
+      },
+      "analysis": [
+        {
+          "word": "This problem",
+          "base_form": "problem",
+          "range": [0, 12],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "这个问题",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/ˈprɒbləm/", "us": "/ˈprɑːbləm/"
+          }
+        },
+        {
+          "word": "can be solved",
+          "base_form": "solve",
+          "range": [13, 26],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "可以被解决",
+          "explanation": "情态动词 can 的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_008",
+      "sentence_info": {
+        "original": "The rules must be obeyed",
+        "translation": "规则必须被遵守",
+        "sentence_pattern": "主语 + must be + 过去分词",
+        "pattern_code": "SV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "modal_verb"]
+      },
+      "analysis": [
+        {
+          "word": "The rules",
+          "base_form": "rule",
+          "range": [0, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "规则",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/ruːlz/", "us": "/ruːlz/"
+          }
+        },
+        {
+          "word": "must be obeyed",
+          "base_form": "obey",
+          "range": [10, 24],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "必须被遵守",
+          "explanation": "情态动词 must 的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_009",
+      "sentence_info": {
+        "original": "He got hurt in the accident",
+        "translation": "他在事故中受伤了",
+        "sentence_pattern": "主语 + got + 过去分词 + 地点状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "get_passive"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "got hurt",
+          "base_form": "hurt",
+          "range": [3, 11],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "受伤",
+          "explanation": "get + done 构成的被动语态，常用于口语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "in the accident",
+          "base_form": "in the accident",
+          "range": [12, 27],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在事故中",
+          "explanation": "介词短语表示背景。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "VOICE_PASSIVE_010",
+      "sentence_info": {
+        "original": "My bike was stolen",
+        "translation": "我的自行车被偷了",
+        "sentence_pattern": "主语 + was + 过去分词",
+        "pattern_code": "SV",
+        "difficulty_level": 2,
+        "tags": ["voice", "passive", "past_simple"]
+      },
+      "analysis": [
+        {
+          "word": "My bike",
+          "base_form": "bike",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我的自行车",
+          "explanation": "动作的承受者。",
+          "phonetics": {
+            "uk": "/baɪk/", "us": "/baɪk/"
+          }
+        },
+        {
+          "word": "was stolen",
+          "base_form": "steal",
+          "range": [8, 18],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "被偷了",
+          "explanation": "一般过去时的被动语态。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

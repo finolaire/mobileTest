@@ -1,0 +1,570 @@
+{
+  "unit_name": "五大句型 (3/5) - SVP 主系表结构",
+  "description": "说明主语的状态、性质或特征，通常由系动词连接。",
+  "category": "Basic_Structure",
+  "code": "BS_SVP",
+  "sentences": [
+    {
+      "id": "BS_SVP_001",
+      "sentence_info": {
+        "original": "The flower is red",
+        "translation": "这朵花是红色的",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "adjective"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这",
+          "explanation": "定冠词，特指。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "flower",
+          "base_form": "flower",
+          "range": [4, 10],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "花",
+          "explanation": "单数名词作主语。",
+          "phonetics": {
+            "uk": "/ˈflaʊə(r)/", "us": "/ˈflaʊər/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [11, 13],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "Be动词作系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "red",
+          "base_form": "red",
+          "range": [14, 17],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "红色的",
+          "explanation": "形容词作表语，说明主语的颜色。",
+          "phonetics": {
+            "uk": "/red/", "us": "/red/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_002",
+      "sentence_info": {
+        "original": "He looks tired",
+        "translation": "他看起来很累",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "senses"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "代词主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "looks",
+          "base_form": "look",
+          "range": [3, 8],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "看起来",
+          "explanation": "感官动词作系动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/lʊks/", "us": "/lʊks/"
+          }
+        },
+        {
+          "word": "tired",
+          "base_form": "tired",
+          "range": [9, 14],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "疲累的",
+          "explanation": "形容词作表语，描述主语状态。",
+          "phonetics": {
+            "uk": "/ˈtaɪəd/", "us": "/ˈtaɪərd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_003",
+      "sentence_info": {
+        "original": "She is a teacher",
+        "translation": "她是一名老师",
+        "sentence_pattern": "主语 + 系动词 + 表语(名词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "noun"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "代词主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [4, 6],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "Be动词作系动词。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [7, 8],
+          "tag": "article_indefinite",
+          "type": "Article (不定冠词)",
+          "chinese_definition": "一名",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "teacher",
+          "base_form": "teacher",
+          "range": [9, 16],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "老师",
+          "explanation": "名词作表语，说明主语的身份。",
+          "phonetics": {
+            "uk": "/ˈtiːtʃə(r)/", "us": "/ˈtiːtʃər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_004",
+      "sentence_info": {
+        "original": "The soup tastes good",
+        "translation": "这汤尝起来很好",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "senses"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "soup",
+          "base_form": "soup",
+          "range": [4, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "汤",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/suːp/", "us": "/suːp/"
+          }
+        },
+        {
+          "word": "tastes",
+          "base_form": "taste",
+          "range": [9, 15],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "尝起来",
+          "explanation": "感官动词作系动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/teɪsts/", "us": "/teɪsts/"
+          }
+        },
+        {
+          "word": "good",
+          "base_form": "good",
+          "range": [16, 20],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "好",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ɡʊd/", "us": "/ɡʊd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_005",
+      "sentence_info": {
+        "original": "I feel happy",
+        "translation": "我感到快乐",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "senses", "emotion"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "feel",
+          "base_form": "feel",
+          "range": [2, 6],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "感到",
+          "explanation": "感官动词作系动词。",
+          "phonetics": {
+            "uk": "/fiːl/", "us": "/fiːl/"
+          }
+        },
+        {
+          "word": "happy",
+          "base_form": "happy",
+          "range": [7, 12],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "快乐的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ˈhæpi/", "us": "/ˈhæpi/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_006",
+      "sentence_info": {
+        "original": "He became a doctor",
+        "translation": "他成为了一名医生",
+        "sentence_pattern": "主语 + 系动词 + 表语(名词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "noun"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "became",
+          "base_form": "become",
+          "range": [3, 9],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "成为",
+          "explanation": "become 的过去式，作系动词。",
+          "phonetics": {
+            "uk": "/bɪˈkeɪm/", "us": "/bɪˈkeɪm/"
+          }
+        },
+        {
+          "word": "a",
+          "base_form": "a",
+          "range": [10, 11],
+          "tag": "article_indefinite",
+          "type": "Article (不定冠词)",
+          "chinese_definition": "一名",
+          "explanation": "不定冠词。",
+          "phonetics": {
+            "uk": "/ə/", "us": "/ə/"
+          }
+        },
+        {
+          "word": "doctor",
+          "base_form": "doctor",
+          "range": [12, 18],
+          "tag": "noun_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "医生",
+          "explanation": "名词作表语。",
+          "phonetics": {
+            "uk": "/ˈdɒktə(r)/", "us": "/ˈdɑːktər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_007",
+      "sentence_info": {
+        "original": "The weather turned cold",
+        "translation": "天气变冷了",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "change"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "weather",
+          "base_form": "weather",
+          "range": [4, 11],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "天气",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/ˈweðə(r)/", "us": "/ˈweðər/"
+          }
+        },
+        {
+          "word": "turned",
+          "base_form": "turn",
+          "range": [12, 18],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "变得",
+          "explanation": "turn 的过去式，表示变化。",
+          "phonetics": {
+            "uk": "/tɜːnd/", "us": "/tɜːrnd/"
+          }
+        },
+        {
+          "word": "cold",
+          "base_form": "cold",
+          "range": [19, 23],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "冷的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/kəʊld/", "us": "/koʊld/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_008",
+      "sentence_info": {
+        "original": "The music sounds beautiful",
+        "translation": "音乐听起来很美",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "senses"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/"
+          }
+        },
+        {
+          "word": "music",
+          "base_form": "music",
+          "range": [4, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "音乐",
+          "explanation": "不可数名词作主语。",
+          "phonetics": {
+            "uk": "/ˈmjuːzɪk/", "us": "/ˈmjuːzɪk/"
+          }
+        },
+        {
+          "word": "sounds",
+          "base_form": "sound",
+          "range": [10, 16],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "听起来",
+          "explanation": "感官动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/saʊndz/", "us": "/saʊndz/"
+          }
+        },
+        {
+          "word": "beautiful",
+          "base_form": "beautiful",
+          "range": [17, 26],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "美丽的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ˈbjuːtɪfl/", "us": "/ˈbjuːtɪfl/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_009",
+      "sentence_info": {
+        "original": "They seem friendly",
+        "translation": "他们似乎很友好",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "perception"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "主格代词。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "seem",
+          "base_form": "seem",
+          "range": [5, 9],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "似乎",
+          "explanation": "系动词。",
+          "phonetics": {
+            "uk": "/siːm/", "us": "/siːm/"
+          }
+        },
+        {
+          "word": "friendly",
+          "base_form": "friendly",
+          "range": [10, 18],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "友好的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ˈfrendli/", "us": "/ˈfrendli/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SVP_010",
+      "sentence_info": {
+        "original": "It smells sweet",
+        "translation": "它闻起来很香",
+        "sentence_pattern": "主语 + 系动词 + 表语(形容词)",
+        "pattern_code": "SVP",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "svp_pattern", "senses"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它",
+          "explanation": "代词主格。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "smells",
+          "base_form": "smell",
+          "range": [3, 9],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "闻起来",
+          "explanation": "感官动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/smelz/", "us": "/smelz/"
+          }
+        },
+        {
+          "word": "sweet",
+          "base_form": "sweet",
+          "range": [10, 15],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "香甜的",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/swiːt/", "us": "/swiːt/"
+          }
+        }
+      ]
+    }
+  ]
+}

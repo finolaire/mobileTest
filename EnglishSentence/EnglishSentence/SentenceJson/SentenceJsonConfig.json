@@ -1,0 +1,70 @@
+{
+  "sections": [
+    {
+      "id": "Basic_Structure",
+      "title": "01_句法基础 (Basic Structure)",
+      "directory": "01_Basic_Structure",
+      "files": [
+        "01_SV_Pattern.json",
+        "02_SVO_Pattern.json",
+        "03_SVP_Pattern.json",
+        "04_SVOO_Pattern.json",
+        "05_SVOC_Pattern.json",
+        "06_There_Be.json"
+      ]
+    },
+    {
+      "id": "Tenses",
+      "title": "02_核心时态 (Tenses)",
+      "directory": "02_Tenses",
+      "files": [
+        "01_Present_Simple.json",
+        "02_Present_Continuous.json",
+        "03_Past_Simple.json",
+        "04_Past_Continuous.json",
+        "05_Future_Simple.json",
+        "06_Present_Perfect.json",
+        "07_Present_Perfect_Continuous.json",
+        "08_Past_Perfect.json",
+        "09_Past_Perfect_Continuous.json",
+        "10_Future_Continuous.json",
+        "11_Future_Perfect.json",
+        "12_Future_Perfect_Continuous.json",
+        "13_Future_in_Past_Simple.json",
+        "14_Future_in_Past_Continuous.json",
+        "15_Future_in_Past_Perfect.json",
+        "16_Future_in_Past_Perfect_Continuous.json"
+      ]
+    },
+    {
+      "id": "Voice_Mood",
+      "title": "03_语态与语气 (Voice & Mood)",
+      "directory": "03_Voice_Mood",
+      "files": [
+        "01_Passive_Voice.json",
+        "02_Subjunctive.json",
+        "03_Imperative.json"
+      ]
+    },
+    {
+      "id": "Clauses",
+      "title": "04_从句 (Clauses)",
+      "directory": "04_Clauses",
+      "files": [
+        "01_Noun_Clauses.json",
+        "02_Attributive_Clauses.json",
+        "03_Adverbial_Clauses.json"
+      ]
+    },
+    {
+      "id": "Special_Patterns",
+      "title": "05_特殊句型 (Special Patterns)",
+      "directory": "05_Special_Patterns",
+      "files": [
+        "01_Inversion.json",
+        "02_Emphasis.json",
+        "03_Ellipsis.json"
+      ]
+    }
+  ]
+}

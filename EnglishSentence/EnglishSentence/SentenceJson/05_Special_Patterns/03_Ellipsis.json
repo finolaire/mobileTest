@@ -1,0 +1,582 @@
+{
+  "unit_name": "特殊句型 (3/3) - 省略句",
+  "description": "为了避免重复、突出重点或使语言简洁，省略句子中某些成分，但意思仍然清楚。",
+  "category": "Special_Patterns",
+  "code": "PATTERN_ELLIPSIS",
+  "sentences": [
+    {
+      "id": "PATTERN_ELLIPSIS_001",
+      "sentence_info": {
+        "original": "Sounds good",
+        "translation": "听起来不错",
+        "sentence_pattern": "(It) + Sounds + good",
+        "pattern_code": "VP",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "spoken_english"]
+      },
+      "analysis": [
+        {
+          "word": "(It)",
+          "base_form": "it",
+          "range": [],
+          "tag": "ellipsis_subject",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "它（省略）",
+          "explanation": "口语中常省略主语 It。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/"
+          }
+        },
+        {
+          "word": "Sounds",
+          "base_form": "sound",
+          "range": [0, 6],
+          "tag": "verb_linking",
+          "type": "Linking Verb (系动词)",
+          "chinese_definition": "听起来",
+          "explanation": "感官系动词，第三人称单数。",
+          "phonetics": {
+            "uk": "/saʊndz/", "us": "/saʊndz/"
+          }
+        },
+        {
+          "word": "good",
+          "base_form": "good",
+          "range": [7, 11],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "不错/好",
+          "explanation": "形容词作表语。",
+          "phonetics": {
+            "uk": "/ɡʊd/", "us": "/ɡʊd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_002",
+      "sentence_info": {
+        "original": "I'll help you if necessary",
+        "translation": "如果有必要，我会帮你",
+        "sentence_pattern": "主句 + if + (it is) + necessary",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "ellipsis", "conditional"]
+      },
+      "analysis": [
+        {
+          "word": "I'll help you",
+          "base_form": "I will help you",
+          "range": [0, 13],
+          "tag": "clause_main",
+          "type": "Main Clause (主句)",
+          "chinese_definition": "我会帮你",
+          "explanation": "完整的将来时主句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "if",
+          "base_form": "if",
+          "range": [14, 16],
+          "tag": "conjunction_subordinating",
+          "type": "Conjunction (连词)",
+          "chinese_definition": "如果",
+          "explanation": "引导条件状语从句。",
+          "phonetics": {
+            "uk": "/ɪf/", "us": "/ɪf/"
+          }
+        },
+        {
+          "word": "(it is)",
+          "base_form": "it is",
+          "range": [],
+          "tag": "ellipsis_clause_subject_verb",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "它是（省略）",
+          "explanation": "状语从句主语与主句一致或为 it is 时常省略。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "necessary",
+          "base_form": "necessary",
+          "range": [17, 26],
+          "tag": "adjective_predicative",
+          "type": "Predicative (表语)",
+          "chinese_definition": "必要的",
+          "explanation": "形容词保留作表语。",
+          "phonetics": {
+            "uk": "/ˈnesəsəri/", "us": "/ˈnesəseri/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_003",
+      "sentence_info": {
+        "original": "Some like tea, others coffee",
+        "translation": "有些人喜欢茶，其他人喜欢咖啡",
+        "sentence_pattern": "Some ... others ...",
+        "pattern_code": "COORDINATE_ELLIPSIS",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "ellipsis", "coordinate"]
+      },
+      "analysis": [
+        {
+          "word": "Some like tea",
+          "base_form": "Some like tea",
+          "range": [0, 13],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列分句)",
+          "chinese_definition": "有些人喜欢茶",
+          "explanation": "完整的并列分句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "others",
+          "base_form": "others",
+          "range": [15, 21],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "其他人",
+          "explanation": "后一分句主语。",
+          "phonetics": {
+            "uk": "/ˈʌðəz/", "us": "/ˈʌðərz/"
+          }
+        },
+        {
+          "word": "(like)",
+          "base_form": "like",
+          "range": [],
+          "tag": "ellipsis_verb",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "喜欢（省略）",
+          "explanation": "避免重复省略谓语动词。",
+          "phonetics": {
+            "uk": "/laɪk/", "us": "/laɪk/"
+          }
+        },
+        {
+          "word": "coffee",
+          "base_form": "coffee",
+          "range": [22, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "咖啡",
+          "explanation": "宾语。",
+          "phonetics": {
+            "uk": "/ˈkɒfi/", "us": "/ˈkɔːfi/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_004",
+      "sentence_info": {
+        "original": "I didn't want to go, but I had to",
+        "translation": "我不想去，但我不得不去",
+        "sentence_pattern": "... want to ..., ... had to (do)",
+        "pattern_code": "INFINITIVE_ELLIPSIS",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "ellipsis", "infinitive"]
+      },
+      "analysis": [
+        {
+          "word": "I didn't want to go",
+          "base_form": "I didn't want to go",
+          "range": [0, 19],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列分句)",
+          "chinese_definition": "我不想去",
+          "explanation": "前一分句完整。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "but I had to",
+          "base_form": "but I had to",
+          "range": [21, 33],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列分句)",
+          "chinese_definition": "但我不得不",
+          "explanation": "不定式符号 to 后省略动词原形 go。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "(go)",
+          "base_form": "go",
+          "range": [],
+          "tag": "ellipsis_verb",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "去（省略）",
+          "explanation": "省略了动词 go。",
+          "phonetics": {
+            "uk": "/ɡəʊ/", "us": "/ɡoʊ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_005",
+      "sentence_info": {
+        "original": "No, I won't",
+        "translation": "不，我不会",
+        "sentence_pattern": "No, I won't (do something)",
+        "pattern_code": "SHORT_ANSWER",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "short_answer"]
+      },
+      "analysis": [
+        {
+          "word": "No",
+          "base_form": "no",
+          "range": [0, 2],
+          "tag": "adverb_response",
+          "type": "Adverb (答语)",
+          "chinese_definition": "不",
+          "explanation": "否定回答。",
+          "phonetics": {
+            "uk": "/nəʊ/", "us": "/noʊ/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [4, 5],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "won't",
+          "base_form": "will not",
+          "range": [6, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "不会",
+          "explanation": "助动词保留，省略谓语动词。",
+          "phonetics": {
+            "uk": "/wəʊnt/", "us": "/woʊnt/"
+          }
+        },
+        {
+          "word": "(do it)",
+          "base_form": "do it",
+          "range": [],
+          "tag": "ellipsis_verb_phrase",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "做这件事（省略）",
+          "explanation": "省略了具体的动作。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_006",
+      "sentence_info": {
+        "original": "He is coming, but I don't know when",
+        "translation": "他要来了，但我不知道什么时候",
+        "sentence_pattern": "... know + when (clause)",
+        "pattern_code": "WH_CLAUSE_ELLIPSIS",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "ellipsis", "wh_clause"]
+      },
+      "analysis": [
+        {
+          "word": "He is coming",
+          "base_form": "He is coming",
+          "range": [0, 12],
+          "tag": "clause_main",
+          "type": "Main Clause (主句)",
+          "chinese_definition": "他要来了",
+          "explanation": "前一分句完整。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "but I don't know",
+          "base_form": "but I don't know",
+          "range": [14, 30],
+          "tag": "clause_coordinate",
+          "type": "Coordinate Clause (并列分句)",
+          "chinese_definition": "但我不知道",
+          "explanation": "后一分句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "when",
+          "base_form": "when",
+          "range": [31, 35],
+          "tag": "adverb_interrogative",
+          "type": "Interrogative Adverb (疑问副词)",
+          "chinese_definition": "什么时候",
+          "explanation": "保留疑问词，省略从句其他部分。",
+          "phonetics": {
+            "uk": "/wen/", "us": "/wen/"
+          }
+        },
+        {
+          "word": "(he is coming)",
+          "base_form": "he is coming",
+          "range": [],
+          "tag": "ellipsis_clause",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "他来（省略）",
+          "explanation": "省略了从句的主语和谓语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_007",
+      "sentence_info": {
+        "original": "He is taller than I",
+        "translation": "他比我高",
+        "sentence_pattern": "S + be + adj_comp + than + S",
+        "pattern_code": "COMPARISON_ELLIPSIS",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "comparison"]
+      },
+      "analysis": [
+        {
+          "word": "He is taller",
+          "base_form": "He is taller",
+          "range": [0, 12],
+          "tag": "clause_main",
+          "type": "Main Clause (主句)",
+          "chinese_definition": "他更高",
+          "explanation": "主句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "than",
+          "base_form": "than",
+          "range": [13, 17],
+          "tag": "conjunction_comparison",
+          "type": "Conjunction (连词)",
+          "chinese_definition": "比",
+          "explanation": "比较级连词。",
+          "phonetics": {
+            "uk": "/ðæn/", "us": "/ðæn/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [18, 19],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "比较对象的主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "(am)",
+          "base_form": "am",
+          "range": [],
+          "tag": "ellipsis_verb",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "是（省略）",
+          "explanation": "省略了系动词 am。",
+          "phonetics": {
+            "uk": "/æm/", "us": "/æm/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_008",
+      "sentence_info": {
+        "original": "Anything else?",
+        "translation": "还有别的吗？",
+        "sentence_pattern": "(Is there) + Anything + else?",
+        "pattern_code": "QUESTION_ELLIPSIS",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "spoken_english"]
+      },
+      "analysis": [
+        {
+          "word": "(Is there)",
+          "base_form": "Is there",
+          "range": [],
+          "tag": "ellipsis_verb_subject",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "有（省略）",
+          "explanation": "口语中省略疑问句的主语和谓语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "Anything",
+          "base_form": "anything",
+          "range": [0, 8],
+          "tag": "pronoun_indefinite",
+          "type": "Pronoun (不定代词)",
+          "chinese_definition": "任何事",
+          "explanation": "句子主体。",
+          "phonetics": {
+            "uk": "/ˈeniθɪŋ/", "us": "/ˈeniθɪŋ/"
+          }
+        },
+        {
+          "word": "else",
+          "base_form": "else",
+          "range": [9, 13],
+          "tag": "adverb_other",
+          "type": "Adverb (副词)",
+          "chinese_definition": "别的",
+          "explanation": "修饰不定代词。",
+          "phonetics": {
+            "uk": "/els/", "us": "/els/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_009",
+      "sentence_info": {
+        "original": "Come here!",
+        "translation": "过来！",
+        "sentence_pattern": "(You) + Come + here",
+        "pattern_code": "IMPERATIVE_ELLIPSIS",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "imperative"]
+      },
+      "analysis": [
+        {
+          "word": "(You)",
+          "base_form": "you",
+          "range": [],
+          "tag": "ellipsis_subject",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "你（省略）",
+          "explanation": "祈使句通常省略主语 You。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "Come",
+          "base_form": "come",
+          "range": [0, 4],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "来",
+          "explanation": "动词原形开头。",
+          "phonetics": {
+            "uk": "/kʌm/", "us": "/kʌm/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [5, 9],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "这里",
+          "explanation": "地点状语。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_ELLIPSIS_010",
+      "sentence_info": {
+        "original": "Why not try again?",
+        "translation": "为什么不再试一次？",
+        "sentence_pattern": "Why + not + (do you) + try ...",
+        "pattern_code": "WHY_NOT_ELLIPSIS",
+        "difficulty_level": 1,
+        "tags": ["special_pattern", "ellipsis", "suggestion"]
+      },
+      "analysis": [
+        {
+          "word": "Why",
+          "base_form": "why",
+          "range": [0, 3],
+          "tag": "adverb_interrogative",
+          "type": "Interrogative Adverb (疑问副词)",
+          "chinese_definition": "为什么",
+          "explanation": "疑问词。",
+          "phonetics": {
+            "uk": "/waɪ/", "us": "/waɪ/"
+          }
+        },
+        {
+          "word": "not",
+          "base_form": "not",
+          "range": [4, 7],
+          "tag": "adverb_negative",
+          "type": "Adverb (否定副词)",
+          "chinese_definition": "不",
+          "explanation": "否定词。",
+          "phonetics": {
+            "uk": "/nɒt/", "us": "/nɑːt/"
+          }
+        },
+        {
+          "word": "(do you)",
+          "base_form": "do you",
+          "range": [],
+          "tag": "ellipsis_auxiliary_subject",
+          "type": "Ellipsis (省略成分)",
+          "chinese_definition": "你做（省略）",
+          "explanation": "Why not 后直接跟不带to的不定式，省略了 do you。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "try",
+          "base_form": "try",
+          "range": [8, 11],
+          "tag": "verb_transitive",
+          "type": "Verb (动词)",
+          "chinese_definition": "尝试",
+          "explanation": "动词原形。",
+          "phonetics": {
+            "uk": "/traɪ/", "us": "/traɪ/"
+          }
+        },
+        {
+          "word": "again",
+          "base_form": "again",
+          "range": [12, 17],
+          "tag": "adverb_frequency",
+          "type": "Adverb (副词)",
+          "chinese_definition": "再一次",
+          "explanation": "副词修饰动词。",
+          "phonetics": {
+            "uk": "/əˈɡen/", "us": "/əˈɡen/"
+          }
+        }
+      ]
+    }
+  ]
+}
