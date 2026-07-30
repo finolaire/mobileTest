@@ -11,6 +11,8 @@ struct DisplayConfig: Codable {
     var showPhonetics: Bool = true
     var showWordType: Bool = true
     var showSentencePattern: Bool = true
+    /// 朗读时是否朗读句型（沉浸式/自动播放）
+    var speakSentencePattern: Bool = false
     var showTranslation: Bool = true
     var showEnglishSentence: Bool = true
     var showAudioButton: Bool = true
@@ -37,6 +39,28 @@ struct DisplayConfig: Codable {
         if let data = try? JSONEncoder().encode(self) {
             UserDefaults.standard.set(data, forKey: DisplayConfig.userDefaultsKey)
         }
+    }
+    
+    /// 兼容旧版缓存：新增字段缺失时使用默认值，避免整份配置回退
+    init() {}
+    
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        phoneticType = try c.decodeIfPresent(PhoneticType.self, forKey: .phoneticType) ?? .us
+        showPhonetics = try c.decodeIfPresent(Bool.self, forKey: .showPhonetics) ?? true
+        showWordType = try c.decodeIfPresent(Bool.self, forKey: .showWordType) ?? true
+        showSentencePattern = try c.decodeIfPresent(Bool.self, forKey: .showSentencePattern) ?? true
+        speakSentencePattern = try c.decodeIfPresent(Bool.self, forKey: .speakSentencePattern) ?? false
+        showTranslation = try c.decodeIfPresent(Bool.self, forKey: .showTranslation) ?? true
+        showEnglishSentence = try c.decodeIfPresent(Bool.self, forKey: .showEnglishSentence) ?? true
+        showAudioButton = try c.decodeIfPresent(Bool.self, forKey: .showAudioButton) ?? true
+        showTranslationAudioButton = try c.decodeIfPresent(Bool.self, forKey: .showTranslationAudioButton) ?? true
+        showEnglishAudioButton = try c.decodeIfPresent(Bool.self, forKey: .showEnglishAudioButton) ?? true
+        backgroundImageIndex = try c.decodeIfPresent(Int.self, forKey: .backgroundImageIndex) ?? 0
+        useCustomBackground = try c.decodeIfPresent(Bool.self, forKey: .useCustomBackground) ?? false
+        customBackgroundImageName = try c.decodeIfPresent(String.self, forKey: .customBackgroundImageName)
+        selectedVoiceIdentifier = try c.decodeIfPresent(String.self, forKey: .selectedVoiceIdentifier)
+        maskOpacity = try c.decodeIfPresent(Float.self, forKey: .maskOpacity) ?? 0.8
     }
 }
 
