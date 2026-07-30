@@ -8,6 +8,7 @@ struct AppStrings {
         static let showPhonetics = "显示音标"
         static let showWordType = "显示词性"
         static let showPattern = "显示句型"
+        static let patternAudio = "朗读"
         static let showWordAudio = "显示单词朗读"
         
         static let accent = "口音"

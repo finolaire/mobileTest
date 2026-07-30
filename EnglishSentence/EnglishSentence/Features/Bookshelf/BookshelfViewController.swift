@@ -86,7 +86,7 @@ class BookshelfViewController: UIViewController {
     }
     
     private func showMissingFilesAlert(count: Int) {
-        let message = "Found \(count) courses. Expected at least 5.\n\nDebug Info:\n- Manifest loaded: \(CourseManager.shared.isManifestLoaded ? "Yes" : "No")\n\nTry this:\n1. Ensure 'SentenceJson' folder is added to Xcode (blue folder icon preferred).\n2. Clean Build Folder (Shift+Cmd+K)."
+        let message = "Found \(count) courses. Expected at least 5.\n\nDebug Info:\n- Manifest loaded: \(CourseManager.shared.isManifestLoaded ? "Yes" : "No")\n\nTry this:\n1. Ensure 'Resources/SentenceJson' is in the app target.\n2. Clean Build Folder (Shift+Cmd+K)."
         let alert = UIAlertController(title: "Missing Files", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)

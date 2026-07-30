@@ -66,7 +66,9 @@ class CourseManager {
         
         // Strategy 0: Load from Manifest (Preferred)
         var manifestLoaded = false
-        if let manifestURL = Bundle.main.url(forResource: "SentenceJsonConfig", withExtension: "json", subdirectory: "SentenceJson") ?? Bundle.main.url(forResource: "SentenceJsonConfig", withExtension: "json") {
+        if let manifestURL = Bundle.main.url(forResource: "SentenceJsonConfig", withExtension: "json", subdirectory: "Resources/SentenceJson")
+            ?? Bundle.main.url(forResource: "SentenceJsonConfig", withExtension: "json", subdirectory: "SentenceJson")
+            ?? Bundle.main.url(forResource: "SentenceJsonConfig", withExtension: "json") {
             print("Found manifest at: \(manifestURL)")
             do {
                 let data = try Data(contentsOf: manifestURL)
@@ -100,8 +102,11 @@ class CourseManager {
                         if foundPath == nil {
                             let name = (filename as NSString).deletingPathExtension
                             let ext = (filename as NSString).pathExtension
-                            if let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: "SentenceJson") {
-                                foundPath = url.path
+                            for subdir in ["Resources/SentenceJson", "SentenceJson"] {
+                                if let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: subdir) {
+                                    foundPath = url.path
+                                    break
+                                }
                             }
                         }
                         
