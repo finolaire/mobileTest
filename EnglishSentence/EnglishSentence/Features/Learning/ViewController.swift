@@ -31,7 +31,7 @@ enum ImmersiveConfigStore {
         lockScreenPlayback: true,
         autoStopEnabled: false,
         autoStopMinutes: 15,
-        playSentencePattern: true,
+        playSentencePattern: false,
         playTranslation: true,
         playOriginal: true,
         sentenceCountOption: "all",
@@ -362,6 +362,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         view.backgroundColor = .black
         TTSManager.shared.warmUpAsync()
         
+        // 用设置页「句型朗读」初始化自动播放配置
+        immersiveConfig.playSentencePattern = viewModel.displayConfig.speakSentencePattern
+        
         setupUI()
         setupBindings()
         setupImmersiveCallbacks()
@@ -601,7 +604,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         }
         
         var candidates: [(order: Int, type: PlayItemType)] = []
-        if immersiveConfig.playSentencePattern {
+        if viewModel.displayConfig.speakSentencePattern {
             candidates.append((immersiveConfig.orderPattern, .pattern))
         }
         if immersiveConfig.playTranslation {
@@ -696,7 +699,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         let soundName = immersiveConfig.intervalSoundFile.isEmpty ? IntervalSoundDefinitions.defaultSound : immersiveConfig.intervalSoundFile
         let fileName = IntervalSoundDefinitions.soundFileMapping[soundName] ?? soundName
         
-        guard let url = Bundle.main.url(forResource: fileName, withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "mp3", subdirectory: "Resources/Media")
+            ?? Bundle.main.url(forResource: fileName, withExtension: "mp3", subdirectory: "Resource")
+            ?? Bundle.main.url(forResource: fileName, withExtension: "mp3") else {
             proceedToNextImmersiveSentence()
             return
         }
@@ -993,9 +998,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     @objc private func immersiveTapped() {
         let configVC = ImmersiveReadingConfigViewController(config: immersiveConfig)
         configVC.onStart = { [weak self] config in
-            self?.immersiveConfig = config
+            guard let self = self else { return }
+            self.immersiveConfig = config
             ImmersiveConfigStore.save(config)
-            self?.startImmersivePlayback()
+            // 同步回设置页「句型朗读」开关
+            var displayConfig = self.viewModel.displayConfig
+            displayConfig.speakSentencePattern = config.playSentencePattern
+            self.viewModel.updateConfig(displayConfig)
+            self.startImmersivePlayback()
         }
         present(configVC, animated: true)
     }
@@ -1029,7 +1039,11 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     @objc private func settingsTapped() {
         let settingsVC = SettingsViewController(config: viewModel.displayConfig)
         settingsVC.onConfigChanged = { [weak self] newConfig in
-            self?.viewModel.updateConfig(newConfig)
+            guard let self = self else { return }
+            self.viewModel.updateConfig(newConfig)
+            // 与自动播放配置中的「播放语法」保持同步
+            self.immersiveConfig.playSentencePattern = newConfig.speakSentencePattern
+            ImmersiveConfigStore.save(self.immersiveConfig)
         }
         present(settingsVC, animated: true, completion: nil)
     }

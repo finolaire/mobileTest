@@ -193,7 +193,9 @@ class IntervalSoundSelectorViewController: UIViewController, UITableViewDataSour
         let extensions = ["mp3", "wav", "m4a", "caf"]
         
         for ext in extensions {
-            if let url = Bundle.main.url(forResource: fileName, withExtension: ext) {
+            if let url = Bundle.main.url(forResource: fileName, withExtension: ext, subdirectory: "Resources/Media")
+                ?? Bundle.main.url(forResource: fileName, withExtension: ext, subdirectory: "Resource")
+                ?? Bundle.main.url(forResource: fileName, withExtension: ext) {
                 soundURL = url
                 break
             }
