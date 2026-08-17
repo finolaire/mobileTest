@@ -373,6 +373,22 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         
         translationAudioButton.addTarget(self, action: #selector(translationAudioTapped), for: .touchUpInside)
         englishAudioButton.addTarget(self, action: #selector(englishAudioTapped), for: .touchUpInside)
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleOverlayDeepLinkNotification(_:)),
+            name: OverlayDeepLinkRouter.didEnqueueNotification,
+            object: nil
+        )
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        processPendingOverlayDeepLinkIfNeeded()
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: OverlayDeepLinkRouter.didEnqueueNotification, object: nil)
     }
     
     private func setupUI() {
@@ -1049,15 +1065,49 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }
     
     @objc private func eyebrowTapped() {
-        let vc = EyesOverlayViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        presentEyesOverlay()
     }
 
     @objc private func sleepTapped() {
-        let vc = SleepOverlayViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        presentSleepOverlay()
+    }
+
+    // MARK: - Siri / Deep Link
+
+    @objc private func handleOverlayDeepLinkNotification(_ notification: Notification) {
+        processPendingOverlayDeepLinkIfNeeded()
+    }
+
+    private func processPendingOverlayDeepLinkIfNeeded() {
+        guard isViewLoaded, view.window != nil else { return }
+        guard let link = OverlayDeepLinkRouter.shared.consume() else { return }
+        switch link {
+        case .eyes:
+            presentEyesOverlay()
+        case .sleep:
+            presentSleepOverlay()
+        }
+    }
+
+    private func presentEyesOverlay() {
+        presentOverlay(EyesOverlayViewController())
+    }
+
+    private func presentSleepOverlay() {
+        presentOverlay(SleepOverlayViewController())
+    }
+
+    private func presentOverlay(_ overlay: UIViewController) {
+        overlay.modalPresentationStyle = .fullScreen
+
+        // 若已有模态页（含另一个遮罩），先关掉再打开目标页
+        if let presented = presentedViewController {
+            presented.dismiss(animated: false) { [weak self] in
+                self?.present(overlay, animated: true)
+            }
+        } else {
+            present(overlay, animated: true)
+        }
     }
 
     @objc private func bookshelfTapped() {
