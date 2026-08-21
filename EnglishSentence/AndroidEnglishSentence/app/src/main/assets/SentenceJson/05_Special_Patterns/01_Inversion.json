@@ -1,0 +1,666 @@
+{
+  "unit_name": "特殊句型 (1/3) - 倒装句",
+  "description": "为了强调或修辞效果，将谓语动词放在主语之前，分为完全倒装和部分倒装。",
+  "category": "Special_Patterns",
+  "code": "PATTERN_INVERSION",
+  "sentences": [
+    {
+      "id": "PATTERN_INVERSION_001",
+      "sentence_info": {
+        "original": "Never have I seen such a beautiful view",
+        "translation": "我从未见过如此美丽的景色",
+        "sentence_pattern": "否定副词 + 助动词 + 主语 + 动词...",
+        "pattern_code": "ADV_AUX_S_V",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "inversion", "negative_adverb"]
+      },
+      "analysis": [
+        {
+          "word": "Never",
+          "base_form": "never",
+          "range": [0, 5],
+          "tag": "adverb_negative",
+          "type": "Adverb (否定副词)",
+          "chinese_definition": "从不",
+          "explanation": "否定副词置于句首，引起部分倒装。",
+          "phonetics": {
+            "uk": "/ˈnevə(r)/", "us": "/ˈnevər/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [6, 10],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词提前至主语之前。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [11, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "seen",
+          "base_form": "see",
+          "range": [13, 17],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "看见",
+          "explanation": "实义动词的过去分词。",
+          "phonetics": {
+            "uk": "/siːn/", "us": "/siːn/"
+          }
+        },
+        {
+          "word": "such a beautiful view",
+          "base_form": "such a beautiful view",
+          "range": [18, 39],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "如此美丽的景色",
+          "explanation": "动词 see 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_002",
+      "sentence_info": {
+        "original": "Here comes the bus",
+        "translation": "公交车来了",
+        "sentence_pattern": "地点副词 + 谓语动词 + 主语",
+        "pattern_code": "ADV_V_S",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "inversion", "full_inversion"]
+      },
+      "analysis": [
+        {
+          "word": "Here",
+          "base_form": "here",
+          "range": [0, 4],
+          "tag": "adverb_place",
+          "type": "Adverb (地点副词)",
+          "chinese_definition": "这里",
+          "explanation": "地点副词置于句首，引起完全倒装。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "comes",
+          "base_form": "come",
+          "range": [5, 10],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "来",
+          "explanation": "谓语动词，完全倒装时直接放在主语之前。",
+          "phonetics": {
+            "uk": "/kʌmz/", "us": "/kʌmz/"
+          }
+        },
+        {
+          "word": "the bus",
+          "base_form": "bus",
+          "range": [11, 18],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "公交车",
+          "explanation": "主语放在句尾。",
+          "phonetics": {
+            "uk": "/bʌs/", "us": "/bʌs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_003",
+      "sentence_info": {
+        "original": "Only then did I realize my mistake",
+        "translation": "直到那时我才意识到我的错误",
+        "sentence_pattern": "Only + 状语 + 助动词 + 主语 + 动词...",
+        "pattern_code": "ONLY_ADV_AUX_S_V",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "inversion", "only_inversion"]
+      },
+      "analysis": [
+        {
+          "word": "Only then",
+          "base_form": "only then",
+          "range": [0, 9],
+          "tag": "adverb_phrase",
+          "type": "Adverb Phrase (副词短语)",
+          "chinese_definition": "直到那时",
+          "explanation": "Only + 时间副词位于句首，引起部分倒装。",
+          "phonetics": {
+            "uk": "/ˈəʊnli ðen/", "us": "/ˈoʊnli ðen/"
+          }
+        },
+        {
+          "word": "did",
+          "base_form": "do",
+          "range": [10, 13],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "做(助动词)",
+          "explanation": "一般过去时的助动词提前。",
+          "phonetics": {
+            "uk": "/dɪd/", "us": "/dɪd/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [14, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "realize",
+          "base_form": "realize",
+          "range": [16, 23],
+          "tag": "verb_transitive",
+          "type": "Verb (及物动词)",
+          "chinese_definition": "意识到",
+          "explanation": "谓语动词原形。",
+          "phonetics": {
+            "uk": "/ˈriːəlaɪz/", "us": "/ˈriːəlaɪz/"
+          }
+        },
+        {
+          "word": "my mistake",
+          "base_form": "my mistake",
+          "range": [24, 34],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我的错误",
+          "explanation": "动词 realize 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_004",
+      "sentence_info": {
+        "original": "So angry was he that he couldn't speak",
+        "translation": "他是如此生气以至于说不出话来",
+        "sentence_pattern": "So + 形容词 + be动词 + 主语 + that从句",
+        "pattern_code": "SO_ADJ_BE_S_THAT",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "inversion", "so_that"]
+      },
+      "analysis": [
+        {
+          "word": "So angry",
+          "base_form": "so angry",
+          "range": [0, 8],
+          "tag": "adjective_phrase",
+          "type": "Adjective Phrase (形容词短语)",
+          "chinese_definition": "如此生气",
+          "explanation": "So + 形容词位于句首，引起倒装。",
+          "phonetics": {
+            "uk": "/səʊ ˈæŋɡri/", "us": "/soʊ ˈæŋɡri/"
+          }
+        },
+        {
+          "word": "was",
+          "base_form": "be",
+          "range": [9, 12],
+          "tag": "verb_be",
+          "type": "Be Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词提前至主语之前。",
+          "phonetics": {
+            "uk": "/wɒz/", "us": "/wʌz/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [13, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/hi/", "us": "/hi/"
+          }
+        },
+        {
+          "word": "that he couldn't speak",
+          "base_form": "that he couldn't speak",
+          "range": [16, 38],
+          "tag": "clause_result",
+          "type": "Clause (结果状语从句)",
+          "chinese_definition": "以至于他不能说话",
+          "explanation": "表示结果的从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_005",
+      "sentence_info": {
+        "original": "Not only is he smart, but also he is diligent",
+        "translation": "他不仅聪明，而且勤奋",
+        "sentence_pattern": "Not only + 助动词/系动词 + 主语...",
+        "pattern_code": "NOT_ONLY_INV",
+        "difficulty_level": 3,
+        "tags": ["special_pattern", "inversion", "not_only"]
+      },
+      "analysis": [
+        {
+          "word": "Not only",
+          "base_form": "not only",
+          "range": [0, 8],
+          "tag": "conjunction_phrase",
+          "type": "Conjunction (连词短语)",
+          "chinese_definition": "不仅",
+          "explanation": "Not only 位于句首，前一分句倒装。",
+          "phonetics": {
+            "uk": "/nɒt ˈəʊnli/", "us": "/nɑːt ˈoʊnli/"
+          }
+        },
+        {
+          "word": "is",
+          "base_form": "be",
+          "range": [9, 11],
+          "tag": "verb_be",
+          "type": "Be Verb (系动词)",
+          "chinese_definition": "是",
+          "explanation": "系动词提前。",
+          "phonetics": {
+            "uk": "/ɪz/", "us": "/ɪz/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [12, 14],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/hi/", "us": "/hi/"
+          }
+        },
+        {
+          "word": "smart",
+          "base_form": "smart",
+          "range": [15, 20],
+          "tag": "adjective_predicative",
+          "type": "Adjective (表语形容词)",
+          "chinese_definition": "聪明的",
+          "explanation": "表语。",
+          "phonetics": {
+            "uk": "/smɑːt/", "us": "/smɑːrt/"
+          }
+        },
+        {
+          "word": "but also he is diligent",
+          "base_form": "but also he is diligent",
+          "range": [22, 45],
+          "tag": "clause_coordinate",
+          "type": "Clause (并列句)",
+          "chinese_definition": "而且他很勤奋",
+          "explanation": "后一分句正常语序。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_006",
+      "sentence_info": {
+        "original": "Had I known the truth, I would have told you",
+        "translation": "如果我早知道真相，我就告诉你了",
+        "sentence_pattern": "Had/Were/Should + 主语...",
+        "pattern_code": "CONDITIONAL_INV",
+        "difficulty_level": 4,
+        "tags": ["special_pattern", "inversion", "conditional"]
+      },
+      "analysis": [
+        {
+          "word": "Had",
+          "base_form": "have",
+          "range": [0, 3],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "如果有(虚拟语气)",
+          "explanation": "虚拟语气省略if，Had提前引起倒装。",
+          "phonetics": {
+            "uk": "/hæd/", "us": "/hæd/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [4, 5],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "known",
+          "base_form": "know",
+          "range": [6, 11],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "知道",
+          "explanation": "实义动词过去分词。",
+          "phonetics": {
+            "uk": "/nəʊn/", "us": "/noʊn/"
+          }
+        },
+        {
+          "word": "the truth",
+          "base_form": "truth",
+          "range": [12, 21],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "真相",
+          "explanation": "宾语。",
+          "phonetics": {
+            "uk": "/truːθ/", "us": "/truːθ/"
+          }
+        },
+        {
+          "word": "I would have told you",
+          "base_form": "I would have told you",
+          "range": [23, 44],
+          "tag": "clause_main",
+          "type": "Main Clause (主句)",
+          "chinese_definition": "我就告诉你了",
+          "explanation": "虚拟语气主句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_007",
+      "sentence_info": {
+        "original": "Under the tree sat a boy",
+        "translation": "树下坐着一个男孩",
+        "sentence_pattern": "介词短语 + 谓语动词 + 主语",
+        "pattern_code": "PREP_V_S",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "inversion", "full_inversion"]
+      },
+      "analysis": [
+        {
+          "word": "Under the tree",
+          "base_form": "under the tree",
+          "range": [0, 14],
+          "tag": "prepositional_phrase",
+          "type": "Prepositional Phrase (介词短语)",
+          "chinese_definition": "在树下",
+          "explanation": "表示地点的介词短语置于句首，引起完全倒装。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "sat",
+          "base_form": "sit",
+          "range": [15, 18],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "坐",
+          "explanation": "谓语动词过去式。",
+          "phonetics": {
+            "uk": "/sæt/", "us": "/sæt/"
+          }
+        },
+        {
+          "word": "a boy",
+          "base_form": "boy",
+          "range": [19, 24],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "一个男孩",
+          "explanation": "主语后置。",
+          "phonetics": {
+            "uk": "/bɔɪ/", "us": "/bɔɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_008",
+      "sentence_info": {
+        "original": "He doesn't like coffee, neither do I",
+        "translation": "他不喜欢咖啡，我也不喜欢",
+        "sentence_pattern": "Neither/Nor + 助动词/系动词 + 主语",
+        "pattern_code": "NEITHER_AUX_S",
+        "difficulty_level": 2,
+        "tags": ["special_pattern", "inversion", "neither_nor"]
+      },
+      "analysis": [
+        {
+          "word": "He doesn't like coffee",
+          "base_form": "He doesn't like coffee",
+          "range": [0, 22],
+          "tag": "clause_main",
+          "type": "Main Clause (主句)",
+          "chinese_definition": "他不喜欢咖啡",
+          "explanation": "前句为否定句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "neither",
+          "base_form": "neither",
+          "range": [24, 31],
+          "tag": "adverb_conjunction",
+          "type": "Adverb (副词/连词)",
+          "chinese_definition": "也不",
+          "explanation": "Neither 位于句首表示“也不”，引起倒装。",
+          "phonetics": {
+            "uk": "/ˈnaɪðə(r)/", "us": "/ˈniːðər/"
+          }
+        },
+        {
+          "word": "do",
+          "base_form": "do",
+          "range": [32, 34],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "做(助动词)",
+          "explanation": "助动词提前。",
+          "phonetics": {
+            "uk": "/duː/", "us": "/duː/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [35, 36],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_009",
+      "sentence_info": {
+        "original": "Hardly had I arrived when it began to rain",
+        "translation": "我刚到就开始下雨了",
+        "sentence_pattern": "Hardly + 助动词 + 主语... when...",
+        "pattern_code": "HARDLY_WHEN_INV",
+        "difficulty_level": 4,
+        "tags": ["special_pattern", "inversion", "hardly_when"]
+      },
+      "analysis": [
+        {
+          "word": "Hardly",
+          "base_form": "hardly",
+          "range": [0, 6],
+          "tag": "adverb_negative",
+          "type": "Adverb (否定副词)",
+          "chinese_definition": "几乎不/刚...",
+          "explanation": "Hardly 位于句首，引起倒装。",
+          "phonetics": {
+            "uk": "/ˈhɑːdli/", "us": "/ˈhɑːrdli/"
+          }
+        },
+        {
+          "word": "had",
+          "base_form": "have",
+          "range": [7, 10],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "过去完成时助动词提前。",
+          "phonetics": {
+            "uk": "/hæd/", "us": "/hæd/"
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [11, 12],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "arrived",
+          "base_form": "arrive",
+          "range": [13, 20],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "到达",
+          "explanation": "实义动词过去分词。",
+          "phonetics": {
+            "uk": "/əˈraɪvd/", "us": "/əˈraɪvd/"
+          }
+        },
+        {
+          "word": "when it began to rain",
+          "base_form": "when it began to rain",
+          "range": [21, 42],
+          "tag": "clause_time",
+          "type": "Time Clause (时间状语从句)",
+          "chinese_definition": "这时开始下雨",
+          "explanation": "Hardly...when... 固定搭配。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PATTERN_INVERSION_010",
+      "sentence_info": {
+        "original": "No sooner had he left than the phone rang",
+        "translation": "他刚离开电话就响了",
+        "sentence_pattern": "No sooner + 助动词 + 主语... than...",
+        "pattern_code": "NO_SOONER_THAN_INV",
+        "difficulty_level": 4,
+        "tags": ["special_pattern", "inversion", "no_sooner"]
+      },
+      "analysis": [
+        {
+          "word": "No sooner",
+          "base_form": "no sooner",
+          "range": [0, 9],
+          "tag": "adverb_phrase",
+          "type": "Adverb Phrase (副词短语)",
+          "chinese_definition": "刚...",
+          "explanation": "No sooner 位于句首，引起倒装。",
+          "phonetics": {
+            "uk": "/nəʊ ˈsuːnə(r)/", "us": "/noʊ ˈsuːnər/"
+          }
+        },
+        {
+          "word": "had",
+          "base_form": "have",
+          "range": [10, 13],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "过去完成时助动词提前。",
+          "phonetics": {
+            "uk": "/hæd/", "us": "/hæd/"
+          }
+        },
+        {
+          "word": "he",
+          "base_form": "he",
+          "range": [14, 16],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/hi/", "us": "/hi/"
+          }
+        },
+        {
+          "word": "left",
+          "base_form": "leave",
+          "range": [17, 21],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "离开",
+          "explanation": "实义动词过去分词。",
+          "phonetics": {
+            "uk": "/left/", "us": "/left/"
+          }
+        },
+        {
+          "word": "than the phone rang",
+          "base_form": "than the phone rang",
+          "range": [22, 41],
+          "tag": "clause_time",
+          "type": "Time Clause (时间状语从句)",
+          "chinese_definition": "电话就响了",
+          "explanation": "No sooner...than... 固定搭配。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

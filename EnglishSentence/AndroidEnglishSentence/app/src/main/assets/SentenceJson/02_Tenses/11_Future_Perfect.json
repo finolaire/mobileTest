@@ -1,0 +1,690 @@
+{
+  "unit_name": "核心时态 (11/16) - 将来完成时",
+  "description": "表示在将来某一时刻之前已经完成的动作，常与 by + 将来时间连用。",
+  "category": "Tenses",
+  "code": "TENS_FUT_PERF",
+  "sentences": [
+    {
+      "id": "TENS_FUT_PERF_001",
+      "sentence_info": {
+        "original": "By next year, I will have graduated",
+        "translation": "到明年，我就已经毕业了",
+        "sentence_pattern": "By + 时间状语 + 主语 + will have + 过去分词",
+        "pattern_code": "ADV_SV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "milestone"]
+      },
+      "analysis": [
+        {
+          "word": "By next year",
+          "base_form": "by next year",
+          "range": [0, 12],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到明年",
+          "explanation": "By 引导的时间状语，是将来完成时的典型标志。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [14, 15],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [16, 25],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "graduated",
+          "base_form": "graduate",
+          "range": [26, 35],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "毕业",
+          "explanation": "动词 graduate 的过去分词。",
+          "phonetics": {
+            "uk": "/ˈɡrædʒuˌeɪtɪd/", "us": "/ˈɡrædʒuˌeɪtɪd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_002",
+      "sentence_info": {
+        "original": "They will have finished the project by Friday",
+        "translation": "到周五，他们将已经完成了这个项目",
+        "sentence_pattern": "主语 + will have + 过去分词 + 宾语 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "deadline"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "will have finished",
+          "base_form": "finish",
+          "range": [5, 23],
+          "tag": "verb_phrase",
+          "type": "Predicate (谓语)",
+          "chinese_definition": "将会已经完成",
+          "explanation": "将来完成时结构。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "the project",
+          "base_form": "project",
+          "range": [24, 35],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "项目",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/ˈprɒdʒekt/", "us": "/ˈprɑːdʒekt/"
+          }
+        },
+        {
+          "word": "by Friday",
+          "base_form": "by Friday",
+          "range": [36, 45],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到周五",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_003",
+      "sentence_info": {
+        "original": "I will have finished my work by 5 pm",
+        "translation": "下午5点前我将完成我的工作",
+        "sentence_pattern": "主语 + will have + 过去分词 + 宾语 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "deadline"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [2, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "finished",
+          "base_form": "finish",
+          "range": [12, 20],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "完成",
+          "explanation": "动词 finish 的过去分词。",
+          "phonetics": {
+            "uk": "/ˈfɪnɪʃt/", "us": "/ˈfɪnɪʃt/"
+          }
+        },
+        {
+          "word": "my work",
+          "base_form": "work",
+          "range": [21, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我的工作",
+          "explanation": "finished 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by 5 pm",
+          "base_form": "by 5 pm",
+          "range": [29, 36],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "下午5点前",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_004",
+      "sentence_info": {
+        "original": "She will have lived here for ten years by next month",
+        "translation": "到下个月，她将在这里住满十年了",
+        "sentence_pattern": "主语 + will have + 过去分词 + 地点状语 + 时间段 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "duration"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [4, 13],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "lived",
+          "base_form": "live",
+          "range": [14, 19],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "居住",
+          "explanation": "动词 live 的过去分词。",
+          "phonetics": {
+            "uk": "/lɪvd/", "us": "/lɪvd/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [20, 24],
+          "tag": "adverb_place",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "这里",
+          "explanation": "地点副词。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "for ten years",
+          "base_form": "for ten years",
+          "range": [25, 38],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "十年",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by next month",
+          "base_form": "by next month",
+          "range": [39, 52],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到下个月",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_005",
+      "sentence_info": {
+        "original": "They will have arrived by then",
+        "translation": "到那时，他们将已经到达了",
+        "sentence_pattern": "主语 + will have + 过去分词 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "prediction"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [5, 14],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "arrived",
+          "base_form": "arrive",
+          "range": [15, 22],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "到达",
+          "explanation": "动词 arrive 的过去分词。",
+          "phonetics": {
+            "uk": "/əˈraɪvd/", "us": "/əˈraɪvd/"
+          }
+        },
+        {
+          "word": "by then",
+          "base_form": "by then",
+          "range": [23, 30],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到那时",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_006",
+      "sentence_info": {
+        "original": "We will have eaten dinner by the time you come",
+        "translation": "等你来的时候，我们将已经吃过晚饭了",
+        "sentence_pattern": "主语 + will have + 过去分词 + 宾语 + 时间状语从句",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "sequence_of_events"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [3, 12],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "eaten",
+          "base_form": "eat",
+          "range": [13, 18],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "吃",
+          "explanation": "动词 eat 的过去分词。",
+          "phonetics": {
+            "uk": "/ˈiːtn/", "us": "/ˈiːtn/"
+          }
+        },
+        {
+          "word": "dinner",
+          "base_form": "dinner",
+          "range": [19, 25],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "晚饭",
+          "explanation": "eaten 的宾语。",
+          "phonetics": {
+            "uk": "/ˈdɪnə(r)/", "us": "/ˈdɪnər/"
+          }
+        },
+        {
+          "word": "by the time you come",
+          "base_form": "by the time you come",
+          "range": [26, 46],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "到你来的时候",
+          "explanation": "by the time 引导的时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_007",
+      "sentence_info": {
+        "original": "He will have left before you get here",
+        "translation": "在你到达这里之前，他将已经离开了",
+        "sentence_pattern": "主语 + will have + 过去分词 + 时间状语从句",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "sequence_of_events"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [3, 12],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "left",
+          "base_form": "leave",
+          "range": [13, 17],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "离开",
+          "explanation": "动词 leave 的过去分词。",
+          "phonetics": {
+            "uk": "/left/", "us": "/left/"
+          }
+        },
+        {
+          "word": "before you get here",
+          "base_form": "before you get here",
+          "range": [18, 37],
+          "tag": "clause_adverbial",
+          "type": "Adverbial Clause (时间状语从句)",
+          "chinese_definition": "在你到达这里之前",
+          "explanation": "before 引导的时间状语从句。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_008",
+      "sentence_info": {
+        "original": "The movie will have started by 8 pm",
+        "translation": "到晚上8点，电影将已经开始了",
+        "sentence_pattern": "主语 + will have + 过去分词 + By + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "deadline"]
+      },
+      "analysis": [
+        {
+          "word": "The movie",
+          "base_form": "movie",
+          "range": [0, 9],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "电影",
+          "explanation": "主语。",
+          "phonetics": {
+            "uk": "/ðə ˈmuːvi/", "us": "/ðə ˈmuːvi/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [10, 19],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "started",
+          "base_form": "start",
+          "range": [20, 27],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "开始",
+          "explanation": "动词 start 的过去分词。",
+          "phonetics": {
+            "uk": "/ˈstɑːtɪd/", "us": "/ˈstɑːrtɪd/"
+          }
+        },
+        {
+          "word": "by 8 pm",
+          "base_form": "by 8 pm",
+          "range": [28, 35],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到晚上8点",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_009",
+      "sentence_info": {
+        "original": "I will have read this book by tomorrow",
+        "translation": "到明天，我将已经读完这本书了",
+        "sentence_pattern": "主语 + will have + 过去分词 + 宾语 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "deadline"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [2, 11],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "read",
+          "base_form": "read",
+          "range": [12, 16],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "读",
+          "explanation": "动词 read 的过去分词（读音为 /red/）。",
+          "phonetics": {
+            "uk": "/red/", "us": "/red/"
+          }
+        },
+        {
+          "word": "this book",
+          "base_form": "book",
+          "range": [17, 26],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "这本书",
+          "explanation": "read 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "by tomorrow",
+          "base_form": "by tomorrow",
+          "range": [27, 38],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到明天",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_FUT_PERF_010",
+      "sentence_info": {
+        "original": "You will have learned a lot by the end of the course",
+        "translation": "到课程结束时，你将已经学到了很多东西",
+        "sentence_pattern": "主语 + will have + 过去分词 + 宾语 + By + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 3,
+        "tags": ["tense", "future_perfect", "milestone"]
+      },
+      "analysis": [
+        {
+          "word": "You",
+          "base_form": "you",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "你",
+          "explanation": "第二人称主格。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "will have",
+          "base_form": "will have",
+          "range": [4, 13],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "将会已经",
+          "explanation": "将来完成时的助动词结构。",
+          "phonetics": {
+            "uk": "/wɪl hæv/", "us": "/wɪl hæv/"
+          }
+        },
+        {
+          "word": "learned",
+          "base_form": "learn",
+          "range": [14, 21],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "学习",
+          "explanation": "动词 learn 的过去分词。",
+          "phonetics": {
+            "uk": "/lɜːnd/", "us": "/lɜːrnd/"
+          }
+        },
+        {
+          "word": "a lot",
+          "base_form": "a lot",
+          "range": [22, 27],
+          "tag": "phrase_noun",
+          "type": "Object (宾语)",
+          "chinese_definition": "很多",
+          "explanation": "learned 的宾语。",
+          "phonetics": {
+            "uk": "/ə lɒt/", "us": "/ə lɑːt/"
+          }
+        },
+        {
+          "word": "by the end of the course",
+          "base_form": "by the end of the course",
+          "range": [28, 52],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "到课程结束时",
+          "explanation": "By 引导的时间截止点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

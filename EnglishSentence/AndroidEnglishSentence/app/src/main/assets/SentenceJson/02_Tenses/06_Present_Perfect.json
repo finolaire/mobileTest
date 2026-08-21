@@ -1,0 +1,678 @@
+{
+  "unit_name": "核心时态 (6/16) - 现在完成时",
+  "description": "表示过去发生的动作对现在造成的影响，或从过去持续到现在的动作。",
+  "category": "Tenses",
+  "code": "TENS_PRES_PERF",
+  "sentences": [
+    {
+      "id": "TENS_PRES_PERF_001",
+      "sentence_info": {
+        "original": "I have finished my homework",
+        "translation": "我已经完成了作业",
+        "sentence_pattern": "主语 + have/has + 过去分词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "result"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词，用于构成完成时。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "finished",
+          "base_form": "finish",
+          "range": [7, 15],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "完成",
+          "explanation": "动词 finish 的过去分词形式 (规则变化)。",
+          "phonetics": {
+            "uk": "/ˈfɪnɪʃt/", "us": "/ˈfɪnɪʃt/"
+          }
+        },
+        {
+          "word": "my homework",
+          "base_form": "homework",
+          "range": [16, 27],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我的作业",
+          "explanation": "finish 的宾语。",
+          "phonetics": {
+            "uk": "/ˈhəʊmwɜːk/", "us": "/ˈhoʊmwɜːrk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_002",
+      "sentence_info": {
+        "original": "She has been to Paris",
+        "translation": "她去过巴黎",
+        "sentence_pattern": "主语 + has + been + to + 地点",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "experience"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [4, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词 have 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "been to",
+          "base_form": "be",
+          "range": [8, 15],
+          "tag": "phrase_verb",
+          "type": "Past Participle (过去分词短语)",
+          "chinese_definition": "去过",
+          "explanation": "have been to 表示“去过某地（已经回来了）”，强调经历。",
+          "phonetics": {
+            "uk": "/biːn tuː/", "us": "/bɪn tuː/"
+          }
+        },
+        {
+          "word": "Paris",
+          "base_form": "Paris",
+          "range": [16, 21],
+          "tag": "noun_proper",
+          "type": "Noun (专有名词)",
+          "chinese_definition": "巴黎",
+          "explanation": "地点名词。",
+          "phonetics": {
+            "uk": "/ˈpærɪs/", "us": "/ˈpærɪs/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_003",
+      "sentence_info": {
+        "original": "We have lived here for ten years",
+        "translation": "我们已经在这里住了十年了",
+        "sentence_pattern": "主语 + have/has + 过去分词 + 地点状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "continuing_state"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [3, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "lived",
+          "base_form": "live",
+          "range": [8, 13],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "居住",
+          "explanation": "动词 live 的过去分词形式（规则变化）。",
+          "phonetics": {
+            "uk": "/lɪvd/", "us": "/lɪvd/"
+          }
+        },
+        {
+          "word": "here",
+          "base_form": "here",
+          "range": [14, 18],
+          "tag": "adverb_place",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "这里",
+          "explanation": "地点副词。",
+          "phonetics": {
+            "uk": "/hɪə(r)/", "us": "/hɪr/"
+          }
+        },
+        {
+          "word": "for ten years",
+          "base_form": "for ten years",
+          "range": [19, 32],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "十年了",
+          "explanation": "for + 时间段，表示动作持续的时间。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_004",
+      "sentence_info": {
+        "original": "He has lost his wallet",
+        "translation": "他丢了他的钱包",
+        "sentence_pattern": "主语 + have/has + 过去分词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "result"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词 have 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "lost",
+          "base_form": "lose",
+          "range": [7, 11],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "丢失",
+          "explanation": "动词 lose 的过去分词形式（不规则变化）。",
+          "phonetics": {
+            "uk": "/lɒst/", "us": "/lɔːst/"
+          }
+        },
+        {
+          "word": "his wallet",
+          "base_form": "wallet",
+          "range": [12, 22],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他的钱包",
+          "explanation": "lost 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_005",
+      "sentence_info": {
+        "original": "They have just arrived",
+        "translation": "他们刚刚到达",
+        "sentence_pattern": "主语 + have/has + just + 过去分词",
+        "pattern_code": "SV",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "recent_action"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [5, 9],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "just",
+          "base_form": "just",
+          "range": [10, 14],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "刚刚",
+          "explanation": "副词，常用于现在完成时，表示动作刚发生。",
+          "phonetics": {
+            "uk": "/dʒʌst/", "us": "/dʒʌst/"
+          }
+        },
+        {
+          "word": "arrived",
+          "base_form": "arrive",
+          "range": [15, 22],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "到达",
+          "explanation": "动词 arrive 的过去分词形式（规则变化）。",
+          "phonetics": {
+            "uk": "/əˈraɪvd/", "us": "/əˈraɪvd/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_006",
+      "sentence_info": {
+        "original": "I have never seen that movie",
+        "translation": "我从未看过那部电影",
+        "sentence_pattern": "主语 + have/has + never + 过去分词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "experience"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [2, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "never",
+          "base_form": "never",
+          "range": [7, 12],
+          "tag": "adverb_frequency",
+          "type": "Adverbial (频率状语)",
+          "chinese_definition": "从未",
+          "explanation": "否定副词，常用于现在完成时。",
+          "phonetics": {
+            "uk": "/ˈnevə(r)/", "us": "/ˈnevər/"
+          }
+        },
+        {
+          "word": "seen",
+          "base_form": "see",
+          "range": [13, 17],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "看见",
+          "explanation": "动词 see 的过去分词形式（不规则变化）。",
+          "phonetics": {
+            "uk": "/siːn/", "us": "/siːn/"
+          }
+        },
+        {
+          "word": "that movie",
+          "base_form": "movie",
+          "range": [18, 28],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "那部电影",
+          "explanation": "seen 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_007",
+      "sentence_info": {
+        "original": "She has already cooked dinner",
+        "translation": "她已经做好了晚饭",
+        "sentence_pattern": "主语 + have/has + already + 过去分词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "result"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [4, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "already",
+          "base_form": "already",
+          "range": [8, 15],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "已经",
+          "explanation": "副词，表示动作已完成。",
+          "phonetics": {
+            "uk": "/ɔːlˈredi/", "us": "/ɔːlˈredi/"
+          }
+        },
+        {
+          "word": "cooked",
+          "base_form": "cook",
+          "range": [16, 22],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "烹饪",
+          "explanation": "动词 cook 的过去分词形式（规则变化）。",
+          "phonetics": {
+            "uk": "/kʊkt/", "us": "/kʊkt/"
+          }
+        },
+        {
+          "word": "dinner",
+          "base_form": "dinner",
+          "range": [23, 29],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "晚饭",
+          "explanation": "cooked 的宾语。",
+          "phonetics": {
+            "uk": "/ˈdɪnə(r)/", "us": "/ˈdɪnər/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_008",
+      "sentence_info": {
+        "original": "Have you ever eaten sushi",
+        "translation": "你吃过寿司吗",
+        "sentence_pattern": "Have/Has + 主语 + ever + 过去分词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "question", "experience"]
+      },
+      "analysis": [
+        {
+          "word": "Have",
+          "base_form": "have",
+          "range": [0, 4],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词置于句首构成疑问句。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "you",
+          "base_form": "you",
+          "range": [5, 8],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "你",
+          "explanation": "第二人称主格。",
+          "phonetics": {
+            "uk": "/juː/", "us": "/juː/"
+          }
+        },
+        {
+          "word": "ever",
+          "base_form": "ever",
+          "range": [9, 13],
+          "tag": "adverb_frequency",
+          "type": "Adverbial (频率状语)",
+          "chinese_definition": "曾经",
+          "explanation": "副词，常用于疑问句中询问经历。",
+          "phonetics": {
+            "uk": "/ˈevə(r)/", "us": "/ˈevər/"
+          }
+        },
+        {
+          "word": "eaten",
+          "base_form": "eat",
+          "range": [14, 19],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "吃",
+          "explanation": "动词 eat 的过去分词形式（不规则变化）。",
+          "phonetics": {
+            "uk": "/ˈiːtn/", "us": "/ˈiːtn/"
+          }
+        },
+        {
+          "word": "sushi",
+          "base_form": "sushi",
+          "range": [20, 25],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "寿司",
+          "explanation": "eaten 的宾语。",
+          "phonetics": {
+            "uk": "/ˈsuːʃi/", "us": "/ˈsuːʃi/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_009",
+      "sentence_info": {
+        "original": "We have known each other for years",
+        "translation": "我们认识好多年了",
+        "sentence_pattern": "主语 + have/has + 过去分词 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "continuing_state"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "have",
+          "base_form": "have",
+          "range": [3, 7],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæv/", "us": "/hæv/"
+          }
+        },
+        {
+          "word": "known",
+          "base_form": "know",
+          "range": [8, 13],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "认识",
+          "explanation": "动词 know 的过去分词形式（不规则变化）。",
+          "phonetics": {
+            "uk": "/nəʊn/", "us": "/noʊn/"
+          }
+        },
+        {
+          "word": "each other",
+          "base_form": "each other",
+          "range": [14, 24],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "彼此",
+          "explanation": "相互代词作宾语。",
+          "phonetics": {
+            "uk": "/iːtʃ ˈʌðə(r)/", "us": "/iːtʃ ˈʌðər/"
+          }
+        },
+        {
+          "word": "for years",
+          "base_form": "for years",
+          "range": [25, 34],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "好多年",
+          "explanation": "for + 时间段。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PRES_PERF_010",
+      "sentence_info": {
+        "original": "He has broken his leg",
+        "translation": "他摔断了他的腿",
+        "sentence_pattern": "主语 + have/has + 过去分词 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 2,
+        "tags": ["tense", "present_perfect", "result"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "has",
+          "base_form": "have",
+          "range": [3, 6],
+          "tag": "verb_auxiliary",
+          "type": "Auxiliary Verb (助动词)",
+          "chinese_definition": "已经",
+          "explanation": "助动词。",
+          "phonetics": {
+            "uk": "/hæz/", "us": "/hæz/"
+          }
+        },
+        {
+          "word": "broken",
+          "base_form": "break",
+          "range": [7, 13],
+          "tag": "verb_past_participle",
+          "type": "Past Participle (过去分词)",
+          "chinese_definition": "折断",
+          "explanation": "动词 break 的过去分词形式（不规则变化）。",
+          "phonetics": {
+            "uk": "/ˈbrəʊkən/", "us": "/ˈbroʊkən/"
+          }
+        },
+        {
+          "word": "his leg",
+          "base_form": "leg",
+          "range": [14, 21],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他的腿",
+          "explanation": "broken 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "unit_name": "五大句型 (1/5) - SV 主谓结构",
+  "description": "最简单的句子结构，由主语和不及物动词构成。",
+  "category": "Basic_Structure",
+  "code": "BS_SV",
+  "sentences": [
+    {
+      "id": "BS_SV_001",
+      "sentence_info": {
+        "original": "Birds fly",
+        "translation": "鸟儿飞翔",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern"]
+      },
+      "analysis": [
+        {
+          "word": "Birds",
+          "base_form": "bird",
+          "range": [0, 5],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "鸟",
+          "explanation": "复数名词，作主语。",
+          "phonetics": {
+            "uk": "/bɜːdz/", "us": "/bɜːrdz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "fly",
+          "base_form": "fly",
+          "range": [6, 9],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "飞",
+          "explanation": "不及物动词，不需要宾语。",
+          "phonetics": {
+            "uk": "/flaɪ/", "us": "/flaɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_002",
+      "sentence_info": {
+        "original": "The sun rises",
+        "translation": "太阳升起",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词，特指独一无二的事物。",
+          "phonetics": {
+             "uk": "/ðə/", "us": "/ðə/",
+             "audio_uk": "",
+             "audio_us": ""
+          }
+        },
+        {
+          "word": "sun",
+          "base_form": "sun",
+          "range": [4, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "太阳",
+          "explanation": "名词作主语。",
+          "phonetics": {
+             "uk": "/sʌn/", "us": "/sʌn/",
+             "audio_uk": "",
+             "audio_us": ""
+          }
+        },
+        {
+          "word": "rises",
+          "base_form": "rise",
+          "range": [8, 13],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "升起",
+          "explanation": "rise 的第三人称单数形式。",
+          "phonetics": {
+             "uk": "/ˈraɪzɪz/", "us": "/ˈraɪzɪz/",
+             "audio_uk": "",
+             "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_003",
+      "sentence_info": {
+        "original": "Time flies",
+        "translation": "时间飞逝",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "idiom"]
+      },
+      "analysis": [
+        {
+          "word": "Time",
+          "base_form": "time",
+          "range": [0, 4],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "时间",
+          "explanation": "不可数名词作主语。",
+          "phonetics": {
+            "uk": "/taɪm/", "us": "/taɪm/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "flies",
+          "base_form": "fly",
+          "range": [5, 10],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "飞逝",
+          "explanation": "fly 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/flaɪz/", "us": "/flaɪz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_004",
+      "sentence_info": {
+        "original": "He sleeps",
+        "translation": "他睡觉",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "daily"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "人称代词主格作主语。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "sleeps",
+          "base_form": "sleep",
+          "range": [3, 9],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "睡觉",
+          "explanation": "sleep 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/sliːps/", "us": "/sliːps/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_005",
+      "sentence_info": {
+        "original": "Flowers bloom",
+        "translation": "花朵盛开",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "Flowers",
+          "base_form": "flower",
+          "range": [0, 7],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "花朵",
+          "explanation": "复数名词作主语。",
+          "phonetics": {
+            "uk": "/ˈflaʊəz/", "us": "/ˈflaʊərz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "bloom",
+          "base_form": "bloom",
+          "range": [8, 13],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "盛开",
+          "explanation": "不及物动词，表示花开。",
+          "phonetics": {
+            "uk": "/bluːm/", "us": "/bluːm/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_006",
+      "sentence_info": {
+        "original": "She smiles",
+        "translation": "她微笑",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "emotion"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "人称代词主格作主语。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "smiles",
+          "base_form": "smile",
+          "range": [4, 10],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "微笑",
+          "explanation": "smile 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/smaɪlz/", "us": "/smaɪlz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_007",
+      "sentence_info": {
+        "original": "It rains",
+        "translation": "下雨了",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "weather"]
+      },
+      "analysis": [
+        {
+          "word": "It",
+          "base_form": "it",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "它",
+          "explanation": "代词作主语，指代天气。",
+          "phonetics": {
+            "uk": "/ɪt/", "us": "/ɪt/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "rains",
+          "base_form": "rain",
+          "range": [3, 8],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "下雨",
+          "explanation": "rain 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/reɪnz/", "us": "/reɪnz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_008",
+      "sentence_info": {
+        "original": "Dogs bark",
+        "translation": "狗叫",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "animal"]
+      },
+      "analysis": [
+        {
+          "word": "Dogs",
+          "base_form": "dog",
+          "range": [0, 4],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "狗",
+          "explanation": "复数名词作主语。",
+          "phonetics": {
+            "uk": "/dɒɡz/", "us": "/dɔːɡz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "bark",
+          "base_form": "bark",
+          "range": [5, 9],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "吠叫",
+          "explanation": "不及物动词，指狗叫。",
+          "phonetics": {
+            "uk": "/bɑːk/", "us": "/bɑːrk/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_009",
+      "sentence_info": {
+        "original": "The wind blows",
+        "translation": "风吹",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "nature"]
+      },
+      "analysis": [
+        {
+          "word": "The",
+          "base_form": "the",
+          "range": [0, 3],
+          "tag": "article_definite",
+          "type": "Article (定冠词)",
+          "chinese_definition": "这/那",
+          "explanation": "定冠词。",
+          "phonetics": {
+            "uk": "/ðə/", "us": "/ðə/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "wind",
+          "base_form": "wind",
+          "range": [4, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "风",
+          "explanation": "名词作主语。",
+          "phonetics": {
+            "uk": "/wɪnd/", "us": "/wɪnd/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "blows",
+          "base_form": "blow",
+          "range": [9, 14],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "吹",
+          "explanation": "blow 的第三人称单数形式。",
+          "phonetics": {
+            "uk": "/bləʊz/", "us": "/bloʊz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BS_SV_010",
+      "sentence_info": {
+        "original": "Babies cry",
+        "translation": "婴儿哭泣",
+        "sentence_pattern": "主语 + 不及物动词",
+        "pattern_code": "SV",
+        "difficulty_level": 1,
+        "tags": ["basic_structure", "sv_pattern", "human"]
+      },
+      "analysis": [
+        {
+          "word": "Babies",
+          "base_form": "baby",
+          "range": [0, 6],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "婴儿",
+          "explanation": "baby 的复数形式，作主语。",
+          "phonetics": {
+            "uk": "/ˈbeɪbiz/", "us": "/ˈbeɪbiz/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        },
+        {
+          "word": "cry",
+          "base_form": "cry",
+          "range": [7, 10],
+          "tag": "verb_intransitive",
+          "type": "Verb (不及物动词)",
+          "chinese_definition": "哭泣",
+          "explanation": "不及物动词。",
+          "phonetics": {
+            "uk": "/kraɪ/", "us": "/kraɪ/",
+            "audio_uk": "",
+            "audio_us": ""
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">兔子英语</string>
+    <string name="widget1_name">提醒学习</string>
+    <string name="widget1_description">每天更换不同的图片提醒你学习哦～</string>
+    <string name="widget2_name">学习英语，保护眼睛</string>
+    <string name="widget2_description">学习英语要坚持，也要保护好眼睛哦～</string>
+    <string name="widget2_line1">学习英语</string>
+    <string name="widget2_line2">保护眼睛</string>
+</resources>

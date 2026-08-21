@@ -1,0 +1,570 @@
+{
+  "unit_name": "核心时态 (3/16) - 一般过去时",
+  "description": "表示过去某个时间发生的动作或存在的状态。",
+  "category": "Tenses",
+  "code": "TENS_PAST_SIMPLE",
+  "sentences": [
+    {
+      "id": "TENS_PAST_SIMPLE_001",
+      "sentence_info": {
+        "original": "I went to the park yesterday",
+        "translation": "我昨天去了公园",
+        "sentence_pattern": "主语 + 动词过去式 + 地点状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "irregular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "went",
+          "base_form": "go",
+          "range": [2, 6],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "去",
+          "explanation": "动词 go 的过去式（不规则变化）。",
+          "phonetics": {
+            "uk": "/went/", "us": "/went/"
+          }
+        },
+        {
+          "word": "to the park",
+          "base_form": "to the park",
+          "range": [7, 18],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "去公园",
+          "explanation": "介词短语表示方向/地点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "yesterday",
+          "base_form": "yesterday",
+          "range": [19, 28],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "昨天",
+          "explanation": "表示过去的时间状语，是一般过去时的标志词。",
+          "phonetics": {
+            "uk": "/ˈjestədeɪ/", "us": "/ˈjestərdeɪ/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_002",
+      "sentence_info": {
+        "original": "She lived in London last year",
+        "translation": "她去年住在伦敦",
+        "sentence_pattern": "主语 + 动词过去式 + 地点状语 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "regular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "lived",
+          "base_form": "live",
+          "range": [4, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "居住",
+          "explanation": "动词 live 的过去式（规则变化，加 d）。",
+          "phonetics": {
+            "uk": "/lɪvd/", "us": "/lɪvd/"
+          }
+        },
+        {
+          "word": "in London",
+          "base_form": "in London",
+          "range": [10, 19],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (地点状语)",
+          "chinese_definition": "在伦敦",
+          "explanation": "介词短语表示地点。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "last year",
+          "base_form": "last year",
+          "range": [20, 29],
+          "tag": "phrase_noun",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "去年",
+          "explanation": "表示过去的时间状语。",
+          "phonetics": {
+            "uk": "/lɑːst jɪə(r)/", "us": "/læst jɪr/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_003",
+      "sentence_info": {
+        "original": "We watched a movie last night",
+        "translation": "我们昨晚看了一部电影",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "regular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "We",
+          "base_form": "we",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我们",
+          "explanation": "第一人称复数主格。",
+          "phonetics": {
+            "uk": "/wiː/", "us": "/wiː/"
+          }
+        },
+        {
+          "word": "watched",
+          "base_form": "watch",
+          "range": [3, 10],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "观看",
+          "explanation": "动词 watch 的过去式（规则变化，加 ed）。",
+          "phonetics": {
+            "uk": "/wɒtʃt/", "us": "/wɑːtʃt/"
+          }
+        },
+        {
+          "word": "a movie",
+          "base_form": "movie",
+          "range": [11, 18],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "一部电影",
+          "explanation": "动词 watched 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        },
+        {
+          "word": "last night",
+          "base_form": "last night",
+          "range": [19, 29],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "昨晚",
+          "explanation": "表示过去的时间状语。",
+          "phonetics": {
+            "uk": "/lɑːst naɪt/", "us": "/læst naɪt/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_004",
+      "sentence_info": {
+        "original": "He bought a new car",
+        "translation": "他买了一辆新车",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "irregular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "bought",
+          "base_form": "buy",
+          "range": [3, 9],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "买",
+          "explanation": "动词 buy 的过去式（不规则变化）。",
+          "phonetics": {
+            "uk": "/bɔːt/", "us": "/bɔːt/"
+          }
+        },
+        {
+          "word": "a new car",
+          "base_form": "car",
+          "range": [10, 19],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "一辆新车",
+          "explanation": "动词 bought 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_005",
+      "sentence_info": {
+        "original": "They played football on Sunday",
+        "translation": "他们星期天踢了足球",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "regular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "They",
+          "base_form": "they",
+          "range": [0, 4],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他们",
+          "explanation": "第三人称复数主格。",
+          "phonetics": {
+            "uk": "/ðeɪ/", "us": "/ðeɪ/"
+          }
+        },
+        {
+          "word": "played",
+          "base_form": "play",
+          "range": [5, 11],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "踢",
+          "explanation": "动词 play 的过去式（规则变化，加 ed）。",
+          "phonetics": {
+            "uk": "/pleɪd/", "us": "/pleɪd/"
+          }
+        },
+        {
+          "word": "football",
+          "base_form": "football",
+          "range": [12, 20],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "足球",
+          "explanation": "运动名称，作宾语。",
+          "phonetics": {
+            "uk": "/ˈfʊtbɔːl/", "us": "/ˈfʊtbɔːl/"
+          }
+        },
+        {
+          "word": "on Sunday",
+          "base_form": "on Sunday",
+          "range": [21, 30],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "在星期天",
+          "explanation": "时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_006",
+      "sentence_info": {
+        "original": "I finished my homework",
+        "translation": "我完成了我的作业",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "regular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "finished",
+          "base_form": "finish",
+          "range": [2, 10],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "完成",
+          "explanation": "动词 finish 的过去式（规则变化，加 ed）。",
+          "phonetics": {
+            "uk": "/ˈfɪnɪʃt/", "us": "/ˈfɪnɪʃt/"
+          }
+        },
+        {
+          "word": "my homework",
+          "base_form": "homework",
+          "range": [11, 22],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "我的作业",
+          "explanation": "动词 finished 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_007",
+      "sentence_info": {
+        "original": "The rain stopped an hour ago",
+        "translation": "雨一小时前停了",
+        "sentence_pattern": "主语 + 动词过去式 + 时间状语",
+        "pattern_code": "SV_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "regular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "The rain",
+          "base_form": "rain",
+          "range": [0, 8],
+          "tag": "noun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "雨",
+          "explanation": "不可数名词作主语。",
+          "phonetics": {
+            "uk": "/ðə reɪn/", "us": "/ðə reɪn/"
+          }
+        },
+        {
+          "word": "stopped",
+          "base_form": "stop",
+          "range": [9, 16],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "停止",
+          "explanation": "动词 stop 的过去式（双写 p 加 ed）。",
+          "phonetics": {
+            "uk": "/stɒpt/", "us": "/stɑːpt/"
+          }
+        },
+        {
+          "word": "an hour ago",
+          "base_form": "an hour ago",
+          "range": [17, 28],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "一小时前",
+          "explanation": "表示过去的时间状语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_008",
+      "sentence_info": {
+        "original": "She cooked dinner for us",
+        "translation": "她为我们做了晚饭",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语 + 状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "regular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "She",
+          "base_form": "she",
+          "range": [0, 3],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "她",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/ʃiː/", "us": "/ʃiː/"
+          }
+        },
+        {
+          "word": "cooked",
+          "base_form": "cook",
+          "range": [4, 10],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "烹饪",
+          "explanation": "动词 cook 的过去式（规则变化，加 ed）。",
+          "phonetics": {
+            "uk": "/kʊkt/", "us": "/kʊkt/"
+          }
+        },
+        {
+          "word": "dinner",
+          "base_form": "dinner",
+          "range": [11, 17],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "晚饭",
+          "explanation": "动词 cooked 的宾语。",
+          "phonetics": {
+            "uk": "/ˈdɪnə(r)/", "us": "/ˈdɪnər/"
+          }
+        },
+        {
+          "word": "for us",
+          "base_form": "for us",
+          "range": [18, 24],
+          "tag": "phrase_prepositional",
+          "type": "Adverbial (状语)",
+          "chinese_definition": "为我们",
+          "explanation": "介词短语表示对象。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_009",
+      "sentence_info": {
+        "original": "He lost his keys",
+        "translation": "他弄丢了他的钥匙",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语",
+        "pattern_code": "SVO",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "irregular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "He",
+          "base_form": "he",
+          "range": [0, 2],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "他",
+          "explanation": "第三人称单数主格。",
+          "phonetics": {
+            "uk": "/hiː/", "us": "/hiː/"
+          }
+        },
+        {
+          "word": "lost",
+          "base_form": "lose",
+          "range": [3, 7],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "丢失",
+          "explanation": "动词 lose 的过去式（不规则变化）。",
+          "phonetics": {
+            "uk": "/lɒst/", "us": "/lɔːst/"
+          }
+        },
+        {
+          "word": "his keys",
+          "base_form": "key",
+          "range": [8, 16],
+          "tag": "noun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他的钥匙",
+          "explanation": "动词 lost 的宾语。",
+          "phonetics": {
+            "uk": "", "us": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TENS_PAST_SIMPLE_010",
+      "sentence_info": {
+        "original": "I saw him yesterday",
+        "translation": "我昨天看见了他",
+        "sentence_pattern": "主语 + 动词过去式 + 宾语 + 时间状语",
+        "pattern_code": "SVO_ADV",
+        "difficulty_level": 1,
+        "tags": ["tense", "past_simple", "irregular_verb"]
+      },
+      "analysis": [
+        {
+          "word": "I",
+          "base_form": "I",
+          "range": [0, 1],
+          "tag": "pronoun_subject",
+          "type": "Subject (主语)",
+          "chinese_definition": "我",
+          "explanation": "第一人称单数主格。",
+          "phonetics": {
+            "uk": "/aɪ/", "us": "/aɪ/"
+          }
+        },
+        {
+          "word": "saw",
+          "base_form": "see",
+          "range": [2, 5],
+          "tag": "verb_past",
+          "type": "Verb (动词过去式)",
+          "chinese_definition": "看见",
+          "explanation": "动词 see 的过去式（不规则变化）。",
+          "phonetics": {
+            "uk": "/sɔː/", "us": "/sɔː/"
+          }
+        },
+        {
+          "word": "him",
+          "base_form": "he",
+          "range": [6, 9],
+          "tag": "pronoun_object",
+          "type": "Object (宾语)",
+          "chinese_definition": "他",
+          "explanation": "宾格代词，作宾语。",
+          "phonetics": {
+            "uk": "/hɪm/", "us": "/hɪm/"
+          }
+        },
+        {
+          "word": "yesterday",
+          "base_form": "yesterday",
+          "range": [10, 19],
+          "tag": "adverb_time",
+          "type": "Adverbial (时间状语)",
+          "chinese_definition": "昨天",
+          "explanation": "时间状语。",
+          "phonetics": {
+            "uk": "/ˈjestədeɪ/", "us": "/ˈjestərdeɪ/"
+          }
+        }
+      ]
+    }
+  ]
+}
